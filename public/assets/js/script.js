@@ -313,17 +313,19 @@ $(".notifi-wishlist").on("click", function () {
 /*=====================
    14. Loader Js
    ==========================*/
-const loaderEl = document.getElementsByClassName("fullpage-loader")[0];
-document.addEventListener("readystatechange", (event) => {
-    const readyState = "complete";
-    if (document.readyState == readyState) {
-        loaderEl.classList.add("fullpage-loader--invisible");
+document.addEventListener("readystatechange", () => {
+  const loaderEl = document.getElementsByClassName("fullpage-loader")[0];
+  if (document.readyState === "complete" && loaderEl) {
+    loaderEl.classList.add("fullpage-loader--invisible");
 
-        setTimeout(() => {
-            loaderEl.parentNode.removeChild(loaderEl);
-        }, 100);
-    }
+    setTimeout(() => {
+      if (loaderEl && loaderEl.parentNode) {
+        loaderEl.parentNode.removeChild(loaderEl);
+      }
+    }, 100);
+  }
 });
+
 
 /*=====================
     15. header Dropdown Js
