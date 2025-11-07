@@ -1,33 +1,76 @@
-import React from 'react'
-
+import React, { useEffect, useRef } from "react";
+import $ from "jquery";
+import "slick-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Navbar() {
+    const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const $slider = $(sliderRef.current);
+
+    // Wait for DOM to fully render before initializing slick
+    const timer = setTimeout(() => {
+      if ($slider.length && !$slider.hasClass("slick-initialized")) {
+        $slider.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          vertical: true,
+          variableWidth: false,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          arrows: false,
+        });
+      }
+    }, 100); // short delay ensures element exists
+
+    // Close button functionality
+    $(".close-notification").on("click", function () {
+      $(".header-notification").addClass("remove");
+    });
+
+    // Cleanup on unmount
+    return () => {
+      clearTimeout(timer);
+      if ($slider.hasClass("slick-initialized")) {
+        $slider.slick("unslick");
+      }
+    };
+  }, []);
   return (
     <div>
       
     {/* <!-- Header Start --> */}
     <header className="header-2">
-        <div className="header-notification theme-bg-color overflow-hidden py-2">
-            <div className="notification-slider">
-                <div>
-                    <div className="timer-notification text-center">
-                        <h6><strong className="me-1">Welcome to Fastkart!</strong>Wrap new offers/gift
-                            every single day on Weekends.<strong className="ms-1">New Coupon Code: Fast024
-                            </strong>
-                        </h6>
-                    </div>
-                </div>
-
-                <div>
-                    <div className="timer-notification text-center">
-                        <h6>Something you love is now on sale!<a href="shop-left-sidebar.html" className="text-white">Buy
-                                Now
-                                !</a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <button className="btn close-notification"><span>Close</span> <i className="fas fa-times"></i></button>
+       <div className="header-notification theme-bg-color overflow-hidden py-2">
+      <div className="notification-slider" ref={sliderRef}>
+        <div>
+          <div className="timer-notification text-center">
+            <h6>
+              <strong className="me-1">Welcome to Fastkart!</strong> Wrap new
+              offers/gift every single day on Weekends.
+              <strong className="ms-1"> New Coupon Code: Fast024 </strong>
+            </h6>
+          </div>
         </div>
+
+        <div>
+          <div className="timer-notification text-center">
+            <h6>
+              Something you love is now on sale!
+              <a href="/shop-left-sidebar" className="text-white">
+                Buy Now!
+              </a>
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <button className="btn close-notification">
+        <span>Close</span> <i className="fas fa-times"></i>
+      </button>
+    </div>
         <div className="top-nav top-header sticky-header sticky-header-3">
             <div className="container-fluid-lg">
                 <div className="row">
@@ -680,38 +723,8 @@ export default function Navbar() {
                                             </ul>
                                         </li>
 
-                                        <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="javascript:void(0)"
-                                                data-bs-toggle="dropdown">Shop</a>
-
-                                            <ul className="dropdown-menu">
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-category-slider.html">Shop
-                                                        Category Slider</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-category.html">Shop
-                                                        Category Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-banner.html">Shop Banner</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-left-sidebar.html">Shop Left
-                                                        Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-list.html">Shop List</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-right-sidebar.html">Shop
-                                                        Right Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="shop-top-filter.html">Shop Top
-                                                        Filter</a>
-                                                </li>
-                                            </ul>
+                                        <li className="nav-item ">
+                                            <a className="nav-link " href="javascript:void(0)">Shop</a>
                                         </li>
 
                                         <li className="nav-item dropdown">
@@ -1095,7 +1108,7 @@ export default function Navbar() {
             </li>
 
             <li className="mobile-category">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" >
                     <i className="iconly-Category icli js-link"></i>
                     <span>Category</span>
                 </a>
@@ -1125,28 +1138,28 @@ export default function Navbar() {
     </div>
     {/* <!-- mobile fix menu end --> */}
       {/* <!-- Location Modal Start --> */}
-    <div class="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Choose your Delivery Location</h5>
-                    <p class="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel">Choose your Delivery Location</h5>
+                    <p className="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="location-list">
-                        <div class="search-input">
-                            <input type="search" class="form-control" placeholder="Search Your Area" />
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                <div className="modal-body">
+                    <div className="location-list">
+                        <div className="search-input">
+                            <input type="search" className="form-control" placeholder="Search Your Area" />
+                            <i className="fa-solid fa-magnifying-glass"></i>
                         </div>
 
-                        <div class="disabled-box">
+                        <div className="disabled-box">
                             <h6>Select a Location</h6>
                         </div>
 
-                        <ul class="location-select custom-height">
+                        <ul className="location-select custom-height">
                             <li>
                                 <a href="javascript:void(0)">
                                     <h6>Alabama</h6>
@@ -1224,71 +1237,71 @@ export default function Navbar() {
     </div>
     {/* <!-- Location Modal End --> */}
     {/* <!-- Deal Box Modal Start --> */}
-    <div class="modal fade theme-modal deal-modal" id="deal-box" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
+    <div className="modal fade theme-modal deal-modal" id="deal-box" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
                     <div>
-                        <h5 class="modal-title w-100" id="deal_today">Deal Today</h5>
-                        <p class="mt-1 text-content">Recommended deals for you.</p>
+                        <h5 className="modal-title w-100" id="deal_today">Deal Today</h5>
+                        <p className="mt-1 text-content">Recommended deals for you.</p>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="deal-offer-box">
-                        <ul class="deal-offer-list">
-                            <li class="list-1">
-                                <div class="deal-offer-contain">
-                                    <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/10.png" class="blur-up lazyload"
+                <div className="modal-body">
+                    <div className="deal-offer-box">
+                        <ul className="deal-offer-list">
+                            <li className="list-1">
+                                <div className="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-image">
+                                        <img src="../assets/images/vegetable/product/10.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
-                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
                                         <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
 
-                            <li class="list-2">
-                                <div class="deal-offer-contain">
-                                    <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/11.png" class="blur-up lazyload"
+                            <li className="list-2">
+                                <div className="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-image">
+                                        <img src="../assets/images/vegetable/product/11.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
-                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
                                         <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
 
-                            <li class="list-3">
-                                <div class="deal-offer-contain">
-                                    <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/12.png" class="blur-up lazyload"
+                            <li className="list-3">
+                                <div className="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-image">
+                                        <img src="../assets/images/vegetable/product/12.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
-                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
                                         <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
 
-                            <li class="list-1">
-                                <div class="deal-offer-contain">
-                                    <a href="shop-left-sidebar.html" class="deal-image">
-                                        <img src="../assets/images/vegetable/product/13.png" class="blur-up lazyload"
+                            <li className="list-1">
+                                <div className="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-image">
+                                        <img src="../assets/images/vegetable/product/13.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
-                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                    <a href="shop-left-sidebar.html" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
                                         <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
