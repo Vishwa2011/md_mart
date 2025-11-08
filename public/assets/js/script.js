@@ -272,6 +272,7 @@ $(window).on("load resize", function () {
 /*=====================
    13. Wishlist Js
    ==========================*/
+   $(document).ready(function(){
 $(".notifi-wishlist").on("click", function () {
     $.notify({
         icon: "fa fa-check",
@@ -308,6 +309,7 @@ $(".notifi-wishlist").on("click", function () {
             '<a href="{3}" target="{4}" data-notify="url"></a>' +
             "</div>",
     });
+});
 });
 
 /*=====================

@@ -1,6 +1,7 @@
 /**=====================
     Custom Slick js
 ==========================**/
+$(document).ready(function(){
 $('.category-slider').slick({
     arrows: true,
     infinite: true,
@@ -43,7 +44,7 @@ $('.category-slider').slick({
     },
     ]
 });
-
+});
 $('.category-slider-2').slick({
     arrows: true,
     infinite: true,
@@ -96,12 +97,13 @@ $('.category-slider-2').slick({
     },
     ]
 });
-
+$(document).ready(function(){
 $('.product-category-1').slick({
     arrows: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+});
 });
 
 $('.menu-slider').slick({
@@ -713,7 +715,7 @@ $('.slider-5_2').slick({
     },
     ]
 });
-
+$(document).ready(function(){
 $('.slider-6').slick({
     arrows: false,
     infinite: true,
@@ -746,6 +748,7 @@ $('.slider-6').slick({
         }
     },
     ]
+});
 });
 
 $('.slider-6_1').slick({
@@ -1124,7 +1127,7 @@ $('.search-product').slick({
     },
     ]
 });
-
+$(document).ready(function(){
 $('.three-slider-1').slick({
     arrows: true,
     infinite: true,
@@ -1144,8 +1147,9 @@ $('.three-slider-1').slick({
         }
     },
     ]
-})
-
+});
+});
+$(document).ready(function(){
 $('.three-slider').slick({
     arrows: true,
     infinite: true,
@@ -1165,8 +1169,8 @@ $('.three-slider').slick({
         }
     },
     ]
-})
-
+});
+});
 $('.category-slider-1').slick({
     arrows: true,
     infinite: true,
