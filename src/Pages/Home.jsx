@@ -14,7 +14,7 @@ export default function Home() {
                         <img src="../assets/images/veg-3/home/1.png" className="img-fluid bg-img blur-up lazyload" alt="" />
                         <div className="home-detail home-width p-center-left ">
                             <div>
-                                <h6 className="ls-expanded theme-color">ORGA484415415458156154545NIC</h6>
+                                <h6 className="ls-expanded theme-color">ORGANIC</h6>
                                 <h1 className="fw-bold w-100">100% Fresh</h1>
                                 <h3 className="text-content fw-light">Fruit & Vegetables</h3>
                                 <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
