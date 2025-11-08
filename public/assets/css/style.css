@@ -28677,6 +28677,9 @@ header .navbar.navbar-expand-xl .navbar-nav .nav-link::before {
     transform: translateY(-50%)
 }
 
+header .navbar.navbar-expand-xl .navbar-nav .nav-link1::before {
+display: none;
+}
 [dir=rtl] header .navbar.navbar-expand-xl .navbar-nav .nav-link::before {
     right: unset;
     left: -12px
@@ -32332,7 +32335,7 @@ body.rtl .menu-label {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     bottom: -5px;
     background-color: #fff;

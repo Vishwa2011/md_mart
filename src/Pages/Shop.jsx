@@ -1,35 +1,41 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Shop = () => {
+     useEffect(() => {
+    /**=====================
+        Quantity 2 js
+    ==========================**/
+    $(".addcart-button").click(function () {
+      $(this).next().addClass("open");
+      $(".add-to-cart-box .qty-input").val("1");
+    });
+
+    $(".qty-left-minus").on("click", function () {
+      var $qty = $(this).siblings(".qty-input");
+      var _val = $($qty).val();
+      if (_val === "1") {
+        var _removeCls = $(this).parents(".cart_qty");
+        $(_removeCls).removeClass("open");
+      }
+      var currentVal = parseInt($qty.val());
+      if (!isNaN(currentVal) && currentVal > 0) {
+        $qty.val(currentVal - 1);
+      }
+    });
+
+    $(".qty-right-plus").click(function () {
+      if ($(this).prev().val() < 9) {
+        $(this).prev().val(+$(this).prev().val() + 1);
+      }
+    });
+  }, []); // only run once
   return (
     <>
        <Navbar />
 
-       {/* <!-- Breadcrumb Section Start --> */}
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
-                        <h2>Shop Category</h2>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
-                                    <a href="index.html">
-                                        <i class="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item active">Shop Category</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {/* <!-- Breadcrumb Section End --> */}
            {/* <!-- Shop Section Start --> */}
     <section class="section-b-space shop-section">
         <div class="container-fluid-lg">
@@ -120,28 +126,28 @@ const Shop = () => {
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" id="pop" href="javascript:void(0)">Popularity</a>
+                                            <a class="dropdown-item" id="pop" href="">Popularity</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="low" href="javascript:void(0)">Low - High
+                                            <a class="dropdown-item" id="low" href="">Low - High
                                                 Price</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="high" href="javascript:void(0)">High - Low
+                                            <a class="dropdown-item" id="high" href="">High - Low
                                                 Price</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="rating" href="javascript:void(0)">Average
+                                            <a class="dropdown-item" id="rating" href="">Average
                                                 Rating</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="aToz" href="javascript:void(0)">A - Z Order</a>
+                                            <a class="dropdown-item" id="aToz" href="">A - Z Order</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="zToa" href="javascript:void(0)">Z - A Order</a>
+                                            <a class="dropdown-item" id="zToa" href="">Z - A Order</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" id="off" href="javascript:void(0)">% Off - Hight To
+                                            <a class="dropdown-item" id="off" href="">% Off - Hight To
                                                 Low</a>
                                         </li>
                                     </ul>
@@ -151,12 +157,12 @@ const Shop = () => {
                             <div class="grid-option d-none d-md-block">
                                 <ul>
                                     <li class="three-grid">
-                                        <a href="javascript:void(0)">
+                                        <a href="">
                                             <img src="../assets/svg/grid-3.svg" class="blur-up lazyload" alt=""/>
                                         </a>
                                     </li>
                                     <li class="grid-btn d-xxl-inline-block d-none active">
-                                        <a href="javascript:void(0)">
+                                        <a href="">
                                             <img src="../assets/svg/grid-4.svg"
                                                 class="blur-up lazyload d-lg-inline-block d-none" alt="" />
                                             <img src="../assets/svg/grid.svg"
@@ -164,7 +170,7 @@ const Shop = () => {
                                         </a>
                                     </li>
                                     <li class="list-btn">
-                                        <a href="javascript:void(0)">
+                                        <a href="">
                                             <img src="../assets/svg/list.svg" class="blur-up lazyload" alt="" />
                                         </a>
                                     </li>
@@ -175,19 +181,19 @@ const Shop = () => {
                         <div class="filter-category">
                             <ul>
                                 <li>
-                                    <a href="javascript:void(0)">Vegetable</a>
+                                    <a href="">Vegetable</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Fruit</a>
+                                    <a href="">Fruit</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Fresh</a>
+                                    <a href="">Fresh</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Milk</a>
+                                    <a href="">Milk</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Meat</a>
+                                    <a href="">Meat</a>
                                 </li>
                             </ul>
                         </div>
@@ -199,28 +205,24 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                           
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                  <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -229,7 +231,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Cheesy feet cheesy grin brie.
@@ -288,28 +290,24 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.05s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                         
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -319,7 +317,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Feta taleggio croque monsieur
@@ -378,28 +376,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/4.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -409,7 +402,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Lancashire hard cheese
@@ -470,28 +463,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.15s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -501,7 +489,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Cheddar cheddar pecorino hard
@@ -560,28 +548,24 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/6.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                        
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -591,7 +575,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Bavarian bergkase smelly
@@ -653,28 +637,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.25s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/7.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
-
+                                           
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -684,7 +663,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Melted cheese babybel chalk
@@ -745,28 +724,24 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                        
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -775,7 +750,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Squirty cheese cottage cheese
@@ -834,28 +809,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.35s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
-
+                                          
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -865,7 +835,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Swiss ricotta cauliflower
@@ -925,28 +895,24 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/4.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                          
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -956,7 +922,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Boursin the big cheese
@@ -1016,28 +982,21 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.45s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
-
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1047,7 +1006,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Halloumi mozzarella monterey
@@ -1107,28 +1066,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/6.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1138,7 +1092,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Manchego cow cheddar.
@@ -1199,28 +1153,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.55s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/7.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1230,7 +1179,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Roquefort say cheese the big
@@ -1291,28 +1240,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1321,7 +1265,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Lancashire when the cheese
@@ -1380,28 +1324,23 @@ const Shop = () => {
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.65s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <img src="../assets/images/cake/product/3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i>
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                    <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1411,7 +1350,7 @@ const Shop = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
                                         <p class="text-content mt-1 mb-2 product-content">Say cheese cheese and biscuits
@@ -1471,21 +1410,21 @@ const Shop = () => {
                     <nav class="custom-pagination">
                         <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                <a class="page-link" href="" tabindex="-1">
                                     <i class="fa-solid fa-angles-left"></i>
                                 </a>
                             </li>
                             <li class="page-item active">
-                                <a class="page-link" href="javascript:void(0)">1</a>
+                                <a class="page-link" href="">1</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">2</a>
+                                <a class="page-link" href="">2</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">3</a>
+                                <a class="page-link" href="">3</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">
+                                <a class="page-link" href="">
                                     <i class="fa-solid fa-angles-right"></i>
                                 </a>
                             </li>
@@ -1498,6 +1437,109 @@ const Shop = () => {
     {/* <!-- Shop Section End --> */}
 
     <Footer />
+{/* <!-- Quick View Modal Box Start --> */}
+    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-sm-4 g-2">
+                        <div class="col-lg-6">
+                            <div class="slider-image">
+                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="right-sidebar-modal">
+                                <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 class="price">$36.99</h4>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                    <span class="ms-2">8 Reviews</span>
+                                    <span class="ms-2 text-danger">6 sold in last 16 hours</span>
+                                </div>
+
+                                <div class="product-detail">
+                                    <h4>Product Details :</h4>
+                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                        Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
+                                        Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
+                                        muffin I love carrot cake sugar plum dessert bonbon.</p>
+                                </div>
+
+                                <ul class="brand-list">
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Brand Name:</h5>
+                                            <h6>Black Forest</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Code:</h5>
+                                            <h6>W0690034</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Type:</h5>
+                                            <h6>White Cream Cake</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="select-size">
+                                    <h4>Cake Size :</h4>
+                                    <select class="form-select select-form-size">
+                                        <option selected>Select Size</option>
+                                        <option value="1.2">1/2 KG</option>
+                                        <option value="0">1 KG</option>
+                                        <option value="1.5">1/5 KG</option>
+                                        <option value="red">Red Roses</option>
+                                        <option value="pink">With Pink Roses</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-button">
+                                    <button onclick="location.href = 'cart.html';"
+                                        class="btn btn-md add-cart-button icon">Add
+                                        To Cart</button>
+                                    <button onclick="location.href = 'product-left-thumbnail.html';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        View More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Quick View Modal Box End --> */}
     </>
   )
 }

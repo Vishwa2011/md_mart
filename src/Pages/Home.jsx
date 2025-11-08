@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Newsletter from '../component/Newsletter'
+import Footer from './Footer'
 
 export default function Home() {
   return (
@@ -654,11 +655,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -725,11 +722,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -800,11 +793,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -871,11 +860,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -946,11 +931,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1017,11 +998,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1088,11 +1065,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -1163,11 +1136,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1234,11 +1203,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -1305,11 +1270,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -1380,11 +1341,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -1455,11 +1412,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1530,11 +1483,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -1601,11 +1550,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1672,11 +1617,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1743,11 +1684,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1814,11 +1751,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1885,11 +1818,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -1956,11 +1885,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2027,11 +1952,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2098,11 +2019,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -2169,11 +2086,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2244,11 +2157,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -2315,11 +2224,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2386,11 +2291,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2457,11 +2358,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -2528,11 +2425,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -2599,11 +2492,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -2670,11 +2559,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -2745,11 +2630,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2816,11 +2697,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -2887,11 +2764,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -2958,11 +2831,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3029,11 +2898,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3100,11 +2965,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -3171,11 +3032,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3242,11 +3099,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -3313,11 +3166,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3384,11 +3233,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -3459,11 +3304,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3530,11 +3371,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3601,11 +3438,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -3672,11 +3505,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -3743,11 +3572,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                     
                                     </ul>
                                 </div>
 
@@ -3814,11 +3639,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                    
                                     </ul>
                                 </div>
 
@@ -3885,11 +3706,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                     
                                     </ul>
                                 </div>
 
@@ -3956,11 +3773,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
 
@@ -4027,11 +3840,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -4098,11 +3907,7 @@ export default function Home() {
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
-                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                            <a href="compare.html">
-                                                <i class="iconly-Swap icli"></i>
-                                            </a>
-                                        </li>
+                                    
                                     </ul>
                                 </div>
 
@@ -4257,12 +4062,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4316,12 +4116,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4375,12 +4170,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4438,12 +4228,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4497,12 +4282,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4556,12 +4336,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                    
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4631,12 +4406,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4690,12 +4460,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4749,12 +4514,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4812,12 +4572,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4871,12 +4626,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4930,12 +4680,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5005,12 +4750,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                        
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5064,12 +4804,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                  
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5123,12 +4858,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                     
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5186,12 +4916,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                 
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5245,12 +4970,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                        
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5304,12 +5024,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5379,12 +5094,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5438,12 +5148,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5497,12 +5202,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                     
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5560,12 +5260,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                       
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5619,12 +5314,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5678,12 +5368,7 @@ export default function Home() {
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Compare">
-                                                            <a href="compare.html">
-                                                                <i class="iconly-Swap icli"></i>
-                                                            </a>
-                                                        </li>
+                                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -5749,11 +5434,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -5822,11 +5503,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -5893,11 +5570,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -5962,11 +5635,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6033,11 +5702,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                              
                             </ul>
                         </div>
 
@@ -6102,11 +5767,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                             
                             </ul>
                         </div>
 
@@ -6173,11 +5834,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6246,11 +5903,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -6321,11 +5974,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                             
                             </ul>
                         </div>
 
@@ -6394,11 +6043,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -6465,11 +6110,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6534,11 +6175,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                              
                             </ul>
                         </div>
 
@@ -6605,11 +6242,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6674,11 +6307,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6745,11 +6374,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6814,11 +6439,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                             
                             </ul>
                         </div>
 
@@ -6885,11 +6506,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -6954,11 +6571,7 @@ export default function Home() {
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
-                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                    <a href="compare.html">
-                                        <i class="iconly-Swap icli"></i>
-                                    </a>
-                                </li>
+                              
                             </ul>
                         </div>
 
@@ -7112,6 +6725,7 @@ export default function Home() {
     <Newsletter />
     {/* <!-- Newsletter Section End --> */}
 
+    <Footer />
 
 
 
@@ -7264,6 +6878,27 @@ export default function Home() {
         <button onclick="location.href = 'cart.html';" class="btn item-button btn-sm fw-bold">$ 20.70</button>
     </div>
     {/* <!-- Items section End --> */}
+
+    {/* <!-- Cookie Bar Box Start --> */}
+    <div class="cookie-bar-box">
+        <div class="cookie-box">
+            <div class="cookie-image">
+                <img src="../assets/images/cookie-bar.png" class="blur-up lazyload" alt="" />
+                <h2>Cookies!</h2>
+            </div>
+
+            <div class="cookie-contain">
+                <h5 class="text-content">We use cookies to make your experience better</h5>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn privacy-button">Privacy Policy</button>
+            <button class="btn ok-button">OK</button>
+        </div>
+    </div>
+    {/* <!-- Cookie Bar Box End --> */}
+
     </div>
   )
 }

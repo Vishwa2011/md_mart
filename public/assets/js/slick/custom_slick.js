@@ -751,7 +751,7 @@ $('.slider-6').slick({
     ]
 });
 });
-
+$(document).ready(function(){
 $('.slider-6_1').slick({
     arrows: false,
     infinite: true,
@@ -785,6 +785,7 @@ $('.slider-6_1').slick({
         }
     },
     ]
+});
 });
 
 $('.slider-6_2').slick({
@@ -905,7 +906,7 @@ $('.left-slider-modal').slick({
     },
     ]
 });
-
+$(document).ready(function(){
 $('.product-main').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -913,7 +914,8 @@ $('.product-main').slick({
     fade: true,
     asNavFor: '.left-slider-image'
 });
-
+});
+$(document).ready(function(){
 $('.left-slider-image').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -945,6 +947,7 @@ $('.left-slider-image').slick({
         }
     },
     ]
+});
 });
 
 $('.product-main-2').slick({

@@ -1,36 +1,40 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Productdetails = () => {
+         useEffect(() => {
+        /**=====================
+            Quantity 2 js
+        ==========================**/
+        $(".addcart-button").click(function () {
+          $(this).next().addClass("open");
+          $(".add-to-cart-box .qty-input").val("1");
+        });
+    
+        $(".qty-left-minus").on("click", function () {
+          var $qty = $(this).siblings(".qty-input");
+          var _val = $($qty).val();
+          if (_val === "1") {
+            var _removeCls = $(this).parents(".cart_qty");
+            $(_removeCls).removeClass("open");
+          }
+          var currentVal = parseInt($qty.val());
+          if (!isNaN(currentVal) && currentVal > 0) {
+            $qty.val(currentVal - 1);
+          }
+        });
+    
+        $(".qty-right-plus").click(function () {
+          if ($(this).prev().val() < 9) {
+            $(this).prev().val(+$(this).prev().val() + 1);
+          }
+        });
+      }, []); // only run once
   return (
     <>
       <Navbar />
-       {/* <!-- Breadcrumb Section Start --> */}
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
-                        <h2>Creamy Chocolate Cake</h2>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
-                                    <a href="index.html">
-                                        <i class="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-
-                                <li class="breadcrumb-item active">Creamy Chocolate Cake</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {/* <!-- Breadcrumb Section End --> */}
-
     
       {/* <!-- Product Left Sidebar Start --> */}
     <section class="product-section">
@@ -263,20 +267,17 @@ const Productdetails = () => {
                                         </div>
                                     </div>
 
-                                    <button onclick="location.href = 'cart.html';"
+                                    <button onclick="location.href = '/Cart';"
                                         class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</button>
                                 </div>
 
                                 <div class="buy-box">
-                                    <a href="wishlist.html">
-                                        <i data-feather="heart"></i>
+                                    <a href="/Wishlist">
+                                       <i class="fa-solid fa-heart"></i>
                                         <span>Add To Wishlist</span>
                                     </a>
 
-                                    <a href="compare.html">
-                                        <i data-feather="shuffle"></i>
-                                        <span>Add To Compare</span>
-                                    </a>
+                                  
                                 </div>
 
                                 <div class="pickup-box">
@@ -429,13 +430,13 @@ const Productdetails = () => {
                                     <li>
                                         <div class="product-box product-box-bg wow fadeInUp">
                                             <div class="product-image">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <img src="../assets/images/fashion/product/27.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <h6 class="name">Women Flare Bell Bottom Jeans</h6>
                                                 </a>
 
@@ -450,13 +451,13 @@ const Productdetails = () => {
                                     <li>
                                         <div class="product-box product-box-bg wow fadeInUp" data-wow-delay="0.1s">
                                             <div class="product-image">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <img src="../assets/images/fashion/product/28.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <h6 class="name">Women Straight Fit Jeans</h6>
                                                 </a>
 
@@ -471,13 +472,13 @@ const Productdetails = () => {
                                     <li>
                                         <div class="product-box product-box-bg wow fadeInUp">
                                             <div class="product-image">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <img src="../assets/images/fashion/product/29.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
-                                                <a href="product-left-thumbnail.html">
+                                                <a href="/">
                                                     <h6 class="name">Women Polyester Activewear</h6>
                                                 </a>
 
@@ -1025,7 +1026,9 @@ const Productdetails = () => {
     {/* <!-- Related Product Section Start --> */}
     <section class="product-list-section section-b-space">
         <div class="container-fluid-lg">
-          
+          <div class="title">
+                <h2>Related Products</h2>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="slider-6_1 product-wrapper">
@@ -1042,19 +1045,15 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                           
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1064,7 +1063,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Cake</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Chocolate Chip Cookies 250 g</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1120,7 +1119,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.05s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
@@ -1129,19 +1128,14 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1150,7 +1144,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1206,7 +1200,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
@@ -1215,19 +1209,15 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                          
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1237,7 +1227,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1293,7 +1283,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.15s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/4.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
@@ -1302,19 +1292,15 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                       
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1324,7 +1310,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1380,7 +1366,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
@@ -1389,19 +1375,15 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                           
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1411,7 +1393,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Snacks</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1467,7 +1449,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.25s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/6.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
@@ -1476,19 +1458,15 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
+                                            
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1498,7 +1476,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1556,7 +1534,7 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <img src="../assets/images/cake/product/7.png" class="img-fluid" alt="" />
                                         </a>
 
@@ -1564,19 +1542,14 @@ const Productdetails = () => {
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="javascript:void(0)" data-bs-toggle="modal"
                                                     data-bs-target="#view">
-                                                    <i data-feather="eye"></i>
+                                                    <i class="fa-solid fa-eye"></i> 
                                                 </a>
                                             </li>
 
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                                <a href="compare.html">
-                                                    <i data-feather="refresh-cw"></i>
-                                                </a>
-                                            </li>
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
-                                                <a href="wishlist.html" class="notifi-wishlist">
-                                                    <i data-feather="heart"></i>
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1586,7 +1559,7 @@ const Productdetails = () => {
                                 <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
-                                        <a href="product-left-thumbnail.html">
+                                        <a href="/">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
                                         <div class="product-rating mt-2">
@@ -1647,6 +1620,223 @@ const Productdetails = () => {
     {/* <!-- Related Product Section End --> */}
 
       <Footer />
+
+       {/* <!-- Review Modal Start --> */}
+    <div class="modal fade theme-modal question-modal" id="writereview" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="product-review-form">
+                        <div class="product-wrapper">
+                            <div class="product-image">
+                                <img class="img-fluid" alt="Solid Collared Tshirts"
+                                    src="../assets/images/fashion/product/26.jpg" />
+                            </div>
+                            <div class="product-content">
+                                <h5 class="name">Solid Collared Tshirts</h5>
+                                <div class="product-review-rating">
+                                    <div class="product-rating">
+                                        <h6 class="price-number">$16.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="product-review-rating">
+                                <label>Rating</label>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <label for="content" class="form-label">Your Question *</label>
+                            <textarea id="content" rows="3" class="form-control" placeholder="Your Question"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-theme-outline fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-md fw-bold text-light theme-bg-color">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Review Modal End --> */}
+      {/* <!-- Quick View Modal Box Start --> */}
+    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-sm-4 g-2">
+                        <div class="col-lg-6">
+                            <div class="slider-image">
+                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="right-sidebar-modal">
+                                <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 class="price">$36.99</h4>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                    <span class="ms-2">8 Reviews</span>
+                                    <span class="ms-2 text-danger">6 sold in last 16 hours</span>
+                                </div>
+
+                                <div class="product-detail">
+                                    <h4>Product Details :</h4>
+                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                        Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
+                                        Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
+                                        muffin I love carrot cake sugar plum dessert bonbon.</p>
+                                </div>
+
+                                <ul class="brand-list">
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Brand Name:</h5>
+                                            <h6>Black Forest</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Code:</h5>
+                                            <h6>W0690034</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Type:</h5>
+                                            <h6>White Cream Cake</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="select-size">
+                                    <h4>Cake Size :</h4>
+                                    <select class="form-select select-form-size">
+                                        <option selected>Select Size</option>
+                                        <option value="1.2">1/2 KG</option>
+                                        <option value="0">1 KG</option>
+                                        <option value="1.5">1/5 KG</option>
+                                        <option value="red">Red Roses</option>
+                                        <option value="pink">With Pink Roses</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-button">
+                                    <button onclick="location.href = '/Cart';"
+                                        class="btn btn-md add-cart-button icon">Add
+                                        To Cart</button>
+                                    <button onclick="location.href = '/';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        View More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Quick View Modal Box End --> */}
+     {/* <!-- Sticky Cart Box Start --> */}
+    <div class="sticky-bottom-cart">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-content">
+                        <div class="product-image">
+                            <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                alt="" />
+                            <div class="content">
+                                <h5>Creamy Chocolate Cake</h5>
+                                <h6>$32.96<del class="text-danger">$96.00</del><span>55% off</span></h6>
+                            </div>
+                        </div>
+                        <div class="selection-section">
+                            <div class="form-group mb-0">
+                                <select id="input-state" class="form-control form-select">
+                                    <option selected disabled>Choose Weight...</option>
+                                    <option>1/2 KG</option>
+                                    <option>1 KG</option>
+                                    <option>1.5 KG</option>
+                                </select>
+                            </div>
+                            <div class="cart_qty qty-box product-qty m-0">
+                                <div class="input-group h-100">
+                                    <button type="button" class="qty-left-minus" data-type="minus" data-field="">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                    <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        value="1" />
+                                    <button type="button" class="qty-right-plus" data-type="plus" data-field="">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-btn">
+                            <a class="btn theme-bg-color text-white wishlist-btn" href="wishlist.html"><i
+                                    class="fa fa-bookmark"></i> Wishlist</a>
+                            <a class="btn theme-bg-color text-white" href="cart.html"><i
+                                    class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Sticky Cart Box End --> */}
     </>
   )
 }
