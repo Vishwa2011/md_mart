@@ -273,6 +273,7 @@ export default function Navbar() {
                             <button className="dropdown-category dropdown-category-2">
                                 <i className="iconly-Category icli"></i>
                                 <span>All Categoriessadfssdfgdsgdf</span>
+                                <span>All Categorie dsgsdfgdfgdfgdfs</span>
                             </button>
 
                             <div className="category-dropdown">
