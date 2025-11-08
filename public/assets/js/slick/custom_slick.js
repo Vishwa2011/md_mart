@@ -180,7 +180,7 @@ $('.slider-2-landing').slick({
     },
     ]
 });
-
+$(document).ready(function () {
 $('.slider-3').slick({
     infinite: true,
     slidesToScroll: 1,
@@ -199,6 +199,7 @@ $('.slider-3').slick({
         }
     },
     ]
+});
 });
 
 $('.slider-bank-3').slick({

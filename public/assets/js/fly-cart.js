@@ -1,6 +1,7 @@
  /**=====================
      Fly Cart js
 ==========================**/
+$(document).ready(function () {
  $('.btn-cart').on('click', function () {
      if ($(window).width() > 768) {
          var cart = $('.button-item');
@@ -36,4 +37,5 @@
              $(this).detach()
          });
      }
+ });
  });

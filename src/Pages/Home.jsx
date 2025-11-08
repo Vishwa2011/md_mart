@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Newsletter from '../component/Newsletter'
 
 export default function Home() {
   return (
@@ -5789,7 +5790,7 @@ export default function Home() {
                                         <div class="qty-right-plus" data-type="plus" data-field="">
                                             <i class="fa-solid fa-plus"></i>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
 
                                 <button class="buy-button buy-button-2 btn btn-cart">
@@ -7010,7 +7011,106 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
 
+    {/* <!-- Blog Section Start --> */}
+    <section class="blog-section">
+        <div class="container-fluid-lg">
+            <div class="title">
+                <h2>Blog</h2>
+            </div>
 
+            <div class="slider-3 arrow-slider">
+                <div>
+                    <div class="blog-box ratio_50">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                            </a>
+                            <div class="blog-list">
+                                <span>March 9, 2021</span>
+                                <span>By Emil Kristensen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_50">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/veg-3/blog/2.jpg" class="img-fluid bg-img" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Email Marketing</label>
+                            <a href="blog-detail.html">
+                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                            </a>
+                            <div class="blog-list">
+                                <span>March 9, 2021</span>
+                                <span>By Emil Kristensen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_50">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/veg-3/blog/3.jpg" class="img-fluid bg-img" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                            </a>
+                            <div class="blog-list">
+                                <span>March 9, 2021</span>
+                                <span>By Emil Kristensen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_50">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                            </a>
+                            <div class="blog-list">
+                                <span>March 9, 2021</span>
+                                <span>By Emil Kristensen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- Blog Section End --> */}
+
+
+    {/* <!-- Newsletter Section Start --> */}
+    <Newsletter />
+    {/* <!-- Newsletter Section End --> */}
 
 
 
@@ -7138,6 +7238,32 @@ export default function Home() {
         </div>
     </div>
     {/* <!-- Quick View Modal Box End --> */}
+    {/* <!-- Items section Start --> */}
+    <div class="button-item">
+        <button class="item-btn btn text-white">
+            <i class="iconly-Bag-2 icli"></i>
+        </button>
+    </div>
+    <div class="item-section">
+        <button class="close-button">
+            <i class="fas fa-times"></i>
+        </button>
+        <h6>
+            <i class="iconly-Bag-2 icli"></i>
+            <span>5 Items</span>
+        </h6>
+        <ul class="items-image">
+            <li>
+                <img src="../assets/images/veg-3/cate1/1.png" alt="" />
+            </li>
+            <li>
+                <img src="../assets/images/veg-3/cate1/2.png" alt="" />
+            </li>
+            <li>+3</li>
+        </ul>
+        <button onclick="location.href = 'cart.html';" class="btn item-button btn-sm fw-bold">$ 20.70</button>
+    </div>
+    {/* <!-- Items section End --> */}
     </div>
   )
 }
