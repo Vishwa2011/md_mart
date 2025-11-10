@@ -13,7 +13,7 @@ const Privacy = ({
 
       <main className="privacypolicy-main min-h-screen bg-gray-50 text-gray-800 p-6 md:p-12">
         <header className="privacypolicy-header max-w-4xl mx-auto mb-8">
-          <div className="privacypolicy-header-box bg-white p-6 rounded-2xl shadow-sm">
+          <div className="privacypolicy-header-box p-6 rounded-2xl ">
             <h1 className="privacypolicy-title text-3xl md:text-4xl font-semibold">Privacy Policy</h1>
             <p className="privacypolicy-date mt-2 text-sm text-gray-600">
               Effective date: <time dateTime={effectiveDate}>{effectiveDate}</time>
