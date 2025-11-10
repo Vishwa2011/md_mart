@@ -38,7 +38,7 @@ const About = () => {
                         <div class="col-6">
                             <div class="fresh-image-2">
                                 <div>
-                                    <img src="../assets/images/inner-page/about-us/1.jpg"
+                                    <img src="../assets/images/aboutus-img2.jpg"
                                         class="bg-img blur-up lazyload" alt="" />
                                 </div>
                             </div>
@@ -60,17 +60,22 @@ const About = () => {
                         <div>
                             <div class="review-title">
                                 <h4>About Us</h4>
-                                <h2>We make Organic Food In Market</h2>
+                                <h2>Your Trusted Online Shopping Destination</h2>
                             </div>
 
                             <div class="delivery-list">
-                                <p class="text-content">Just a few seconds to measure your body temperature. Up to 5
-                                    users! The battery lasts up to 2 years. There are many variations of passages of
-                                    Lorem Ipsum available.We started in 2019 and haven't stopped smashing it since. A
-                                    global brand that doesn't sleep, we are 24/7 and always bringing something new with
-                                    over 100 new products dropping on the monthly, bringing you the latest looks for
-                                    less.</p>
-
+                                <p class="text-content">
+                                    Founded in 2019, our journey began with a simple vision — to make quality products accessible and affordable for everyone.
+                                     What started as a small online store has now grown into a trusted eCommerce brand serving thousands of happy customers across the country.
+                                     <br /><br />
+                                     We believe shopping should be easy, enjoyable, and reliable. That’s why we handpick every product with care,
+                                     ensuring the best quality and unbeatable value. From everyday essentials to the latest trends,
+                                     we constantly update our collection with new arrivals every month, keeping your shopping experience fresh and exciting.
+                                     <br /><br />
+                                     Our dedicated team works 24/7 to bring innovation, style, and convenience to your doorstep.
+                                     With secure payment options, fast delivery, and a responsive support team,
+                                     we’re not just an online store — we’re your trusted shopping partner.
+                                </p>
                                 <ul class="delivery-box">
                                     <li>
                                         <div class="delivery-box">
@@ -91,7 +96,7 @@ const About = () => {
                                             </div>
 
                                             <div class="delivery-detail">
-                                                <h5 class="text">Only fresh foods</h5>
+                                                <h5 class="text">Top Quality Products</h5>
                                             </div>
                                         </div>
                                     </li>
@@ -103,7 +108,7 @@ const About = () => {
                                             </div>
 
                                             <div class="delivery-detail">
-                                                <h5 class="text">Free delivery for all orders</h5>
+                                                <h5 class="text">Genuine & Authentic Items</h5>
                                             </div>
                                         </div>
                                     </li>
@@ -115,7 +120,7 @@ const About = () => {
                                             </div>
 
                                             <div class="delivery-detail">
-                                                <h5 class="text">Only fresh foods</h5>
+                                                <h5 class="text">Trusted & Verified</h5>
                                             </div>
                                         </div>
                                     </li>
@@ -144,10 +149,11 @@ const About = () => {
                                 <div class="client-icon">
                                     <img src="../assets/svg/3/work.svg" class="blur-up lazyload" alt="" />
                                 </div>
-                                <h2>10</h2>
-                                <h4>Business Years</h4>
-                                <p>A coffee shop is a small business that sells coffee, pastries, and other morning
-                                    goods. There are many different types of coffee shops around the world.</p>
+                                <h2>10+</h2>
+                                <h4>Years in Business</h4>
+                                <p>We’ve been serving happy customers for over a decade — delivering quality
+                                products, unbeatable deals, and excellent service every step of the way.
+                                </p>
                             </div>
                         </div>
 
@@ -156,10 +162,10 @@ const About = () => {
                                 <div class="client-icon">
                                     <img src="../assets/svg/3/buy.svg" class="blur-up lazyload" alt="" />
                                 </div>
-                                <h2>80 K+</h2>
-                                <h4>Products Sales</h4>
-                                <p>Some coffee shops have a seating area, while some just have a spot to order and then
-                                    go somewhere else to sit down. The coffee shop that I am going to.</p>
+                                <h2>80K +</h2>
+                                <h4>Products Sold</h4>
+                                <p>We’ve successfully sold over 80,000 products worldwide, delivering quality,
+      trust, and value to our growing family of happy customers every day.</p>
                             </div>
                         </div>
 
@@ -170,8 +176,8 @@ const About = () => {
                                 </div>
                                 <h2>90%</h2>
                                 <h4>Happy Customers</h4>
-                                <p>My goal for this coffee shop is to be able to get a coffee and get on with my day.
-                                    It's a Thursday morning and I am rushing between meetings.</p>
+                                <p>With 90% customer satisfaction, we take pride in delivering a seamless shopping
+      experience, top-quality products.</p>
                             </div>
                         </div>
                     </div>
@@ -194,14 +200,14 @@ const About = () => {
                         <div>
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="../assets/images/inner-page/user/1.jpg" class="img-fluid blur-up lazyload"
+                                    <img src="../assets/images/CEO.jpg" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </div>
 
                                 <div class="team-name">
-                                    <h3>Anna Baranov</h3>
-                                    <h5>Marketing</h5>
-                                    <p>cheeseburger airedale mozzarella the big cheese fondue.</p>
+                                    <h3>Rohit Sharma</h3>
+                                    <h5>Founder & CEO</h5>
+                                    <p>Passionate about building seamless shopping experiences and leading the team toward innovation.</p>
                                     <ul class="team-media">
                                         <li>
                                             <a href="https://www.facebook.com/" class="fb-bg">
@@ -234,14 +240,15 @@ const About = () => {
                         <div>
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="../assets/images/inner-page/user/2.jpg" class="img-fluid blur-up lazyload"
+                                    <img src="../assets/images/operation.jpg" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </div>
 
                                 <div class="team-name">
-                                    <h3>Anna Baranov</h3>
-                                    <h5>Marketing</h5>
-                                    <p>cheese on toast mozzarella bavarian bergkase smelly cheese cheesy feet.</p>
+                                    <h3>Priya Mehta</h3>
+                                    <h5>Operations Manager</h5>
+                                    <p>Ensures smooth operations and logistics, keeping everything from inventory to delivery
+        running efficiently for a seamless customer experience.</p>
                                     <ul class="team-media">
                                         <li>
                                             <a href="https://www.facebook.com/" class="fb-bg">
@@ -274,14 +281,15 @@ const About = () => {
                         <div>
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="../assets/images/inner-page/user/3.jpg" class="img-fluid blur-up lazyload"
+                                    <img src="../assets/images/marketing.jpg" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </div>
 
                                 <div class="team-name">
-                                    <h3>Anna Baranov</h3>
-                                    <h5>Marketing</h5>
-                                    <p>camembert de normandie. Bocconcini rubber cheese fromage frais port-salut.</p>
+                                    <h3>Vikram Yadav</h3>
+                                    <h5>Marketing Head</h5>
+                                    <p> Leads our marketing and branding efforts, ensuring our customers are aware of the latest
+        products, deals, and promotions across all channels.</p>
                                     <ul class="team-media">
                                         <li>
                                             <a href="https://www.facebook.com/" class="fb-bg">
@@ -314,14 +322,15 @@ const About = () => {
                         <div>
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="../assets/images/inner-page/user/4.jpg" class="img-fluid blur-up lazyload"
+                                    <img src="../assets/images/logistics.jpg" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </div>
 
                                 <div class="team-name">
-                                    <h3>Anna Baranov</h3>
-                                    <h5>Marketing</h5>
-                                    <p>Fondue stinking bishop goat. Macaroni cheese croque monsieur cottage cheese.</p>
+                                    <h3>Raj</h3>
+                                    <h5>Logistics Head</h5>
+                                    <p>Manages shipping, warehousing, and delivery operations to ensure that every order reaches
+    our customers accurately and on time.</p>
                                     <ul class="team-media">
                                         <li>
                                             <a href="https://www.facebook.com/" class="fb-bg">
@@ -354,14 +363,15 @@ const About = () => {
                         <div>
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="../assets/images/inner-page/user/1.jpg" class="img-fluid blur-up lazyload"
+                                    <img src="../assets/images/product-manager.jpg" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </div>
 
                                 <div class="team-name">
-                                    <h3>Anna Baranov</h3>
-                                    <h5>Marketing</h5>
-                                    <p>squirty cheese cheddar macaroni cheese airedale cheese triangles.</p>
+                                    <h3>Aarav Patel</h3>
+                                    <h5>Product Manager</h5>
+                                    <p>Oversees product selection and development, ensuring our customers get high-quality, trendy
+    products that meet their needs.</p>
                                     <ul class="team-media">
                                         <li>
                                             <a href="https://www.facebook.com/" class="fb-bg">
@@ -397,12 +407,15 @@ const About = () => {
     </section>
     {/* <!-- Team Section End --> */}
     
+
+
+
     {/* <!-- Review Section Start --> */}
     <section class="review-section section-lg-space">
         <div class="container-fluid">
             <div class="about-us-title text-center">
                 <h4 class="text-content">Latest Testimonials</h4>
-                <h2 class="center">What people say</h2>
+                <h2 class="center">What people says</h2>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -430,21 +443,20 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Hear From Our Team</h3>
 
-                                <p>"I usually try to keep my sadness pent up inside where it can fester quietly as a
-                                    mental illness. There, now he's trapped in a book I wrote: a crummy world of plot
-                                    holes and spelling errors! As an interesting side note."</p>
+                                <p>"Building this platform has been an incredible journey. Every challenge has helped us
+        grow, and seeing our customers happy is the ultimate reward."</p>
 
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/1.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/CEO.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Betty J. Turner</h4>
-                                        <h6>CTO, Company</h6>
+                                        <h4>Rohit Sharma</h4>
+                                        <h6>Founder & CEO</h6>
                                     </div>
                                 </div>
                             </div>
@@ -473,20 +485,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Smooth Operations, Happy Customers</h3>
 
-                                <p>"My busy schedule leaves little, if any, time for blogging and social media. The
-                                    Lorem Ipsum Company has been a huge part of helping me grow my business through
-                                    organic search and content marketing."</p>
+                                <p> "Ensuring smooth operations and timely deliveries keeps our customers satisfied.
+      I take pride in making everything run like clockwork."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/2.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/operation.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Alfredo S. Rocha</h4>
-                                        <h6>Project Manager</h6>
+                                        <h4>Priya Mehta</h4>
+                                        <h6>Operation Manager</h6>
                                     </div>
                                 </div>
                             </div>
@@ -515,20 +526,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Creative Marketing That Connects</h3>
 
-                                <p>"Professional, responsive, and able to keep up with ever-changing demand and tight
-                                    deadlines: That's how I would describe Jeramy and his team at The Lorem Ipsum
-                                    Company. When it comes to content marketing."</p>
+                                <p>"Marketing is all about connecting with our customers. I love finding creative ways
+      to showcase our products and keep our audience engaged."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/3.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/marketing.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Donald C. Spurr</h4>
-                                        <h6>Sale Agents</h6>
+                                        <h4>Vikram Yadav</h4>
+                                        <h6>Marketing Head</h6>
                                     </div>
                                 </div>
                             </div>
@@ -557,20 +567,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Helping Customers Every Day</h3>
 
-                                <p>"After being forced to move twice within five years, our customers had a hard time
-                                    finding us and our sales plummeted. The Lorem Ipsum Co. not only revitalized our
-                                    brand."</p>
+                                <p>"Helping our customers solve problems quickly is what I enjoy most. Their satisfaction
+      drives everything we do."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/4.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/customer-support.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Terry G. Fain</h4>
-                                        <h6>Photographer</h6>
+                                        <h4>Neha Sharma</h4>
+                                        <h6>Customer Support Lead</h6>
                                     </div>
                                 </div>
                             </div>
@@ -599,20 +608,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Curating Products Our Customers Love</h3>
 
-                                <p>"I was skeptical of SEO and content marketing at first, but the Lorem Ipsum Company
-                                    not only proved itself financially speaking, but the response I have received from
-                                    customers is incredible."</p>
+                                <p>"I’m passionate about curating products that our customers love. Seeing them excited
+      about new arrivals is the best part of my job."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/1.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/product-manager.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Gwen J. Geiger</h4>
-                                        <h6>Designer</h6>
+                                        <h4>Aarav Patel</h4>
+                                        <h6>Product Manager</h6>
                                     </div>
                                 </div>
                             </div>
@@ -641,21 +649,20 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Delivering Excellence Every Time</h3>
 
-                                <p>"Jeramy and his team at the Lorem Ipsum Company whipped my website into shape just in
-                                    time for tax season. I was excited by the results and am proud to direct clients to
-                                    my website once again."</p>
+                                <p> "From warehouse to doorstep, making sure each order reaches our customers safely
+      and on time is my mission every day."</p>
 
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/2.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/logistics.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Constance K. Whang</h4>
-                                        <h6>CEO, Company</h6>
+                                        <h4>Raj</h4>
+                                        <h6>Logistics Head</h6>
                                     </div>
                                 </div>
                             </div>
@@ -684,20 +691,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Enhancing Every Customer Journey</h3>
 
-                                <p>"Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put
-                                    on your good vestments." What are their names? Yep, I remember. They came in last at
-                                    the Olympics!"</p>
+                                <p>"I strive to make every customer interaction seamless and enjoyable. From browsing to checkout,
+    our goal is to create a shopping experience that delights every time."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/3.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/customer-exp-manager.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Christopher R. Lee</h4>
-                                        <h6>Managing Director</h6>
+                                        <h4>Priya Verma</h4>
+                                        <h6>Customer Experience Manager</h6>
                                     </div>
                                 </div>
                             </div>
@@ -726,20 +732,19 @@ const About = () => {
                                     </ul>
                                 </div>
 
-                                <h3>Top Quality, Beautiful Location</h3>
+                                <h3>Ensuring Every Product is Perfect</h3>
 
-                                <p>"Good man. Nixon's pro-war and pro-family. Hey, tell me something. You've got all
-                                    this money. How come you always dress like you're doing your laundry? So, how 'bout
-                                    them Knicks? What kind of a father would I be if I said no?."</p>
+                                <p>"I make sure every product meets our high standards before it reaches our customers. Quality
+    is the heart of what we do."</p>
                                 <div class="reviewer-profile">
                                     <div class="reviewer-image">
-                                        <img src="../assets/images/inner-page/user/4.jpg" class="blur-up lazyload"
+                                        <img src="../assets/images/QA-manager.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </div>
 
                                     <div class="reviewer-name">
-                                        <h4>Eileen R. Chu</h4>
-                                        <h6>Marketing Director</h6>
+                                        <h4>Karan Joshi </h4>
+                                        <h6>Quality Assurance Manager</h6>
                                     </div>
                                 </div>
                             </div>

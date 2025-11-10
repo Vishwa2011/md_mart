@@ -56,8 +56,7 @@ const Faq = () => {
 
                                 <div class="faq-box-contain">
                                     <h3>Getting Started</h3>
-                                    <p>Bring to the table win-win survival strategies to ensure proactive domination.
-                                    </p>
+                                    <p>Find quick answers about orders, shipping, returns, and your account here.</p>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +69,9 @@ const Faq = () => {
 
                                 <div class="faq-box-contain">
                                     <h3>Sales Question</h3>
-                                    <p>Lorizzle ipsizzle boom shackalack sit get down get down.</p>
+                                    <p>
+                                        Have questions about pricing, discounts, or bulk orders? 
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ const Faq = () => {
 
                                 <div class="faq-box-contain">
                                     <h3>Pricing & Plans</h3>
-                                    <p>Curabitizzle fizzle break yo neck, yall quis fo shizzle mah nizzle fo rizzle.</p>
+                                    <p>About our pricing options, membership benefits, and exclusive subscription plans.</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +97,7 @@ const Faq = () => {
 
                                 <div class="faq-box-contain">
                                     <h3>Support Contact</h3>
-                                    <p>Gizzle fo shizzle bow wow wow bizzle leo bibendizzle check out this.</p>
+                                    <p>Need help? Contact our team anytime via the <a href="/Contact" class="theme-color text-decoration-underline">Contact Page</a> .</p>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +174,7 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>We accept all major payment options including Credit/Debit Cards, UPI, Net Banking, Wallets, and Cash on Delivery (COD) 
-          depending on your delivery location.</p>
+                                        depending on your delivery location.</p>
                                     </div>
                                 </div>
                             </div>
@@ -189,8 +190,8 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>Delivery times depend on your location and product availability. 
-          Generally, we deliver within <strong>2-5 business days</strong>. 
-          You’ll receive regular updates via SMS or email once your order is dispatched.</p>
+                                        Generally, we deliver within <strong>2-5 business days</strong>. 
+                                        You’ll receive regular updates via SMS or email once your order is dispatched.</p>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +207,7 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p> Once your order is shipped, we’ll send you a tracking link via email or SMS. 
-          You can also log in to your account and view the real-time status of your order from the “My Orders” section.</p>
+                                        You can also log in to your account and view the real-time status of your order from the “My Orders” section.</p>
                                     </div>
                                 </div>
                             </div>
@@ -223,8 +224,8 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>If you’re not satisfied with your purchase, you can request a return or replacement within 
-          <strong>7 days</strong> of delivery. Refunds will be processed once the item passes quality inspection. 
-          Please refer to our <a href="/Return">Return Policy</a> page for more details.</p>
+                                        <strong>7 days</strong> of delivery. Refunds will be processed once the item passes quality inspection. 
+                                        Please refer to our <a href="/Return">Return Policy</a> page for more details.</p>
                                     </div>
                                 </div>
                             </div>
@@ -234,15 +235,15 @@ const Faq = () => {
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSeven">
                                         Is my personal information secure? <i
-                                            class="fa-solid fa-angle-down"></i>
+                                        class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseSeven" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>Absolutely! We take your privacy seriously. 
-          All your personal and payment information is encrypted and protected using the latest security standards. 
-          Learn more in our <a href="/Privacy">Privacy Policy</a></p>
+                                        All your personal and payment information is encrypted and protected using the latest security standards. 
+                                        Learn more in our <a href="/Privacy">Privacy Policy</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +260,7 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>Yes! We frequently offer seasonal discounts, promo codes, and loyalty rewards for our regular customers. 
-          Stay updated by subscribing to our newsletter or following us on social media.</p>
+                                        Stay updated by subscribing to our newsletter or following us on social media.</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +276,7 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>You can reach our support team through the <a href="/contact">Contact Us</a> page, 
-          email us at <strong>support@mdmart.com</strong>, or call our helpline between <strong>9 AM to 9 PM</strong>.</p>
+                                        email us at <strong>support@mdmart.com</strong>, or call our helpline between <strong>9 AM to 9 PM</strong>.</p>
                                     </div>
                                 </div>
                             </div>
