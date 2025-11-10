@@ -42,14 +42,14 @@ const Cart = () => {
                                     <tr class="product-box-contain">
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product-left-thumbnail.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/1.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Bell pepper</a>
+                                                            <a href="/Productdetails">Bell pepper</a>
                                                         </li>
 
                                                         <li class="text-content"><span class="text-title">Sold
@@ -126,22 +126,22 @@ const Cart = () => {
 
                                         <td class="save-remove">
                                             <h4 class="table-title text-content">Action</h4>
-                                            <a class="save notifi-wishlist" href="javascript:void(0)">Save for later</a>
-                                            <a class="remove close_button" href="javascript:void(0)">Remove</a>
+                                            <a class="save notifi-wishlist" href="#">Save for later</a>
+                                            <a class="remove close_button" href="#">Remove</a>
                                         </td>
                                     </tr>
 
                                     <tr class="product-box-contain">
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product-left-thumbnail.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/2.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Eggplant</a>
+                                                            <a href="/Productdetails">Eggplant</a>
                                                         </li>
 
                                                         <li class="text-content"><span class="text-title">Sold
@@ -222,22 +222,22 @@ const Cart = () => {
 
                                         <td class="save-remove">
                                             <h4 class="table-title text-content">Action</h4>
-                                            <a class="save notifi-wishlist" href="javascript:void(0)">Save for later</a>
-                                            <a class="remove close_button" href="javascript:void(0)">Remove</a>
+                                            <a class="save notifi-wishlist" href="#">Save for later</a>
+                                            <a class="remove close_button" href="#">Remove</a>
                                         </td>
                                     </tr>
 
                                     <tr class="product-box-contain">
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product-left-thumbnail.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/3.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Onion</a>
+                                                            <a href="/Productdetails">Onion</a>
                                                         </li>
 
                                                         <li class="text-content"><span class="text-title">Sold
@@ -317,8 +317,8 @@ const Cart = () => {
 
                                         <td class="save-remove">
                                             <h4 class="table-title text-content">Action</h4>
-                                            <a class="save notifi-wishlist" href="javascript:void(0)">Save for later</a>
-                                            <a class="remove close_button" href="javascript:void(0)">Remove</a>
+                                            <a class="save notifi-wishlist" href="#">Save for later</a>
+                                            <a class="remove close_button" href="#">Remove</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -370,14 +370,14 @@ const Cart = () => {
                         <div class="button-group cart-button">
                             <ul>
                                 <li>
-                                    <button onclick="location.href = 'checkout.html';"
-                                        class="btn btn-animation proceed-btn fw-bold">Process To Checkout</button>
+                                    <a href="/Checkout"
+                                        class="btn btn-animation proceed-btn fw-bold">Process To Checkout</a>
                                 </li>
 
                                 <li>
-                                    <button onclick="location.href = '/';"
+                                    <a href='/'
                                         class="btn btn-light shopping-button text-dark">
-                                        <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</button>
+                                        <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</a>
                                 </li>
                             </ul>
                         </div>
