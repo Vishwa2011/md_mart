@@ -13,7 +13,7 @@ export default function Home() {
             <div className="row g-4">
                 <div className="col-xxl-6 col-md-8">
                     <div className="home-contain h-100">
-                        <img src="../assets/images/veg-3/home/1.png" className="img-fluid bg-img blur-up lazyload" alt="" />
+                        <img src="../assets/images/Hero-img.jpg" className="img-fluid bg-img blur-up lazyload" alt="" />
                         <div className="home-detail home-width p-center-left ">
                             <div>
                                 <h6 className="ls-expanded theme-color">ORGANIC</h6>
@@ -31,7 +31,7 @@ export default function Home() {
                 <div className="col-xxl-3 col-md-4 ratio_medium d-md-block d-none">
                     <div className="home-contain home-small h-100">
                         <div className="h-100">
-                            <img src="../assets/images/veg-3/home/2.png" className="img-fluid bg-img blur-up lazyload"
+                            <img src="../assets/images/Banner1.jpg" className="img-fluid bg-img blur-up lazyload"
                                 alt="" />
                         </div>
                         <div className="home-detail text-center p-top-center w-100 text-white">
@@ -50,7 +50,7 @@ export default function Home() {
                         <div className="col-xxl-12 col-sm-6">
                             <div className="home-contain">
                                 <a href="/Shop">
-                                    <img src="../assets/images/veg-3/home/3.png"
+                                    <img src="../assets/images/Banner2.jpg"
                                         className="img-fluid bg-img blur-up lazyload" alt="" />
                                 </a>
                                 <div className="home-detail text-white p-center text-center">
@@ -65,7 +65,7 @@ export default function Home() {
                         <div className="col-xxl-12 col-sm-6">
                             <div className="home-contain">
                                 <a href="/Shop">
-                                    <img src="../assets/images/veg-3/home/4.png"
+                                    <img src="../assets/images/Banner3.jpg"
                                         className="img-fluid bg-img blur-up lazyload" alt="" />
                                 </a>
                                 <div className="home-detail text-white w-50 p-center-left home-p-sm">
