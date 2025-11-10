@@ -325,7 +325,7 @@ export default function Home() {
                                     <a href="/Shop" class="text-title">
                                         <h5>Bell pepper</h5>
                                     </a>
-                                    <h5 class="price">$70.21 <span>$65.00</span></h5>
+                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
                                         <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
                                     </div>
@@ -401,7 +401,7 @@ export default function Home() {
                                     <a href="/Shop" class="text-title">
                                         <h5>Eggplant</h5>
                                     </a>
-                                    <h5 class="price">$70.21 <span>$65.00</span></h5>
+                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
                                         <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
                                     </div>
@@ -477,7 +477,7 @@ export default function Home() {
                                     <a href="/Shop" class="text-title">
                                         <h5>Onion</h5>
                                     </a>
-                                    <h5 class="price">$70.21 <span>$65.00</span></h5>
+                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
                                         <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
                                     </div>
@@ -552,7 +552,7 @@ export default function Home() {
                                     <a href="/Shop" class="text-title">
                                         <h5>Bell pepper</h5>
                                     </a>
-                                    <h5 class="price">$70.21 <span>$65.00</span></h5>
+                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
                                         <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
                                     </div>
@@ -680,7 +680,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Bell pepper</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -747,7 +747,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -818,7 +818,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -885,7 +885,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -956,7 +956,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Peru</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1023,7 +1023,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Avocado</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1090,7 +1090,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1161,7 +1161,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Beetroot</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1228,7 +1228,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Strawberry</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1295,7 +1295,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Corn</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1366,7 +1366,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1437,7 +1437,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1508,7 +1508,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1575,7 +1575,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1642,7 +1642,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1709,7 +1709,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1776,7 +1776,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1843,7 +1843,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1910,7 +1910,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1977,7 +1977,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2044,7 +2044,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2111,7 +2111,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2182,7 +2182,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Apple</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2249,7 +2249,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Passion</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2316,7 +2316,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Blackberry</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2383,7 +2383,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Peru</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2450,7 +2450,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Apple</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2517,7 +2517,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Strawberry</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2584,7 +2584,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Bell pepper</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2655,7 +2655,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2722,7 +2722,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2789,7 +2789,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2856,7 +2856,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2923,7 +2923,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2990,7 +2990,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3057,7 +3057,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3124,7 +3124,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3191,7 +3191,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3258,7 +3258,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3329,7 +3329,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3396,7 +3396,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3463,7 +3463,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3530,7 +3530,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3597,7 +3597,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3664,7 +3664,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3731,7 +3731,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3798,7 +3798,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3865,7 +3865,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3932,7 +3932,7 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
-                                    <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -4041,7 +4041,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Tomato</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4095,7 +4095,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Red onion</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4149,7 +4149,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4207,7 +4207,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Potato</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4261,7 +4261,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Broccoli</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4315,7 +4315,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4385,7 +4385,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Garlic</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4439,7 +4439,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Beetroot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4493,7 +4493,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Eggplant</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4551,7 +4551,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Bell pepper</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4605,7 +4605,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Pea</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4659,7 +4659,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Avocado</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4729,7 +4729,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Tomato</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4783,7 +4783,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Red onion</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4837,7 +4837,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4895,7 +4895,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Potato</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -4949,7 +4949,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Broccoli</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5003,7 +5003,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5073,7 +5073,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Garlic</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5127,7 +5127,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Beetroot</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5181,7 +5181,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Eggplant</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5239,7 +5239,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Bell pepper</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5293,7 +5293,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Pea</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5347,7 +5347,7 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Avocado</h4>
                                                     </a>
-                                                    <h5 class="price">$75.20<del>$65.21</del></h5>
+                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
@@ -5459,7 +5459,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5528,7 +5528,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Ginger</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5595,7 +5595,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5660,7 +5660,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Potato</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5727,7 +5727,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Onion</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5792,7 +5792,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Broccoli</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5859,7 +5859,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Pea</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5928,7 +5928,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Cabbage</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5999,7 +5999,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Strawberry</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6068,7 +6068,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Cucumber</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6135,7 +6135,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Apple</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6200,7 +6200,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Blackberry</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6267,7 +6267,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Apple</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6332,7 +6332,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Bell pepper</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6399,7 +6399,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6464,7 +6464,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Potato</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6531,7 +6531,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Broccoli</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6596,7 +6596,7 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Cucumber</h5>
                             </a>
-                            <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
+                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6770,7 +6770,7 @@ export default function Home() {
                         <div class="col-lg-6">
                             <div class="right-sidebar-modal">
                                 <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
-                                <h4 class="price">$36.99</h4>
+                                <h4 class="price">₹36.99</h4>
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
@@ -6875,7 +6875,7 @@ export default function Home() {
             </li>
             <li>+3</li>
         </ul>
-        <button onclick="location.href = '/Cart';" class="btn item-button btn-sm fw-bold">$ 20.70</button>
+        <button onclick="location.href = '/Cart';" class="btn item-button btn-sm fw-bold">₹ 20.70</button>
     </div>
     {/* <!-- Items section End --> */}
 

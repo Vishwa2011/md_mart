@@ -210,7 +210,7 @@ export default function Navbar() {
                                                                 <a href="/Productdetails">
                                                                     <h5>Fantasy Crunchy Choco Chip Cookies</h5>
                                                                 </a>
-                                                                <h6><span>1 x</span> $80.58</h6>
+                                                                <h6><span>1 x</span> ₹80.58</h6>
                                                                 <button className="close-button">
                                                                     <i className="fa-solid fa-xmark"></i>
                                                                 </button>
@@ -230,7 +230,7 @@ export default function Navbar() {
                                                                     <h5>Peanut Butter Bite Premium Butter Cookies 600 g
                                                                     </h5>
                                                                 </a>
-                                                                <h6><span>1 x</span> $25.68</h6>
+                                                                <h6><span>1 x</span> ₹25.68</h6>
                                                                 <button className="close-button">
                                                                     <i className="fa-solid fa-xmark"></i>
                                                                 </button>
@@ -242,7 +242,7 @@ export default function Navbar() {
 
                                                 <div className="price-box">
                                                     <h5>Price :</h5>
-                                                    <h4 className="theme-color fw-bold">$106.58</h4>
+                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
                                                 </div>
 
                                                 <div className="button-group">
@@ -839,70 +839,70 @@ export default function Navbar() {
                             <li>
                                 <a href="#">
                                     <h6>Alabama</h6>
-                                    <span>Min: $130</span>
+                                    <span>Min: ₹130</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Arizona</h6>
-                                    <span>Min: $150</span>
+                                    <span>Min: ₹150</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>California</h6>
-                                    <span>Min: $110</span>
+                                    <span>Min: ₹110</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Colorado</h6>
-                                    <span>Min: $140</span>
+                                    <span>Min: ₹140</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Florida</h6>
-                                    <span>Min: $160</span>
+                                    <span>Min: ₹160</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Georgia</h6>
-                                    <span>Min: $120</span>
+                                    <span>Min: ₹120</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Kansas</h6>
-                                    <span>Min: $170</span>
+                                    <span>Min: ₹170</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Minnesota</h6>
-                                    <span>Min: $120</span>
+                                    <span>Min: ₹120</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>New York</h6>
-                                    <span>Min: $110</span>
+                                    <span>Min: ₹110</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
                                     <h6>Washington</h6>
-                                    <span>Min: $130</span>
+                                    <span>Min: ₹130</span>
                                 </a>
                             </li>
                         </ul>
@@ -937,7 +937,7 @@ export default function Navbar() {
 
                                     <a href="/Shop" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
@@ -951,7 +951,7 @@ export default function Navbar() {
 
                                     <a href="/Shop" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
@@ -965,7 +965,7 @@ export default function Navbar() {
 
                                     <a href="/Shop" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>
@@ -979,7 +979,7 @@ export default function Navbar() {
 
                                     <a href="/Shop" className="deal-contain">
                                         <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
                                     </a>
                                 </div>
                             </li>

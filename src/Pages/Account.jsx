@@ -311,8 +311,8 @@ const Account = () => {
                                                             croque monsieur.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$08.02</span>
-                                                            <del>$15.15</del>
+                                                            <span class="theme-color">₹08.02</span>
+                                                            <del>₹15.15</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -371,8 +371,8 @@ const Account = () => {
                                                             fondue.</p>
                                                         <h6 class="unit mt-1">350 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$04.33</span>
-                                                            <del>$10.36</del>
+                                                            <span class="theme-color">₹04.33</span>
+                                                            <del>₹10.36</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -433,8 +433,8 @@ const Account = () => {
                                                             ricotta edam.</p>
                                                         <h6 class="unit mt-1">570 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$12.52</span>
-                                                            <del>$13.62</del>
+                                                            <span class="theme-color">₹12.52</span>
+                                                            <del>₹13.62</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -493,8 +493,8 @@ const Account = () => {
                                                             cottage cheese cauliflower cheese jarlsberg.</p>
                                                         <h6 class="unit mt-1">100 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$10.25</span>
-                                                            <del>$12.36</del>
+                                                            <span class="theme-color">₹10.25</span>
+                                                            <del>₹12.36</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -553,8 +553,8 @@ const Account = () => {
                                                             monsieur goat melted cheese port-salut.</p>
                                                         <h6 class="unit mt-1">550 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$14.25</span>
-                                                            <del>$16.57</del>
+                                                            <span class="theme-color">₹14.25</span>
+                                                            <del>₹16.57</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -612,8 +612,8 @@ const Account = () => {
                                                             hard cheese cream cheese red leicester.</p>
                                                         <h6 class="unit mt-1">1 Kg</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$12.68</span>
-                                                            <del>$14.69</del>
+                                                            <span class="theme-color">₹12.68</span>
+                                                            <del>₹14.69</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -671,8 +671,8 @@ const Account = () => {
                                                             everybody's happy cottage cheese paneer.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$08.02</span>
-                                                            <del>$15.15</del>
+                                                            <span class="theme-color">₹08.02</span>
+                                                            <del>₹15.15</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -746,7 +746,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -826,7 +826,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -903,7 +903,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -980,7 +980,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 

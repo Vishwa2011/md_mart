@@ -111,7 +111,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$20.68</h6>
+                                            <h6 class="theme-color">₹20.68</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -121,7 +121,7 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$35.10</h5>
+                                            <h5>₹35.10</h5>
                                         </td>
                                     </tr>
 
@@ -148,7 +148,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$15.14</h6>
+                                            <h6 class="theme-color">₹15.14</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -158,7 +158,7 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$52.95</h5>
+                                            <h5>₹52.95</h5>
                                         </td>
                                     </tr>
 
@@ -185,7 +185,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$29.22</h6>
+                                            <h6 class="theme-color">₹29.22</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -195,7 +195,7 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$67.36</h5>
+                                            <h5>₹67.36</h5>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -216,24 +216,24 @@ const Ordersuccess = () => {
                                 <ul class="summery-contain">
                                     <li>
                                         <h4>Vegetables Total</h4>
-                                        <h4 class="price">$32.34</h4>
+                                        <h4 class="price">₹32.34</h4>
                                     </li>
 
                                     <li>
                                         <h4>Vegetables Saving</h4>
-                                        <h4 class="price theme-color">$12.23</h4>
+                                        <h4 class="price theme-color">₹12.23</h4>
                                     </li>
 
                                     <li>
                                         <h4>Coupon Discount</h4>
-                                        <h4 class="price text-danger">$6.27</h4>
+                                        <h4 class="price text-danger">₹6.27</h4>
                                     </li>
                                 </ul>
 
                                 <ul class="summery-total">
                                     <li class="list-total">
                                         <h4>Total (USD)</h4>
-                                        <h4 class="price">$19.28</h4>
+                                        <h4 class="price">₹19.28</h4>
                                     </li>
                                 </ul>
                             </div>

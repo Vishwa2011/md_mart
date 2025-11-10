@@ -518,7 +518,7 @@ const Blog = () => {
                                                                 <h6 class="name">Meatigo Premium Goat Curry</h6>
                                                             </a>
                                                             <span>450 G</span>
-                                                            <h6 class="price theme-color">$ 70.00</h6>
+                                                            <h6 class="price theme-color">₹ 70.00</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -537,7 +537,7 @@ const Blog = () => {
                                                                 <h6 class="name">Dates Medjoul Premium Imported</h6>
                                                             </a>
                                                             <span>450 G</span>
-                                                            <h6 class="price theme-color">$ 40.00</h6>
+                                                            <h6 class="price theme-color">₹ 40.00</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -556,7 +556,7 @@ const Blog = () => {
                                                                 <h6 class="name">Apple Red Premium Imported</h6>
                                                             </a>
                                                             <span>1 KG</span>
-                                                            <h6 class="price theme-color">$ 80.00</h6>
+                                                            <h6 class="price theme-color">₹ 80.00</h6>
                                                         </div>
                                                     </div>
                                                 </div>
