@@ -20,6 +20,7 @@ import Privacy from './Pages/Privacy'
 import Termscondition from './Pages/Terms&condition'
 import Mission from './Pages/Mission';
 import Vision from './Pages/Vision';
+import Forgot from './Pages/Forgot';
 
 
 
@@ -47,6 +48,7 @@ function App() {
        <Route path='/Terms' element={<Termscondition/>}/>
        <Route path='/Mission' element={<Mission/>}/>
        <Route path='/Vision' element={<Vision/>}/>
+       <Route path="/Forgot" element={<Forgot />}/>
   </Routes>
 
   {/* <!-- Tap to top and theme setting button start --> */}

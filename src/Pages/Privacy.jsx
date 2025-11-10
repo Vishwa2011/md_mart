@@ -10,7 +10,29 @@ const Privacy = ({
     <>
       {/* NAVBAR */}
       <Navbar />
-
+      {/* <!-- Breadcrumb Section Start --> */}
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain">
+                        <h2>Privacy Policy</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active">Privacy Policy</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {/* <!-- Breadcrumb Section End --> */}
       <main className="privacypolicy-main min-h-screen bg-gray-50 text-gray-800 p-6 md:p-12">
         <header className="privacypolicy-header max-w-4xl mx-auto mb-8">
           <div className="privacypolicy-header-box bg-white p-6 rounded-2xl shadow-sm">

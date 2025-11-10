@@ -18393,7 +18393,7 @@ section,
 }
 
 .container-fluid-lg {
-    padding: 0 calc(12px + 148*(100vw - 320px)/1600)
+    padding: 0 calc(-5px + 148*(100vw - 320px)/1600)
 }
 
 .container-fluid-md {
@@ -32432,7 +32432,7 @@ body.rtl .menu-label {
 
 .product-box-3 .product-header .product-header-top .wishlist-button {
     position: relative;
-    padding: 6px;
+    padding: 5px 10px 3px 10px;
     margin-left: auto;
     background-color: #fff;
     -webkit-box-shadow: 0 3px 3px rgba(34, 34, 34, .24);
@@ -47079,7 +47079,7 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 /* General Layout */
 .privacypolicy-main {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f7fbff 100%);
   color: #2d3748;
   padding: 4rem 1rem;
   font-family: 'Poppins', sans-serif;

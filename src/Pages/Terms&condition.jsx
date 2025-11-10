@@ -10,7 +10,29 @@ const Termscondition = ({
     <>
       {/* NAVBAR */}
       <Navbar />
-
+     {/* <!-- Breadcrumb Section Start --> */}
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain">
+                        <h2>Terms & Condition</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active">Terms & Condition</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {/* <!-- Breadcrumb Section End --> */}
       <main className="termsandconditions-main">
         <header className="termsandconditions-header">
           <h1>Terms & Conditions</h1>

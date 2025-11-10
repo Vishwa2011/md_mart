@@ -59,7 +59,7 @@ const Footer = () => {
                         <div class="footer-logo">
                             <div class="theme-logo">
                                 <a href="/">
-                                    <img src="../assets/images/logo/1.png" class="blur-up lazyload" alt="" />
+                                    <img src="/assets/images/vendor-page/logo/mdmart.png" class="blur-up lazyload" alt="" style={{width:'140px'}}/>
                                 </a>
                             </div>
 

@@ -83,7 +83,7 @@ export default function Navbar() {
                                 </span>
                             </button>
                             <a href="/" className="web-logo nav-logo">
-                                <img src="../assets/images/logo/3.png" className="img-fluid blur-up lazyload" alt="" /> 
+                                <img src="/assets/images/vendor-page/logo/mdmart.png" className="img-fluid blur-up lazyload" alt="" style={{width:'90px'}}/> 
                             </a>
 
                             <div className="search-full">
@@ -186,7 +186,7 @@ export default function Navbar() {
                                        
 
                                         <li className="onhover-dropdown">
-                                            <a href="#" className="header-icon swap-icon">
+                                            <a href="/Wishlist" className="header-icon swap-icon">
                                                 <i className="iconly-Heart icli"></i>
                                             </a>
 
@@ -251,6 +251,13 @@ export default function Navbar() {
                                                     text-white">Checkout</a>
                                                 </div>
                                             </div>
+                                        </li>
+
+                                                 <li className="onhover-dropdown">
+                                            <a href="/Account" className="header-icon swap-icon">
+                                       <i class="fa-solid fa-user-tie"></i>
+                                            </a>
+
                                         </li>
                                     </ul>
                                 </div>
