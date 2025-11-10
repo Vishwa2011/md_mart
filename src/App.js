@@ -17,7 +17,7 @@ import Wishlist from './Pages/Wishlist';
 import Account from './Pages/Account';
 import Login from './Pages/Login';
 import Privacy from './Pages/Privacy'
-import Tems from './Pages/Terms'
+import Terms from './Pages/Terms'
 
 
 
