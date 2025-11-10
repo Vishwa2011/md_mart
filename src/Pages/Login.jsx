@@ -71,7 +71,7 @@ const Login = () => {
                                                 id="flexCheckDefault" />
                                             <label class="form-check-label" for="flexCheckDefault">Remember me</label>
                                         </div>
-                                        <a href="forgot.html" class="forgot-password">Forgot Password?</a>
+                                        <a href="/Forgot" class="forgot-password">Forgot Password?</a>
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@ const Login = () => {
 
                         <div class="sign-up-box">
                             <h4>Don't have an account?</h4>
-                            <a href="sign-up.html">Sign Up</a>
+                            <a href="/Signup">Sign Up</a>
                         </div>
                     </div>
                 </div>

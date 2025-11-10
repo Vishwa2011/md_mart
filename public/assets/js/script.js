@@ -389,6 +389,7 @@ $(".theme-option .setting-box .setting-button").click(function () {
 /*=====================
    20. user-dashboard profile change js
    ==========================*/
+   
 function readURL(uploader) {
     $('.update_img').attr('src',
         window.URL.createObjectURL(uploader.files[0]));

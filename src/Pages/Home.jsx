@@ -20,7 +20,7 @@ export default function Home() {
                                 <h1 className="fw-bold w-100">100% Fresh</h1>
                                 <h3 className="text-content fw-light">Fruit & Vegetables</h3>
                                 <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
-                                <button onclick="location.href = 'shop-left-sidebar.html';"
+                                <button onclick="location.href = '/Shop';"
                                     className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
                                     Now</button>
                             </div>
@@ -39,7 +39,7 @@ export default function Home() {
                                 <h4 className="fw-bold">Fresh & 100% Organic</h4>
                                 <h5 className="text-center">farmer's market</h5>
                                 <button className="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = '/Shop';">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function Home() {
                     <div className="row g-3">
                         <div className="col-xxl-12 col-sm-6">
                             <div className="home-contain">
-                                <a href="shop-left-sidebar.html">
+                                <a href="/Shop">
                                     <img src="../assets/images/veg-3/home/3.png"
                                         className="img-fluid bg-img blur-up lazyload" alt="" />
                                 </a>
@@ -64,7 +64,7 @@ export default function Home() {
 
                         <div className="col-xxl-12 col-sm-6">
                             <div className="home-contain">
-                                <a href="shop-left-sidebar.html">
+                                <a href="/Shop">
                                     <img src="../assets/images/veg-3/home/4.png"
                                         className="img-fluid bg-img blur-up lazyload" alt="" />
                                 </a>
@@ -94,7 +94,7 @@ export default function Home() {
                     <div class="category-slider arrow-slider">
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn">
-                                <a href="shop-left-sidebar.html" class="circle-1">
+                                <a href="/Shop" class="circle-1">
                                     <img src="../assets/images/veg-3/category/1.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -106,7 +106,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
-                                <a href="shop-left-sidebar.html" class="circle-2">
+                                <a href="/Shop" class="circle-2">
                                     <img src="../assets/images/veg-3/category/2.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -118,7 +118,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
-                                <a href="shop-left-sidebar.html" class="circle-3">
+                                <a href="/Shop" class="circle-3">
                                     <img src="../assets/images/veg-3/category/3.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -130,7 +130,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.15s">
-                                <a href="shop-left-sidebar.html" class="circle-4">
+                                <a href="/Shop" class="circle-4">
                                     <img src="../assets/images/veg-3/category/4.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -142,7 +142,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.2s">
-                                <a href="shop-left-sidebar.html" class="circle-4">
+                                <a href="/Shop" class="circle-4">
                                     <img src="../assets/images/veg-3/category/5.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -154,7 +154,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.25s">
-                                <a href="shop-left-sidebar.html" class="circle-1">
+                                <a href="/Shop" class="circle-1">
                                     <img src="../assets/images/veg-3/category/6.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -166,7 +166,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.3s">
-                                <a href="shop-left-sidebar.html" class="circle-2">
+                                <a href="/Shop" class="circle-2">
                                     <img src="../assets/images/veg-3/category/7.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -178,7 +178,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.35s">
-                                <a href="shop-left-sidebar.html" class="circle-3">
+                                <a href="/Shop" class="circle-3">
                                     <img src="../assets/images/veg-3/category/8.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -190,7 +190,7 @@ export default function Home() {
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.4s">
-                                <a href="shop-left-sidebar.html" class="circle-4">
+                                <a href="/Shop" class="circle-4">
                                     <img src="../assets/images/veg-3/category/2.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -224,7 +224,7 @@ export default function Home() {
                                     <h6>Fresh Vegetable</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    <button onclick="location.href = '/Shop';"
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@ export default function Home() {
                                     <h6>Organic Vegetable</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    <button onclick="location.href = '/Shop';"
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
                                 </div>
                             </div>
@@ -254,7 +254,7 @@ export default function Home() {
                                     <h6>Fruit & Vegetables</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    <button onclick="location.href = '/Shop';"
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ export default function Home() {
                                     <h6>Fruit & Vegetables</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    <button onclick="location.href = '/Shop';"
                                         class="btn-category btn theme-bg-color text-white">View
                                         Offer</button>
                                 </div>
@@ -293,7 +293,7 @@ export default function Home() {
                     <div class="three-slider-1 arrow-slider">
                         <div>
                             <div class="deal-box wow fadeInUp">
-                                <a href="shop-left-sidebar.html" class="category-image order-sm-2">
+                                <a href="/Shop" class="category-image order-sm-2">
                                     <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -322,7 +322,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="shop-left-sidebar.html" class="text-title">
+                                    <a href="/Shop" class="text-title">
                                         <h5>Bell pepper</h5>
                                     </a>
                                     <h5 class="price">$70.21 <span>$65.00</span></h5>
@@ -369,7 +369,7 @@ export default function Home() {
 
                         <div>
                             <div class="deal-box wow fadeInUp" data-wow-delay="0.05s">
-                                <a href="shop-left-sidebar.html" class="category-image order-sm-2">
+                                <a href="/Shop" class="category-image order-sm-2">
                                     <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -398,7 +398,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="shop-left-sidebar.html" class="text-title">
+                                    <a href="/Shop" class="text-title">
                                         <h5>Eggplant</h5>
                                     </a>
                                     <h5 class="price">$70.21 <span>$65.00</span></h5>
@@ -445,7 +445,7 @@ export default function Home() {
 
                         <div>
                             <div class="deal-box wow fadeInUp" data-wow-delay="0.1s">
-                                <a href="shop-left-sidebar.html" class="category-image order-sm-2">
+                                <a href="/Shop" class="category-image order-sm-2">
                                     <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid blur-up lazyload"
                                         alt="" />
                                 </a>
@@ -474,7 +474,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="shop-left-sidebar.html" class="text-title">
+                                    <a href="/Shop" class="text-title">
                                         <h5>Onion</h5>
                                     </a>
                                     <h5 class="price">$70.21 <span>$65.00</span></h5>
@@ -549,7 +549,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="shop-left-sidebar.html" class="text-title">
+                                    <a href="/Shop" class="text-title">
                                         <h5>Bell pepper</h5>
                                     </a>
                                     <h5 class="price">$70.21 <span>$65.00</span></h5>
@@ -645,7 +645,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -677,7 +677,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Bell pepper</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -712,7 +712,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -744,7 +744,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -783,7 +783,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -815,7 +815,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -850,7 +850,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -882,7 +882,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -921,7 +921,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/7.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -953,7 +953,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Peru</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -988,7 +988,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/9.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1020,7 +1020,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Avocado</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1055,7 +1055,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1087,7 +1087,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1126,7 +1126,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/12.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1158,7 +1158,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Beetroot</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1193,7 +1193,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/13.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1225,7 +1225,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Strawberry</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1260,7 +1260,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/15.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1292,7 +1292,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Corn</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1331,7 +1331,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/17.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1363,7 +1363,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1402,7 +1402,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1434,7 +1434,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1473,7 +1473,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1505,7 +1505,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1540,7 +1540,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1572,7 +1572,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1607,7 +1607,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1639,7 +1639,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1674,7 +1674,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1706,7 +1706,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1741,7 +1741,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1773,7 +1773,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1808,7 +1808,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1840,7 +1840,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1875,7 +1875,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/10.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1907,7 +1907,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -1942,7 +1942,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -1974,7 +1974,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2009,7 +2009,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/17.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2041,7 +2041,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2076,7 +2076,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2108,7 +2108,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2147,7 +2147,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/8.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2179,7 +2179,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Apple</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2214,7 +2214,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/14.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2246,7 +2246,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Passion</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2281,7 +2281,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/16.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2313,7 +2313,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Blackberry</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2348,7 +2348,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/7.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2380,7 +2380,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Peru</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2415,7 +2415,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/9.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2447,7 +2447,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Apple</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2482,7 +2482,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/13.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2514,7 +2514,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Strawberry</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2549,7 +2549,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/12.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2581,7 +2581,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Bell pepper</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2620,7 +2620,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2652,7 +2652,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2687,7 +2687,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2719,7 +2719,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2754,7 +2754,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2786,7 +2786,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2821,7 +2821,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2853,7 +2853,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2888,7 +2888,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2920,7 +2920,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -2955,7 +2955,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -2987,7 +2987,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3022,7 +3022,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/10.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3054,7 +3054,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3089,7 +3089,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3121,7 +3121,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3156,7 +3156,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/17.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3188,7 +3188,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3223,7 +3223,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3255,7 +3255,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3294,7 +3294,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3326,7 +3326,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3361,7 +3361,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3393,7 +3393,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Eggplant</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3428,7 +3428,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3460,7 +3460,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Onion</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3495,7 +3495,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3527,7 +3527,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Potato</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3562,7 +3562,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3594,7 +3594,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Baby Chili</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3629,7 +3629,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3661,7 +3661,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Broccoli</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3696,7 +3696,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/10.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3728,7 +3728,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Pea</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3763,7 +3763,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3795,7 +3795,7 @@ export default function Home() {
                                             <i data-feather="star" class="fill"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cucumber</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3830,7 +3830,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/17.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3862,7 +3862,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Cabbage</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3897,7 +3897,7 @@ export default function Home() {
                                         </button>
                                     </div>
 
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
                                     </a>
 
@@ -3929,7 +3929,7 @@ export default function Home() {
                                             <i data-feather="star"></i>
                                         </li>
                                     </ul>
-                                    <a href="product-left-thumbnail.html">
+                                    <a href="/Productdetails">
                                         <h5 class="name">Ginger</h5>
                                     </a>
                                     <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -3975,7 +3975,7 @@ export default function Home() {
                                 <h3 class="mb-sm-3 mb-1">Fresh Vegetable & Daily Eating</h3>
                                 <h4>Get Extra 50% Off</h4>
                                 <button class="btn theme-color bg-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = '/Shop';">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -3990,7 +3990,7 @@ export default function Home() {
                                 <h3 class="mb-sm-3 mb-1">100% Natural & Healthy Fruits</h3>
                                 <h4 class="text-content">Weekend Special</h4>
                                 <button class="btn theme-bg-color text-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = '/Shop';">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -4016,7 +4016,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4038,14 +4038,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Tomato</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4058,7 +4058,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4070,7 +4070,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4092,14 +4092,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Red onion</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4112,7 +4112,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4124,7 +4124,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4146,14 +4146,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4166,7 +4166,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4182,7 +4182,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4204,14 +4204,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Potato</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4224,7 +4224,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4236,7 +4236,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4258,14 +4258,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Broccoli</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4278,7 +4278,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4290,7 +4290,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4312,14 +4312,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4332,7 +4332,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4360,7 +4360,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/7.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4382,14 +4382,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Garlic</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4402,7 +4402,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4414,7 +4414,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/8.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4436,14 +4436,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Beetroot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4456,7 +4456,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4468,7 +4468,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 pb-1 wow fadeInUp" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/9.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4490,14 +4490,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Eggplant</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4510,7 +4510,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4526,7 +4526,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/10.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4548,14 +4548,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Bell pepper</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4568,7 +4568,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4580,7 +4580,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/11.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4602,14 +4602,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Pea</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4622,7 +4622,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4634,7 +4634,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/12.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4656,14 +4656,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Avocado</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4676,7 +4676,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4704,7 +4704,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4726,14 +4726,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Tomato</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4746,7 +4746,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4758,7 +4758,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4780,14 +4780,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Red onion</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4800,7 +4800,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4812,7 +4812,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4834,14 +4834,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4854,7 +4854,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4870,7 +4870,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4892,14 +4892,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Potato</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4912,7 +4912,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4924,7 +4924,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -4946,14 +4946,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Broccoli</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -4966,7 +4966,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -4978,7 +4978,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5000,14 +5000,14 @@ export default function Home() {
                                                             <i data-feather="star" class="fill"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Carrot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5020,7 +5020,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5048,7 +5048,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/7.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5070,14 +5070,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Garlic</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5090,7 +5090,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5102,7 +5102,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/8.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5124,14 +5124,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Beetroot</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5144,7 +5144,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5156,7 +5156,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/9.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5178,14 +5178,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Eggplant</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5198,7 +5198,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5214,7 +5214,7 @@ export default function Home() {
                                     <div class="row gy-sm-4 gy-3">
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/10.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5236,14 +5236,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Bell pepper</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5256,7 +5256,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5268,7 +5268,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/11.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5290,14 +5290,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Pea</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5310,7 +5310,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5322,7 +5322,7 @@ export default function Home() {
 
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="shop-left-sidebar.html" class="product-image">
+                                                <a href="/Shop" class="product-image">
                                                     <img src="../assets/images/veg-3/pro1/12.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
@@ -5344,14 +5344,14 @@ export default function Home() {
                                                             <i data-feather="star"></i>
                                                         </li>
                                                     </ul>
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h4 class="name">Avocado</h4>
                                                     </a>
                                                     <h5 class="price">$75.20<del>$65.21</del></h5>
                                                     <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
-                                                            <a href="cart.html">
+                                                            <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
@@ -5364,7 +5364,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
-                                                            <a href="wishlist.html">
+                                                            <a href="/Wishlist">
                                                                 <i class="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
@@ -5397,7 +5397,7 @@ export default function Home() {
                                 <h2 class="my-3">100% Organic Best Quality Best Price</h2>
                                 <h4 class="text-content fw-300">Best Fastkart Food Quality</h4>
                                 <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = '/Shop';">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -5424,7 +5424,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5456,7 +5456,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5493,7 +5493,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5525,7 +5525,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Ginger</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5560,7 +5560,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5592,7 +5592,7 @@ export default function Home() {
                                     <i data-feather="star" class="fill"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5625,7 +5625,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5657,7 +5657,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Potato</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5692,7 +5692,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5724,7 +5724,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Onion</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5757,7 +5757,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5789,7 +5789,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Broccoli</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5824,7 +5824,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/10.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5856,7 +5856,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Pea</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5893,7 +5893,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/17.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5925,7 +5925,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Cabbage</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -5964,7 +5964,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/13.png" class="img-fluid" alt="" />
                             </a>
 
@@ -5996,7 +5996,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Strawberry</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6033,7 +6033,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6065,7 +6065,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Cucumber</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6100,7 +6100,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/8.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6132,7 +6132,7 @@ export default function Home() {
                                     <i data-feather="star" class="fill"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Apple</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6165,7 +6165,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/16.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6197,7 +6197,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Blackberry</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6232,7 +6232,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/9.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6264,7 +6264,7 @@ export default function Home() {
                                     <i data-feather="star" class="fill"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Apple</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6297,7 +6297,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/12.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6329,7 +6329,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Bell pepper</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6364,7 +6364,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6396,7 +6396,7 @@ export default function Home() {
                                     <i data-feather="star" class="fill"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Eggplant</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6429,7 +6429,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6461,7 +6461,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Potato</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6496,7 +6496,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6528,7 +6528,7 @@ export default function Home() {
                                     <i data-feather="star"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Broccoli</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6561,7 +6561,7 @@ export default function Home() {
                                 </button>
                             </div>
 
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
                             </a>
 
@@ -6593,7 +6593,7 @@ export default function Home() {
                                     <i data-feather="star" class="fill"></i>
                                 </li>
                             </ul>
-                            <a href="product-left-thumbnail.html">
+                            <a href="/Productdetails">
                                 <h5 class="name">Cucumber</h5>
                             </a>
                             <h5 class="price theme-color">$70.21<del>$65.25</del></h5>
@@ -6635,14 +6635,14 @@ export default function Home() {
                 <div>
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
                             </a>
                         </div>
 
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <h2>A Fresh Vegetable online market place a fresh...</h2>
                             </a>
                             <div class="blog-list">
@@ -6656,14 +6656,14 @@ export default function Home() {
                 <div>
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <img src="../assets/images/veg-3/blog/2.jpg" class="img-fluid bg-img" alt="" />
                             </a>
                         </div>
 
                         <div class="blog-detail">
                             <label>Email Marketing</label>
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <h2>A Fresh Vegetable online market place a fresh...</h2>
                             </a>
                             <div class="blog-list">
@@ -6677,14 +6677,14 @@ export default function Home() {
                 <div>
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <img src="../assets/images/veg-3/blog/3.jpg" class="img-fluid bg-img" alt="" />
                             </a>
                         </div>
 
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <h2>A Fresh Vegetable online market place a fresh...</h2>
                             </a>
                             <div class="blog-list">
@@ -6698,14 +6698,14 @@ export default function Home() {
                 <div>
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
                             </a>
                         </div>
 
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
-                            <a href="blog-detail.html">
+                            <a href="/Blogdetails">
                                 <h2>A Fresh Vegetable online market place a fresh...</h2>
                             </a>
                             <div class="blog-list">
@@ -6837,10 +6837,10 @@ export default function Home() {
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = 'cart.html';"
+                                    <button onclick="location.href = '/Cart';"
                                         class="btn btn-md add-cart-button icon">Add
                                         To Cart</button>
-                                    <button onclick="location.href = 'product-left-thumbnail.html';"
+                                    <button onclick="location.href = '/Productdetails';"
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
                                 </div>
@@ -6875,7 +6875,7 @@ export default function Home() {
             </li>
             <li>+3</li>
         </ul>
-        <button onclick="location.href = 'cart.html';" class="btn item-button btn-sm fw-bold">$ 20.70</button>
+        <button onclick="location.href = '/Cart';" class="btn item-button btn-sm fw-bold">$ 20.70</button>
     </div>
     {/* <!-- Items section End --> */}
 

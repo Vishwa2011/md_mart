@@ -91,14 +91,14 @@ const Ordersuccess = () => {
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/1.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Bell pepper</a>
+                                                            <a href="/Productdetails">Bell pepper</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Fresho</li>
@@ -128,14 +128,14 @@ const Ordersuccess = () => {
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/2.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Eggplant</a>
+                                                            <a href="/Productdetails">Eggplant</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Nesto</li>
@@ -165,14 +165,14 @@ const Ordersuccess = () => {
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/3.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Onion</a>
+                                                            <a href="/Productdetails">Onion</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Basket</li>
@@ -254,7 +254,7 @@ const Ordersuccess = () => {
                                     <li class="pb-0">
                                         <h4>Expected Date Of Delivery:</h4>
                                         <h4 class="price theme-color">
-                                            <a href="order-tracking.html" class="text-danger">Track Order</a>
+                                            <a href="/Ordertracking" class="text-danger">Track Order</a>
                                         </h4>
                                     </li>
                                 </ul>
