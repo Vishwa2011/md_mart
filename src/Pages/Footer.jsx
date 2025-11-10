@@ -138,6 +138,12 @@ const Footer = () => {
                                 <li>
                                     <a href="/Terms" class="text-content">Terms & Conditions</a>
                                 </li>
+                                <li>
+                                    <a href="/Return" class="text-content">Return Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/Shipping" class="text-content">Shipping Policy</a>
+                                </li>
                             </ul>
                         </div>
                     </div>

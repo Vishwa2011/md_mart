@@ -47351,7 +47351,165 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 
 
 
+/* RETURN POLICY */
+
+.returnpolicy-main {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #333;
+  padding: 2rem 1.5rem;
+}
+
+.returnpolicy-header {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.returnpolicy-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.returnpolicy-header p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.returnpolicy-article {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.returnpolicy-section {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.returnpolicy-section:hover {
+  transform: translateY(-3px);
+}
+
+.returnpolicy-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.8rem;
+}
+
+.returnpolicy-section p,
+.returnpolicy-section ul {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.returnpolicy-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.returnpolicy-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.returnpolicy-section a:hover {
+  text-decoration: underline;
+}
 
 
 
 
+/* SHIPPING POLICY */
+
+.shippingpolicy-main {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #333;
+  padding: 2rem 1.5rem;
+}
+
+.shippingpolicy-header {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.shippingpolicy-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.shippingpolicy-header p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.shippingpolicy-article {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.shippingpolicy-section {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.shippingpolicy-section:hover {
+  transform: translateY(-3px);
+}
+
+.shippingpolicy-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.8rem;
+}
+
+.shippingpolicy-section p,
+.shippingpolicy-section ul {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.shippingpolicy-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.shippingpolicy-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.shippingpolicy-section a:hover {
+  text-decoration: underline;
+}
