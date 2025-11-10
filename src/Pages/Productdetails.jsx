@@ -267,8 +267,8 @@ const Productdetails = () => {
                                         </div>
                                     </div>
 
-                                    <button onclick="location.href = '/Cart';"
-                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</button>
+                                    <a href="/Cart"
+                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</a>
                                 </div>
 
                                 <div class="buy-box">
@@ -294,9 +294,9 @@ const Productdetails = () => {
 
                                     <div class="product-info">
                                         <ul class="product-info-list product-info-list-2">
-                                            <li>Type : <a href="javascript:void(0)">Fruit</a></li>
-                                            <li>MFG : <a href="javascript:void(0)">Jun 4, 2022</a></li>
-                                            <li>Stock : <a href="javascript:void(0)">5 Items Left</a></li>
+                                            <li>Type : <a href="">Fruit</a></li>
+                                            <li>MFG : <a href="">Jun 4, 2022</a></li>
+                                            <li>Stock : <a href="">5 Items Left</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -307,31 +307,31 @@ const Productdetails = () => {
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/1.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/2.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/3.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/4.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/5.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
@@ -756,7 +756,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Jack Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -808,7 +808,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Jessica
                                                                         Miller</a>
                                                                     <div class="date-time">
@@ -861,7 +861,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Rome Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -915,7 +915,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Sarah
                                                                         Davis</a>
                                                                     <div class="date-time">
@@ -968,7 +968,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">John Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -1043,7 +1043,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1126,7 +1126,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1207,7 +1207,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1290,7 +1290,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1373,7 +1373,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1456,7 +1456,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1540,7 +1540,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1774,10 +1774,10 @@ const Productdetails = () => {
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = '/Cart';"
+                                    <a href="/Cart"
                                         class="btn btn-md add-cart-button icon">Add
-                                        To Cart</button>
-                                    <button onclick="location.href = '/';"
+                                        To Cart</a>
+                                    <button href=""
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
                                 </div>

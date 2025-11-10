@@ -1525,12 +1525,12 @@ const Shop = () => {
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = '/Cart';"
+                                    <a href="/Cart"
                                         class="btn btn-md add-cart-button icon">Add
-                                        To Cart</button>
-                                    <button onclick="location.href = '/Productdetails';"
+                                        To Cart</a>
+                                    <a href="Productdetails"
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
-                                        View More Details</button>
+                                        View More Details</a>
                                 </div>
                             </div>
                         </div>

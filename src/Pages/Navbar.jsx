@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="timer-notification text-center">
             <h6>
               Something you love is now on sale!
-              <a href="/shop-left-sidebar" className="text-white">
+              <a href="/Shop" className="text-white">
                 Buy Now!
               </a>
             </h6>
@@ -300,28 +300,28 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Potato & Tomato</a>
+                                                        <a href="">Potato & Tomato</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cucumber & Capsicum</a>
+                                                        <a href="">Cucumber & Capsicum</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Leafy Vegetables</a>
+                                                        <a href="">Leafy Vegetables</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Root Vegetables</a>
+                                                        <a href="">Root Vegetables</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Beans & Okra</a>
+                                                        <a href="">Beans & Okra</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cabbage & Cauliflower</a>
+                                                        <a href="">Cabbage & Cauliflower</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Gourd & Drumstick</a>
+                                                        <a href="">Gourd & Drumstick</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Specialty</a>
+                                                        <a href="">Specialty</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -332,22 +332,22 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Banana & Papaya</a>
+                                                        <a href="">Banana & Papaya</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Kiwi, Citrus Fruit</a>
+                                                        <a href="">Kiwi, Citrus Fruit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Apples & Pomegranate</a>
+                                                        <a href="">Apples & Pomegranate</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Seasonal Fruits</a>
+                                                        <a href="">Seasonal Fruits</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Mangoes</a>
+                                                        <a href="">Mangoes</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Fruit Baskets</a>
+                                                        <a href="">Fruit Baskets</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -368,25 +368,25 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Soda & Cocktail Mix</a>
+                                                        <a href="">Soda & Cocktail Mix</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Soda & Cocktail Mix</a>
+                                                        <a href="">Soda & Cocktail Mix</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Sports & Energy Drinks</a>
+                                                        <a href="">Sports & Energy Drinks</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Non Alcoholic Drinks</a>
+                                                        <a href="">Non Alcoholic Drinks</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Packaged Water</a>
+                                                        <a href="">Packaged Water</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Spring Water</a>
+                                                        <a href="">Spring Water</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Flavoured Water</a>
+                                                        <a href="">Flavoured Water</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -407,16 +407,16 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Fresh Meat</a>
+                                                        <a href="">Fresh Meat</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Frozen Meat</a>
+                                                        <a href="">Frozen Meat</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Marinated Meat</a>
+                                                        <a href="">Marinated Meat</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Fresh & Frozen Meat</a>
+                                                        <a href="">Fresh & Frozen Meat</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -427,25 +427,25 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Fresh Water Fish</a>
+                                                        <a href="">Fresh Water Fish</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Dry Fish</a>
+                                                        <a href="">Dry Fish</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Frozen Fish & Seafood</a>
+                                                        <a href="">Frozen Fish & Seafood</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Marine Water Fish</a>
+                                                        <a href="">Marine Water Fish</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Canned Seafood</a>
+                                                        <a href="">Canned Seafood</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Prawans & Shrimps</a>
+                                                        <a href="">Prawans & Shrimps</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Other Seafood</a>
+                                                        <a href="">Other Seafood</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -466,28 +466,28 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Oats & Porridge</a>
+                                                        <a href="">Oats & Porridge</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Kids Cereal</a>
+                                                        <a href="">Kids Cereal</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Muesli</a>
+                                                        <a href="">Muesli</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Flakes</a>
+                                                        <a href="">Flakes</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Granola & Cereal Bars</a>
+                                                        <a href="">Granola & Cereal Bars</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Instant Noodles</a>
+                                                        <a href="">Instant Noodles</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Pasta & Macaroni</a>
+                                                        <a href="">Pasta & Macaroni</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Frozen Non-Veg Snacks</a>
+                                                        <a href="">Frozen Non-Veg Snacks</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -498,28 +498,28 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Milk</a>
+                                                        <a href="">Milk</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Curd</a>
+                                                        <a href="">Curd</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Paneer, Tofu & Cream</a>
+                                                        <a href="">Paneer, Tofu & Cream</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Butter & Margarine</a>
+                                                        <a href="">Butter & Margarine</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Condensed, Powdered Milk</a>
+                                                        <a href="">Condensed, Powdered Milk</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Buttermilk & Lassi</a>
+                                                        <a href="">Buttermilk & Lassi</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Yogurt & Shrikhand</a>
+                                                        <a href="">Yogurt & Shrikhand</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Flavoured, Soya Milk</a>
+                                                        <a href="">Flavoured, Soya Milk</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -540,19 +540,19 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Instant Noodles</a>
+                                                        <a href="">Instant Noodles</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Hakka Noodles</a>
+                                                        <a href="">Hakka Noodles</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cup Noodles</a>
+                                                        <a href="">Cup Noodles</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Vermicelli</a>
+                                                        <a href="">Vermicelli</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Instant Pasta</a>
+                                                        <a href="">Instant Pasta</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -573,19 +573,19 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Salted Biscuits</a>
+                                                        <a href="">Salted Biscuits</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Marie, Health, Digestive</a>
+                                                        <a href="">Marie, Health, Digestive</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cream Biscuits & Wafers</a>
+                                                        <a href="">Cream Biscuits & Wafers</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Glucose & Milk Biscuits</a>
+                                                        <a href="">Glucose & Milk Biscuits</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cookies</a>
+                                                        <a href="">Cookies</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -596,16 +596,16 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Bread Sticks & Lavash</a>
+                                                        <a href="">Bread Sticks & Lavash</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Cheese & Garlic Bread</a>
+                                                        <a href="">Cheese & Garlic Bread</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Puffs, Patties, Sandwiches</a>
+                                                        <a href="">Puffs, Patties, Sandwiches</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Breadcrumbs & Croutons</a>
+                                                        <a href="">Breadcrumbs & Croutons</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -626,16 +626,16 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Lemon, Ginger & Garlic</a>
+                                                        <a href="">Lemon, Ginger & Garlic</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Indian & Exotic Herbs</a>
+                                                        <a href="">Indian & Exotic Herbs</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Vegetables</a>
+                                                        <a href="">Organic Vegetables</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Fruits</a>
+                                                        <a href="">Organic Fruits</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -646,28 +646,28 @@ export default function Navbar() {
                                                 </div>
                                                 <ul>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Dry Fruits</a>
+                                                        <a href="">Organic Dry Fruits</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Dals & Pulses</a>
+                                                        <a href="">Organic Dals & Pulses</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Millet & Flours</a>
+                                                        <a href="">Organic Millet & Flours</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Sugar, Jaggery</a>
+                                                        <a href="">Organic Sugar, Jaggery</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Masalas & Spices</a>
+                                                        <a href="">Organic Masalas & Spices</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Rice, Other Rice</a>
+                                                        <a href="">Organic Rice, Other Rice</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Flours</a>
+                                                        <a href="">Organic Flours</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0)">Organic Edible Oil, Ghee</a>
+                                                        <a href="">Organic Edible Oil, Ghee</a>
                                                     </li>
                                                 </ul>
                                             </div>
