@@ -16,6 +16,8 @@ import Ordertracking from './Pages/Ordertracking';
 import Wishlist from './Pages/Wishlist';
 import Account from './Pages/Account';
 import Login from './Pages/Login';
+import Privacy from './Pages/Privacy'
+import Tems from './Pages/Terms'
 
 
 
@@ -39,6 +41,8 @@ function App() {
        <Route path='/Wishlist' element={<Wishlist/>}/>
        <Route path='/Account' element={<Account/>}/>
        <Route path='/Login' element={<Login/>}/>
+       <Route path='/Privacy' element={<Privacy/>}/>
+       <Route path='/Terms' element={<Terms/>}/>
   </Routes>
 
   {/* <!-- Tap to top and theme setting button start --> */}
