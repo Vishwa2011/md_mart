@@ -12,7 +12,7 @@ const Blog = () => {
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-contain">
-                        <h2>Blog List</h2>
+                        <h2>Blog </h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -20,7 +20,7 @@ const Blog = () => {
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active">Blog List</li>
+                                <li class="breadcrumb-item active">Blog </li>
                             </ol>
                         </nav>
                     </div>
@@ -48,14 +48,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Mark J.
                                                 Speight</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>one pot creamy mediterranean chicken pasta cream.</h3>
                                     </a>
                                     <p>Monterey jack cheese slices cream cheese cream cheese hard cheese roquefort
                                         emmental lancashire. Who moved my cheese dolcelatte st. agur blue cheese fromage
                                         mozzarella say cheese mascarpone blue castello.</p>
                                         <a href="/Blogdetails">
-                                                 <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                                 <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                              More <i class="fa-solid fa-right-long"></i></button>
 
                                         </a>
@@ -75,7 +75,7 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>rebeus
                                                 hagrid</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Crispy Frozen Vegetable is the on the Tempura.</h3>
                                     </a>
                                     <p>Manchego cauliflower cheese st. agur blue cheese red leicester monterey jack
@@ -92,7 +92,7 @@ const Blog = () => {
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="blog-image">
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <img src="../assets/images/inner-page/blog/3.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </a>
@@ -105,14 +105,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Chris C.
                                                 Hall</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>How to start regrowing green onions and other vegetables.</h3>
                                     </a>
                                     <p>Cheese triangles say cheese cheese and biscuits dolcelatte jarlsberg cream cheese
                                         taleggio fromage frais. Who moved my cheese cottage cheese cheese on toast
                                         rubber cheese melted cheese ricotta.</p>
                                           <a href="/Blogdetails">
-                                                 <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                                 <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                                   More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -121,7 +121,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.15s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/4.jpg" class="blur-up lazyload" alt="" />
                                 </a>
 
@@ -131,14 +131,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>James M.
                                                 Martin</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Starting a vegetable garden: the basics.</h3>
                                     </a>
                                     <p>Jarlsberg swiss edam. Goat everyone loves cheese strings ricotta cheese and wine
                                         pepper jack dolcelatte halloumi. Cream cheese queso croque monsieur camembert de
                                         normandie cheddar cheesecake cheese slices croque monsieur.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -147,7 +147,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.2s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/5.jpg" class="blur-up lazyload" alt="" />
                                 </a>
 
@@ -157,14 +157,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Cecil M.
                                                 Levis</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Adapt this simple pasta salad to whatever vegetable.</h3>
                                     </a>
                                     <p>Cream cheese cheese slices chalk and cheese cottage cheese cheddar port-salut
                                         everyone loves dolcelatte. Cream cheese camembert de normandie cow chalk and
                                         cheese brie gouda cottage cheese cheesy grin.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -173,7 +173,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.25s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/1.jpg" class="blur-up lazyload" alt="" />
                                 </a>
 
@@ -183,14 +183,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Mary R.
                                                 Hernandez</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>With chefs idle and vegetables rotting, China's virus-hit.</h3>
                                     </a>
                                     <p>Monterey jack chalk and cheese cheese and biscuits cream cheese fondue say cheese
                                         stilton halloumi. Gouda everyone loves chalk and cheese everyone loves stinking
                                         bishop manchego stilton.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -199,7 +199,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.3s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/2.jpg" class="blur-up lazyload" alt="" />
                                 </a>
 
@@ -209,14 +209,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Cheryl D.
                                                 Moser</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Turn that bowl of pasta into a supercharged veggie vehicle.</h3>
                                     </a>
                                     <p>The big cheese fondue st. agur blue cheese. Cheese on toast paneer lancashire
                                         cheese and biscuits rubber cheese macaroni cheese queso feta. Stinking bishop
                                         fromage brie edam cheesy feet smelly cheese fromage frais paneer.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -225,7 +225,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.35s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/3.jpg" alt="" class="blur-up lazyload" />
                                 </a>
 
@@ -235,14 +235,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Mina M.
                                                 Short</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Health, care and skin on the for your organic.</h3>
                                     </a>
                                     <p>Cheesy grin brie croque monsieur cheesy grin cottage cheese cheese strings
                                         dolcelatte cheeseburger. Cheesy feet queso red leicester fromage frais hard
                                         cheese cheeseburger fromage when the cheese comes out everybody's happy.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -251,7 +251,7 @@ const Blog = () => {
 
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="blog-detail.html" class="blog-image">
+                                <a href="/Blogdetails" class="blog-image">
                                     <img src="../assets/images/inner-page/blog/4.jpg" alt="" class="blur-up lazyload" />
                                 </a>
 
@@ -261,14 +261,14 @@ const Blog = () => {
                                         <span class="super"><i data-feather="user"></i> <span>Marie S.
                                                 Santiago</span></span>
                                     </div>
-                                    <a href="blog-detail.html">
+                                    <a href="/Blogdetails">
                                         <h3>Fresh organicsm, brand, fresh and picnic place awesome.</h3>
                                     </a>
                                     <p>Macaroni cheese camembert de normandie airedale. Cheese triangles babybel cow
                                         blue castello cheddar cheese and biscuits jarlsberg melted cheese. Caerphilly
                                         fromage frais ricotta manchego edam boursin edam swiss.</p>
                                           <a href="/Blogdetails">
-                                    <button onclick="location.href = 'blog-detail.html';" class="blog-button">Read
+                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
                                         More <i class="fa-solid fa-right-long"></i></button>
                                           </a>
                                 </div>
@@ -279,21 +279,21 @@ const Blog = () => {
                     <nav class="custom-pagination">
                         <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                <a class="page-link" href="" tabindex="-1">
                                     <i class="fa-solid fa-angles-left"></i>
                                 </a>
                             </li>
                             <li class="page-item active">
-                                <a class="page-link" href="javascript:void(0)">1</a>
+                                <a class="page-link" href="">1</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">2</a>
+                                <a class="page-link" href="">2</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">3</a>
+                                <a class="page-link" href="">3</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="javascript:void(0)">
+                                <a class="page-link" href="">
                                     <i class="fa-solid fa-angles-right"></i>
                                 </a>
                             </li>
@@ -322,13 +322,13 @@ const Blog = () => {
                                     <div class="accordion-body pt-0">
                                         <div class="recent-post-box">
                                             <div class="recent-box">
-                                                <a href="blog-detail.html" class="recent-image">
+                                                <a href="/Blogdetails" class="recent-image">
                                                     <img src="../assets/images/inner-page/blog/1.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="recent-detail">
-                                                    <a href="blog-detail.html">
+                                                    <a href="/Blogdetails">
                                                         <h5 class="recent-name">Green onion knife and salad placed</h5>
                                                     </a>
                                                     <h6>25 Jan, 2022 <i data-feather="thumbs-up"></i></h6>
@@ -336,13 +336,13 @@ const Blog = () => {
                                             </div>
 
                                             <div class="recent-box">
-                                                <a href="blog-detail.html" class="recent-image">
+                                                <a href="/Blogdetails" class="recent-image">
                                                     <img src="../assets/images/inner-page/blog/2.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="recent-detail">
-                                                    <a href="blog-detail.html">
+                                                    <a href="/Blogdetails">
                                                         <h5 class="recent-name">Health and skin for your organic</h5>
                                                     </a>
                                                     <h6>25 Jan, 2022 <i data-feather="thumbs-up"></i></h6>
@@ -350,13 +350,13 @@ const Blog = () => {
                                             </div>
 
                                             <div class="recent-box">
-                                                <a href="blog-detail.html" class="recent-image">
+                                                <a href="/Blogdetails" class="recent-image">
                                                     <img src="../assets/images/inner-page/blog/3.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="recent-detail">
-                                                    <a href="blog-detail.html">
+                                                    <a href="/Blogdetails">
                                                         <h5 class="recent-name">Organics mix masala fresh & soft</h5>
                                                     </a>
                                                     <h6>25 Jan, 2022 <i data-feather="thumbs-up"></i></h6>
@@ -364,13 +364,13 @@ const Blog = () => {
                                             </div>
 
                                             <div class="recent-box">
-                                                <a href="blog-detail.html" class="recent-image">
+                                                <a href="/Blogdetails" class="recent-image">
                                                     <img src="../assets/images/inner-page/blog/4.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="recent-detail">
-                                                    <a href="blog-detail.html">
+                                                    <a href="/Blogdetails">
                                                         <h5 class="recent-name">Fresh organics brand and picnic</h5>
                                                     </a>
                                                     <h6>25 Jan, 2022 <i data-feather="thumbs-up"></i></h6>
@@ -391,7 +391,7 @@ const Blog = () => {
                                         <div class="category-list-box">
                                             <ul>
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Latest Recipes</h5>
                                                             <span>10</span>
@@ -400,7 +400,7 @@ const Blog = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Diet Food</h5>
                                                             <span>6</span>
@@ -409,7 +409,7 @@ const Blog = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Low calorie Items</h5>
                                                             <span>8</span>
@@ -418,7 +418,7 @@ const Blog = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Cooking Method</h5>
                                                             <span>9</span>
@@ -427,7 +427,7 @@ const Blog = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Dairy Free</h5>
                                                             <span>12</span>
@@ -436,7 +436,7 @@ const Blog = () => {
                                                 </li>
 
                                                 <li>
-                                                    <a href="blog-list.html">
+                                                    <a href="/Blog">
                                                         <div class="category-name">
                                                             <h5>Vegetarian Food</h5>
                                                             <span>10</span>
@@ -461,35 +461,35 @@ const Blog = () => {
                                             <ul>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">Fruit Cutting</a>
+                                                    <a href="">Fruit Cutting</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">Meat</a>
+                                                    <a href="">Meat</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">organic</a>
+                                                    <a href="">organic</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">cake</a>
+                                                    <a href="">cake</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">pick fruit</a>
+                                                    <a href="">pick fruit</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">backery</a>
+                                                    <a href="">backery</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">organix food</a>
+                                                    <a href="">organix food</a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="javascript:void(0)">Most Expensive Fruit</a>
+                                                    <a href="">Most Expensive Fruit</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -507,14 +507,14 @@ const Blog = () => {
                                         <ul class="product-list product-list-2 border-0 p-0">
                                             <li>
                                                 <div class="offer-product">
-                                                    <a href="shop-left-sidebar.html" class="offer-image">
+                                                    <a href="/Shop" class="offer-image">
                                                         <img src="../assets/images/vegetable/product/23.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
                                                     <div class="offer-detail">
                                                         <div>
-                                                            <a href="shop-left-sidebar.html">
+                                                            <a href="/Shop">
                                                                 <h6 class="name">Meatigo Premium Goat Curry</h6>
                                                             </a>
                                                             <span>450 G</span>
@@ -526,14 +526,14 @@ const Blog = () => {
 
                                             <li>
                                                 <div class="offer-product">
-                                                    <a href="shop-left-sidebar.html" class="offer-image">
+                                                    <a href="/Shop" class="offer-image">
                                                         <img src="../assets/images/vegetable/product/24.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
                                                     <div class="offer-detail">
                                                         <div>
-                                                            <a href="shop-left-sidebar.html">
+                                                            <a href="/Shop">
                                                                 <h6 class="name">Dates Medjoul Premium Imported</h6>
                                                             </a>
                                                             <span>450 G</span>
@@ -545,14 +545,14 @@ const Blog = () => {
 
                                             <li class="mb-0">
                                                 <div class="offer-product">
-                                                    <a href="shop-left-sidebar.html" class="offer-image">
+                                                    <a href="/Shop" class="offer-image">
                                                         <img src="../assets/images/vegetable/product/26.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
                                                     <div class="offer-detail">
                                                         <div>
-                                                            <a href="shop-left-sidebar.html">
+                                                            <a href="/Shop">
                                                                 <h6 class="name">Apple Red Premium Imported</h6>
                                                             </a>
                                                             <span>1 KG</span>

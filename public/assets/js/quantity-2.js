@@ -13,7 +13,7 @@
          $qty.val(currentVal + 1);
      }
  });
-
+$(document).ready(function () {
  $('.qty-left-minus').on('click', function () {
      var $qty = $(this).siblings(".qty-input");
      var _val = $($qty).val();
@@ -25,6 +25,7 @@
      if (!isNaN(currentVal) && currentVal > 0) {
          $qty.val(currentVal - 1);
      }
+ });
  });
 
  $('.qty-right-plus').click(function () {

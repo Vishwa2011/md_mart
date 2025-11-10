@@ -16,6 +16,8 @@ import Ordertracking from './Pages/Ordertracking';
 import Wishlist from './Pages/Wishlist';
 import Account from './Pages/Account';
 import Login from './Pages/Login';
+import Privacy from './Pages/Privacy'
+import Termscondition from './Pages/Terms&condition'
 import Mission from './Pages/Mission';
 import Vision from './Pages/Vision';
 
@@ -41,6 +43,8 @@ function App() {
        <Route path='/Wishlist' element={<Wishlist/>}/>
        <Route path='/Account' element={<Account/>}/>
        <Route path='/Login' element={<Login/>}/>
+       <Route path='/Privacy' element={<Privacy/>}/>
+       <Route path='/Terms' element={<Termscondition/>}/>
        <Route path='/Mission' element={<Mission/>}/>
        <Route path='/Vision' element={<Vision/>}/>
   </Routes>
