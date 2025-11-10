@@ -1,6 +1,7 @@
 /**=====================
      Sticky Cart Bottom js
 ==========================**/
+$(document).ready(function () {
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   var width_content = jQuery(window).width();
@@ -12,4 +13,5 @@ $(window).scroll(function () {
       $("body").removeClass("stickyCart");
     }
   }
+});
 });

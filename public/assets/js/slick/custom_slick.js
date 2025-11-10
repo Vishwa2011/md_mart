@@ -952,7 +952,7 @@ $('.left-slider-image').slick({
     },
     ]
 });
-});
+
 
 $('.product-main-2').slick({
     slidesToShow: 1,
@@ -1069,6 +1069,7 @@ $('.bottom-slider-image').slick({
         }
     },
     ]
+});
 });
 $(document).ready(function () {
 $('.slider-user').slick({

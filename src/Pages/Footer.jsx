@@ -25,7 +25,7 @@ const Footer = () => {
                                 </div>
 
                                 <div class="service-detail">
-                                    <h5>Free Delivery For Order Over $50</h5>
+                                    <h5>Free Delivery For Order Over ₹50</h5>
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
                         <div class="footer-logo">
                             <div class="theme-logo">
                                 <a href="/">
-                                    <img src="../assets/images/logo/1.png" class="blur-up lazyload" alt="" />
+                                    <img src="/assets/images/vendor-page/logo/mdmart.png" class="blur-up lazyload" alt="" style={{width:'140px'}}/>
                                 </a>
                             </div>
 
@@ -70,11 +70,11 @@ const Footer = () => {
                                 <ul class="address">
                                     <li>
                                         <i data-feather="home"></i>
-                                        <a href="javascript:void(0)">1418 Riverwood Drive, CA 96052, US</a>
+                                        <a href="">1418 Riverwood Drive, CA 96052, US</a>
                                     </li>
                                     <li>
                                         <i data-feather="mail"></i>
-                                        <a href="javascript:void(0)">support@fastkart.com</a>
+                                        <a href="">support@mdmart.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,22 +89,22 @@ const Footer = () => {
                         <div class="footer-contain">
                             <ul>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Vegetables & Fruit</a>
+                                    <a href="/Shop" class="text-content">Vegetables & Fruit</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Beverages</a>
+                                    <a href="/Shop" class="text-content">Beverages</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Meats & Seafood</a>
+                                    <a href="/Shop" class="text-content">Meats & Seafood</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Frozen Foods</a>
+                                    <a href="/Shop" class="text-content">Frozen Foods</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Biscuits & Snacks</a>
+                                    <a href="/Shop" class="text-content">Biscuits & Snacks</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Grocery & Staples</a>
+                                    <a href="/Shop" class="text-content">Grocery & Staples</a>
                                 </li>
                             </ul>
                         </div>
@@ -121,29 +121,21 @@ const Footer = () => {
                                     <a href="/" class="text-content">Home</a>
                                 </li>
                                 <li>
-                                    <a href="shop-left-sidebar.html" class="text-content">Shop</a>
+                                    <a href="/Shop" class="text-content">Shop</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html" class="text-content">About Us</a>
+                                    <a href="/About" class="text-content">About Us</a>
+                                </li>
+                                 <li>
+                                    <a href="/Faq" class="text-content">FAQ</a>
                                 </li>
                                 <li>
-                                    <a href="blog-list.html" class="text-content">Blog</a>
+                                    <a href="/Blog" class="text-content">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html" class="text-content">Contact Us</a>
+                                    <a href="/Contact" class="text-content">Contact Us</a>
                                 </li>
-                                <li>
-                                    <a href="/Privacy" class="text-content">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="/Terms" class="text-content">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="/Return" class="text-content">Return Policy</a>
-                                </li>
-                                <li>
-                                    <a href="/Shipping" class="text-content">Shipping Policy</a>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -156,23 +148,27 @@ const Footer = () => {
                         <div class="footer-contain">
                             <ul>
                                 <li>
-                                    <a href="order-success.html" class="text-content">Your Order</a>
+                                    <a href="/Ordersuccess" class="text-content">Your Order</a>
                                 </li>
                                 <li>
-                                    <a href="user-dashboard.html" class="text-content">Your Account</a>
+                                    <a href="/Account" class="text-content">Your Account</a>
                                 </li>
                                 <li>
-                                    <a href="order-tracking.html" class="text-content">Track Order</a>
+                                    <a href="/Ordertracking" class="text-content">Track Order</a>
                                 </li>
                                 <li>
-                                    <a href="wishlist.html" class="text-content">Your Wishlist</a>
+                                    <a href="/Privacy" class="text-content">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="search.html" class="text-content">Search</a>
+                                    <a href="/Terms" class="text-content">Terms & Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="/Faq" class="text-content">FAQ</a>
+                                    <a href="/Return" class="text-content">Return Policy</a>
                                 </li>
+                                <li>
+                                    <a href="faq.html" class="text-content">FAQ</a>
+                                </li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -189,7 +185,7 @@ const Footer = () => {
                                         <i data-feather="phone"></i>
                                         <div class="contact-number">
                                             <h6 class="text-content">Hotline 24/7 :</h6>
-                                            <h5>+91 888 104 2340</h5>
+                                            <h5>+91 1234567897</h5>
                                         </div>
                                     </div>
                                 </li>
@@ -199,28 +195,11 @@ const Footer = () => {
                                         <i data-feather="mail"></i>
                                         <div class="contact-number">
                                             <h6 class="text-content">Email Address :</h6>
-                                            <h5>fastkart@hotmail.com</h5>
+                                            <h5>infomdmart@gmail.com</h5>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="social-app">
-                                    <h5 class="mb-2 text-content">Download App :</h5>
-                                    <ul>
-                                        <li class="mb-0">
-                                            <a href="https://play.google.com/store/apps" target="_blank">
-                                                <img src="../assets/images/playstore.svg" class="blur-up lazyload"
-                                                    alt="" />
-                                            </a>
-                                        </li>
-                                        <li class="mb-0">
-                                            <a href="https://www.apple.com/in/app-store/" target="_blank">
-                                                <img src="../assets/images/appstore.svg" class="blur-up lazyload"
-                                                    alt="" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -229,12 +208,10 @@ const Footer = () => {
 
             <div class="sub-footer section-small-space">
                 <div class="reserve">
-                    <h6 class="text-content">©2022 Fastkart All rights reserved</h6>
+                    <h6 class="text-content">Copyright © 2025 MDMart All rights reserved. Proudly Powered By <a target='_blanck' href="https://successinnovativetechnologiespvtltd.com/">Success Innovative Technologies Pvt. Ltd.</a></h6>
                 </div>
 
-                <div class="payment">
-                    <img src="../assets/images/payment/1.png" class="blur-up lazyload" alt="" />
-                </div>
+               
 
                 <div class="social-link">
                     <h6 class="text-content">Stay connected :</h6>

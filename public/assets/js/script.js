@@ -362,6 +362,7 @@ $(".add-cart-box .btn-close").click(function () {
 /*=====================
    17. active class Js
    ==========================*/
+   
 $(".product-package .select-package li a").click(function () {
     $("li a").removeClass("active");
     $(this).addClass("active");
@@ -389,6 +390,7 @@ $(".theme-option .setting-box .setting-button").click(function () {
 /*=====================
    20. user-dashboard profile change js
    ==========================*/
+   
 function readURL(uploader) {
     $('.update_img').attr('src',
         window.URL.createObjectURL(uploader.files[0]));

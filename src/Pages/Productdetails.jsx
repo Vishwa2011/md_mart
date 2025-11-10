@@ -31,6 +31,17 @@ const Productdetails = () => {
             $(this).prev().val(+$(this).prev().val() + 1);
           }
         });
+        $(".product-package .select-package li").click(function () {
+    // Remove active class from all
+    $(".product-package .select-package li").removeClass("active");
+
+    // Add active class to clicked li
+    $(this).addClass("active");
+
+    // Select the radio input inside clicked li
+    $(this).find('input[type=radio]').prop('checked', true);
+});
+
       }, []); // only run once
   return (
     <>
@@ -151,7 +162,7 @@ const Productdetails = () => {
                                 <h6 class="offer-top">30% Off</h6>
                                 <h2 class="name">Deliciously Ripe Peach</h2>
                                 <div class="price-rating">
-                                    <h3 class="theme-color price">$49.50 <del class="text-content">$58.46</del> <span
+                                    <h3 class="theme-color price">₹49.50 <del class="text-content">₹58.46</del> <span
                                             class="offer theme-color">(8% off)</span></h3>
                                     <div class="product-rating custom-rate">
                                         <ul class="rating">
@@ -182,32 +193,32 @@ const Productdetails = () => {
                                         goodness of this summer fruit.</p>
                                 </div>
 
-                                <div class="product-package">
-                                    <div class="product-title">
-                                        <h4>Weight </h4>
-                                    </div>
+                             <div class="product-package">
+    <div class="product-title">
+        <h4>Weight</h4>
+    </div>
 
-                                    <ul class="rectangle select-package">
-                                        <li class="form-check">
-                                            <input class="form-check-input" checked type="radio" name="size" id="small" />
-                                            <label class="form-check-label" for="small">
-                                                <span>1 KG</span>
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="radio" name="size" id="medium" />
-                                            <label class="form-check-label" for="medium">
-                                                <span>2 KG</span>
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="radio" name="size" id="large" />
-                                            <label class="form-check-label" for="large">
-                                                <span>3 KG</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
+    <ul class="rectangle select-package">
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="small" checked />
+            <label class="form-check-label" for="small">
+                <span>1 KG</span>
+            </label>
+        </li>
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="medium" />
+            <label class="form-check-label" for="medium">
+                <span>2 KG</span>
+            </label>
+        </li>
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="large" />
+            <label class="form-check-label" for="large">
+                <span>3 KG</span>
+            </label>
+        </li>
+    </ul>
+</div>
 
                                 <div class="time deal-timer product-deal-timer mx-md-0 mx-auto" id="clockdiv-1"
                                     data-hours="1" data-minutes="2" data-seconds="3">
@@ -267,8 +278,8 @@ const Productdetails = () => {
                                         </div>
                                     </div>
 
-                                    <button onclick="location.href = '/Cart';"
-                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</button>
+                                    <a href="/Cart"
+                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</a>
                                 </div>
 
                                 <div class="buy-box">
@@ -294,9 +305,9 @@ const Productdetails = () => {
 
                                     <div class="product-info">
                                         <ul class="product-info-list product-info-list-2">
-                                            <li>Type : <a href="javascript:void(0)">Fruit</a></li>
-                                            <li>MFG : <a href="javascript:void(0)">Jun 4, 2022</a></li>
-                                            <li>Stock : <a href="javascript:void(0)">5 Items Left</a></li>
+                                            <li>Type : <a href="">Fruit</a></li>
+                                            <li>MFG : <a href="">Jun 4, 2022</a></li>
+                                            <li>Stock : <a href="">5 Items Left</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -307,31 +318,31 @@ const Productdetails = () => {
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/1.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/2.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/3.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/4.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">
+                                            <a href="">
                                                 <img src="../assets/images/product/payment/5.svg"
                                                     class="blur-up lazyload" alt="" />
                                             </a>
@@ -441,8 +452,8 @@ const Productdetails = () => {
                                                 </a>
 
                                                 <h5 class="sold text-content">
-                                                    <span class="theme-color price">$26.69</span>
-                                                    <del>$28.56</del>
+                                                    <span class="theme-color price">₹26.69</span>
+                                                    <del>₹28.56</del>
                                                 </h5>
                                             </div>
                                         </div>
@@ -462,8 +473,8 @@ const Productdetails = () => {
                                                 </a>
 
                                                 <h5 class="sold text-content">
-                                                    <span class="theme-color price">$26.69</span>
-                                                    <del>$28.56</del>
+                                                    <span class="theme-color price">₹26.69</span>
+                                                    <del>₹28.56</del>
                                                 </h5>
                                             </div>
                                         </div>
@@ -483,8 +494,8 @@ const Productdetails = () => {
                                                 </a>
 
                                                 <h5 class="sold text-content">
-                                                    <span class="theme-color price">$26.69</span>
-                                                    <del>$28.56</del>
+                                                    <span class="theme-color price">₹26.69</span>
+                                                    <del>₹28.56</del>
                                                 </h5>
                                             </div>
                                         </div>
@@ -499,7 +510,7 @@ const Productdetails = () => {
                                             <input class="checkbox_animated" type="checkbox" value="" id="check1" />
                                             <label class="form-check-label" for="check1">
                                                 <span class="color color-1"> Men Gym Co-Ord Set
-                                                    <span>$12</span></span>
+                                                    <span>₹12</span></span>
                                             </label>
                                         </div>
                                     </li>
@@ -509,7 +520,7 @@ const Productdetails = () => {
                                             <input class="checkbox_animated" type="checkbox" value="" id="check2" />
                                             <label class="form-check-label" for="check2">
                                                 <span class="color color-1"> Women Polyester Activewear
-                                                    <span>$15</span></span>
+                                                    <span>₹15</span></span>
                                             </label>
                                         </div>
                                     </li>
@@ -519,14 +530,14 @@ const Productdetails = () => {
                                             <input class="checkbox_animated" type="checkbox" value="" id="check3" />
                                             <label class="form-check-label" for="check3">
                                                 <span class="color color-1"> Long Sleeve Top
-                                                    <span>$12</span></span>
+                                                    <span>₹12</span></span>
                                             </label>
                                         </div>
                                     </li>
 
                                     <li class="content">
                                         <h5>Product Selected for</h5>
-                                        <h4 class="theme-color">$210.69 <del class="text-content">212.36</del></h4>
+                                        <h4 class="theme-color">₹210.69 <del class="text-content">212.36</del></h4>
                                         <button class="btn text-white theme-bg-color btn-md mt-sm-4 mt-3 fw-bold"><i
                                                 class="fa-solid fa-cart-shopping me-2"></i> Add All To Cart</button>
                                     </li>
@@ -756,7 +767,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Jack Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -808,7 +819,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Jessica
                                                                         Miller</a>
                                                                     <div class="date-time">
@@ -861,7 +872,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Rome Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -915,7 +926,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">Sarah
                                                                         Davis</a>
                                                                     <div class="date-time">
@@ -968,7 +979,7 @@ const Productdetails = () => {
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
-                                                                <div class="people-name"><a href="javascript:void(0)"
+                                                                <div class="people-name"><a href=""
                                                                         class="name">John Doe</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
@@ -1043,7 +1054,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1087,7 +1098,7 @@ const Productdetails = () => {
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">500 G</h6>
-                                        <h5 class="price"><span class="theme-color">$10.25</span> <del>$12.57</del>
+                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.57</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1126,7 +1137,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1168,7 +1179,7 @@ const Productdetails = () => {
                                             <span>(4.0)</span>
                                         </div>
                                         <h6 class="unit">250 ml</h6>
-                                        <h5 class="price"><span class="theme-color">$08.02</span> <del>$15.15</del>
+                                        <h5 class="price"><span class="theme-color">₹08.02</span> <del>₹15.15</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1207,7 +1218,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1251,7 +1262,7 @@ const Productdetails = () => {
                                             <span>(2.4)</span>
                                         </div>
                                         <h6 class="unit">350 G</h6>
-                                        <h5 class="price"><span class="theme-color">$04.33</span> <del>$10.36</del>
+                                        <h5 class="price"><span class="theme-color">₹04.33</span> <del>₹10.36</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1290,7 +1301,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1334,7 +1345,7 @@ const Productdetails = () => {
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">570 G</h6>
-                                        <h5 class="price"><span class="theme-color">$12.52</span> <del>$13.62</del>
+                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1373,7 +1384,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1417,7 +1428,7 @@ const Productdetails = () => {
                                             <span>(3.8)</span>
                                         </div>
                                         <h6 class="unit">100 G</h6>
-                                        <h5 class="price"><span class="theme-color">$10.25</span> <del>$12.36</del>
+                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.36</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1456,7 +1467,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1502,7 +1513,7 @@ const Productdetails = () => {
 
                                         <h6 class="unit">550 G</h6>
 
-                                        <h5 class="price"><span class="theme-color">$14.25</span> <del>$16.57</del>
+                                        <h5 class="price"><span class="theme-color">₹14.25</span> <del>₹16.57</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1540,7 +1551,7 @@ const Productdetails = () => {
 
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                <a href="" data-bs-toggle="modal"
                                                     data-bs-target="#view">
                                                     <i class="fa-solid fa-eye"></i> 
                                                 </a>
@@ -1585,7 +1596,7 @@ const Productdetails = () => {
 
                                         <h6 class="unit">1 Kg</h6>
 
-                                        <h5 class="price"><span class="theme-color">$12.68</span> <del>$14.69</del>
+                                        <h5 class="price"><span class="theme-color">₹12.68</span> <del>₹14.69</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1642,7 +1653,7 @@ const Productdetails = () => {
                                 <h5 class="name">Solid Collared Tshirts</h5>
                                 <div class="product-review-rating">
                                     <div class="product-rating">
-                                        <h6 class="price-number">$16.00</h6>
+                                        <h6 class="price-number">₹16.00</h6>
                                     </div>
                                 </div>
                             </div>
@@ -1707,7 +1718,7 @@ const Productdetails = () => {
                         <div class="col-lg-6">
                             <div class="right-sidebar-modal">
                                 <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
-                                <h4 class="price">$36.99</h4>
+                                <h4 class="price">₹36.99</h4>
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
@@ -1774,10 +1785,10 @@ const Productdetails = () => {
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = '/Cart';"
+                                    <a href="/Cart"
                                         class="btn btn-md add-cart-button icon">Add
-                                        To Cart</button>
-                                    <button onclick="location.href = '/';"
+                                        To Cart</a>
+                                    <button href=""
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
                                 </div>
@@ -1800,7 +1811,7 @@ const Productdetails = () => {
                                 alt="" />
                             <div class="content">
                                 <h5>Creamy Chocolate Cake</h5>
-                                <h6>$32.96<del class="text-danger">$96.00</del><span>55% off</span></h6>
+                                <h6>₹32.96<del class="text-danger">₹96.00</del><span>55% off</span></h6>
                             </div>
                         </div>
                         <div class="selection-section">
@@ -1826,9 +1837,9 @@ const Productdetails = () => {
                             </div>
                         </div>
                         <div class="add-btn">
-                            <a class="btn theme-bg-color text-white wishlist-btn" href="wishlist.html"><i
+                            <a class="btn theme-bg-color text-white wishlist-btn" href="/Wishlist"><i
                                     class="fa fa-bookmark"></i> Wishlist</a>
-                            <a class="btn theme-bg-color text-white" href="cart.html"><i
+                            <a class="btn theme-bg-color text-white" href="/Cart"><i
                                     class="fas fa-shopping-cart"></i> Add To Cart</a>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Checkout = () => {
+    
   return (
     <>
      <Navbar />
@@ -192,9 +193,9 @@ const Checkout = () => {
                                                                     <div>
                                                                         <h5 class="items text-content"><span>3
                                                                                 Items</span>@
-                                                                            $693.48</h5>
+                                                                            ₹693.48</h5>
                                                                         <h5 class="charge text-content">Delivery Charge
-                                                                            $34.67
+                                                                            ₹34.67
                                                                             <button type="button" class="btn p-0"
                                                                                 data-bs-toggle="tooltip"
                                                                                 data-bs-placement="top"
@@ -545,69 +546,69 @@ const Checkout = () => {
                                     <img src="../assets/images/vegetable/product/1.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Bell pepper <span>X 1</span></h4>
-                                    <h4 class="price">$32.34</h4>
+                                    <h4 class="price">₹32.34</h4>
                                 </li>
 
                                 <li>
                                     <img src="../assets/images/vegetable/product/2.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Eggplant <span>X 3</span></h4>
-                                    <h4 class="price">$12.23</h4>
+                                    <h4 class="price">₹12.23</h4>
                                 </li>
 
                                 <li>
                                     <img src="../assets/images/vegetable/product/3.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Onion <span>X 2</span></h4>
-                                    <h4 class="price">$18.27</h4>
+                                    <h4 class="price">₹18.27</h4>
                                 </li>
 
                                 <li>
                                     <img src="../assets/images/vegetable/product/4.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Potato <span>X 1</span></h4>
-                                    <h4 class="price">$26.90</h4>
+                                    <h4 class="price">₹26.90</h4>
                                 </li>
 
                                 <li>
                                     <img src="../assets/images/vegetable/product/5.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Baby Chili <span>X 1</span></h4>
-                                    <h4 class="price">$19.28</h4>
+                                    <h4 class="price">₹19.28</h4>
                                 </li>
 
                                 <li>
                                     <img src="../assets/images/vegetable/product/6.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Broccoli <span>X 2</span></h4>
-                                    <h4 class="price">$29.69</h4>
+                                    <h4 class="price">₹29.69</h4>
                                 </li>
                             </ul>
 
                             <ul class="summery-total">
                                 <li>
                                     <h4>Subtotal</h4>
-                                    <h4 class="price">$111.81</h4>
+                                    <h4 class="price">₹111.81</h4>
                                 </li>
 
                                 <li>
                                     <h4>Shipping</h4>
-                                    <h4 class="price">$8.90</h4>
+                                    <h4 class="price">₹8.90</h4>
                                 </li>
 
                                 <li>
                                     <h4>Tax</h4>
-                                    <h4 class="price">$29.498</h4>
+                                    <h4 class="price">₹29.498</h4>
                                 </li>
 
                                 <li>
                                     <h4>Coupon/Code</h4>
-                                    <h4 class="price">$-23.10</h4>
+                                    <h4 class="price">₹-23.10</h4>
                                 </li>
 
                                 <li class="list-total">
                                     <h4>Total (USD)</h4>
-                                    <h4 class="price">$19.28</h4>
+                                    <h4 class="price">₹19.28</h4>
                                 </li>
                             </ul>
                         </div>
@@ -631,8 +632,10 @@ const Checkout = () => {
                                 </li>
                             </ul>
                         </div>
+<a href="/Ordersuccess">
 
                         <button class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Place Order</button>
+</a>
                     </div>
                 </div>
             </div>

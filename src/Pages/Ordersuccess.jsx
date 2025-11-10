@@ -91,14 +91,14 @@ const Ordersuccess = () => {
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/1.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Bell pepper</a>
+                                                            <a href="/Productdetails">Bell pepper</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Fresho</li>
@@ -111,7 +111,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$20.68</h6>
+                                            <h6 class="theme-color">₹20.68</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -121,21 +121,21 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$35.10</h5>
+                                            <h5>₹35.10</h5>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/2.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Eggplant</a>
+                                                            <a href="/Productdetails">Eggplant</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Nesto</li>
@@ -148,7 +148,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$15.14</h6>
+                                            <h6 class="theme-color">₹15.14</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -158,21 +158,21 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$52.95</h5>
+                                            <h5>₹52.95</h5>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="product-detail">
                                             <div class="product border-0">
-                                                <a href="product.left-sidebar.html" class="product-image">
+                                                <a href="/Productdetails" class="product-image">
                                                     <img src="../assets/images/vegetable/product/3.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
                                                     <ul>
                                                         <li class="name">
-                                                            <a href="product-left-thumbnail.html">Onion</a>
+                                                            <a href="/Productdetails">Onion</a>
                                                         </li>
 
                                                         <li class="text-content">Sold By: Basket</li>
@@ -185,7 +185,7 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">$29.22</h6>
+                                            <h6 class="theme-color">₹29.22</h6>
                                         </td>
 
                                         <td class="quantity">
@@ -195,7 +195,7 @@ const Ordersuccess = () => {
 
                                         <td class="subtotal">
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>$67.36</h5>
+                                            <h5>₹67.36</h5>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -216,24 +216,24 @@ const Ordersuccess = () => {
                                 <ul class="summery-contain">
                                     <li>
                                         <h4>Vegetables Total</h4>
-                                        <h4 class="price">$32.34</h4>
+                                        <h4 class="price">₹32.34</h4>
                                     </li>
 
                                     <li>
                                         <h4>Vegetables Saving</h4>
-                                        <h4 class="price theme-color">$12.23</h4>
+                                        <h4 class="price theme-color">₹12.23</h4>
                                     </li>
 
                                     <li>
                                         <h4>Coupon Discount</h4>
-                                        <h4 class="price text-danger">$6.27</h4>
+                                        <h4 class="price text-danger">₹6.27</h4>
                                     </li>
                                 </ul>
 
                                 <ul class="summery-total">
                                     <li class="list-total">
                                         <h4>Total (USD)</h4>
-                                        <h4 class="price">$19.28</h4>
+                                        <h4 class="price">₹19.28</h4>
                                     </li>
                                 </ul>
                             </div>
@@ -254,7 +254,7 @@ const Ordersuccess = () => {
                                     <li class="pb-0">
                                         <h4>Expected Date Of Delivery:</h4>
                                         <h4 class="price theme-color">
-                                            <a href="order-tracking.html" class="text-danger">Track Order</a>
+                                            <a href="/Ordertracking" class="text-danger">Track Order</a>
                                         </h4>
                                     </li>
                                 </ul>

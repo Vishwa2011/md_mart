@@ -64,7 +64,7 @@ const Otp = () => {
                             </div>
 
                             <div class="send-box pt-4">
-                                <h5>Didn't get the code? <a href="javascript:void(0)" class="theme-color fw-bold">Resend
+                                <h5>Didn't get the code? <a href="" class="theme-color fw-bold">Resend
                                         It</a></h5>
                             </div>
 

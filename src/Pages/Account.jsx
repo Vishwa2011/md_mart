@@ -1,8 +1,52 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Account = () => {
+       useEffect(() => {
+            /**=====================
+                Quantity 2 js
+            ==========================**/
+            $(".addcart-button").click(function () {
+              $(this).next().addClass("open");
+              $(".add-to-cart-box .qty-input").val("1");
+            });
+        
+            $(".qty-left-minus").on("click", function () {
+              var $qty = $(this).siblings(".qty-input");
+              var _val = $($qty).val();
+              if (_val === "1") {
+                var _removeCls = $(this).parents(".cart_qty");
+                $(_removeCls).removeClass("open");
+              }
+              var currentVal = parseInt($qty.val());
+              if (!isNaN(currentVal) && currentVal > 0) {
+                $qty.val(currentVal - 1);
+              }
+            });
+        
+            $(".qty-right-plus").click(function () {
+              if ($(this).prev().val() < 9) {
+                $(this).prev().val(+$(this).prev().val() + 1);
+              }
+            });
+            // Ensure only one address box is selected and radio is checked
+document.querySelectorAll('.address-box').forEach(box => {
+    box.addEventListener('click', function() {
+        // Remove active class from all boxes
+        document.querySelectorAll('.address-box').forEach(b => b.classList.remove('active'));
+        
+        // Add active class to clicked box
+        this.classList.add('active');
+
+        // Check the radio button inside clicked box
+        const radio = this.querySelector('input[type=radio]');
+        if(radio) radio.checked = true;
+    });
+});
+
+          }, []); // only run once
   return (
     <>
     <Navbar />
@@ -12,7 +56,7 @@ const Account = () => {
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-contain">
-                        <h2>User Dashboard</h2>
+                        <h2>Account</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -20,7 +64,7 @@ const Account = () => {
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active">User Dashboard</li>
+                                <li class="breadcrumb-item active">Account</li>
                             </ol>
                         </nav>
                     </div>
@@ -120,7 +164,15 @@ const Account = () => {
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
                                 <div class="dashboard-home">
-                              
+                              <div class="title">
+                                        <h2>My Account</h2>
+                                      <span className="title-leaf">
+                                     <svg className="icon-width bg-gray">
+                                       <use href="../assets/svg/leaf.svg#leaf"></use>
+                                     </svg>
+                                    </span>
+
+                                    </div>
 
                                     <div class="dashboard-user-name">
                                         <h6 class="text-content">Hello, <b class="text-title">Vicki E. Pope</b></h6>
@@ -235,20 +287,28 @@ const Account = () => {
 
                             <div class="tab-pane fade" id="pills-wishlist" role="tabpanel">
                                 <div class="dashboard-wishlist">
-                                
+                               <div class="title">
+                                        <h2>My Wishlist History</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                            <svg class="icon-width bg-gray">
+                                                <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
                                     <div class="row g-sm-4 g-3">
                                         <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/2.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -257,7 +317,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Vegetable</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
                                                         <p class="text-content mt-1 mb-2 product-content">Cheesy feet
@@ -266,8 +326,8 @@ const Account = () => {
                                                             croque monsieur.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$08.02</span>
-                                                            <del>$15.15</del>
+                                                            <span class="theme-color">₹08.02</span>
+                                                            <del>₹15.15</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -300,14 +360,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/3.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -316,7 +376,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Vegetable</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies
                                                                 600 g</h5>
                                                         </a>
@@ -326,8 +386,8 @@ const Account = () => {
                                                             fondue.</p>
                                                         <h6 class="unit mt-1">350 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$04.33</span>
-                                                            <del>$10.36</del>
+                                                            <span class="theme-color">₹04.33</span>
+                                                            <del>₹10.36</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -360,14 +420,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/4.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -376,7 +436,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Snacks</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and
                                                                 Jowar Chips</h5>
                                                         </a>
@@ -388,8 +448,8 @@ const Account = () => {
                                                             ricotta edam.</p>
                                                         <h6 class="unit mt-1">570 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$12.52</span>
-                                                            <del>$13.62</del>
+                                                            <span class="theme-color">₹12.52</span>
+                                                            <del>₹13.62</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -422,14 +482,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/5.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -438,7 +498,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Snacks</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g
                                                             </h5>
                                                         </a>
@@ -448,8 +508,8 @@ const Account = () => {
                                                             cottage cheese cauliflower cheese jarlsberg.</p>
                                                         <h6 class="unit mt-1">100 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$10.25</span>
-                                                            <del>$12.36</del>
+                                                            <span class="theme-color">₹10.25</span>
+                                                            <del>₹12.36</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -482,14 +542,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/6.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -498,7 +558,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Vegetable</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                                         </a>
                                                         <p class="text-content mt-1 mb-2 product-content">Bavarian
@@ -508,8 +568,8 @@ const Account = () => {
                                                             monsieur goat melted cheese port-salut.</p>
                                                         <h6 class="unit mt-1">550 G</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$14.25</span>
-                                                            <del>$16.57</del>
+                                                            <span class="theme-color">₹14.25</span>
+                                                            <del>₹16.57</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -542,14 +602,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/7.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -558,7 +618,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Vegetable</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
                                                         <p class="text-content mt-1 mb-2 product-content">Melted cheese
@@ -567,8 +627,8 @@ const Account = () => {
                                                             hard cheese cream cheese red leicester.</p>
                                                         <h6 class="unit mt-1">1 Kg</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$12.68</span>
-                                                            <del>$14.69</del>
+                                                            <span class="theme-color">₹12.68</span>
+                                                            <del>₹14.69</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -601,14 +661,14 @@ const Account = () => {
                                             <div class="product-box-3 theme-bg-white h-100">
                                                 <div class="product-header">
                                                     <div class="product-image">
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <img src="../assets/images/cake/product/2.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
                                                         <div class="product-header-top">
                                                             <button class="btn wishlist-button close_button">
-                                                                <i data-feather="x"></i>
+                                                                <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -617,7 +677,7 @@ const Account = () => {
                                                 <div class="product-footer">
                                                     <div class="product-detail">
                                                         <span class="span-name">Vegetable</span>
-                                                        <a href="product-left-thumbnail.html">
+                                                        <a href="/Productdetails">
                                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
                                                         <p class="text-content mt-1 mb-2 product-content">Squirty cheese
@@ -626,8 +686,8 @@ const Account = () => {
                                                             everybody's happy cottage cheese paneer.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
                                                         <h5 class="price">
-                                                            <span class="theme-color">$08.02</span>
-                                                            <del>$15.15</del>
+                                                            <span class="theme-color">₹08.02</span>
+                                                            <del>₹15.15</del>
                                                         </h5>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
@@ -661,13 +721,20 @@ const Account = () => {
 
                             <div class="tab-pane fade" id="pills-order" role="tabpanel">
                                 <div class="dashboard-order">
-                                   
+                                    <div class="title">
+                                        <h2>My Orders History</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                            <svg class="icon-width bg-gray">
+                                                <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
 
-                                    <div class="order-contain">
+                                    <div class="order-contain"> 
                                         <div class="order-box dashboard-bg-box">
                                             <div class="order-container">
                                                 <div class="order-icon">
-                                                    <i data-feather="box"></i>
+                                                    <i className="fa-solid fa-box"></i>
                                                 </div>
 
                                                 <div class="order-detail">
@@ -678,13 +745,13 @@ const Account = () => {
                                             </div>
 
                                             <div class="product-order-detail">
-                                                <a href="product-left-thumbnail.html" class="order-image">
+                                                <a href="/Productdetails" class="order-image">
                                                     <img src="../assets/images/vegetable/product/1.png"
                                                         class="blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="order-wrap">
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h3>Fantasy Crunchy Choco Chip Cookies</h3>
                                                     </a>
                                                     <p class="text-content">Cheddar dolcelatte gouda. Macaroni cheese
@@ -694,7 +761,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -704,19 +771,21 @@ const Account = () => {
                                                                 <div class="product-rating ms-2">
                                                                     <ul class="rating">
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            {/* <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i> */}
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                                            
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -744,7 +813,7 @@ const Account = () => {
                                         <div class="order-box dashboard-bg-box">
                                             <div class="order-container">
                                                 <div class="order-icon">
-                                                    <i data-feather="box"></i>
+                                                   <i className="fa-solid fa-box"></i>
                                                 </div>
 
                                                 <div class="order-detail">
@@ -756,13 +825,13 @@ const Account = () => {
                                             </div>
 
                                             <div class="product-order-detail">
-                                                <a href="product-left-thumbnail.html" class="order-image">
+                                                <a href="/Productdetails" class="order-image">
                                                     <img src="../assets/images/vegetable/product/2.png" alt=""
                                                         class="blur-up lazyload" />
                                                 </a>
 
                                                 <div class="order-wrap">
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h3>Cold Brew Coffee Instant Coffee 50 g</h3>
                                                     </a>
                                                     <p class="text-content">Pecorino paneer port-salut when the cheese
@@ -772,7 +841,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -782,19 +851,19 @@ const Account = () => {
                                                                 <div class="product-rating ms-2">
                                                                     <ul class="rating">
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -822,7 +891,7 @@ const Account = () => {
                                         <div class="order-box dashboard-bg-box">
                                             <div class="order-container">
                                                 <div class="order-icon">
-                                                    <i data-feather="box"></i>
+                                                    <i className="fa-solid fa-box"></i>
                                                 </div>
 
                                                 <div class="order-detail">
@@ -833,13 +902,13 @@ const Account = () => {
                                             </div>
 
                                             <div class="product-order-detail">
-                                                <a href="product-left-thumbnail.html" class="order-image">
+                                                <a href="/Productdetails" class="order-image">
                                                     <img src="../assets/images/vegetable/product/3.png" alt=""
                                                         class="blur-up lazyload" />
                                                 </a>
 
                                                 <div class="order-wrap">
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h3>Peanut Butter Bite Premium Butter Cookies 600 g</h3>
                                                     </a>
                                                     <p class="text-content">Cow bavarian bergkase mascarpone paneer
@@ -849,7 +918,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -859,19 +928,19 @@ const Account = () => {
                                                                 <div class="product-rating ms-2">
                                                                     <ul class="rating">
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -899,7 +968,7 @@ const Account = () => {
                                         <div class="order-box dashboard-bg-box">
                                             <div class="order-container">
                                                 <div class="order-icon">
-                                                    <i data-feather="box"></i>
+                                                   <i className="fa-solid fa-box"></i>
                                                 </div>
 
                                                 <div class="order-detail">
@@ -910,13 +979,13 @@ const Account = () => {
                                             </div>
 
                                             <div class="product-order-detail">
-                                                <a href="product-left-thumbnail.html" class="order-image">
+                                                <a href="/Productdetails" class="order-image">
                                                     <img src="../assets/images/vegetable/product/4.png"
                                                         class="blur-up lazyload" alt="" />
                                                 </a>
 
                                                 <div class="order-wrap">
-                                                    <a href="product-left-thumbnail.html">
+                                                    <a href="/Productdetails">
                                                         <h3>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
                                                     </a>
                                                     <p class="text-content">The big cheese cream cheese pepper jack
@@ -926,7 +995,7 @@ const Account = () => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>$20.68</h5>
+                                                                <h5>₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -936,19 +1005,19 @@ const Account = () => {
                                                                 <div class="product-rating ms-2">
                                                                     <ul class="rating">
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star" class="fill"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                         <li>
-                                                                            <i data-feather="star"></i>
+                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -979,7 +1048,14 @@ const Account = () => {
                             <div class="tab-pane fade" id="pills-address" role="tabpanel">
                                 <div class="dashboard-address">
                                     <div class="title title-flex">
-                                       
+                                        <div>
+                                            <h2>My Address Book</h2>
+                                            <span class="title-leaf">
+                                                <svg class="icon-width bg-gray">
+                                                     <use href="../assets/svg/leaf.svg#leaf"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
 
                                         <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
                                             data-bs-toggle="modal" data-bs-target="#add-address"><i data-feather="plus"
@@ -1251,7 +1327,14 @@ const Account = () => {
                             <div class="tab-pane fade" id="pills-card" role="tabpanel">
                                 <div class="dashboard-card">
                                     <div class="title title-flex">
-                                       
+                                       <div>
+                                            <h2>My Card Details</h2>
+                                            <span class="title-leaf">
+                                                <svg class="icon-width bg-gray">
+                                                     <use href="../assets/svg/leaf.svg#leaf"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
 
                                         <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
                                             data-bs-toggle="modal" data-bs-target="#editCard"><i data-feather="plus"
@@ -1408,7 +1491,14 @@ const Account = () => {
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
                                 <div class="dashboard-profile">
-                                  
+                                  <div class="title">
+                                        <h2>My Profile</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                 <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
 
                                     <div class="profile-detail dashboard-bg-box">
                                         <div class="dashboard-title">
@@ -1420,19 +1510,19 @@ const Account = () => {
                                                 <div class="product-rating profile-rating">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1495,7 +1585,7 @@ const Account = () => {
                                                             <tr>
                                                                 <td>Phone Number :</td>
                                                                 <td>
-                                                                    <a href="javascript:void(0)"> +91 846 - 547 -
+                                                                    <a href=""> +91 846 - 547 -
                                                                         210</a>
                                                                 </td>
                                                             </tr>
@@ -1517,7 +1607,7 @@ const Account = () => {
                                                             <tr>
                                                                 <td>Email :</td>
                                                                 <td>
-                                                                    <a href="javascript:void(0)">vicki.pope@gmail.com
+                                                                    <a href="#">vicki.pope@gmail.com
                                                                         <span data-bs-toggle="modal"
                                                                             data-bs-target="#editProfile">Edit</span></a>
                                                                 </td>
@@ -1525,7 +1615,7 @@ const Account = () => {
                                                             <tr>
                                                                 <td>Password :</td>
                                                                 <td>
-                                                                    <a href="javascript:void(0)">●●●●●●
+                                                                    <a href="#">●●●●●●
                                                                         <span data-bs-toggle="modal"
                                                                             data-bs-target="#editProfile">Edit</span></a>
                                                                 </td>
@@ -1549,7 +1639,14 @@ const Account = () => {
 
                             <div class="tab-pane fade" id="pills-download" role="tabpanel">
                                 <div class="dashboard-download">
-                                  
+                                  <div class="title">
+                                        <h2>My Download</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
 
                                     <div class="download-detail dashboard-bg-box">
                                         <form>
@@ -2167,6 +2264,291 @@ const Account = () => {
         </div>
     </section>
     {/* <!-- User Dashboard Section End --> */}
+
+
+        {/* <!-- Edit Profile Start --> */}
+    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Edit Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="pname" value="Jack Jennas" />
+                                    <label for="pname">Full Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="email" class="form-control" id="email1" value="vicki.pope@gmail.com" />
+                                    <label for="email1">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input class="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
+                                        maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value =
+                                            this.value.slice(0, this.maxLength);" />
+                                    <label for="mobile">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address1"
+                                        value="8424 James Lane South San Francisco" />
+                                    <label for="address1">Add Address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address2" value="CA 94080" />
+                                    <label for="address2">Add Address 2</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect1">
+                                        <option selected>Choose Your Country</option>
+                                        <option value="kingdom">United Kingdom</option>
+                                        <option value="states">United States</option>
+                                        <option value="fra">France</option>
+                                        <option value="china">China</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="russian">Russian Federation</option>
+                                        <option value="malay">Malaysia</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="hong">Hong Kong SAR, China</option>
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="saudi">Saudi Arabia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="singa">Singapore</option>
+                                    </select>
+                                    <label for="floatingSelect">Country</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect">
+                                        <option selected>Choose Your City</option>
+                                        <option value="kingdom">India</option>
+                                        <option value="states">Canada</option>
+                                        <option value="fra">Dubai</option>
+                                        <option value="china">Los Angeles</option>
+                                        <option value="spain">Thailand</option>
+                                    </select>
+                                    <label for="floatingSelect">City</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address3" value="94080" />
+                                    <label for="address3">Pin Code</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Edit Profile End --> */}
+      {/* <!-- Edit Card Start --> */}
+    <div class="modal fade theme-modal" id="editCard" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel8">Edit Card</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="finame" value="Mark" />
+                                    <label for="finame">First Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="laname" value="Jecno" />
+                                    <label for="laname">Last Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect12">
+                                        <option selected>Card Type</option>
+                                        <option value="kingdom">Visa Card</option>
+                                        <option value="states">MasterCard Card</option>
+                                        <option value="fra">RuPay Card</option>
+                                        <option value="china">Contactless Card</option>
+                                        <option value="spain">Maestro Card</option>
+                                    </select>
+                                    <label for="floatingSelect12">Card Type</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light">Update Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Edit Card End --> */}
+      {/* <!-- Remove Profile Modal Start --> */}
+    <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p>The permission for the use/group, preview is inherited from the object, object will create a
+                            new permission for this object</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-target="#removeAddress" data-bs-toggle="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <h4 class="text-content">It's Removed.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Remove Profile Modal End --> */}
+        {/* <!-- Add address modal box start --> */}
+    <div class="modal fade theme-modal" id="add-address" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add a new address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" />
+                            <label for="fname">First Name</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" />
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email Address" />
+                            <label for="email">Email Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="address"
+                                style={{height:'100px'}}></textarea>
+                            <label for="address">Enter Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="pin" placeholder="Enter Pin Code" />
+                            <label for="pin">Pin Code</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Add address modal box end --> */}
     <Footer />
     </>
   )
