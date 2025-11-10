@@ -171,7 +171,7 @@ const Footer = () => {
                                     <a href="search.html" class="text-content">Search</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html" class="text-content">FAQ</a>
+                                    <a href="/Faq" class="text-content">FAQ</a>
                                 </li>
                             </ul>
                         </div>

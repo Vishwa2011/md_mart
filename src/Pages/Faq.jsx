@@ -128,21 +128,17 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne">
-                                        What is Fastkart and why was the name changed? <i
+                                        What is Fastkart and what do we offer? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Fastkart is leading the charge in transforming India's vast, unorganised
-                                            grocery landscape through cutting-edge technology and innovation. Blinkit is
-                                            India's largest and most convenient hyper-local delivery company, which
-                                            enables you to order grocery, fruits & vegetables, and other daily essential
-                                            products, directly via your mobile or web browser.</p>
-
-                                        <p>To know the reason why we changed our brand name from Grofers to Fastkart,
-                                            read this <span class="fw-bold">blog post.</span></p>
+                                        <p>
+                                            <strong>Fastkart</strong> is a modern eCommerce platform designed to make your daily shopping experience easier, faster, and more convenient. 
+                                            From groceries and household items to personal care and lifestyle products — we bring everything you need right to your doorstep.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -151,17 +147,17 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo">
-                                        How to remove the impurities of Graphene oxide? <i
+                                         How do I place an order on your website? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Discover, Explore & Understanding The Product Description Maecenas
-                                            ullamcorper eros libero, facilisis temper mi dapibus vel. Sed ut felis
-                                            ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit
-                                            tincidunt justo, nec pulvinar tortor elit vitae urna.</p>
+                                         <p>
+                                            Placing an order is simple! Just browse through our products, add your desired items to the cart, 
+                                            proceed to checkout, fill in your shipping details, and make a secure payment using any of our supported methods.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -170,16 +166,14 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree">
-                                        How long will delivery take? <i class="fa-solid fa-angle-down"></i>
+                                       What payment methods do you accept? <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Discover, Explore & Understanding The Product Description Maecenas
-                                            ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis
-                                            ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit
-                                            tincidunt justo, nec pulvinar tortor elit vitae urna.</p>
+                                        <p>We accept all major payment options including Credit/Debit Cards, UPI, Net Banking, Wallets, and Cash on Delivery (COD) 
+          depending on your delivery location.</p>
                                     </div>
                                 </div>
                             </div>
@@ -188,17 +182,15 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour">
-                                        How do I find my Windows Product key? <i class="fa-solid fa-angle-down"></i>
+                                        How long will it take to deliver my order? <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>The product key is located inside the product packaging, on the
-                                            receipt or confirmation page for a digital purchase or in a
-                                            confirmation e-mail that shows you purchased Windows. If you
-                                            purchased a digital copy from Microsoft Store, you can locate your
-                                            product key in your Account under Digital Content.</p>
+                                        <p>Delivery times depend on your location and product availability. 
+          Generally, we deliver within <strong>2-5 business days</strong>. 
+          You’ll receive regular updates via SMS or email once your order is dispatched.</p>
                                     </div>
                                 </div>
                             </div>
@@ -207,21 +199,14 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive">
-                                        I've downloaded an ISO file, now what? <i class="fa-solid fa-angle-down"></i>
+                                        How can I track my order? <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>You can use the ISO file to create bootable media for installation
-                                            or recovery. You can also install Windows on your current device
-                                            by opening the ISO file, selecting the Setup and following the
-                                            instructions.</p>
-
-                                        <p>To create bootable media such as a bootable USB drive or DVD, you
-                                            will need an ISO burning or mounting software. We recommend always
-                                            using a blank USB or blank DVD because contents may be deleted
-                                            when creating a bootable image.</p>
+                                        <p> Once your order is shipped, we’ll send you a tracking link via email or SMS. 
+          You can also log in to your account and view the real-time status of your order from the “My Orders” section.</p>
                                     </div>
                                 </div>
                             </div>
@@ -230,18 +215,16 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSix">
-                                        What's the difference between 32-bit and 64-bit versions of Windows? <i
+                                        What is your return and refund policy? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseSix" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>The terms 32-bit and 64-bit refer to the way a computer's
-                                            processor (also called a CPU) handles information. The 64-bit
-                                            version of Windows handles large amounts of random access memory
-                                            (RAM) more effectively than a 32-bit system. Not all devices can
-                                            run the 64-bit versions of Windows.</p>
+                                        <p>If you’re not satisfied with your purchase, you can request a return or replacement within 
+          <strong>7 days</strong> of delivery. Refunds will be processed once the item passes quality inspection. 
+          Please refer to our <a href="/Return">Return Policy</a> page for more details.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,21 +233,16 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingSeven">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSeven">
-                                        Questionnaire on online shopping behavior during COVID-19. <i
+                                        Is my personal information secure? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseSeven" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Fastkart is leading the charge in transforming India's vast, unorganised
-                                            grocery landscape through cutting-edge technology and innovation. Blinkit is
-                                            India's largest and most convenient hyper-local delivery company, which
-                                            enables you to order grocery, fruits & vegetables, and other daily essential
-                                            products, directly via your mobile or web browser.</p>
-
-                                        <p>To know the reason why we changed our brand name from Grofers to Fastkart,
-                                            read this <span class="fw-bold">blog post.</span></p>
+                                        <p>Absolutely! We take your privacy seriously. 
+          All your personal and payment information is encrypted and protected using the latest security standards. 
+          Learn more in our <a href="/Privacy">Privacy Policy</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -273,18 +251,15 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingEight">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseEight">
-                                        How Can I Get More Attention From Customers? <i
+                                         Do you offer discounts or loyalty programs? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseEight" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form, by injected humour, or
-                                            randomised words which don't look even slightly believable. If you are going
-                                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                                            embarrassing hidden in the middle of text. </p>
+                                        <p>Yes! We frequently offer seasonal discounts, promo codes, and loyalty rewards for our regular customers. 
+          Stay updated by subscribing to our newsletter or following us on social media.</p>
                                     </div>
                                 </div>
                             </div>
@@ -293,20 +268,14 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingNine">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseNine">
-                                        What is payment method? <i class="fa-solid fa-angle-down"></i>
+                                        How can I contact customer support? <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="collapseNine" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type
-                                            specimen book. It has survived not only five centuries, but also the leap
-                                            into electronic typesetting, remaining essentially unchanged. It was
-                                            popularised in the 1960s with the release of Letraset sheets containing
-                                            Lorem Ipsum passages, and more recently with desktop publishing software
-                                            like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                        <p>You can reach our support team through the <a href="/contact">Contact Us</a> page, 
+          email us at <strong>support@mdmart.com</strong>, or call our helpline between <strong>9 AM to 9 PM</strong>.</p>
                                     </div>
                                 </div>
                             </div>
