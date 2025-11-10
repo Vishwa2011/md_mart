@@ -18,6 +18,8 @@ import Account from './Pages/Account';
 import Login from './Pages/Login';
 import Privacy from './Pages/Privacy'
 import Termscondition from './Pages/Terms&condition'
+import Returnpolicy from './Pages/Returnpolicy'
+import ShippingPolicy from './Pages/Shippingpoilicy'
 import Mission from './Pages/Mission';
 import Vision from './Pages/Vision';
 
@@ -45,6 +47,8 @@ function App() {
        <Route path='/Login' element={<Login/>}/>
        <Route path='/Privacy' element={<Privacy/>}/>
        <Route path='/Terms' element={<Termscondition/>}/>
+       <Route path='/Return' element={<Returnpolicy/>}/>
+       <Route path='/Shipping' element={<ShippingPolicy/>}/>
        <Route path='/Mission' element={<Mission/>}/>
        <Route path='/Vision' element={<Vision/>}/>
   </Routes>
