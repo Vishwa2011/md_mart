@@ -132,6 +132,12 @@ const Footer = () => {
                                 <li>
                                     <a href="contact-us.html" class="text-content">Contact Us</a>
                                 </li>
+                                <li>
+                                    <a href="/Privacy" class="text-content">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/Terms" class="text-content">Terms & Conditions</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
