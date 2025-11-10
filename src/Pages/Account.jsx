@@ -150,7 +150,7 @@ const Account = () => {
                             <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
                                 <div class="dashboard-home">
                               <div class="title">
-                                        <h2>My Dashboard</h2>
+                                        <h2>My Account</h2>
                                       <span className="title-leaf">
                                      <svg className="icon-width bg-gray">
                                        <use href="../assets/svg/leaf.svg#leaf"></use>
