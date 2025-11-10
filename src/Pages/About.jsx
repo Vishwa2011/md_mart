@@ -192,7 +192,7 @@ const About = () => {
         <div class="container-fluid-lg">
             <div class="about-us-title text-center">
                 <h4 class="text-content">Our Creative Team</h4>
-                <h2 class="center">fastkart team member</h2>
+                <h2 class="center">MD  team member</h2>
             </div>
             <div class="row">
                 <div class="col-12">

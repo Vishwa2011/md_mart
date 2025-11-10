@@ -62,7 +62,23 @@ const Productdetails = () => {
                                                 <div class="slider-image">
                                                     <img src="../assets/images/fruit/product/1.png" id="img-1"
                                                         data-zoom-image="../assets/images/fruit/product/1.png" class="
-                                                        img-fluid image_zoom_cls-0 blur-up lazyload" alt="" />
+                                                        img-fluid image_zoom_cls-0 blur-up lazyload" alt=""  style={{
+    zIndex: 999,
+    overflow: 'hidden',
+    marginLeft: 0,
+    marginTop: 0,
+    backgroundPosition: '-1347.46px -1581.86px',
+    width: 507,
+    height: 507,
+    float: 'left',
+    cursor: 'crosshair',
+    backgroundRepeat: 'no-repeat',
+    position: 'absolute',
+    backgroundImage: 'url("../assets/images/fashion/product/24.jpg")',
+    top: 0,
+    left: 0,
+ 
+  }}/>
                                                 </div>
                                             </div>
 
@@ -219,6 +235,8 @@ const Productdetails = () => {
         </li>
     </ul>
 </div>
+
+
 
                                 <div class="time deal-timer product-deal-timer mx-md-0 mx-auto" id="clockdiv-1"
                                     data-hours="1" data-minutes="2" data-seconds="3">
