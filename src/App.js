@@ -22,6 +22,7 @@ import Returnpolicy from './Pages/Returnpolicy'
 import ShippingPolicy from './Pages/Shippingpoilicy'
 import Mission from './Pages/Mission';
 import Vision from './Pages/Vision';
+import Forgot from './Pages/Forgot';
 
 
 
@@ -51,6 +52,7 @@ function App() {
        <Route path='/Shipping' element={<ShippingPolicy/>}/>
        <Route path='/Mission' element={<Mission/>}/>
        <Route path='/Vision' element={<Vision/>}/>
+       <Route path="/Forgot" element={<Forgot />}/>
   </Routes>
 
   {/* <!-- Tap to top and theme setting button start --> */}
