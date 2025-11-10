@@ -31,6 +31,21 @@ const Account = () => {
                 $(this).prev().val(+$(this).prev().val() + 1);
               }
             });
+            // Ensure only one address box is selected and radio is checked
+document.querySelectorAll('.address-box').forEach(box => {
+    box.addEventListener('click', function() {
+        // Remove active class from all boxes
+        document.querySelectorAll('.address-box').forEach(b => b.classList.remove('active'));
+        
+        // Add active class to clicked box
+        this.classList.add('active');
+
+        // Check the radio button inside clicked box
+        const radio = this.querySelector('input[type=radio]');
+        if(radio) radio.checked = true;
+    });
+});
+
           }, []); // only run once
   return (
     <>

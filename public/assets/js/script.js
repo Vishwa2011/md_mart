@@ -362,6 +362,7 @@ $(".add-cart-box .btn-close").click(function () {
 /*=====================
    17. active class Js
    ==========================*/
+   
 $(".product-package .select-package li a").click(function () {
     $("li a").removeClass("active");
     $(this).addClass("active");

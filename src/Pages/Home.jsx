@@ -332,36 +332,28 @@ export default function Home() {
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
                                     <div class="timer" id="clockdiv-4" data-hours="1" data-minutes="2" data-seconds="3">
-                                        <ul>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="days">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="hours">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="minutes">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="seconds">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                      <ul>
+        <li>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
+            </div>
+        </li>
+    </ul>
                                     </div>
                                 </div>
                             </div>
@@ -408,36 +400,28 @@ export default function Home() {
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
                                     <div class="timer" id="clockdiv-1" data-hours="1" data-minutes="2" data-seconds="3">
-                                        <ul>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="days">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="hours">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="minutes">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="seconds">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                      <ul>
+        <li>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
+            </div>
+        </li>
+    </ul>
                                     </div>
                                 </div>
                             </div>
@@ -485,35 +469,27 @@ export default function Home() {
                                     <h4 class="offer">Hurry up offer end in</h4>
                                     <div class="timer" id="clockdiv-2" data-hours="1" data-minutes="2" data-seconds="3">
                                         <ul>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="days">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="hours">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="minutes">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="seconds">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+        <li>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
+            </div>
+        </li>
+    </ul>
                                     </div>
                                 </div>
                             </div>
@@ -559,36 +535,28 @@ export default function Home() {
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
                                     <div class="timer" id="clockdiv-3" data-hours="1" data-minutes="2" data-seconds="3">
-                                        <ul>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="days">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="hours">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="minutes">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="counter">
-                                                    <div class="seconds">
-                                                        <h6></h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                     <ul>
+        <li>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
+            </div>
+        </li>
+        <li>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
+            </div>
+        </li>
+    </ul>
                                     </div>
                                 </div>
                             </div>
@@ -6893,7 +6861,9 @@ export default function Home() {
         </div>
 
         <div class="button-group">
-            <button class="btn privacy-button">Privacy Policy</button>
+           <a href="/Privacy">
+             <button class="btn privacy-button" >Privacy Policy</button>
+            </a>
             <button class="btn ok-button">OK</button>
         </div>
     </div>

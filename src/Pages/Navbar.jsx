@@ -48,7 +48,7 @@ export default function Navbar() {
         <div>
           <div className="timer-notification text-center">
             <h6>
-              <strong className="me-1">Welcome to Fastkart!</strong> Wrap new
+              <strong className="me-1">Welcome to MD Mart!</strong> Wrap new
               offers/gift every single day on Weekends.
               <strong className="ms-1"> New Coupon Code: Fast024 </strong>
             </h6>
@@ -186,7 +186,7 @@ export default function Navbar() {
                                        
 
                                         <li className="onhover-dropdown">
-                                            <a href="/Wishlist" className="header-icon swap-icon">
+                                            <a href="/Wishlist" className="header-icon swap-icon" title="Wishlist">
                                                 <i className="iconly-Heart icli"></i>
                                             </a>
 
@@ -252,9 +252,14 @@ export default function Navbar() {
                                                 </div>
                                             </div>
                                         </li>
+    <li className="onhover-dropdown">
+  <a href="/login" className="header-icon swap-icon" title="Log in">
+    <i className="fa-solid fa-right-to-bracket"></i> {/* Login icon */}
+  </a>
+</li>
 
                                                  <li className="onhover-dropdown">
-                                            <a href="/Account" className="header-icon swap-icon">
+                                            <a href="/Account" className="header-icon swap-icon" title=" My Account">
                                        <i class="fa-solid fa-user-tie"></i>
                                             </a>
 

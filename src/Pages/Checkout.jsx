@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Checkout = () => {
+    
   return (
     <>
      <Navbar />
@@ -631,8 +632,10 @@ const Checkout = () => {
                                 </li>
                             </ul>
                         </div>
+<a href="/Ordersuccess">
 
                         <button class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Place Order</button>
+</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
  /**=====================
      zoom js
 ==========================**/
+  $(document).ready(function () {
  if ($(window).width() > 991) {
      $('.product-main').on('afterChange', function (event, slick, currentSlide, nextSlide) {
          var img_url_temp = $(this).find('img').attr('src');
@@ -25,3 +26,4 @@
          });
      }, 100);
  }
+ });

@@ -31,6 +31,17 @@ const Productdetails = () => {
             $(this).prev().val(+$(this).prev().val() + 1);
           }
         });
+        $(".product-package .select-package li").click(function () {
+    // Remove active class from all
+    $(".product-package .select-package li").removeClass("active");
+
+    // Add active class to clicked li
+    $(this).addClass("active");
+
+    // Select the radio input inside clicked li
+    $(this).find('input[type=radio]').prop('checked', true);
+});
+
       }, []); // only run once
   return (
     <>
@@ -182,32 +193,32 @@ const Productdetails = () => {
                                         goodness of this summer fruit.</p>
                                 </div>
 
-                                <div class="product-package">
-                                    <div class="product-title">
-                                        <h4>Weight </h4>
-                                    </div>
+                             <div class="product-package">
+    <div class="product-title">
+        <h4>Weight</h4>
+    </div>
 
-                                    <ul class="rectangle select-package">
-                                        <li class="form-check">
-                                            <input class="form-check-input" checked type="radio" name="size" id="small" />
-                                            <label class="form-check-label" for="small">
-                                                <span>1 KG</span>
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="radio" name="size" id="medium" />
-                                            <label class="form-check-label" for="medium">
-                                                <span>2 KG</span>
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="radio" name="size" id="large" />
-                                            <label class="form-check-label" for="large">
-                                                <span>3 KG</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
+    <ul class="rectangle select-package">
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="small" checked />
+            <label class="form-check-label" for="small">
+                <span>1 KG</span>
+            </label>
+        </li>
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="medium" />
+            <label class="form-check-label" for="medium">
+                <span>2 KG</span>
+            </label>
+        </li>
+        <li class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="large" />
+            <label class="form-check-label" for="large">
+                <span>3 KG</span>
+            </label>
+        </li>
+    </ul>
+</div>
 
                                 <div class="time deal-timer product-deal-timer mx-md-0 mx-auto" id="clockdiv-1"
                                     data-hours="1" data-minutes="2" data-seconds="3">
