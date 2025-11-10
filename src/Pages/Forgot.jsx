@@ -44,7 +44,7 @@ const Forgot = () => {
                     <div class="d-flex align-items-center justify-content-center h-100">
                         <div class="log-in-box">
                             <div class="log-in-title">
-                                <h3>Welcome To Fastkart</h3>
+                                <h3>Welcome To MD Mart</h3>
                                 <h4>Forgot your password</h4>
                             </div>
 

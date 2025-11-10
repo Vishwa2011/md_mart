@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Termscondition = ({
-  companyName = 'Fastkart',
+  companyName = 'MD Mart',
   effectiveDate = 'November 10, 2025',
 }) => {
   return (
@@ -193,8 +193,8 @@ const Termscondition = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:fastkart@gmail.com" className="underline">
-                fastkart@gmail.com
+              <a href="mailto:MD Mart@gmail.com" className="underline">
+                MD Mart@gmail.com
               </a>
               <br />
               Address: 123 Market Street, Surat, Gujarat, India

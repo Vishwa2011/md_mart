@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const ReturnPolicy = ({
-  companyName = 'Fastkart',
+  companyName = 'MD Mart',
   effectiveDate = 'November 10, 2025',
 }) => {
   return (
@@ -55,8 +55,8 @@ const ReturnPolicy = ({
             <h3>3. Return Process</h3>
             <p>
               To initiate a return, please contact our support team at{' '}
-              <a href="mailto:returns@fastkart.com" className="underline">
-                returns@fastkart.com
+              <a href="mailto:returns@MD Mart.com" className="underline">
+                returns@MD Mart.com
               </a>{' '}
               with your order details and reason for return.
             </p>
@@ -89,8 +89,8 @@ const ReturnPolicy = ({
             <p>
               We only replace items if they are defective or damaged. If you need to
               exchange an item, contact us at{' '}
-              <a href="mailto:support@fastkart.com" className="underline">
-                support@fastkart.com
+              <a href="mailto:support@MD Mart.com" className="underline">
+                support@MD Mart.com
               </a>{' '}
               with your order number and details.
             </p>
@@ -113,8 +113,8 @@ const ReturnPolicy = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:support@fastkart.com" className="underline">
-                support@fastkart.com
+              <a href="mailto:support@MD Mart.com" className="underline">
+                support@MD Mart.com
               </a>
             </address>
           </section>

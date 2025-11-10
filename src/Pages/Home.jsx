@@ -20,9 +20,12 @@ export default function Home() {
                                 <h1 className="fw-bold w-100">100% Fresh</h1>
                                 <h3 className="text-content fw-light">Fruit & Vegetables</h3>
                                 <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
-                                <button onclick="location.href = '/Shop';"
-                                    className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
-                                    Now</button>
+                                <a href="/Shop">
+
+                                    <button
+                                        className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
+                                        Now</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -38,8 +41,11 @@ export default function Home() {
                             <div>
                                 <h4 className="fw-bold">Fresh & 100% Organic</h4>
                                 <h5 className="text-center">farmer's market</h5>
+                                   <a href="/Shop">
+                                   
                                 <button className="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
-                                    onclick="location.href = '/Shop';">Shop Now</button>
+                                  >Shop Now</button>
+                                   </a>
                             </div>
                         </div>
                     </div>
@@ -224,8 +230,11 @@ export default function Home() {
                                     <h6>Fresh Vegetable</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = '/Shop';"
+                                       <a href="/Shop">
+                                       
+                                    <button 
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                       </a>
                                 </div>
                             </div>
                         </div>
@@ -239,8 +248,11 @@ export default function Home() {
                                     <h6>Organic Vegetable</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = '/Shop';"
+                                       <a href="/Shop">
+                                       
+                                    <button 
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                       </a>
                                 </div>
                             </div>
                         </div>
@@ -254,8 +266,11 @@ export default function Home() {
                                     <h6>Fruit & Vegetables</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = '/Shop';"
+                                       <a href="/Shop">
+                                       
+                                    <button
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                       </a>
                                 </div>
                             </div>
                         </div>
@@ -269,9 +284,12 @@ export default function Home() {
                                     <h6>Fruit & Vegetables</h6>
                                 </div>
                                 <div class="offer-box">
-                                    <button onclick="location.href = '/Shop';"
+                                       <a href="/Shop">
+                                       
+                                    <button 
                                         class="btn-category btn theme-bg-color text-white">View
                                         Offer</button>
+                                       </a>
                                 </div>
                             </div>
                         </div>
@@ -3942,8 +3960,11 @@ export default function Home() {
                                 <h6 class="ls-expanded text-uppercase">Premium</h6>
                                 <h3 class="mb-sm-3 mb-1">Fresh Vegetable & Daily Eating</h3>
                                 <h4>Get Extra 50% Off</h4>
+                                   <a href="/Shop">
+                                   
                                 <button class="btn theme-color bg-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                    onclick="location.href = '/Shop';">Shop Now</button>
+                                   >Shop Now</button>
+                                   </a>
                             </div>
                         </div>
                     </div>
@@ -3957,8 +3978,11 @@ export default function Home() {
                                 <h6 class=" ls-expanded text-uppercase">available</h6>
                                 <h3 class="mb-sm-3 mb-1">100% Natural & Healthy Fruits</h3>
                                 <h4 class="text-content">Weekend Special</h4>
+                                   <a href="/Shop">
+                                   
                                 <button class="btn theme-bg-color text-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                    onclick="location.href = '/Shop';">Shop Now</button>
+                                    >Shop Now</button>
+                                   </a>
                             </div>
                         </div>
                     </div>
@@ -5363,9 +5387,12 @@ export default function Home() {
                             <div>
                                 <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
                                 <h2 class="my-3">100% Organic Best Quality Best Price</h2>
-                                <h4 class="text-content fw-300">Best Fastkart Food Quality</h4>
+                                <h4 class="text-content fw-300">Best MD Mart Food Quality</h4>
+                                   <a href="/Shop">
+                                   
                                 <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
-                                    onclick="location.href = '/Shop';">Shop Now</button>
+                                    >Shop Now</button>
+                                   </a>
                             </div>
                         </div>
                     </div>

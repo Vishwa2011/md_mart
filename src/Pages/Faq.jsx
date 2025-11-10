@@ -129,7 +129,7 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne">
-                                        What is Fastkart and what do we offer? <i
+                                        What is MD Mart and what do we offer? <i
                                             class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
@@ -137,7 +137,7 @@ const Faq = () => {
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            <strong>Fastkart</strong> is a modern eCommerce platform designed to make your daily shopping experience easier, faster, and more convenient. 
+                                            <strong>MD Mart</strong> is a modern eCommerce platform designed to make your daily shopping experience easier, faster, and more convenient. 
                                             From groceries and household items to personal care and lifestyle products — we bring everything you need right to your doorstep.
                                         </p>
                                     </div>
