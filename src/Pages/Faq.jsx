@@ -116,7 +116,7 @@ const Faq = () => {
                         <h2>Frequently Asked Questions</h2>
                         <p>We are answering most frequent questions. No worries if you not find exact one. You can find
                             out more by searching or continuing clicking button below or directly <a
-                                href="contact-us.html" class="theme-color text-decoration-underline">contact our
+                                href="/Contact" class="theme-color text-decoration-underline">contact our
                                 support.</a></p>
                     </div>
                 </div>

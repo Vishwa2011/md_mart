@@ -496,7 +496,7 @@ $('.slider-4-1').slick({
     },
     ]
 });
-
+$(document).ready(function () {
 $('.slider-4-2').slick({
     arrows: false,
     infinite: true,
@@ -530,6 +530,7 @@ $('.slider-4-2').slick({
         }
     },
     ]
+});
 });
 $(document).ready(function () {
 $('.slider-4-half').slick({
