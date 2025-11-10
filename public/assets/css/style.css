@@ -47274,7 +47274,7 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 }
 
 .termsandconditions-section:hover {
-  border-left: 5px solid #6366f1;
+  border-left: 5px solid #0da487;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
@@ -47332,7 +47332,7 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 }
 
 .termsandconditions-section a:hover {
-  color: #4338ca;
+  color: #0da487;
   text-decoration: underline;
 }
 

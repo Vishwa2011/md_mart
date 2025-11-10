@@ -1,10 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import './Terms.css'
 
-const Terms = ({
-  companyName = 'Your Company',
+const Termscondition = ({
+  companyName = 'Fastkart',
   effectiveDate = 'November 10, 2025',
 }) => {
   return (
@@ -20,90 +19,151 @@ const Terms = ({
           </p>
           <p>
             Welcome to {companyName}! These Terms & Conditions outline the rules and
-            regulations for the use of our website and services.
+            regulations for the use of our website and services. By accessing this site,
+            you agree to these terms in full.
           </p>
         </header>
 
         <article className="termsandconditions-article">
+
           <section className="termsandconditions-section">
             <h3>1. Acceptance of Terms</h3>
             <p>
-              By accessing this website, you agree to comply with these terms and
-              all applicable laws and regulations. If you do not agree, you are
-              prohibited from using this site.
+              By using {companyName}’s website, you confirm that you accept these terms
+              and agree to comply with them. If you disagree with any part of the terms,
+              please do not use our services.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>2. Use License</h3>
+            <h3>2. User Accounts</h3>
+            <p>
+              To access certain features of the website, you may be required to create
+              an account. You are responsible for maintaining the confidentiality of
+              your login credentials and for all activities under your account.
+            </p>
             <ul>
+              <li>You must provide accurate, current, and complete information.</li>
               <li>
-                Permission is granted to temporarily download one copy of the materials
-                on this site for personal, non-commercial use only.
-              </li>
-              <li>
-                This is a license grant, not a transfer of title, and under this license
-                you may not modify or copy materials, use them commercially, or remove
-                proprietary notations.
+                {companyName} reserves the right to suspend or terminate your account
+                if any information provided is inaccurate or misleading.
               </li>
             </ul>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>3. Disclaimer</h3>
+            <h3>3. Purchases & Payments</h3>
             <p>
-              All materials on {companyName}’s website are provided "as is." We make no
-              warranties, expressed or implied, and hereby disclaim all other warranties,
-              including implied warranties of merchantability or fitness for a
-              particular purpose.
+              All purchases made through {companyName} are subject to product availability
+              and confirmation of the order price. We accept various online payment methods.
+            </p>
+            <ul>
+              <li>Prices are subject to change without prior notice.</li>
+              <li>
+                Payment must be completed before an order is processed and shipped.
+              </li>
+              <li>
+                You agree to provide valid payment information and authorize us to
+                charge the specified amount.
+              </li>
+            </ul>
+          </section>
+
+          <section className="termsandconditions-section">
+            <h3>4. Shipping & Delivery</h3>
+            <p>
+              We strive to deliver your products on time, but delivery times may vary
+              due to factors beyond our control. Any estimated delivery date is not
+              guaranteed.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>4. Limitations</h3>
+            <h3>5. Returns & Refunds</h3>
             <p>
-              In no event shall {companyName} or its suppliers be liable for any damages
-              arising out of the use or inability to use the materials on the site, even
-              if we or an authorized representative has been notified of the possibility
-              of such damage.
+              If you are not satisfied with your purchase, you may request a return or
+              exchange within the time frame specified in our Return Policy. The product
+              must be unused and in its original condition.
+            </p>
+            <p>
+              Refunds will be processed using the original payment method, subject to
+              verification and approval.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>5. Revisions & Errors</h3>
+            <h3>6. Intellectual Property Rights</h3>
             <p>
-              The materials appearing on {companyName}’s website could include technical,
-              typographical, or photographic errors. We do not warrant that any materials
-              are accurate or complete.
+              All content on this site, including text, graphics, logos, images, and
+              software, is the property of {companyName} or its content suppliers and
+              protected by copyright and trademark laws.
+            </p>
+            <p>
+              You may not reproduce, distribute, or exploit any part of the site
+              without written permission from {companyName}.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>6. Links</h3>
+            <h3>7. Prohibited Activities</h3>
+            <ul>
+              <li>Using the site for any unlawful purpose.</li>
+              <li>
+                Attempting to gain unauthorized access to our systems or data.
+              </li>
+              <li>
+                Posting or transmitting any harmful, offensive, or misleading content.
+              </li>
+              <li>Disrupting or interfering with site functionality or security.</li>
+            </ul>
+          </section>
+
+          <section className="termsandconditions-section">
+            <h3>8. Third-Party Links</h3>
             <p>
-              {companyName} is not responsible for the contents of any linked sites. The
-              inclusion of any link does not imply endorsement by us.
+              Our website may contain links to third-party websites that are not owned
+              or controlled by {companyName}. We are not responsible for the content,
+              policies, or practices of such websites.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>7. Modifications</h3>
+            <h3>9. Disclaimer</h3>
             <p>
-              We may revise these terms at any time without notice. By using this site,
-              you agree to the current version of these Terms & Conditions.
+              The materials on {companyName}’s website are provided "as is" without
+              warranties of any kind. We make no representations or guarantees regarding
+              the accuracy or reliability of the information.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>8. Governing Law</h3>
+            <h3>10. Limitation of Liability</h3>
             <p>
-              These terms shall be governed by and construed in accordance with the laws
-              of your jurisdiction, without regard to conflict of law provisions.
+              In no event shall {companyName} or its affiliates be liable for any direct,
+              indirect, or consequential damages resulting from your use of the website
+              or services.
             </p>
           </section>
 
           <section className="termsandconditions-section">
-            <h3>9. Contact Us</h3>
+            <h3>11. Modifications to Terms</h3>
+            <p>
+              We may update or revise these Terms & Conditions at any time. Updated
+              versions will be posted on this page with a revised effective date.
+            </p>
+          </section>
+
+          <section className="termsandconditions-section">
+            <h3>12. Governing Law</h3>
+            <p>
+              These terms shall be governed by and interpreted in accordance with the
+              laws of India. Any disputes will be subject to the jurisdiction of courts
+              located in Surat, Gujarat.
+            </p>
+          </section>
+
+          <section className="termsandconditions-section">
+            <h3>13. Contact Us</h3>
             <p>
               If you have any questions about these Terms & Conditions, please contact us:
             </p>
@@ -111,9 +171,11 @@ const Terms = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:legal@yourcompany.com" className="underline">
-                legal@yourcompany.com
+              <a href="mailto:fastkart@gmail.com" className="underline">
+                fastkart@gmail.com
               </a>
+              <br />
+              Address: 123 Market Street, Surat, Gujarat, India
             </address>
           </section>
         </article>
@@ -125,4 +187,4 @@ const Terms = ({
   )
 }
 
-export default Terms
+export default Termscondition
