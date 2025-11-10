@@ -397,10 +397,12 @@ function readURL(uploader) {
 /*=====================
    21. Wishlist box remove js
    ==========================*/
+     $(document).ready(function () {
 $(".close_button").click(function () {
     $(this).closest(".product-box-contain").fadeOut("slow", function () {
         $(this).closest(".product-box-contain").remove();
     });
+});
 });
 
 /*=====================

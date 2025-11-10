@@ -736,7 +736,7 @@ export default function Navbar() {
                                             <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Blog">Blog</a>
                                         </li>
                                         <li className="nav-item ">
-                                            <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Contactus">Contact Us</a>
+                                            <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Contact">Contact Us</a>
                                         </li>
 
                                      

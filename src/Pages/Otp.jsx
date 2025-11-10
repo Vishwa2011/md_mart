@@ -16,7 +16,7 @@ const Otp = () => {
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
@@ -68,7 +68,7 @@ const Otp = () => {
                                         It</a></h5>
                             </div>
 
-                            <button onclick="location.href = 'index.html';" class="btn btn-animation w-100 mt-3"
+                            <button onclick="location.href = '/';" class="btn btn-animation w-100 mt-3"
                                 type="submit">Validate</button>
                         </div>
                     </div>

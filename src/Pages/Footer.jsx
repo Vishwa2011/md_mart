@@ -58,7 +58,7 @@ const Footer = () => {
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="footer-logo">
                             <div class="theme-logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img src="../assets/images/logo/1.png" class="blur-up lazyload" alt="" />
                                 </a>
                             </div>
@@ -118,7 +118,7 @@ const Footer = () => {
                         <div class="footer-contain">
                             <ul>
                                 <li>
-                                    <a href="index.html" class="text-content">Home</a>
+                                    <a href="/" class="text-content">Home</a>
                                 </li>
                                 <li>
                                     <a href="shop-left-sidebar.html" class="text-content">Shop</a>

@@ -16,7 +16,7 @@ const Cart = () => {
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
@@ -375,7 +375,7 @@ const Cart = () => {
                                 </li>
 
                                 <li>
-                                    <button onclick="location.href = 'index.html';"
+                                    <button onclick="location.href = '/';"
                                         class="btn btn-light shopping-button text-dark">
                                         <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</button>
                                 </li>
