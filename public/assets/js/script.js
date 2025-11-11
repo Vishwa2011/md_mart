@@ -98,6 +98,7 @@
 /*=====================
     03. Footer function js
 ==========================*/
+$(document).ready(function () {
 var contentwidth = $(window).width();
 if (contentwidth < "576") {
     $(".footer-title h4").append(
@@ -131,7 +132,7 @@ if (contentwidth < "576") {
 } else {
     $(".footer-contact, .footer-contain").show();
 }
-
+});
 /*=====================
   04. mobile menu active class js
    ==========================*/
@@ -429,6 +430,7 @@ $(".close-notification").click(function () {
 /*=====================
     24. category box js
 ==========================*/
+$(document).ready(function () {
 var contentwidth = $(window).width();
 if (contentwidth < "767") {
     $(".onhover-category-list .category-name").append('<span class="according-menu">+</span>');
@@ -452,7 +454,7 @@ if (contentwidth < "767") {
     });
     $(".accordion-box").hide();
 }
-
+});
 /*=====================
    25. Sidebar Hide & Show Js
    ==========================*/
