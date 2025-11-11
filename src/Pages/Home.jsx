@@ -6723,7 +6723,7 @@ export default function Home() {
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
+                                <img src="../assets/images/veg-3/banner/Banner4.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
