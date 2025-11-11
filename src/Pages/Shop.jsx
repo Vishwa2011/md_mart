@@ -44,15 +44,15 @@ const Shop = () => {
                     <div class="left-box wow fadeInUp">
                         <div class="shop-left-sidebar">
                             <ul class="nav nav-pills mb-3 custom-nav-tab" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
+                                {/* <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-vegetables" data-bs-toggle="pill"
                                         data-bs-target="#pills-vegetable" type="button" role="tab">Vegetables & Fruit
                                         <img src="../assets/svg/1/vegetable.svg" class="blur-up lazyload"
                                             alt="" /></button>
-                                </li>
+                                </li> */}
 
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-beverages" data-bs-toggle="pill"
+                                    <button class="nav-link active" id="pills-beverages" data-bs-toggle="pill"
                                         data-bs-target="#pills-beverages" type="button" role="tab">Beverages <img
                                             src="../assets/svg/1/cup.svg" class="blur-up lazyload" alt="" /></button>
                                 </li>
@@ -88,11 +88,7 @@ const Shop = () => {
                                             src="../assets/svg/1/grocery.svg" class="blur-up lazyload" alt="" /></button>
                                 </li>
 
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-wines" data-bs-toggle="pill"
-                                        data-bs-target="#pills-wines" type="button" role="tab">Wines & Alcohol Drinks
-                                        <img src="../assets/svg/1/drink.svg" class="blur-up lazyload" alt="" /></button>
-                                </li>
+                               
 
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-milk" data-bs-toggle="pill"
@@ -181,20 +177,18 @@ const Shop = () => {
                         <div class="filter-category">
                             <ul>
                                 <li>
-                                    <a href="">Vegetable</a>
+                                    <a href="">Beverages</a>
                                 </li>
                                 <li>
-                                    <a href="">Fruit</a>
+                                    <a href="">Frozen Foods</a>
                                 </li>
                                 <li>
-                                    <a href="">Fresh</a>
+                                    <a href="">Biscuits & Snack</a>
                                 </li>
                                 <li>
-                                    <a href="">Milk</a>
+                                    <a href="">Milk & Dairies</a>
                                 </li>
-                                <li>
-                                    <a href="">Meat</a>
-                                </li>
+                              
                             </ul>
                         </div>
                     </div>
