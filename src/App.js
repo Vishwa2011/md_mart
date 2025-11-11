@@ -30,6 +30,14 @@ import Signup from './Pages/Signup';
 function App() {
   return (
   <>
+   <div class="fullpage-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/Shop' element={<Shop/>}/>
