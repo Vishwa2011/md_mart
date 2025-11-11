@@ -252,13 +252,13 @@ export default function Navbar() {
                                                 </div>
                                             </div>
                                         </li>
-    <li className="onhover-dropdown">
-  <a href="/login" className="header-icon swap-icon" title="Log in">
-    <i className="fa-solid fa-right-to-bracket"></i> {/* Login icon */}
-  </a>
-</li>
+                                            <li >
+                                          <a href="/login" className="header-icon swap-icon" title="Log in">
+                                            <i className="fa-solid fa-right-to-bracket"></i> {/* Login icon */}
+                                          </a>
+                                        </li>
 
-                                                 <li className="onhover-dropdown">
+                                                 <li >
                                             <a href="/Account" className="header-icon swap-icon" title=" My Account">
                                        <i class="fa-solid fa-user-tie"></i>
                                             </a>
