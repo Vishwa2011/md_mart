@@ -5411,7 +5411,7 @@ export default function Home() {
             <div class="row">
                 <div class="col-12">
                     <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                        <img src="../assets/images/veg-3/banner/Banner1.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
+                        <img src="../assets/images/veg-3/banner/Main-Banner.png" class="img-fluid bg-img" alt="Image Size : 1590 X 428" />
                         <div class="banner-detail p-center text-dark  text-center p-0">
                             <div>
                                 <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
@@ -5449,7 +5449,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/banner/Banner3.jpg" class="img-fluid" alt="Image Size : 510 X 232" />
+                                <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5518,7 +5518,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/18.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5585,7 +5585,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5650,7 +5650,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5717,7 +5717,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5782,7 +5782,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5849,7 +5849,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/10.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/7.jpg" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -5989,7 +5989,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/13.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -6058,7 +6058,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -6125,7 +6125,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/8.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -6190,7 +6190,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/16.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -6660,7 +6660,7 @@ export default function Home() {
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/blog/1.jpg" class="img-fluid bg-img" alt="" />
+                                <img src="../assets/images/veg-3/banner/Banner1.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
@@ -6681,7 +6681,7 @@ export default function Home() {
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/blog/2.jpg" class="img-fluid bg-img" alt="" />
+                                <img src="../assets/images/veg-3/banner/Banner3.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
@@ -6702,7 +6702,7 @@ export default function Home() {
                     <div class="blog-box ratio_50">
                         <div class="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/blog/3.jpg" class="img-fluid bg-img" alt="" />
+                                <img src="../assets/images/veg-3/banner/Banner4.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
