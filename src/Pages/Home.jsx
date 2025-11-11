@@ -8,85 +8,298 @@ export default function Home() {
     <div>
         <Navbar />
             {/* <!-- home section start --> */}
-    <section className="home-section-2 home-section-small section-b-space">
-        <div className="container-fluid-lg">
-            <div className="row g-4">
-                <div className="col-xxl-6 col-md-8">
-                    <div className="home-contain h-100">
-                        <img src="../assets/images/Hero-img.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 780 X 534" /> 
-                        <div className="home-detail home-width p-center-left ">
-                            <div>
-                                <h6 className="ls-expanded theme-color">ORGANIC</h6>
-                                <h1 className="fw-bold w-100">100% Fresh</h1>
-                                <h3 className="text-content fw-light">Fruit & Vegetables</h3>
-                                <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
-                                <a href="/Shop">
+<section
+  className="home-section-2 home-section-small section-b-space"
+  style={{ position: "relative", zIndex: 1 }}
+>
+    <div className="container-fluid-lg">
+        <div className="row g-4">
+            {/* LEFT MAIN BANNER */}
+            <div className="col-xxl-6 col-md-8">
+                <div className="home-contain h-100 position-relative" style={{ position: "relative" }}>
+                    <img
+                        src="../assets/images/Hero-img.jpg"
+                        className="img-fluid bg-img blur-up lazyload"
+                        alt="Image Size : 780 X 534"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                    {/* overlay */}
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            backgroundColor: "rgba(0,0,0,0.4)",
+                            zIndex: 1,
+                        }}
+                    ></div>
 
-                                    <button
-                                        className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
-                                        Now</button>
-                                </a>
-                            </div>
+                    <div
+                        className="home-detail home-width p-center-left"
+                        style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "10%",
+                            transform: "translateY(-50%)",
+                            zIndex: 2,
+                            color: "white",
+                        }}
+                    >
+                        <div>
+                            <h6
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    letterSpacing: "2px",
+                                    color: "#a8e063",
+                                }}
+                            >
+                                ORGANIC
+                            </h6>
+                            <h1
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontWeight: 700,
+                                    fontSize: "48px",
+                                    margin: "10px 0",
+                                }}
+                            >
+                                100% Fresh
+                            </h1>
+                            <h3
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontWeight: 400,
+                                    fontSize: "24px",
+                                }}
+                            >
+                                Fruit & Vegetables
+                            </h3>
+                            <p
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontSize: "14px",
+                                    marginTop: "10px",
+                                    color:'#fff'
+                                }}
+                            >
+                                Free shipping on all your order. we deliver you enjoy
+                            </p>
+                            <a href="/Shop">
+                                <button
+                                    className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation"
+                                    style={{
+                                        fontFamily: "'Poppins', sans-serif",
+                                        fontWeight: 500,
+                                        fontSize: "15px",
+                                        backgroundColor: "#a8e063",
+                                        color: "#000",
+                                        border: "none",
+                                        padding: "10px 25px",
+                                        borderRadius: "6px",
+                                        marginTop: "15px",
+                                        cursor: "pointer",
+                                    }}
+                                >
+                                    Shop Now
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className="col-xxl-3 col-md-4 ratio_medium d-md-block d-none">
-                    <div className="home-contain home-small h-100">
-                        <div className="h-100">
-                            <img src="../assets/images/Banner1.jpg" className="img-fluid bg-img blur-up lazyload"
-                                alt="Image Size : 375 X 534" />
-                        </div>
-                        <div className="home-detail text-center p-top-center w-100 text-white">
-                            <div>
-                                <h4 className="fw-bold">Fresh & 100% Organic</h4>
-                                <h5 className="text-center">farmer's market</h5>
-                                   <a href="/Shop">
-                                   
-                                <button className="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
-                                  >Shop Now</button>
-                                   </a>
-                            </div>
+            {/* MIDDLE BANNER */}
+            <div className="col-xxl-3 col-md-4 ratio_medium d-md-block d-none">
+                <div className="home-contain home-small h-100 position-relative" style={{ position: "relative" }}>
+                    <img
+                        src="../assets/images/Banner1.jpg"
+                        className="img-fluid bg-img blur-up lazyload"
+                        alt="Image Size : 375 X 534"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            backgroundColor: "rgba(0,0,0,0.4)",
+                            zIndex: 1,
+                        }}
+                    ></div>
+
+                    <div
+                        className="home-detail text-center p-top-center w-100 text-white"
+                        style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            zIndex: 2,
+                            color: "white",
+                        }}
+                    >
+                        <div>
+                            <h4
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontWeight: 600,
+                                }}
+                            >
+                                Fresh & 100% Organic
+                            </h4>
+                            <h5
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontWeight: 400,
+                                }}
+                            >
+                                farmer's market
+                            </h5>
+                            <a href="/Shop">
+                                <button
+                                    className="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
+                                    style={{
+                                        fontFamily: "'Poppins', sans-serif",
+                                        fontWeight: 500,
+                                        fontSize: "15px",
+                                        backgroundColor: "#fff",
+                                        color: "#000",
+                                        border: "none",
+                                        padding: "10px 25px",
+                                        borderRadius: "6px",
+                                        cursor: "pointer",
+                                    }}
+                                >
+                                    Shop Now
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className="col-xxl-3 ratio_65 d-xxl-block d-none">
-                    <div className="row g-3">
-                        <div className="col-xxl-12 col-sm-6">
-                            <div className="home-contain">
-                                <a href="/Shop">
-                                    <img src="../assets/images/Banner2.jpg"
-                                        className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" />
-                                </a>
-                                <div className="home-detail text-white p-center text-center">
-                                    <div>
-                                        <h4 className="text-center">Organic Lifestyle</h4>
-                                        <h5 className="text-center">Best Weekend Sales</h5>
-                                    </div>
-                                </div>
+            {/* RIGHT SIDE 2 SMALL BANNERS */}
+            <div className="col-xxl-3 ratio_65 d-xxl-block d-none">
+                <div className="row g-3">
+                    {/* BANNER 2 */}
+                    <div className="col-xxl-12 col-sm-6">
+                        <div className="home-contain position-relative" style={{ position: "relative" }}>
+                            <a href="/Shop">
+                                <img
+                                    src="../assets/images/Banner2.jpg"
+                                    className="img-fluid bg-img blur-up lazyload"
+                                    alt="Image Size : 375 X 252"
+                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                />
+                            </a>
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    backgroundColor: "rgba(0,0,0,0.4)",
+                                    zIndex: 1,
+                                }}
+                            ></div>
+                            <div
+                                className="home-detail text-white p-center text-center"
+                                style={{
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: "50%",
+                                    transform: "translate(-50%, -50%)",
+                                    zIndex: 2,
+                                    color: "white",
+                                }}
+                            >
+                                {/* <div>
+                                    <h4
+                                        style={{
+                                            fontFamily: "'Poppins', sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Organic Lifestyle
+                                    </h4>
+                                    <h5
+                                        style={{
+                                            fontFamily: "'Poppins', sans-serif",
+                                            fontWeight: 400,
+                                        }}
+                                    >
+                                        Best Weekend Sales
+                                    </h5>
+                                </div> */}
                             </div>
                         </div>
+                    </div>
 
-                        <div className="col-xxl-12 col-sm-6">
-                            <div className="home-contain">
-                                <a href="/Shop">
-                                    <img src="../assets/images/Banner3.jpg"
-                                        className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" />
-                                </a>
-                                <div className="home-detail text-white w-50 p-center-left home-p-sm">
-                                    <div>
-                                        <h4 className="fw-bold">Safe food saves lives</h4>
-                                        <h5>Discount Offer</h5>
-                                    </div>
-                                </div>
+                    {/* BANNER 3 */}
+                    <div className="col-xxl-12 col-sm-6">
+                        <div className="home-contain position-relative" style={{ position: "relative" }}>
+                            <a href="/Shop">
+                                <img
+                                    src="../assets/images/Banner3.jpg"
+                                    className="img-fluid bg-img blur-up lazyload"
+                                    alt="Image Size : 375 X 252"
+                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                />
+                            </a>
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    backgroundColor: "rgba(0,0,0,0.4)",
+                                    zIndex: 1,
+                                }}
+                            ></div>
+                            <div
+                                className="home-detail text-white w-50 p-center-left home-p-sm"
+                                style={{
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: "10%",
+                                    transform: "translateY(-50%)",
+                                    zIndex: 2,
+                                    color: "white",
+                                }}
+                            >
+                                {/* <div>
+                                    <h4
+                                        style={{
+                                            fontFamily: "'Poppins', sans-serif",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Safe food saves lives
+                                    </h4>
+                                    <h5
+                                        style={{
+                                            fontFamily: "'Poppins', sans-serif",
+                                            fontWeight: 400,
+                                        }}
+                                    >
+                                        Discount Offer
+                                    </h5>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     {/* <!-- Home Section End --> */}
 
      {/* <!-- Category Section Start --> */}
@@ -3959,48 +4172,181 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
         {/* <!-- Banner Section Start --> */}
-    <section class="banner-section">
-        <div class="container-fluid-lg">
-            <div class="row gy-xl-0 gy-3">
-                <div class="col-xl-6">
-                    <div class="banner-contain-3 hover-effect">
-                        <img src="../assets/images/veg-3/banner/Banner2.jpg" class="bg-img img-fluid" alt="Image Size : 781 X 406" />
-                        <div
-                            class="banner-detail banner-details-dark text-white p-center-left w-50  mend-auto">
-                            <div>
-                                <h6 class="ls-expanded text-uppercase">Premium</h6>
-                                <h3 class="mb-sm-3 mb-1">Fresh Vegetable & Daily Eating</h3>
-                                <h4>Get Extra 50% Off</h4>
-                                   <a href="/Shop">
-                                   
-                                <button class="btn theme-color bg-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                   >Shop Now</button>
-                                   </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section className="banner-section" style={{ marginTop: "40px" }}>
+  <div className="container-fluid-lg">
+    <div className="row gy-xl-0 gy-3">
+      {/* Left Banner */}
+      <div className="col-xl-6">
+        <div
+          className="banner-contain-3 hover-effect"
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            borderRadius: "10px",
+          }}
+        >
+          <img
+            src="/assets/images/picture/banner1.webp"
+            className="bg-img img-fluid"
+            alt="Image Size : 781 X 406"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "10px",
+            }}
+          />
+          {/* Dark Overlay */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0,0,0,0.4)",
+              zIndex: 1,
+              borderRadius: "10px",
+            }}
+          ></div>
 
-                <div class="col-xl-6">
-                    <div class="banner-contain-3 hover-effect">
-                        <img src="../assets/images/veg-3/banner/Banner5.jpg" class="bg-img img-fluid" alt="Image Size : 781 X 402" />
-                        <div class="banner-detail text-dark p-center-left w-50  mend-auto">
-                            <div>
-                                <h6 class=" ls-expanded text-uppercase">available</h6>
-                                <h3 class="mb-sm-3 mb-1">100% Natural & Healthy Fruits</h3>
-                                <h4 class="text-content">Weekend Special</h4>
-                                   <a href="/Shop">
-                                   
-                                <button class="btn theme-bg-color text-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
-                                    >Shop Now</button>
-                                   </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div
+            className="banner-detail banner-details-dark text-white p-center-left w-50 mend-auto"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "10%",
+              transform: "translateY(-50%)",
+              zIndex: 2,
+              color: "#fff",
+              width: "45%",
+            }}
+          >
+            <div>
+              <h6
+                className="ls-expanded text-uppercase"
+                style={{
+                  letterSpacing: "2px",
+                  textTransform: "uppercase",
+                  marginBottom: "10px",
+                }}
+              >
+                Premium
+              </h6>
+              <h3 className="mb-sm-3 mb-1" style={{ marginBottom: "10px" }}>
+                Fresh Vegetable & Daily Eating
+              </h3>
+              <h4>Get Extra 50% Off</h4>
+              <a href="/Shop">
+                <button
+                  className="btn theme-color bg-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
+                  style={{
+                    backgroundColor: "#fff",
+                    color: "#4CAF50",
+                    fontWeight: "bold",
+                    border: "none",
+                    padding: "10px 25px",
+                    marginTop: "15px",
+                    borderRadius: "6px",
+                    cursor: "pointer",
+                  }}
+                >
+                  Shop Now
+                </button>
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      {/* Right Banner */}
+      <div className="col-xl-6">
+        <div
+          className="banner-contain-3 hover-effect"
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            borderRadius: "10px",
+          }}
+        >
+          <img
+            src="/assets/images/picture/banner3.jpg"
+            className="bg-img img-fluid"
+            alt="Image Size : 781 X 402"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "10px",
+            }}
+          />
+          {/* Light Overlay */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgb(130 129 129 / 62%)",
+              zIndex: 1,
+              borderRadius: "10px",
+            }}
+          ></div>
+
+          <div
+            className="banner-detail text-dark p-center-left w-50 mend-auto"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "10%",
+              transform: "translateY(-50%)",
+              zIndex: 2,
+              color: "#222",
+              width: "45%",
+            }}
+          >
+            <div>
+              <h6
+                className="ls-expanded text-uppercase"
+                style={{
+                  letterSpacing: "2px",
+                  textTransform: "uppercase",
+                  marginBottom: "10px",
+                  color:'#fff',
+                }}
+              >
+                Available
+              </h6>
+              <h3 className="mb-sm-3 mb-1" style={{ marginBottom: "10px",     color:'#fff', }}>
+                100% Natural & Healthy Fruits
+              </h3>
+              <h4 className="text-content" style={{color:'#fff',}}>Weekend Special</h4>
+              <a href="/Shop">
+                <button
+                  className="btn theme-bg-color text-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
+                  style={{
+                    backgroundColor: "#4CAF50",
+                    color: "#fff",
+                    fontWeight: "bold",
+                    border: "none",
+                    padding: "10px 25px",
+                    marginTop: "15px",
+                    borderRadius: "6px",
+                    cursor: "pointer",
+                  }}
+                >
+                  Shop Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     {/* <!-- Banner Section End --> */}
 
 
@@ -4033,7 +4379,7 @@ export default function Home() {
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
                                                 <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
+                                                    <img src="/assets/images/picture/kaju.png" class="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
                                                 <div class="product-details">
@@ -4055,7 +4401,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tomato</h4>
+                                                        <h4 class="name">cashew nuts</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4399,7 +4745,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Garlic</h4>
+                                                        <h4 class="name">Almonds</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4721,7 +5067,7 @@ export default function Home() {
                                         <div class="col-12">
                                             <div class="product-box-4 wow fadeInUp">
                                                 <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
+                                                    <img src="/assets/images/picture/kaju.png" class="img-fluid"
                                                         alt="" />
                                                 </a>
                                                 <div class="product-details">
@@ -4743,7 +5089,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tomato</h4>
+                                                        <h4 class="name">cashew nuts</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5087,7 +5433,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Garlic</h4>
+                                                        <h4 class="name">Almonds</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
