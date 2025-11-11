@@ -4065,13 +4065,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="#" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4119,13 +4119,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4173,13 +4173,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4231,13 +4231,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4285,13 +4285,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4339,13 +4339,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4409,13 +4409,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4463,13 +4463,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4517,13 +4517,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4575,13 +4575,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4629,13 +4629,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4683,13 +4683,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4753,13 +4753,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4807,13 +4807,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4861,13 +4861,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4919,13 +4919,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -4973,13 +4973,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5027,13 +5027,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5097,13 +5097,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5151,13 +5151,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5205,13 +5205,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5263,13 +5263,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5317,13 +5317,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
@@ -5371,13 +5371,13 @@ export default function Home() {
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
-                                                        <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
-                                                        </li>
+                                                        </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
