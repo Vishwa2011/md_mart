@@ -640,7 +640,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -707,7 +707,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -778,7 +778,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -845,7 +845,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -916,7 +916,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -983,7 +983,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1050,7 +1050,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1121,7 +1121,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1196,7 +1196,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1263,7 +1263,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1334,7 +1334,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1405,7 +1405,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1476,7 +1476,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1543,7 +1543,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1610,7 +1610,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1677,7 +1677,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1744,7 +1744,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1811,7 +1811,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1878,7 +1878,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -1945,7 +1945,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2012,7 +2012,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2079,7 +2079,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2150,7 +2150,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2217,7 +2217,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2284,7 +2284,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2351,7 +2351,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2418,7 +2418,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2485,7 +2485,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2552,7 +2552,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2623,7 +2623,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2690,7 +2690,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2757,7 +2757,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2824,7 +2824,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2891,7 +2891,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -2958,7 +2958,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3025,7 +3025,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3092,7 +3092,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3159,7 +3159,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3226,7 +3226,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3297,7 +3297,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3364,7 +3364,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3431,7 +3431,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3498,7 +3498,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3565,7 +3565,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3632,7 +3632,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3699,7 +3699,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3766,7 +3766,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3833,7 +3833,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -3900,7 +3900,7 @@ export default function Home() {
 
                                     <ul class="option">
                                         <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                                 <i class="iconly-Show icli"></i>
                                             </a>
                                         </li>
@@ -4067,7 +4067,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="#" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4121,7 +4121,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4175,7 +4175,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4233,7 +4233,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4287,7 +4287,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4341,7 +4341,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4411,7 +4411,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4465,7 +4465,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4519,7 +4519,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4577,7 +4577,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4631,7 +4631,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4685,7 +4685,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4755,7 +4755,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4809,7 +4809,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4863,7 +4863,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4921,7 +4921,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -4975,7 +4975,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5029,7 +5029,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5099,7 +5099,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5153,7 +5153,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5207,7 +5207,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5265,7 +5265,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5319,7 +5319,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5373,7 +5373,7 @@ export default function Home() {
                                                         </li>
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
-                                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
                                                                 <i class="iconly-Show icli"></i>
                                                             </a>
@@ -5454,7 +5454,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5523,7 +5523,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5590,7 +5590,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5655,7 +5655,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5722,7 +5722,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5787,7 +5787,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5854,7 +5854,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5923,7 +5923,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -5994,7 +5994,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6063,7 +6063,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6130,7 +6130,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6195,7 +6195,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6262,7 +6262,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6327,7 +6327,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6394,7 +6394,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6459,7 +6459,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6526,7 +6526,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6591,7 +6591,7 @@ export default function Home() {
 
                             <ul class="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#view">
                                         <i class="iconly-Show icli"></i>
                                     </a>
                                 </li>
@@ -6786,8 +6786,8 @@ export default function Home() {
                     <div class="row g-sm-4 g-2">
                         <div class="col-lg-6">
                             <div class="slider-image">
-                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
-                                    alt="" />
+                                <img src="../assets/images/product/category/img1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="Image Size : 750 X 750" />
                             </div>
                         </div>
 
