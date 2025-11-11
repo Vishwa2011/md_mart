@@ -771,7 +771,7 @@ const About = () => {
                                 <div class="blog-box-image">
                                     <div class="blog-image">
                                         <a href="/Blogdetails" class="rounded-3">
-                                            <img src="../assets/images/juices.jpg" class="bg-img blur-up lazyload"
+                                            <img src="/assets/images/picture/about1.jpg" class="bg-img blur-up lazyload"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -783,13 +783,29 @@ const About = () => {
                                 </a>
                             </div>
                         </div>
+   <div>
+                            <div class="blog-box">
+                                <div class="blog-box-image">
+                                    <div class="blog-image">
+                                        <a href="/Blogdetails" class="rounded-3">
+                                            <img src="/assets/images/picture/about3.jpg" class="bg-img blur-up lazyload"
+                                                alt="" />
+                                        </a>
+                                    </div>
+                                </div>
 
+                                <a href="/Blogdetails" class="blog-detail d-block">
+                                    <h6>Vegetables</h6>
+                                    <h5>Fresh Vegetables</h5>
+                                </a>
+                            </div>
+                        </div>
                         <div>
                             <div class="blog-box">
                                 <div class="blog-box-image">
                                     <div class="blog-image">
                                         <a href="/Blogdetails" class="rounded-3">
-                                            <img src="../assets/images/fruits.jpg" class="bg-img blur-up lazyload"
+                                            <img src="/assets/images/picture/about2.jpg" class="bg-img blur-up lazyload"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -802,23 +818,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div>
-                            <div class="blog-box">
-                                <div class="blog-box-image">
-                                    <div class="blog-image">
-                                        <a href="/Blogdetails" class="rounded-3">
-                                            <img src="../assets/images/vegetables.jpg" class="bg-img blur-up lazyload"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <a href="/Blogdetails" class="blog-detail d-block">
-                                    <h6>Vegetables</h6>
-                                    <h5>Fresh Vegetables</h5>
-                                </a>
-                            </div>
-                        </div>
+                     
 
                         <div>
                             <div class="blog-box">
