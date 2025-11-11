@@ -291,76 +291,10 @@ export default function Navbar() {
                                 </div>
 
                                 <ul className="category-list">
-                                    <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
-                                            <img src="../assets/svg/1/vegetable.svg" alt="" /> 
-                                            <h6>Vegetables & Fruit</h6>
-                                            <i className="fa-solid fa-angle-right"></i>
-                                        </a>
-
-                                        <div className="onhover-category-box">
-                                            <div className="list-1">
-                                                <div className="category-title-box">
-                                                    <h5>Organic Vegetables</h5>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="">Potato & Tomato</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Cucumber & Capsicum</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Leafy Vegetables</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Root Vegetables</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Beans & Okra</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Cabbage & Cauliflower</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Gourd & Drumstick</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Specialty</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div className="list-2">
-                                                <div className="category-title-box">
-                                                    <h5>Fresh Fruit</h5>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="">Banana & Papaya</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Kiwi, Citrus Fruit</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Apples & Pomegranate</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Seasonal Fruits</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Mangoes</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Fruit Baskets</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
+                                
 
                                     <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
+                                        <a href="#" className="category-name">
                                             <img src="../assets/svg/1/cup.svg" alt="" /> 
                                             <h6>Beverages</h6>
                                             <i className="fa-solid fa-angle-right"></i>
@@ -399,66 +333,7 @@ export default function Navbar() {
                                     </li>
 
                                     <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
-                                            <img src="../assets/svg/1/meats.svg" alt="" /> 
-                                            <h6>Meats & Seafood</h6>
-                                            <i className="fa-solid fa-angle-right"></i>
-                                        </a>
-
-                                        <div className="onhover-category-box">
-                                            <div className="list-1">
-                                                <div className="category-title-box">
-                                                    <h5>Meat</h5>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="">Fresh Meat</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Frozen Meat</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Marinated Meat</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Fresh & Frozen Meat</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div className="list-2">
-                                                <div className="category-title-box">
-                                                    <h5>Seafood</h5>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="">Fresh Water Fish</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Dry Fish</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Frozen Fish & Seafood</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Marine Water Fish</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Canned Seafood</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Prawans & Shrimps</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Other Seafood</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
+                                        <a href="#" className="category-name">
                                             <img src="../assets/svg/1/breakfast.svg" alt="" /> 
                                             <h6>Breakfast & Dairy</h6>
                                             <i className="fa-solid fa-angle-right"></i>
@@ -532,7 +407,7 @@ export default function Navbar() {
                                     </li>
 
                                     <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
+                                        <a href="#" className="category-name">
                                             <img src="../assets/svg/1/frozen.svg" alt="" /> 
                                             <h6>Frozen Foods</h6>
                                             <i className="fa-solid fa-angle-right"></i>
@@ -565,7 +440,7 @@ export default function Navbar() {
                                     </li>
 
                                     <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
+                                        <a href="#" className="category-name">
                                             <img src="../assets/svg/1/biscuit.svg" alt="" /> 
                                             <h6>Biscuits & Snacks</h6>
                                             <i className="fa-solid fa-angle-right"></i>
@@ -618,7 +493,7 @@ export default function Navbar() {
                                     </li>
 
                                     <li className="onhover-category-list">
-                                        <a href="javascript:void(0)" className="category-name">
+                                        <a href="#" className="category-name">
                                             <img src="../assets/svg/1/grocery.svg" alt="" /> 
                                             <h6>Grocery & Staples</h6>
                                             <i className="fa-solid fa-angle-right"></i>
@@ -795,12 +670,12 @@ export default function Navbar() {
                 </a>
             </li>
 
-            <li>
+            {/* <li>
                 <a href="#" className="search-box">
                     <i className="iconly-Search icli"></i>
                     <span>Search</span>
                 </a>
-            </li>
+            </li> */}
 
             <li>
                 <a href="/Wishlist" className="notifi-wishlist">

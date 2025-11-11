@@ -38,7 +38,7 @@ export default function Newsletter() {
 
                             <div class="col-xxl-4 col-xl-5 d-xl-block d-none">
                                 <div class="shape-box">
-                                    <img src="../assets/images/veg-3/shape/basket.png" alt="" class="img-fluid image-1" />
+                                    <img src="/assets/images/snack.png" alt="" class="img-fluid image-1" />
                                 </div>
                             </div>
                         </div>
