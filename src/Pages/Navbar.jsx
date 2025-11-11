@@ -202,7 +202,7 @@ export default function Navbar() {
                                                     <li>
                                                         <div className="drop-cart">
                                                             <a href="/Productdetails" className="drop-image">
-                                                                <img src="../assets/images/vegetable/product/1.png"
+                                                                <img src="/assets/images/choco.png"
                                                                     className="blur-up lazyload" alt="" /> 
                                                             </a>
 
@@ -221,7 +221,7 @@ export default function Navbar() {
                                                     <li>
                                                         <div className="drop-cart">
                                                             <a href="/Productdetails" className="drop-image">
-                                                                <img src="../assets/images/vegetable/product/2.png"
+                                                                <img src="/assets/images/soda.jpg"
                                                                     className="blur-up lazyload" alt="" /> 
                                                             </a>
 
@@ -936,7 +936,7 @@ export default function Navbar() {
                             <li className="list-1">
                                 <div className="deal-offer-contain">
                                     <a href="/Shop" className="deal-image">
-                                        <img src="../assets/images/vegetable/product/10.png" className="blur-up lazyload"
+                                        <img src="/assets/images/snack.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
@@ -950,7 +950,7 @@ export default function Navbar() {
                             <li className="list-2">
                                 <div className="deal-offer-contain">
                                     <a href="/Shop" className="deal-image">
-                                        <img src="../assets/images/vegetable/product/11.png" className="blur-up lazyload"
+                                        <img src="/assets/images/choco.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
@@ -964,7 +964,7 @@ export default function Navbar() {
                             <li className="list-3">
                                 <div className="deal-offer-contain">
                                     <a href="/Shop" className="deal-image">
-                                        <img src="../assets/images/vegetable/product/12.png" className="blur-up lazyload"
+                                        <img src="/assets/images/soda.jpg" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 
@@ -978,7 +978,7 @@ export default function Navbar() {
                             <li className="list-1">
                                 <div className="deal-offer-contain">
                                     <a href="/Shop" className="deal-image">
-                                        <img src="../assets/images/vegetable/product/13.png" className="blur-up lazyload"
+                                        <img src="/assets/images/oils.png" className="blur-up lazyload"
                                             alt="" />
                                     </a>
 

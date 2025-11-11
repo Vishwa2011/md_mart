@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from "react";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Checkout = () => {
-    
+      const [deliveryType, setDeliveryType] = useState("standard");
   return (
     <>
      <Navbar />
@@ -139,89 +139,115 @@ const Checkout = () => {
                                     </div>
                                 </li>
 
-                                <li>
-                                    <div class="checkout-icon">
-                                        <lord-icon target=".nav-item" src="https://cdn.lordicon.com/oaflahpk.json"
-                                            trigger="loop-on-hover" colors="primary:#0baf9a" class="lord-icon">
-                                        </lord-icon>
-                                    </div>
-                                    <div class="checkout-box">
-                                        <div class="checkout-title">
-                                            <h4>Delivery Option</h4>
-                                        </div>
+                                <li className="list-unstyled">
+      <div className="checkout-icon mb-3">
+        <lord-icon
+          target=".nav-item"
+          src="https://cdn.lordicon.com/oaflahpk.json"
+          trigger="loop-on-hover"
+          colors="primary:#0baf9a"
+          class="lord-icon"
+        ></lord-icon>
+      </div>
 
-                                        <div class="checkout-detail">
-                                            <div class="row g-4">
-                                                <div class="col-xxl-6">
-                                                    <div class="delivery-option">
-                                                        <div class="delivery-category">
-                                                            <div class="shipment-detail">
-                                                                <div
-                                                                    class="form-check custom-form-check hide-check-box">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="standard" id="standard" checked />
-                                                                    <label class="form-check-label"
-                                                                        for="standard">Standard
-                                                                        Delivery Option</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+      <div className="checkout-box border p-4 rounded shadow-sm">
+        <div className="checkout-title mb-4">
+          <h4 className="fw-bold">Delivery Option</h4>
+        </div>
 
-                                                <div class="col-xxl-6">
-                                                    <div class="delivery-option">
-                                                        <div class="delivery-category">
-                                                            <div class="shipment-detail">
-                                                                <div
-                                                                    class="form-check mb-0 custom-form-check show-box-checked">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="standard" id="future" />
-                                                                    <label class="form-check-label" for="future">Future
-                                                                        Delivery Option</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <div className="checkout-detail">
+          <div className="row g-4">
+            {/* Standard Delivery Option */}
+            <div className="col-xxl-6 col-md-6">
+              <div className="delivery-option">
+                <div className="delivery-category">
+                  <div className="shipment-detail">
+                    <div className="form-check custom-form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="delivery"
+                        id="standard"
+                        value="standard"
+                        checked={deliveryType === "standard"}
+                        onChange={(e) => setDeliveryType(e.target.value)}
+                      />
+                      <label className="form-check-label ms-2" htmlFor="standard">
+                        Standard Delivery Option
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                                                <div class="col-12 future-box">
-                                                    <div class="future-option">
-                                                        <div class="row g-md-0 gy-4">
-                                                            <div class="col-md-6">
-                                                                <div class="delivery-items">
-                                                                    <div>
-                                                                        <h5 class="items text-content"><span>3
-                                                                                Items</span>@
-                                                                            ₹693.48</h5>
-                                                                        <h5 class="charge text-content">Delivery Charge
-                                                                            ₹34.67
-                                                                            <button type="button" class="btn p-0"
-                                                                                data-bs-toggle="tooltip"
-                                                                                data-bs-placement="top"
-                                                                                title="Extra Charge">
-                                                                                <i
-                                                                                    class="fa-solid fa-circle-exclamation"></i>
-                                                                            </button>
-                                                                        </h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+            {/* Future Delivery Option */}
+            <div className="col-xxl-6 col-md-6">
+              <div className="delivery-option">
+                <div className="delivery-category">
+                  <div className="shipment-detail">
+                    <div className="form-check mb-0 custom-form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="delivery"
+                        id="future"
+                        value="future"
+                        checked={deliveryType === "future"}
+                        onChange={(e) => setDeliveryType(e.target.value)}
+                      />
+                      <label className="form-check-label ms-2" htmlFor="future">
+                        Future Delivery Option
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                                                            <div class="col-md-6">
-                                                                <form
-                                                                    class="form-floating theme-form-floating date-box">
-                                                                    <input type="date" class="form-control" />
-                                                                    <label>Select Date</label>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+            {/* Future Delivery Box */}
+            {deliveryType === "future" && (
+              <div className="col-12">
+                <div className="future-box border rounded p-4 bg-light mt-3 fade-in">
+                  <div className="future-option">
+                    <div className="row g-md-0 gy-4">
+                      <div className="col-md-6">
+                        <div className="delivery-items">
+                          <h5 className="items text-content mb-2">
+                            <span>3 Items</span> @ ₹693.48
+                          </h5>
+                          <h5 className="charge text-content">
+                            Delivery Charge ₹34.67{" "}
+                            <button
+                              type="button"
+                              className="btn p-0 ms-1"
+                              title="Extra Charge"
+                            >
+                              <i className="fa-solid fa-circle-exclamation"></i>
+                            </button>
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6">
+                        <form className="form-floating theme-form-floating date-box">
+                          <input
+                            type="date"
+                            className="form-control"
+                            id="deliveryDate"
+                          />
+                          <label htmlFor="deliveryDate">Select Date</label>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </li>
 
                                 <li>
                                     <div class="checkout-icon">
@@ -543,35 +569,35 @@ const Checkout = () => {
 
                             <ul class="summery-contain">
                                 <li>
-                                    <img src="../assets/images/vegetable/product/1.png"
+                                    <img src="/assets/images/choco.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Bell pepper <span>X 1</span></h4>
                                     <h4 class="price">₹32.34</h4>
                                 </li>
 
                                 <li>
-                                    <img src="../assets/images/vegetable/product/2.png"
+                                    <img src="/assets/images/soda.jpg"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Eggplant <span>X 3</span></h4>
                                     <h4 class="price">₹12.23</h4>
                                 </li>
 
                                 <li>
-                                    <img src="../assets/images/vegetable/product/3.png"
+                                    <img src="/assets/images/buttor.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Onion <span>X 2</span></h4>
                                     <h4 class="price">₹18.27</h4>
                                 </li>
 
                                 <li>
-                                    <img src="../assets/images/vegetable/product/4.png"
+                                    <img src="/assets/images/snack.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Potato <span>X 1</span></h4>
                                     <h4 class="price">₹26.90</h4>
                                 </li>
 
                                 <li>
-                                    <img src="../assets/images/vegetable/product/5.png"
+                                    <img src="/assets/images/oils.png"
                                         class="img-fluid blur-up lazyloaded checkout-image" alt="" />
                                     <h4>Baby Chili <span>X 1</span></h4>
                                     <h4 class="price">₹19.28</h4>
@@ -632,10 +658,8 @@ const Checkout = () => {
                                 </li>
                             </ul>
                         </div>
-<a href="/Ordersuccess">
 
                         <button class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Place Order</button>
-</a>
                     </div>
                 </div>
             </div>

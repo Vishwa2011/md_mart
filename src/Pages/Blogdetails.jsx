@@ -57,7 +57,7 @@ const Blogdetails = () => {
                                         <div class="recent-post-box">
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/1.jpg"
+                                                    <img src="/assets/images/picture/blog 1.jpg"
                                                         class="img-fluid blur-up lazyload" alt=""/>
                                                 </a>
 
@@ -71,7 +71,8 @@ const Blogdetails = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/2.jpg"
+                                                    <img src="/assets/images/picture/blog 2.jpg"
+                                                    // (450*300)
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -85,7 +86,7 @@ const Blogdetails = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/3.jpg"
+                                                    <img src="/assets/images/picture/blog 1.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -99,7 +100,7 @@ const Blogdetails = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/4.jpg"
+                                                    <img src="/assets/images/picture/blog 2.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -246,7 +247,7 @@ const Blogdetails = () => {
                                             <li>
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/23.png"
+                                                        <img src="/assets/images/picture/blog3.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
@@ -265,7 +266,7 @@ const Blogdetails = () => {
                                             <li>
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/24.png"
+                                                        <img src="/assets/images/picture/blog4.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
@@ -284,7 +285,7 @@ const Blogdetails = () => {
                                             <li class="mb-0">
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/26.png"
+                                                        <img src="/assets/images/picture/blog5.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
@@ -309,7 +310,7 @@ const Blogdetails = () => {
 
                 <div class="col-xxl-9 col-xl-8 col-lg-7 ratio_50">
                     <div class="blog-detail-image rounded-3 mb-4">
-                        <img src="../assets/images/inner-page/blog/1.jpg" class="bg-img blur-up lazyload" alt="" />
+                        <img src="/assets/images/picture/blogdetails,,.jpg" class="bg-img blur-up lazyload" alt="" />
                         <div class="blog-image-contain">
                             <ul class="contain-list">
                                 <li>backpack</li>

@@ -165,9 +165,7 @@ const Footer = () => {
                                 <li>
                                     <a href="/Return" class="text-content">Return Policy</a>
                                 </li>
-                                <li>
-                                    <a href="faq.html" class="text-content">FAQ</a>
-                                </li>
+                               
                                
                             </ul>
                         </div>

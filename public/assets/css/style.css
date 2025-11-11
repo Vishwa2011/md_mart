@@ -36670,13 +36670,6 @@ body.rtl .menu-label {
     margin-top: 5px
 }
 
-.checkout-section-2 .left-sidebar-checkout .checkout-detail-box>ul>li .checkout-box .checkout-detail .future-box {
-    display: none
-}
-
-.checkout-section-2 .left-sidebar-checkout .checkout-detail-box>ul>li .checkout-box .checkout-detail .future-box.show {
-    display: block
-}
 
 .checkout-section-2 .left-sidebar-checkout .checkout-detail-box>ul>li .checkout-box .checkout-detail .future-box .future-option {
     padding: calc(17px + 9*(100vw - 320px)/1600);
@@ -36690,7 +36683,8 @@ body.rtl .menu-label {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
     height: 100%
 }
 
@@ -45759,9 +45753,9 @@ body.rtl .question-answer li .question-box .link-dislike-box {
     margin-left: 7px
 }
 
-.stickyCart {
+/* .stickyCart {
     padding-bottom: 94px
-}
+} */
 
 .stickyCart .theme-option-2 {
     bottom: calc(74px + 16*(100vw - 320px)/1600)
