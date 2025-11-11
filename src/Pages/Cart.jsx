@@ -43,7 +43,7 @@ const Cart = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/1.png"
+                                                    <img src="/assets/images/choco.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
@@ -135,7 +135,7 @@ const Cart = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/2.png"
+                                                    <img src="/assets/images/soda.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
@@ -231,7 +231,7 @@ const Cart = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/3.png"
+                                                    <img src="/assets/images/snack.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
