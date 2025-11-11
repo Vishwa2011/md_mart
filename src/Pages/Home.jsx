@@ -8,7 +8,8 @@ export default function Home() {
     <div>
         <Navbar />
             {/* <!-- home section start --> */}
-<section
+<sectio
+
   className="home-section-2 home-section-small section-b-space"
   style={{ position: "relative", zIndex: 1 }}
 >
@@ -298,7 +299,7 @@ export default function Home() {
             </div>
         </div>
     </div>
-</section>
+</sectio>
 
     {/* <!-- Home Section End --> */}
 
