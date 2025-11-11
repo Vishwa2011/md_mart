@@ -18,7 +18,7 @@ export default function Home() {
                             <div>
                                 <h6 className="ls-expanded theme-color">ORGANIC</h6>
                                 <h1 className="fw-bold w-100">100% Fresh</h1>
-                                <h3 className="text-content fw-light">Fruit & Vegetables</h3>
+                                <h3 className="text-content fw-light">Grocery, Dairy & More</h3>
                                 <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
                                 <a href="/Shop">
 
@@ -227,7 +227,7 @@ export default function Home() {
                                     alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
                                     <h5 class="theme-color">Buy more, Save more</h5>
-                                    <h6>Fresh Vegetable</h6>
+                                    <h6>Fresh Grocery</h6>
                                 </div>
                                 <div class="offer-box">
                                        <a href="/Shop">
@@ -245,7 +245,7 @@ export default function Home() {
                                     alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
                                     <h5 class="theme-color">Save More!</h5>
-                                    <h6>Organic Vegetable</h6>
+                                    <h6>Fresh Dairy Products</h6>
                                 </div>
                                 <div class="offer-box">
                                        <a href="/Shop">
@@ -263,7 +263,7 @@ export default function Home() {
                                     alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
                                     <h5 class="theme-color">Hot Deals!</h5>
-                                    <h6>Fruit & Vegetables</h6>
+                                    <h6>Groceries & Daily Essentials</h6>
                                 </div>
                                 <div class="offer-box">
                                        <a href="/Shop">
@@ -281,7 +281,7 @@ export default function Home() {
                                     alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
                                     <h5 class="theme-color">Buy more, Save more</h5>
-                                    <h6>Fruit & Vegetables</h6>
+                                    <h6>Groceries & Daily Essentials</h6>
                                 </div>
                                 <div class="offer-box">
                                        <a href="/Shop">
@@ -343,7 +343,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
-                                        <h5>Bell pepper</h5>
+                                        <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
@@ -411,7 +411,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
-                                        <h5>Eggplant</h5>
+                                        <h5>Butter</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
@@ -479,7 +479,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
-                                        <h5>Onion</h5>
+                                        <h5>cheese</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
@@ -546,7 +546,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
-                                        <h5>Bell pepper</h5>
+                                        <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
                                     <div class="progress custom-progressbar">
@@ -602,12 +602,12 @@ export default function Home() {
 
                     <li class="nav-item">
                         <button class="nav-link btn" id="cooking-tab" data-bs-toggle="tab" data-bs-target="#cooking"
-                            type="button"> Cooking</button>
+                            type="button"> Groceries & Daily Essentials</button>
                     </li>
 
                     <li class="nav-item">
                         <button class="nav-link btn" id="fruits-tab" data-bs-toggle="tab" data-bs-target="#fruits"
-                            type="button">Fruits & Vegetables</button>
+                            type="button">Groceries & Daily Essentials</button>
                     </li>
 
                     <li class="nav-item">
@@ -667,7 +667,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Bell pepper</h5>
+                                        <h5 class="name">Noodles</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -734,7 +734,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Potato</h5>
+                                        <h5 class="name">Candy</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -805,7 +805,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Baby Chili</h5>
+                                        <h5 class="name">Ketchup</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -872,7 +872,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Broccoli</h5>
+                                        <h5 class="name">Water</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -943,7 +943,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Peru</h5>
+                                        <h5 class="name">Shampoo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1010,7 +1010,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Avocado</h5>
+                                        <h5 class="name">Tea</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1077,7 +1077,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cucumber</h5>
+                                        <h5 class="name">Mayo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1148,7 +1148,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Beetroot</h5>
+                                        <h5 class="name">Jam</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1223,7 +1223,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Strawberry</h5>
+                                        <h5 class="name">Bread</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1290,7 +1290,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Corn</h5>
+                                        <h5 class="name">coffee</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1361,7 +1361,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cabbage</h5>
+                                        <h5 class="name">pasta</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1432,7 +1432,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Ginger</h5>
+                                        <h5 class="name">Cookies</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1503,7 +1503,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1570,7 +1570,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1637,7 +1637,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Onion</h5>
+                                        <h5 class="name">cheese</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1704,7 +1704,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Potato</h5>
+                                        <h5 class="name">Candy</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1771,7 +1771,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Baby Chili</h5>
+                                        <h5 class="name">Ketchup</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1838,7 +1838,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Broccoli</h5>
+                                        <h5 class="name">Water</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1905,7 +1905,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Pea</h5>
+                                        <h5 class="name">curd</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -1972,7 +1972,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cucumber</h5>
+                                        <h5 class="name">Mayo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2039,7 +2039,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cabbage</h5>
+                                        <h5 class="name">pasta</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2106,7 +2106,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Ginger</h5>
+                                        <h5 class="name">Cookies</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2177,7 +2177,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Apple</h5>
+                                        <h5 class="name">Chips</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2378,7 +2378,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Peru</h5>
+                                        <h5 class="name">Shampoo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2445,7 +2445,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Apple</h5>
+                                        <h5 class="name">Chips</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2512,7 +2512,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Strawberry</h5>
+                                        <h5 class="name">Bread</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2579,7 +2579,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Bell pepper</h5>
+                                        <h5 class="name">Noodles</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2650,7 +2650,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2717,7 +2717,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2784,7 +2784,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Onion</h5>
+                                        <h5 class="name">cheese</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2851,7 +2851,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Potato</h5>
+                                        <h5 class="name">Candy</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2918,7 +2918,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Baby Chili</h5>
+                                        <h5 class="name">Ketchup</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -2985,7 +2985,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Broccoli</h5>
+                                        <h5 class="name">Water</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3052,7 +3052,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Pea</h5>
+                                        <h5 class="name">curd</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3119,7 +3119,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cucumber</h5>
+                                        <h5 class="name">Mayo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3186,7 +3186,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cabbage</h5>
+                                        <h5 class="name">pasta</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3253,7 +3253,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Ginger</h5>
+                                        <h5 class="name">Cookies</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3324,7 +3324,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3391,7 +3391,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Eggplant</h5>
+                                        <h5 class="name">Butter</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3458,7 +3458,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Onion</h5>
+                                        <h5 class="name">cheese</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3525,7 +3525,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Potato</h5>
+                                        <h5 class="name">Candy</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3592,7 +3592,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Baby Chili</h5>
+                                        <h5 class="name">Ketchup</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3659,7 +3659,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Broccoli</h5>
+                                        <h5 class="name">Water</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3726,7 +3726,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Pea</h5>
+                                        <h5 class="name">curd</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3793,7 +3793,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cucumber</h5>
+                                        <h5 class="name">Mayo</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3860,7 +3860,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Cabbage</h5>
+                                        <h5 class="name">pasta</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3927,7 +3927,7 @@ export default function Home() {
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
-                                        <h5 class="name">Ginger</h5>
+                                        <h5 class="name">Cookies</h5>
                                     </a>
                                     <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                                     <div class="price-qty">
@@ -3969,7 +3969,7 @@ export default function Home() {
                             class="banner-detail banner-details-dark text-white p-center-left w-50  mend-auto">
                             <div>
                                 <h6 class="ls-expanded text-uppercase">Premium</h6>
-                                <h3 class="mb-sm-3 mb-1">Fresh Vegetable & Daily Eating</h3>
+                                <h3 class="mb-sm-3 mb-1">Groceries & Daily Essentials</h3>
                                 <h4>Get Extra 50% Off</h4>
                                    <a href="/Shop">
                                    
@@ -3987,7 +3987,7 @@ export default function Home() {
                         <div class="banner-detail text-dark p-center-left w-50  mend-auto">
                             <div>
                                 <h6 class=" ls-expanded text-uppercase">available</h6>
-                                <h3 class="mb-sm-3 mb-1">100% Natural & Healthy Fruits</h3>
+                                <h3 class="mb-sm-3 mb-1">Groceries & Daily Essentials</h3>
                                 <h4 class="text-content">Weekend Special</h4>
                                    <a href="/Shop">
                                    
@@ -4055,7 +4055,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tomato</h4>
+                                                        <h4 class="name">tooth paste</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4109,7 +4109,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Red onion</h4>
+                                                        <h4 class="name">Red cheese</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4163,7 +4163,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Carrot</h4>
+                                                        <h4 class="name">Detergent</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4221,7 +4221,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Potato</h4>
+                                                        <h4 class="name">Candy</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4275,7 +4275,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Broccoli</h4>
+                                                        <h4 class="name">Water</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4329,7 +4329,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Carrot</h4>
+                                                        <h4 class="name">Detergent</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4399,7 +4399,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Garlic</h4>
+                                                        <h4 class="name">Dish Soap</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4453,7 +4453,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Beetroot</h4>
+                                                        <h4 class="name">Jam</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4507,7 +4507,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Eggplant</h4>
+                                                        <h4 class="name">Butter</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4565,7 +4565,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Bell pepper</h4>
+                                                        <h4 class="name">Noodles</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4619,7 +4619,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Pea</h4>
+                                                        <h4 class="name">curd</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4673,7 +4673,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Avocado</h4>
+                                                        <h4 class="name">Tea</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4743,7 +4743,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tomato</h4>
+                                                        <h4 class="name">tooth paste</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4797,7 +4797,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Red onion</h4>
+                                                        <h4 class="name">Red cheese</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4851,7 +4851,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Carrot</h4>
+                                                        <h4 class="name">Detergent</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4909,7 +4909,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Potato</h4>
+                                                        <h4 class="name">Candy</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -4963,7 +4963,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Broccoli</h4>
+                                                        <h4 class="name">Water</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5017,7 +5017,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Carrot</h4>
+                                                        <h4 class="name">Detergent</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5087,7 +5087,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Garlic</h4>
+                                                        <h4 class="name">Dish Soap</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5141,7 +5141,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Beetroot</h4>
+                                                        <h4 class="name">Jam</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5195,7 +5195,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Eggplant</h4>
+                                                        <h4 class="name">Butter</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5253,7 +5253,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Bell pepper</h4>
+                                                        <h4 class="name">Noodles</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5307,7 +5307,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Pea</h4>
+                                                        <h4 class="name">curd</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5361,7 +5361,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Avocado</h4>
+                                                        <h4 class="name">Tea</h4>
                                                     </a>
                                                     <h5 class="price">₹75.20<del>₹65.21</del></h5>
                                                     <ul class="option">
@@ -5481,7 +5481,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Eggplant</h5>
+                                <h5 class="name">Butter</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5550,7 +5550,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Ginger</h5>
+                                <h5 class="name">Cookies</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5617,7 +5617,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Eggplant</h5>
+                                <h5 class="name">Butter</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5682,7 +5682,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Potato</h5>
+                                <h5 class="name">Candy</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5749,7 +5749,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Onion</h5>
+                                <h5 class="name">cheese</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5814,7 +5814,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Broccoli</h5>
+                                <h5 class="name">Water</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5881,7 +5881,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Pea</h5>
+                                <h5 class="name">curd</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -5950,7 +5950,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Cabbage</h5>
+                                <h5 class="name">pasta</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6021,7 +6021,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Strawberry</h5>
+                                <h5 class="name">Bread</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6090,7 +6090,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Cucumber</h5>
+                                <h5 class="name">Mayo</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6157,7 +6157,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Apple</h5>
+                                <h5 class="name">Chips</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6289,7 +6289,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Apple</h5>
+                                <h5 class="name">Chips</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6354,7 +6354,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Bell pepper</h5>
+                                <h5 class="name">Noodles</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6421,7 +6421,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Eggplant</h5>
+                                <h5 class="name">Butter</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6486,7 +6486,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Potato</h5>
+                                <h5 class="name">Candy</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6553,7 +6553,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Broccoli</h5>
+                                <h5 class="name">Water</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6618,7 +6618,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Cucumber</h5>
+                                <h5 class="name">Mayo</h5>
                             </a>
                             <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
                             <div class="price-qty">
@@ -6667,7 +6667,7 @@ export default function Home() {
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
-                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                                <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
                             <div class="blog-list">
                                 <span>March 9, 2021</span>
@@ -6688,7 +6688,7 @@ export default function Home() {
                         <div class="blog-detail">
                             <label>Email Marketing</label>
                             <a href="/Blogdetails">
-                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                                <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
                             <div class="blog-list">
                                 <span>March 9, 2021</span>
@@ -6709,7 +6709,7 @@ export default function Home() {
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
-                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                                <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
                             <div class="blog-list">
                                 <span>March 9, 2021</span>
@@ -6730,7 +6730,7 @@ export default function Home() {
                         <div class="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
-                                <h2>A Fresh Vegetable online market place a fresh...</h2>
+                                <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
                             <div class="blog-list">
                                 <span>March 9, 2021</span>
@@ -6793,7 +6793,7 @@ export default function Home() {
 
                         <div class="col-lg-6">
                             <div class="right-sidebar-modal">
-                                <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 class="title-name">curdnut Butter Bite Premium Butter Cookies 600 g</h4>
                                 <h4 class="price">₹36.99</h4>
                                 <div class="product-rating">
                                     <ul class="rating">
@@ -6822,7 +6822,7 @@ export default function Home() {
                                     <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
                                         Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
                                         Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
-                                        muffin I love carrot cake sugar plum dessert bonbon.</p>
+                                        muffin I love Detergent cake sugar plum dessert bonbon.</p>
                                 </div>
 
                                 <ul class="brand-list">
