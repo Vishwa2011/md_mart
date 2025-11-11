@@ -35,19 +35,10 @@ const Vision = () => {
             <div class="row gx-xl-5 gy-xl-0 g-3 ratio_148_1">
                 <div class="col-xl-6 col-12">
                     <div class="row g-sm-4 g-2">
-                        <div class="col-6">
+                        <div class="col-12">
                             <div class="fresh-image-2">
                                 <div>
-                                    <img src="../assets/images/inner-page/about-us/1.jpg"
-                                        class="bg-img blur-up lazyload" alt="" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="fresh-image">
-                                <div>
-                                    <img src="../assets/images/inner-page/about-us/2.jpg"
+                                    <img src="https://img.freepik.com/premium-vector/online-groceries-concept-illustration_114360-2272.jpg"
                                         class="bg-img blur-up lazyload" alt="" />
                                 </div>
                             </div>
