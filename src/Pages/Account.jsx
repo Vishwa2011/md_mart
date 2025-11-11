@@ -301,7 +301,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/2.png"
+                                                            <img src="/assets/images/picture/shop1.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -361,7 +361,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/3.png"
+                                                            <img src="/assets/images/picture/shop2.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -421,7 +421,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/4.png"
+                                                            <img src="/assets/images/picture/shop3.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -483,7 +483,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/5.png"
+                                                            <img src="/assets/images/picture/shop4.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -543,7 +543,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/6.png"
+                                                            <img src="/assets/images/picture/shop5.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -603,7 +603,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/7.png"
+                                                            <img src="/assets/images/picture/shop6.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -662,7 +662,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <div class="product-header">
                                                     <div class="product-image">
                                                         <a href="/Productdetails">
-                                                            <img src="../assets/images/cake/product/2.png"
+                                                            <img src="/assets/images/picture/shop1.png"
                                                                 class="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
@@ -746,7 +746,7 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                                             <div class="product-order-detail">
                                                 <a href="/Productdetails" class="order-image">
-                                                    <img src="../assets/images/vegetable/product/1.png"
+                                                    <img src="/assets/images/picture/shop5.png"
                                                         class="blur-up lazyload" alt="" />
                                                 </a>
 
@@ -810,83 +810,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="order-box dashboard-bg-box">
-                                            <div class="order-container">
-                                                <div class="order-icon">
-                                                   <i className="fa-solid fa-box"></i>
-                                                </div>
-
-                                                <div class="order-detail">
-                                                    <h4>Delivered <span class="success-bg">Success</span></h4>
-                                                    <h6 class="text-content">Cheese on toast cheesy grin cheesy grin
-                                                        cottage cheese caerphilly everyone loves cottage cheese the big
-                                                        cheese.</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="product-order-detail">
-                                                <a href="/Productdetails" class="order-image">
-                                                    <img src="../assets/images/vegetable/product/2.png" alt=""
-                                                        class="blur-up lazyload" />
-                                                </a>
-
-                                                <div class="order-wrap">
-                                                    <a href="/Productdetails">
-                                                        <h3>Cold Brew Coffee Instant Coffee 50 g</h3>
-                                                    </a>
-                                                    <p class="text-content">Pecorino paneer port-salut when the cheese
-                                                        comes out everybody's happy red leicester mascarpone blue
-                                                        castello cauliflower cheese.</p>
-                                                    <ul class="product-size">
-                                                        <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Price : </h6>
-                                                                <h5>₹20.68</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Rate : </h6>
-                                                                <div class="product-rating ms-2">
-                                                                    <ul class="rating">
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Sold By : </h6>
-                                                                <h5>Fresho</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Quantity : </h6>
-                                                                <h5>250 G</h5>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
 
                                         <div class="order-box dashboard-bg-box">
                                             <div class="order-container">
@@ -903,7 +827,7 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                                             <div class="product-order-detail">
                                                 <a href="/Productdetails" class="order-image">
-                                                    <img src="../assets/images/vegetable/product/3.png" alt=""
+                                                    <img src="/assets/images/picture/shop2.png" alt=""
                                                         class="blur-up lazyload" />
                                                 </a>
 
@@ -980,7 +904,7 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                                             <div class="product-order-detail">
                                                 <a href="/Productdetails" class="order-image">
-                                                    <img src="../assets/images/vegetable/product/4.png"
+                                                    <img src="/assets/images/picture/shop3.png"
                                                         class="blur-up lazyload" alt="" />
                                                 </a>
 
@@ -1706,7 +1630,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>1</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                        <img src="/assets/images/picture/dow1.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Sheltos - Real Estate Angular 17 Template</td>
@@ -1740,7 +1664,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>2</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                        <img src="/assets/images/picture/dow2.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
@@ -1776,7 +1700,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>3</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                        <img src="/assets/images/picture/dow3.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Boho - React JS Admin Dashboard Template</td>
@@ -1828,7 +1752,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>1</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                        <img src="/assets/images/picture/dow1.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Sheltos - Real Estate Angular 17 Template</td>
@@ -1862,7 +1786,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>2</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                        <img src="./assets/images/picture/dow2.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
@@ -1898,7 +1822,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>3</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                        <img src="/assets/images/picture/dow3.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Boho - React JS Admin Dashboard Template</td>
@@ -1950,7 +1874,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>1</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                        <img src="/assets/images/picture/dow1.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Sheltos - Real Estate Angular 17 Template</td>
@@ -1984,7 +1908,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>2</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                        <img src="/assets/images/picture/dow2.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
@@ -2020,7 +1944,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>3</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                        <img src="/assets/images/picture/dow3.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Boho - React JS Admin Dashboard Template</td>
@@ -2072,7 +1996,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>1</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                        <img src="/assets/images/picture/dow1.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Sheltos - Real Estate Angular 17 Template</td>
@@ -2106,7 +2030,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>2</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                        <img src="/assets/images/picture/dow2.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
@@ -2142,7 +2066,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                                 <tr>
                                                                     <td>3</td>
                                                                     <td>
-                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                        <img src="/assets/images/picture/dow3.png"
                                                                             class="img-fluid" alt="" />
                                                                     </td>
                                                                     <td>Boho - React JS Admin Dashboard Template</td>

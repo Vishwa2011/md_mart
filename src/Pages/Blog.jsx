@@ -39,7 +39,8 @@ const Blog = () => {
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp">
                                 <div class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/1.jpg" class="blur-up lazyload" alt="" />
+                                    <img src="/assets/images/picture/blog 1.jpg" class="blur-up lazyload" alt="" />
+                                    {/* (450*300) */}
                                 </div>
 
                                 <div class="blog-contain blog-contain-2">
@@ -66,7 +67,7 @@ const Blog = () => {
                         <div class="col-12">
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.05s">
                                 <div class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/2.jpg" class="blur-up lazyload" alt="" />
+                                    <img src="/assets/images/picture/blog 2.jpg" class="blur-up lazyload" alt="" />
                                 </div>
 
                                 <div class="blog-contain blog-contain-2">
@@ -93,7 +94,7 @@ const Blog = () => {
                             <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="blog-image">
                                     <a href="/Blogdetails">
-                                        <img src="../assets/images/inner-page/blog/3.jpg" class="blur-up lazyload"
+                                        <img src="/assets/images/picture/blog 1.jpg" class="blur-up lazyload"
                                             alt="" />
                                     </a>
                                     <label><i class="fa-solid fa-bolt-lightning"></i> popular</label>
@@ -119,161 +120,8 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.15s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/4.jpg" class="blur-up lazyload" alt="" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>James M.
-                                                Martin</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>Starting a vegetable garden: the basics.</h3>
-                                    </a>
-                                    <p>Jarlsberg swiss edam. Goat everyone loves cheese strings ricotta cheese and wine
-                                        pepper jack dolcelatte halloumi. Cream cheese queso croque monsieur camembert de
-                                        normandie cheddar cheesecake cheese slices croque monsieur.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.2s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/5.jpg" class="blur-up lazyload" alt="" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>Cecil M.
-                                                Levis</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>Adapt this simple pasta salad to whatever vegetable.</h3>
-                                    </a>
-                                    <p>Cream cheese cheese slices chalk and cheese cottage cheese cheddar port-salut
-                                        everyone loves dolcelatte. Cream cheese camembert de normandie cow chalk and
-                                        cheese brie gouda cottage cheese cheesy grin.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.25s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/1.jpg" class="blur-up lazyload" alt="" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>Mary R.
-                                                Hernandez</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>With chefs idle and vegetables rotting, China's virus-hit.</h3>
-                                    </a>
-                                    <p>Monterey jack chalk and cheese cheese and biscuits cream cheese fondue say cheese
-                                        stilton halloumi. Gouda everyone loves chalk and cheese everyone loves stinking
-                                        bishop manchego stilton.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.3s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/2.jpg" class="blur-up lazyload" alt="" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>Cheryl D.
-                                                Moser</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>Turn that bowl of pasta into a supercharged veggie vehicle.</h3>
-                                    </a>
-                                    <p>The big cheese fondue st. agur blue cheese. Cheese on toast paneer lancashire
-                                        cheese and biscuits rubber cheese macaroni cheese queso feta. Stinking bishop
-                                        fromage brie edam cheesy feet smelly cheese fromage frais paneer.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.35s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/3.jpg" alt="" class="blur-up lazyload" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>Mina M.
-                                                Short</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>Health, care and skin on the for your organic.</h3>
-                                    </a>
-                                    <p>Cheesy grin brie croque monsieur cheesy grin cottage cheese cheese strings
-                                        dolcelatte cheeseburger. Cheesy feet queso red leicester fromage frais hard
-                                        cheese cheeseburger fromage when the cheese comes out everybody's happy.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="blog-box blog-list wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="/Blogdetails" class="blog-image">
-                                    <img src="../assets/images/inner-page/blog/4.jpg" alt="" class="blur-up lazyload" />
-                                </a>
-
-                                <div class="blog-contain blog-contain-2">
-                                    <div class="blog-label">
-                                        <span class="time"><i data-feather="clock"></i> <span>25 Feg, 2022</span></span>
-                                        <span class="super"><i data-feather="user"></i> <span>Marie S.
-                                                Santiago</span></span>
-                                    </div>
-                                    <a href="/Blogdetails">
-                                        <h3>Fresh organicsm, brand, fresh and picnic place awesome.</h3>
-                                    </a>
-                                    <p>Macaroni cheese camembert de normandie airedale. Cheese triangles babybel cow
-                                        blue castello cheddar cheese and biscuits jarlsberg melted cheese. Caerphilly
-                                        fromage frais ricotta manchego edam boursin edam swiss.</p>
-                                          <a href="/Blogdetails">
-                                    <button onclick="location.href = '/Blogdetails';" class="blog-button">Read
-                                        More <i class="fa-solid fa-right-long"></i></button>
-                                          </a>
-                                </div>
-                            </div>
-                        </div>
+                  
+                    
                     </div>
 
                     <nav class="custom-pagination">
@@ -323,7 +171,7 @@ const Blog = () => {
                                         <div class="recent-post-box">
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/1.jpg"
+                                                    <img src="/assets/images/picture/blog 1.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -337,7 +185,7 @@ const Blog = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/2.jpg"
+                                                    <img src="/assets/images/picture/blog 2.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -351,7 +199,7 @@ const Blog = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/3.jpg"
+                                                    <img src="/assets/images/picture/blog 1.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -365,7 +213,7 @@ const Blog = () => {
 
                                             <div class="recent-box">
                                                 <a href="/Blogdetails" class="recent-image">
-                                                    <img src="../assets/images/inner-page/blog/4.jpg"
+                                                    <img src="/assets/images/picture/blog 2.jpg"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
 
@@ -508,7 +356,7 @@ const Blog = () => {
                                             <li>
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/23.png"
+                                                        <img src="/assets/images/picture/blog3.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
@@ -527,7 +375,7 @@ const Blog = () => {
                                             <li>
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/24.png"
+                                                        <img src="/assets/images/picture/blog4.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
@@ -546,7 +394,7 @@ const Blog = () => {
                                             <li class="mb-0">
                                                 <div class="offer-product">
                                                     <a href="/Shop" class="offer-image">
-                                                        <img src="../assets/images/vegetable/product/26.png"
+                                                        <img src="/assets/images/picture/blog5.png"
                                                             class="blur-up lazyload" alt="" />
                                                     </a>
 
