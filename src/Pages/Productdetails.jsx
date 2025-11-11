@@ -62,23 +62,7 @@ const Productdetails = () => {
                                                 <div class="slider-image">
                                                     <img src="../assets/images/fruit/product/1.png" id="img-1"
                                                         data-zoom-image="../assets/images/fruit/product/1.png" class="
-                                                        img-fluid image_zoom_cls-0 blur-up lazyload" alt=""  style={{
-    zIndex: 999,
-    overflow: 'hidden',
-    marginLeft: 0,
-    marginTop: 0,
-    backgroundPosition: '-1347.46px -1581.86px',
-    width: 507,
-    height: 507,
-    float: 'left',
-    cursor: 'crosshair',
-    backgroundRepeat: 'no-repeat',
-    position: 'absolute',
-    backgroundImage: 'url("../assets/images/fashion/product/24.jpg")',
-    top: 0,
-    left: 0,
- 
-  }}/>
+                                                        img-fluid image_zoom_cls-0 blur-up lazyload" alt="" />
                                                 </div>
                                             </div>
 
@@ -128,43 +112,43 @@ const Productdetails = () => {
                                         <div class="left-slider-image left-slider no-arrow slick-top">
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/1.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/cake1.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}} />
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/2.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/choco.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}}/>
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/3.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/snack.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}} />
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/4.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/oils.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}}/>
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/1.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/7days.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}}/>
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <div class="sidebar-image">
-                                                    <img src="../assets/images/fruit/product/2.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                    <img src="/assets/images/buttor.png"
+                                                        class="img-fluid blur-up lazyload" alt="" style={{height:'113px'}}/>
                                                 </div>
                                             </div>
                                         </div>
@@ -183,19 +167,19 @@ const Productdetails = () => {
                                     <div class="product-rating custom-rate">
                                         <ul class="rating">
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                         </ul>
                                         <span class="review">23 Customer Review</span>
@@ -386,19 +370,19 @@ const Productdetails = () => {
                                     <div class="product-rating mt-1">
                                         <ul class="rating">
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star" class="fill"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                             <li>
-                                                <i data-feather="star"></i>
+                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                             </li>
                                         </ul>
                                         <span>(36 Reviews)</span>
@@ -460,13 +444,13 @@ const Productdetails = () => {
                                         <div class="product-box product-box-bg wow fadeInUp">
                                             <div class="product-image">
                                                 <a href="/">
-                                                    <img src="../assets/images/fashion/product/27.png"
+                                                    <img src="/assets/images/choco.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
                                                 <a href="/">
-                                                    <h6 class="name">Women Flare Bell Bottom Jeans</h6>
+                                                    <h6 class="name">Fantasy Crunchy Choco Chip Cookies</h6>
                                                 </a>
 
                                                 <h5 class="sold text-content">
@@ -481,13 +465,13 @@ const Productdetails = () => {
                                         <div class="product-box product-box-bg wow fadeInUp" data-wow-delay="0.1s">
                                             <div class="product-image">
                                                 <a href="/">
-                                                    <img src="../assets/images/fashion/product/28.png"
+                                                    <img src="/assets/images/cake1.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
                                                 <a href="/">
-                                                    <h6 class="name">Women Straight Fit Jeans</h6>
+                                                    <h6 class="name">Chocolate Chip Cookies 250 g</h6>
                                                 </a>
 
                                                 <h5 class="sold text-content">
@@ -502,13 +486,13 @@ const Productdetails = () => {
                                         <div class="product-box product-box-bg wow fadeInUp">
                                             <div class="product-image">
                                                 <a href="/">
-                                                    <img src="../assets/images/fashion/product/29.png"
+                                                    <img src="/assets/images/buttor.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                             </div>
                                             <div class="product-detail">
                                                 <a href="/">
-                                                    <h6 class="name">Women Polyester Activewear</h6>
+                                                    <h6 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h6>
                                                 </a>
 
                                                 <h5 class="sold text-content">
@@ -527,7 +511,7 @@ const Productdetails = () => {
                                         <div class="form-check">
                                             <input class="checkbox_animated" type="checkbox" value="" id="check1" />
                                             <label class="form-check-label" for="check1">
-                                                <span class="color color-1"> Men Gym Co-Ord Set
+                                                <span class="color color-1"> Fantasy Crunchy Choco Chip Cookies
                                                     <span>₹12</span></span>
                                             </label>
                                         </div>
@@ -537,7 +521,7 @@ const Productdetails = () => {
                                         <div class="form-check">
                                             <input class="checkbox_animated" type="checkbox" value="" id="check2" />
                                             <label class="form-check-label" for="check2">
-                                                <span class="color color-1"> Women Polyester Activewear
+                                                <span class="color color-1">Chocolate Chip Cookies
                                                     <span>₹15</span></span>
                                             </label>
                                         </div>
@@ -547,7 +531,7 @@ const Productdetails = () => {
                                         <div class="form-check">
                                             <input class="checkbox_animated" type="checkbox" value="" id="check3" />
                                             <label class="form-check-label" for="check3">
-                                                <span class="color color-1"> Long Sleeve Top
+                                                <span class="color color-1"> Peanut Butter Bite Premium Butter Cookies
                                                     <span>₹12</span></span>
                                             </label>
                                         </div>
@@ -699,7 +683,7 @@ const Productdetails = () => {
                                                     <div class="col-xl-12">
                                                         <div class="product-main-rating">
                                                             <h2>3.40
-                                                                <i data-feather="star"></i>
+                                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                             </h2>
 
                                                             <h5>5 Overall Rating</h5>
@@ -710,7 +694,7 @@ const Productdetails = () => {
                                                         <ul class="product-rating-list">
                                                             <li>
                                                                 <div class="rating-product">
-                                                                    <h5>5<i data-feather="star"></i></h5>
+                                                                    <h5>5 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i></h5>
                                                                     <div class="progress">
                                                                         <div class="progress-bar" style={{width:"40%"}}>
                                                                         </div>
@@ -720,7 +704,7 @@ const Productdetails = () => {
                                                             </li>
                                                             <li>
                                                                 <div class="rating-product">
-                                                                    <h5>4<i data-feather="star"></i></h5>
+                                                                    <h5>4 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i></h5>
                                                                     <div class="progress">
                                                                         <div class="progress-bar"  style={{width:"20%"}}>
                                                                         </div>
@@ -730,7 +714,7 @@ const Productdetails = () => {
                                                             </li>
                                                             <li>
                                                                 <div class="rating-product">
-                                                                    <h5>3<i data-feather="star"></i></h5>
+                                                                    <h5>3 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i></h5>
                                                                     <div class="progress">
                                                                         <div class="progress-bar"  style={{width:"0%"}}>
                                                                         </div>
@@ -740,7 +724,7 @@ const Productdetails = () => {
                                                             </li>
                                                             <li>
                                                                 <div class="rating-product">
-                                                                    <h5>2<i data-feather="star"></i></h5>
+                                                                    <h5>2 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i></h5>
                                                                     <div class="progress">
                                                                         <div class="progress-bar" style={{width:"20%"}}>
                                                                         </div>
@@ -750,7 +734,7 @@ const Productdetails = () => {
                                                             </li>
                                                             <li>
                                                                 <div class="rating-product">
-                                                                    <h5>1<i data-feather="star"></i></h5>
+                                                                    <h5>1 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i></h5>
                                                                     <div class="progress">
                                                                         <div class="progress-bar"  style={{width:"20%"}}>
                                                                         </div>
@@ -781,7 +765,7 @@ const Productdetails = () => {
                                                             <div>
                                                                 <div class="people-image people-text">
                                                                     <img alt="user" class="img-fluid "
-                                                                        src="../assets/images/review/1.jpg" />
+                                                                        src="/assets/images/CEO.jpg" />
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
@@ -794,23 +778,19 @@ const Productdetails = () => {
                                                                         <div class="product-rating">
                                                                             <ul class="rating">
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -833,7 +813,7 @@ const Productdetails = () => {
                                                             <div>
                                                                 <div class="people-image people-text">
                                                                     <img alt="user" class="img-fluid "
-                                                                        src="../assets/images/review/2.jpg" />
+                                                                        src="/assets/images/operation.jpg" />
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
@@ -848,23 +828,19 @@ const Productdetails = () => {
                                                                             <div class="product-rating">
                                                                                 <ul class="rating">
                                                                                     <li>
-                                                                                        <i data-feather="star"
-                                                                                            class="fill"></i>
+                                                                                         <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <i data-feather="star"
-                                                                                            class="fill"></i>
+                                                                                        <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <i data-feather="star"
-                                                                                            class="fill"></i>
+                                                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <i data-feather="star"
-                                                                                            class="fill"></i>
+                                                                                         <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <i data-feather="star"></i>
+                                                                                         <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
@@ -886,7 +862,7 @@ const Productdetails = () => {
                                                             <div>
                                                                 <div class="people-image people-text">
                                                                     <img alt="user" class="img-fluid "
-                                                                        src="../assets/images/review/3.jpg" />
+                                                                        src="/assets/images/CEO.jpg" />
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
@@ -899,23 +875,19 @@ const Productdetails = () => {
                                                                         <div class="product-rating">
                                                                             <ul class="rating">
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                   <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -940,7 +912,7 @@ const Productdetails = () => {
                                                             <div>
                                                                 <div class="people-image people-text">
                                                                     <img alt="user" class="img-fluid "
-                                                                        src="../assets/images/review/4.jpg" />
+                                                                        src="/assets/images/operation.jpg" />
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
@@ -954,23 +926,19 @@ const Productdetails = () => {
                                                                         <div class="product-rating">
                                                                             <ul class="rating">
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                   <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -993,7 +961,7 @@ const Productdetails = () => {
                                                             <div>
                                                                 <div class="people-image people-text">
                                                                     <img alt="user" class="img-fluid "
-                                                                        src="../assets/images/review/5.jpg" />
+                                                                        src="/assets/images/CEO.jpg" />
                                                                 </div>
                                                             </div>
                                                             <div class="people-comment">
@@ -1006,23 +974,19 @@ const Productdetails = () => {
                                                                         <div class="product-rating">
                                                                             <ul class="rating">
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                  <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"
-                                                                                        class="fill"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <i data-feather="star"></i>
+                                                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -1065,8 +1029,8 @@ const Productdetails = () => {
                             <div class="product-box-3 wow fadeInUp">
                                 <div class="product-header">
                                     <div class="product-image">
-                                        <a href="product-left.htm">
-                                            <img src="../assets/images/cake/product/11.png"
+                                        <a href="/">
+                                            <img src="/assets/images/cake1.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1098,19 +1062,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(5.0)</span>
@@ -1149,7 +1113,7 @@ const Productdetails = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/2.png"
+                                            <img src="/assets/images/flour.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1179,19 +1143,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
@@ -1230,7 +1194,7 @@ const Productdetails = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/3.png"
+                                            <img src="/assets/images/buttor.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1262,19 +1226,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(2.4)</span>
@@ -1313,7 +1277,7 @@ const Productdetails = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/4.png"
+                                            <img src="/assets/images/snack.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1345,19 +1309,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(5.0)</span>
@@ -1396,7 +1360,7 @@ const Productdetails = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/5.png"
+                                            <img src="/assets/images/7days.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1428,19 +1392,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(3.8)</span>
@@ -1479,7 +1443,7 @@ const Productdetails = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/6.png"
+                                            <img src="/assets/images/choco.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1511,19 +1475,19 @@ const Productdetails = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
@@ -1559,12 +1523,13 @@ const Productdetails = () => {
                             </div>
                         </div>
 
-                        <div>
-                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.3s">
+                       <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.15s">
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/">
-                                            <img src="../assets/images/cake/product/7.png" class="img-fluid" alt="" />
+                                            <img src="/assets/images/snack.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
                                         <ul class="product-option">
@@ -1575,6 +1540,7 @@ const Productdetails = () => {
                                                 </a>
                                             </li>
 
+                                       
 
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
                                                 <a href="/Wishlist" class="notifi-wishlist">
@@ -1587,34 +1553,32 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">Snacks</span>
                                         <a href="/">
-                                            <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
+                                            <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
-                                            <span>(3.8)</span>
+                                            <span>(5.0)</span>
                                         </div>
-
-                                        <h6 class="unit">1 Kg</h6>
-
-                                        <h5 class="price"><span class="theme-color">₹12.68</span> <del>₹14.69</del>
+                                        <h6 class="unit">570 G</h6>
+                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1664,11 +1628,11 @@ const Productdetails = () => {
                     <form class="product-review-form">
                         <div class="product-wrapper">
                             <div class="product-image">
-                                <img class="img-fluid" alt="Solid Collared Tshirts"
-                                    src="../assets/images/fashion/product/26.jpg" />
+                                <img class="img-fluid" alt="Fantasy Crunchy Choco Chip Cookies0"
+                                    src="/assets/images/choco.png" />
                             </div>
                             <div class="product-content">
-                                <h5 class="name">Solid Collared Tshirts</h5>
+                                <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                 <div class="product-review-rating">
                                     <div class="product-rating">
                                         <h6 class="price-number">₹16.00</h6>
@@ -1682,19 +1646,19 @@ const Productdetails = () => {
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                 </div>
@@ -1740,19 +1704,19 @@ const Productdetails = () => {
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <span class="ms-2">8 Reviews</span>
@@ -1825,7 +1789,7 @@ const Productdetails = () => {
                 <div class="col-12">
                     <div class="cart-content">
                         <div class="product-image">
-                            <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                            <img src="/assets/images/choco.png" class="img-fluid blur-up lazyload"
                                 alt="" />
                             <div class="content">
                                 <h5>Creamy Chocolate Cake</h5>

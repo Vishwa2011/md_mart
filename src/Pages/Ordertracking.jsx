@@ -36,7 +36,7 @@ const Ordertracking = () => {
             <div class="row g-sm-4 g-3">
                 <div class="col-xxl-3 col-xl-4 col-lg-6">
                     <div class="order-image">
-                        <img src="../assets/images/vegetable/product/6.png" class="img-fluid blur-up lazyload" alt="" />
+                        <img src="/assets/images/choco.png" class="img-fluid blur-up lazyload" alt="" />
                     </div>
                 </div>
 
