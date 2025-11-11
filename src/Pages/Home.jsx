@@ -4363,7 +4363,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xxl-3 col-md-6">
                     <div class="row">
                         <div class="col-xl-12">
