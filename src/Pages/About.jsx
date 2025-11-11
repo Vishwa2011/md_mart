@@ -38,7 +38,7 @@ const About = () => {
                      <div class="col-12">
                             <div class="fresh-image-2">
                                 <div>
-                                    <img src="https://img.freepik.com/premium-vector/online-groceries-concept-illustration_114360-2272.jpg"
+                                    <img src="../assets/images/Img1.jpg"
                                         class="bg-img blur-up lazyload" alt="" />
                                 </div>
                             </div>
