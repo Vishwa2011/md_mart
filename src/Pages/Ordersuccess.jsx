@@ -92,7 +92,7 @@ const Ordersuccess = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/1.png"
+                                                    <img src="/assets/images/picture/shop5.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
@@ -129,7 +129,7 @@ const Ordersuccess = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/2.png"
+                                                    <img src="/assets/images/picture/shop3.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">
@@ -166,7 +166,7 @@ const Ordersuccess = () => {
                                         <td class="product-detail">
                                             <div class="product border-0">
                                                 <a href="/Productdetails" class="product-image">
-                                                    <img src="../assets/images/vegetable/product/3.png"
+                                                    <img src="/assets/images/picture/shop2.png"
                                                         class="img-fluid blur-up lazyload" alt="" />
                                                 </a>
                                                 <div class="product-detail">

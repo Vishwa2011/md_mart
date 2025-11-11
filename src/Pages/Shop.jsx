@@ -206,7 +206,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/2.png"
+                                            <img src="/assets/images/picture/shop1.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -291,7 +291,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/3.png"
+                                            <img src="/assets/images/picture/shop2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -377,7 +377,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/4.png"
+                                            <img src="/assets/images/picture/shop3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -464,7 +464,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/5.png"
+                                            <img src="/assets/images/picture/shop4.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -549,7 +549,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/6.png"
+                                            <img src="/assets/images/picture/shop5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -638,7 +638,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/7.png"
+                                            <img src="/assets/images/picture/shop6.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -725,7 +725,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/2.png"
+                                            <img src="/assets/images/picture/shop1.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -810,7 +810,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/3.png"
+                                            <img src="/assets/images/picture/shop2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -896,7 +896,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/4.png"
+                                            <img src="/assets/images/picture/shop3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -983,7 +983,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/5.png"
+                                            <img src="/assets/images/picture/shop4.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1067,7 +1067,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/6.png"
+                                            <img src="/assets/images/picture/shop5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1154,7 +1154,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/7.png"
+                                            <img src="/assets/images/picture/shop6.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1241,7 +1241,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/2.png"
+                                            <img src="/assets/images/picture/shop1.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1325,7 +1325,7 @@ const Shop = () => {
                                 <div class="product-header">
                                     <div class="product-image">
                                         <a href="/Productdetails">
-                                            <img src="../assets/images/cake/product/3.png"
+                                            <img src="/assets/images/picture/shop2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
 
@@ -1450,7 +1450,7 @@ const Shop = () => {
                     <div class="row g-sm-4 g-2">
                         <div class="col-lg-6">
                             <div class="slider-image">
-                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                <img src="/assets/images/picture/bigest.jpg" class="img-fluid blur-up lazyload"
                                     alt="" />
                             </div>
                         </div>
