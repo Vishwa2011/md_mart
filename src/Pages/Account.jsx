@@ -3,6 +3,34 @@ import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
+
+const giftCardsData = [
+  {
+    id: 1,
+    title: "Amazon Gift Card",
+    code: "#AMZ2548",
+    amount: 150,
+    status: "Active",
+    image: "../assets/images/Giftcard.jpg",
+  },
+  {
+    id: 2,
+    title: "Flipkart Gift Card",
+    code: "#FLP1536",
+    amount: 200,
+    status: "Pending",
+    image: "../assets/images/Giftcard.jpg",
+  },
+  {
+    id: 3,
+    title: "Starbucks Gift Card",
+    code: "#SBX1366",
+    amount: 100,
+    status: "Redeemed",
+    image: "../assets/images/Giftcard.jpg",
+  },
+];
+
 const Account = () => {
        useEffect(() => {
             /**=====================
@@ -105,8 +133,8 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
 
                                 <div class="profile-name">
-                                    <h3>Vicki E. Pope</h3>
-                                    <h6 class="text-content">vicki.pope@gmail.com</h6>
+                                    <h3>Rajesh Patel</h3>
+                                    <h6 class="text-content">rajeshpatel01@gmail.com</h6>
                                 </div>
                             </div>
                         </div>
@@ -145,14 +173,23 @@ document.querySelectorAll('.address-box').forEach(box => {
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-download-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-download" type="button" role="tab"><i
-                                        data-feather="download"></i>Download</button>
+                                        data-feather="download"></i>Help & Support</button>
                             </li>
+
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-security" type="button" role="tab"><i
                                         data-feather="shield"></i>
-                                    Privacy</button>
+                                    E- Gift Cards</button>
                             </li>
+
+                            {/* <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-security" type="button" role="tab"><i
+                                        data-feather="shield"></i>
+                                    Privacy</button>
+                            </li> */}
+
                         </ul>
                     </div>
                 </div>
@@ -175,7 +212,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                     </div>
 
                                     <div class="dashboard-user-name">
-                                        <h6 class="text-content">Hello, <b class="text-title">Vicki E. Pope</b></h6>
+                                        <h6 class="text-content">Hello, <b class="text-title">Rajesh Patel</b></h6>
                                         <p class="text-content">From your My Account Dashboard you have the ability to
                                             view a snapshot of your recent account activity and update your account
                                             information. Select a link below to view or edit information.</p>
@@ -237,7 +274,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                             <div class="dashboard-detail">
                                                 <h6 class="text-content">MARK JECNO</h6>
-                                                <h6 class="text-content">vicki.pope@gmail.com</h6>
+                                                <h6 class="text-content">rajeshpatel01@gmail.com</h6>
                                                 <a href="javascript:void(0)">Change Password</a>
                                             </div>
                                         </div>
@@ -1412,7 +1449,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                         </div>
                                         <div class="profile-name-detail">
                                             <div class="d-sm-flex align-items-center d-block">
-                                                <h3>Vicki E. Pope</h3>
+                                                <h3>Rajesh Patel</h3>
                                                 <div class="product-rating profile-rating">
                                                     <ul class="rating">
                                                         <li>
@@ -1450,7 +1487,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 <li>
                                                     <div class="location-box">
                                                         <i data-feather="mail"></i>
-                                                        <h6>vicki.pope@gmail.com</h6>
+                                                        <h6>rajeshpatel01@gmail.com</h6>
                                                     </div>
                                                 </li>
 
@@ -1513,7 +1550,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             <tr>
                                                                 <td>Email :</td>
                                                                 <td>
-                                                                    <a href="#">vicki.pope@gmail.com
+                                                                    <a href="#">rajeshpatel01@gmail.com
                                                                         <span data-bs-toggle="modal"
                                                                             data-bs-target="#editProfile">Edit</span></a>
                                                                 </td>
@@ -1722,7 +1759,7 @@ document.querySelectorAll('.address-box').forEach(box => {
 
 
                             <div class="tab-pane fade" id="pills-security" role="tabpanel">
-                                <div class="dashboard-privacy">
+                                {/* <div class="dashboard-privacy">
                                     <div class="dashboard-bg-box">
                                         <div class="dashboard-title mb-4">
                                             <h3>Privacy</h3>
@@ -1793,7 +1830,66 @@ document.querySelectorAll('.address-box').forEach(box => {
                                         <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
                                             Account</button>
                                     </div>
-                                </div>
+                                </div> */}
+                            <div className="row g-4 mt-2">
+  {giftCardsData.map((card) => (
+    <div key={card.id} className="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div className="card h-100 shadow-sm rounded-4 overflow-hidden">
+        {/* Card Image */}
+        <img
+          src={card.image}
+          className="card-img-top"
+          alt={card.title}
+          style={{ 
+    width: "100%", 
+    height: "auto",  // maintain height according to width
+    objectFit: "contain", // no cropping
+    background: "#f8f9fa" // optional background if image doesn't fill
+  }}
+        />
+
+        {/* Card Body */}
+        <div className="card-body">
+          <h5 className="card-title fw-bold">{card.title}</h5>
+          <p className="card-text text-muted mb-1">Code: {card.code}</p>
+          <p className="h5 fw-bold text-primary mb-2">₹{card.amount.toFixed(2)}</p>
+
+          {/* Status Badge */}
+          <span
+            className={`badge mb-3 ${
+              card.status === "Active"
+                ? "bg-success"
+                : card.status === "Pending"
+                ? "bg-warning text-dark"
+                : "bg-danger"
+            }`}
+          >
+            {card.status}
+          </span>
+
+          {/* Action Buttons */}
+          <div className="d-flex justify-content-between">
+            <button className="btn btn-outline-primary btn-sm">
+              <i className="far fa-eye me-1"></i> View
+            </button>
+            <button
+    className={`btn btn-sm flex-fill d-flex align-items-center justify-content-center ${
+      card.status === "Redeemed" || card.status === "Expired"
+        ? "btn-secondary disabled"
+        : "btn-success"
+    }`}
+  >
+    <i className="fas fa-gift me-2"></i> {/* icon */}
+    Redeem
+  </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+                            </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -1828,7 +1924,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                         <div class="col-xxl-6">
                             <form>
                                 <div class="form-floating theme-form-floating">
-                                    <input type="email" class="form-control" id="email1" value="vicki.pope@gmail.com" />
+                                    <input type="email" class="form-control" id="email1" value="rajeshpatel01@gmail.com" />
                                     <label for="email1">Email address</label>
                                 </div>
                             </form>
