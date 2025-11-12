@@ -304,7 +304,7 @@ export default function Home() {
                         <div>
                             <div class="deal-box wow fadeInUp">
                                 <a href="/Shop" class="category-image order-sm-2">
-                                    <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid blur-up lazyload"
+                                    <img src="/assets/images/picture/kaju.png" class="img-fluid blur-up lazyload"
                                         alt="Image Size : 183 X 171" />
                                 </a>
 
@@ -625,7 +625,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -1181,7 +1181,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -1461,7 +1461,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -1528,7 +1528,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -2135,7 +2135,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -2675,7 +2675,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -3211,7 +3211,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -3751,7 +3751,7 @@ export default function Home() {
                                     </div>
 
                                     <a href="/Productdetails">
-                                        <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                        <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                                     </a>
 
                                     <ul class="option">
@@ -5533,7 +5533,7 @@ export default function Home() {
             <div class="row">
                 <div class="col-12">
                     <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                        <img src="../assets/images/veg-3/banner/Main-Banner.png" class="img-fluid bg-img" alt="Image Size : 1590 X 428" />
+                        <img src="../assets/images/veg-3/banner/Main-Banner.png" className="newresimg" alt="Image Size : 1590 X 428" />
                         <div class="banner-detail p-center text-dark  text-center p-0">
                             <div>
                                 <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
@@ -5571,7 +5571,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -6111,7 +6111,7 @@ export default function Home() {
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/1.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
                             <ul class="option">
@@ -7014,7 +7014,7 @@ export default function Home() {
         </h6>
         <ul class="items-image">
             <li>
-                <img src="../assets/images/veg-3/cate1/1.png" alt="" />
+                <img src="/assets/images/picture/kaju.png" alt="" />
             </li>
             <li>
                 <img src="../assets/images/veg-3/cate1/2.png" alt="" />

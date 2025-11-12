@@ -47507,3 +47507,29 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 .shippingpolicy-section a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+.newresimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .newresimg {
+    height: 350px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+  .newresimg {
+    height: 250px;
+  }
+}
