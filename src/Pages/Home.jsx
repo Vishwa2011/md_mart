@@ -1,9 +1,57 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import Navbar from './Navbar'
 import Newsletter from '../component/Newsletter'
 import Footer from './Footer'
 
 export default function Home() {
+     const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((oldProgress) => {
+        if (oldProgress >= 50) {
+          clearInterval(timer);
+          return 50;
+        }
+        return oldProgress + 1;
+      });
+    }, 50);
+
+    return () => clearInterval(timer); // cleanup
+  }, []);
+
+  // ===== Countdown Timer =====
+  const initialHours = 60;
+  const initialMinutes = 2;
+  const initialSeconds = 3;
+
+  const [timeLeft, setTimeLeft] = useState(
+    initialHours * 3600 + initialMinutes * 60 + initialSeconds
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
+  const getTimeParts = (totalSec) => {
+    const days = Math.floor(totalSec / (3600 * 24));
+    const hours = Math.floor((totalSec % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSec % 3600) / 60);
+    const seconds = totalSec % 60;
+    return { days, hours, minutes, seconds };
+  };
+
+  const { days, hours, minutes, seconds } = getTimeParts(timeLeft);
   return (
     <div>
         <Navbar />
@@ -342,35 +390,43 @@ export default function Home() {
                                         <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
+                     <div className="progress custom-progressbar" style={{ height: "20px" }}>
+                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
+                                     </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-4" data-hours="1" data-minutes="2" data-seconds="3">
-                                      <ul>
+                                      <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
+      <ul>
         <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
+          <div className="counter">
+            <div className="days">
+              <h6>{days}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
+          <div className="counter">
+            <div className="hours">
+              <h6>{String(hours).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
+          <div className="counter">
+            <div className="minutes">
+              <h6>{String(minutes).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
+          <div className="counter">
+            <div className="seconds">
+              <h6>{String(seconds).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
-    </ul>
-                                    </div>
+      </ul>
+    </div>
                                 </div>
                             </div>
                         </div>
@@ -410,35 +466,43 @@ export default function Home() {
                                         <h5>Butter</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
+              <div className="progress custom-progressbar" style={{ height: "20px" }}>
+                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
+                                     </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-1" data-hours="1" data-minutes="2" data-seconds="3">
-                                      <ul>
+                                    <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
+      <ul>
         <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
+          <div className="counter">
+            <div className="days">
+              <h6>{days}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
+          <div className="counter">
+            <div className="hours">
+              <h6>{String(hours).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
+          <div className="counter">
+            <div className="minutes">
+              <h6>{String(minutes).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
+          <div className="counter">
+            <div className="seconds">
+              <h6>{String(seconds).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
-    </ul>
-                                    </div>
+      </ul>
+    </div>
                                 </div>
                             </div>
                         </div>
@@ -478,35 +542,43 @@ export default function Home() {
                                         <h5>cheese</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
+                              <div className="progress custom-progressbar" style={{ height: "20px" }}>
+                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
+                                     </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-2" data-hours="1" data-minutes="2" data-seconds="3">
-                                        <ul>
+                                     <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
+      <ul>
         <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
+          <div className="counter">
+            <div className="days">
+              <h6>{days}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
+          <div className="counter">
+            <div className="hours">
+              <h6>{String(hours).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
+          <div className="counter">
+            <div className="minutes">
+              <h6>{String(minutes).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
+          <div className="counter">
+            <div className="seconds">
+              <h6>{String(seconds).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
-    </ul>
-                                    </div>
+      </ul>
+    </div>
                                 </div>
                             </div>
                         </div>
@@ -545,35 +617,43 @@ export default function Home() {
                                         <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
+                                    <div className="progress custom-progressbar" style={{ height: "20px" }}>
+                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
+                                     </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-3" data-hours="1" data-minutes="2" data-seconds="3">
-                                     <ul>
+                                    <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
+      <ul>
         <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
+          <div className="counter">
+            <div className="days">
+              <h6>{days}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
+          <div className="counter">
+            <div className="hours">
+              <h6>{String(hours).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
+          <div className="counter">
+            <div className="minutes">
+              <h6>{String(minutes).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
         <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
+          <div className="counter">
+            <div className="seconds">
+              <h6>{String(seconds).padStart(2, "0")}</h6>
             </div>
+          </div>
         </li>
-    </ul>
-                                    </div>
+      </ul>
+    </div>
                                 </div>
                             </div>
                         </div>

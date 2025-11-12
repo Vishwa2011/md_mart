@@ -12579,9 +12579,9 @@ template {
 }
 
 :root {
-    --theme-color: #0da487;
+    --theme-color: #2baedd;
     --theme-color-rgb: 13, 164, 135;
-    --theme-color1: #0e947a;
+    --theme-color1: #2195be;
     --theme-color1-rgb: 14, 148, 122;
     --theme-color2: linear-gradient(90.56deg, var(--theme-color1) 8.46%, var(--theme-color) 62.97%)
 }
@@ -14188,8 +14188,8 @@ template {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background: #0da487;
-    background: -webkit-gradient(linear, left top, right top, from(#0e947a), to(#0da487));
+    background: #418ca7 ;
+    background: -webkit-gradient(linear, left top, right top, from(#418ca7 ), to(#418ca7 ));
     background: linear-gradient(90deg, #0e947a 0%, #0da487 100%);
     -webkit-transition: all .3s ease;
     transition: all .3s ease
@@ -16148,7 +16148,7 @@ body.rtl .delivery-modal .modal-dialog .modal-content .modal-body.policy-body ul
 .product-section-box .custom-nav .nav-item .nav-link:hover::after,
 .product-section-box .custom-nav .nav-item .nav-link.active::after {
     width: 100%;
-    background: #1aa488
+    background: #2baedd
 }
 
 .product-section-box .offer-table {
@@ -43654,8 +43654,7 @@ body.rtl .question-answer li .question-box .link-dislike-box {
 
 .shop-section .left-box .shop-left-sidebar .custom-nav-tab .nav-item .nav-link.active {
     color: #fff;
-    background: linear-gradient(90.56deg, var(--theme-color1) 8.46%, var(--theme-color) 62.97%);
-    font-size: 19px;
+background: linear-gradient(90.56deg, #2082a5 8.46%, var(--theme-color) 62.97%);    font-size: 19px;
     font-weight: 600
 }
 
