@@ -148,9 +148,6 @@ const Footer = () => {
                         <div class="footer-contain">
                             <ul>
                                 <li>
-                                    <a href="/Ordersuccess" class="text-content">Your Order</a>
-                                </li>
-                                <li>
                                     <a href="/Account" class="text-content">Your Account</a>
                                 </li>
                                 <li>

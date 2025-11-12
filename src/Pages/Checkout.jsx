@@ -197,7 +197,7 @@ const Checkout = () => {
                         onChange={(e) => setDeliveryType(e.target.value)}
                       />
                       <label className="form-check-label ms-2" htmlFor="future">
-                        Future Delivery Option
+                        Schedule Delivery Option
                       </label>
                     </div>
                   </div>
@@ -477,7 +477,7 @@ const Checkout = () => {
                                                             <div class="custom-form-check form-check mb-0">
                                                                 <label class="form-check-label" for="wallet"><input
                                                                         class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="wallet" />My
+                                                                        name="flexRadioDefault" id="wallet" />MD Mart
                                                                     Wallet</label>
                                                             </div>
                                                         </div>
@@ -659,7 +659,7 @@ const Checkout = () => {
                             </ul>
                         </div>
 
-                        <button class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Place Order</button>
+                        <button class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold"> <a href='/Ordersuccess' style={{color:'White'}}>Place Order</a></button>
                     </div>
                 </div>
             </div>

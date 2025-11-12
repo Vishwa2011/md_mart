@@ -24,6 +24,7 @@ import Mission from './Pages/Mission';
 import Vision from './Pages/Vision';
 import Forgot from './Pages/Forgot';
 import Signup from './Pages/Signup';
+import OffersPage from './Pages/Offer';
 
 
 
@@ -56,6 +57,7 @@ function App() {
        <Route path='/Vision' element={<Vision/>}/>
        <Route path="/Forgot" element={<Forgot />}/>
        <Route path='/Signup' element={<Signup/>}/>
+       <Route path='/Offerspage' element={<OffersPage/>}/>
   </Routes>
 
   {/* <!-- Tap to top and theme setting button start --> */}

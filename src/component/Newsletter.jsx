@@ -19,7 +19,7 @@ export default function Newsletter() {
                             <div class="col-xxl-8 col-xl-7">
                                 <div class="newsletter-detail p-center-left text-white">
                                     <div>
-                                        <h2>Subscribe to the newsletter</h2>
+                                        <h2>Subscribe For New Offers</h2>
                                         <h4>Join our subscribers list to get the latest news, updates and special offers
                                             delivered directly in your inbox.</h4>
                                         <form class="row g-2">

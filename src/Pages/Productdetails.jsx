@@ -1821,8 +1821,8 @@ const Productdetails = () => {
                         <div class="add-btn">
                             <a class="btn theme-bg-color text-white wishlist-btn" href="/Wishlist"><i
                                     class="fa fa-bookmark"></i> Wishlist</a>
-                            <a class="btn theme-bg-color text-white" href="/Cart"><i
-                                    class="fas fa-shopping-cart"></i> Add To Cart</a>
+                            <a class="btn theme-bg-color text-white" href="/Checkout"><i
+                                    class="fas fa-shopping-cart"></i> Buy Now</a>
                         </div>
                     </div>
                 </div>

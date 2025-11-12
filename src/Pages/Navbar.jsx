@@ -577,26 +577,81 @@ export default function Navbar() {
                                             <div className="dropdown-menu dropdown-menu-2">
                                                 <div className="row">
                                                     <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Daily Vegetables</h5>
-                                                        <a className="dropdown-item" href="/Shop">Beans &
-                                                            Brinjals</a>
-
-                                              
+                                                        <h5 className="dropdown-header">Cooking Essentials</h5>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                           Rice
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                           Atta, Flours & Sooji
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Dals & Pulses
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Sabudana & Poha
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Edible Oils
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Salt & Sugar
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Millet & Organic
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Dry Fruits & Nuts
+                                                        </a>
                                                     </div>
 
                                                     <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Baby Tender</h5>
-                                                        <a className="dropdown-item" href="/Shop">Beans &
-                                                            Brinjals</a>
-
+                                                        <h5 className="dropdown-header">Dairy Products</h5>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Fresh Milk
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Butter
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Cheese
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Yogurt
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Icecream
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Ghee
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Cream
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Buttermilk
+                                                        </a>
                                                     </div>
 
                                                     <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Exotic Vegetables</h5>
-                                                        <a className="dropdown-item" href="/Shop">Asparagus
-                                                            & Artichokes</a>
-
+                                                        <h5 className="dropdown-header">Bakery Products</h5>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Bread
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Cakes
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Rolls
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Buns
+                                                        </a>
+                                                        <a className="dropdown-item" href="/Shop">
+                                                            Muffins
+                                                        </a>
                                                     </div>
+
+
 
                                                     <div className="dropdown-column dropdown-column-img col-3"></div>
                                                 </div>
