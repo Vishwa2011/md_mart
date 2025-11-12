@@ -1551,8 +1551,166 @@ document.querySelectorAll('.address-box').forEach(box => {
 
 
                             <div class="tab-pane fade" id="pills-download" role="tabpanel">
+ <section class="faq-box-contain section-b-space">
+                                                <div class="faq-accordion">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">
+                                        What is MD Mart and what do we offer? <i
+                                            class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>MD Mart</strong> is a modern eCommerce platform designed to make your daily shopping experience easier, faster, and more convenient. 
+                                            From groceries and household items to personal care and lifestyle products — we bring everything you need right to your doorstep.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">
+                                         How do I place an order on your website? <i
+                                            class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                         <p>
+                                            Placing an order is simple! Just browse through our products, add your desired items to the cart, 
+                                            proceed to checkout, fill in your shipping details, and make a secure payment using any of our supported methods.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">
+                                       What payment methods do you accept? <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>We accept all major payment options including Credit/Debit Cards, UPI, Net Banking, Wallets, and Cash on Delivery (COD) 
+                                        depending on your delivery location.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour">
+                                        How long will it take to deliver my order? <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Delivery times depend on your location and product availability. 
+                                        Generally, we deliver within <strong>2-5 business days</strong>. 
+                                        You’ll receive regular updates via SMS or email once your order is dispatched.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive">
+                                        How can I track my order? <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> Once your order is shipped, we’ll send you a tracking link via email or SMS. 
+                                        You can also log in to your account and view the real-time status of your order from the “My Orders” section.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix">
+                                        What is your return and refund policy? <i
+                                            class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>If you’re not satisfied with your purchase, you can request a return or replacement within 
+                                        <strong>7 days</strong> of delivery. Refunds will be processed once the item passes quality inspection. 
+                                        Please refer to our <a href="/Return">Return Policy</a> page for more details.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven">
+                                        Is my personal information secure? <i
+                                        class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Absolutely! We take your privacy seriously. 
+                                        All your personal and payment information is encrypted and protected using the latest security standards. 
+                                        Learn more in our <a href="/Privacy">Privacy Policy</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight">
+                                         Do you offer discounts or loyalty programs? <i
+                                            class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Yes! We frequently offer seasonal discounts, promo codes, and loyalty rewards for our regular customers. 
+                                        Stay updated by subscribing to our newsletter or following us on social media.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine">
+                                        How can I contact customer support? <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>You can reach our support team through the <a href="/contact">Contact Us</a> page, 
+                                        email us at <strong>support@mdmart.com</strong>, or call our helpline between <strong>9 AM to 9 PM</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></section>
 
                             </div>
 
