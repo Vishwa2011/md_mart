@@ -51,12 +51,20 @@ const Checkout = () => {
                                         <div class="checkout-title">
                                             <h4>Delivery Address</h4>
                                         </div>
-
+                                        
                                         <div class="checkout-detail">
                                             <div class="row g-4">
                                                 <div class="col-xxl-6 col-lg-12 col-md-6">
+                                                    
                                                     <div class="delivery-address-box">
+                                                        <div className="d-flex justify-content-end">
+                                                                 <h4 className="mb-3"> <a href="javascript:void(0)"
+                                                                 data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                                             </h4>
+                                                        </div>
+
                                                         <div>
+                                                           
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio" name="jack"
                                                                     id="flexRadioDefault1" />
@@ -96,6 +104,11 @@ const Checkout = () => {
 
                                                 <div class="col-xxl-6 col-lg-12 col-md-6">
                                                     <div class="delivery-address-box">
+                                                         <div className="d-flex justify-content-end">
+                                                                 <h4 className="mb-3"> <a href="javascript:void(0)"
+                                                                 data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                                             </h4>
+                                                        </div>
                                                         <div>
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio" name="jack"
@@ -668,6 +681,63 @@ const Checkout = () => {
     {/* <!-- Checkout section End --> */}
 
      <Footer />
+
+      {/* <!-- Edit Profile Start --> */}
+    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Edit Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        
+
+                     
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address1"
+                                        value="8424 James Lane South San Francisco" />
+                                    <label for="address1">Add Address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address3" value="94080" />
+                                    <label for="address3">Pin Code</label>
+                                </div>
+                            </form>
+                        </div>
+                           <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input class="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
+                                        maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value =
+                                            this.value.slice(0, this.maxLength);" />
+                                    <label for="mobile">Phone</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/* <!-- Edit Profile End --> */}
     </>
   )
 }

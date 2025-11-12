@@ -14984,7 +14984,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .label-flex .discount {
-    background-color: var(--theme-color);
+    background-color:#ed439f;
     color: #fff;
     padding: 4px calc(7px + 3*(100vw - 320px)/1600);
     border-radius: 4px
@@ -18880,7 +18880,7 @@ span {
 }
 
 .theme-color {
-    color: var(--theme-color) !important
+    color: #ed439f;
 }
 
 .theme-bg-color {
@@ -20146,7 +20146,7 @@ span {
 }
 
 .deal-section .deal-box .deal-detail .hot-deal {
-    background-color: var(--theme-color);
+    background-color: #ed439f;
     display: inline-block;
     padding: 3px 10px;
     border-radius: 50px;
@@ -33433,7 +33433,7 @@ body.rtl .menu-label {
 }
 
 .product-section-2 .product-box-4 .product-details .price {
-    color: var(--theme-color);
+    color: #ed439f;
     font-weight: 500
 }
 

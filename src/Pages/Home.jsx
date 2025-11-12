@@ -1,57 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from 'react'
 import Navbar from './Navbar'
 import Newsletter from '../component/Newsletter'
 import Footer from './Footer'
 
 export default function Home() {
-     const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((oldProgress) => {
-        if (oldProgress >= 50) {
-          clearInterval(timer);
-          return 50;
-        }
-        return oldProgress + 1;
-      });
-    }, 50);
-
-    return () => clearInterval(timer); // cleanup
-  }, []);
-
-  // ===== Countdown Timer =====
-  const initialHours = 60;
-  const initialMinutes = 2;
-  const initialSeconds = 3;
-
-  const [timeLeft, setTimeLeft] = useState(
-    initialHours * 3600 + initialMinutes * 60 + initialSeconds
-  );
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => clearInterval(interval); // cleanup
-  }, []);
-
-  const getTimeParts = (totalSec) => {
-    const days = Math.floor(totalSec / (3600 * 24));
-    const hours = Math.floor((totalSec % (3600 * 24)) / 3600);
-    const minutes = Math.floor((totalSec % 3600) / 60);
-    const seconds = totalSec % 60;
-    return { days, hours, minutes, seconds };
-  };
-
-  const { days, hours, minutes, seconds } = getTimeParts(timeLeft);
   return (
     <div>
         <Navbar />
@@ -254,45 +206,39 @@ export default function Home() {
     <section>
         <div class="container-fluid-lg">
             <div class="title">
-                <h2>Best Offer</h2>
+                <h2>Best Value</h2>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="three-slider arrow-slider ratio_65">
                         <div>
-                            <div className="offer-banner hover-effect">
-    <img 
-        src="../assets/images/Banner4.jpg"
-        className="img-fluid bg-img blur-up lazyload"
-        alt="Image Size : 510 X 288"
-        style={{ width: '100%' }}
-    />
-    <div className="banner-detail">
-        <h5 className="theme-color">Everyday Clean, Everyday Save!</h5>
-        <h6>Detergent & Home Care Essentials</h6>
-    </div>
-    <div className="offer-box">
-        <a href="/Offerspage">
-            <button className="btn-category btn theme-bg-color text-white">
-                View Offer
-            </button>
-        </a>
-    </div>
-</div>
-
+                            <div class="offer-banner hover-effect">
+                                <img src="../assets/images/Banner4.jpg" class="img-fluid bg-img blur-up lazyload"
+                                    alt="Image Size : 510 X 288" />
+                                <div class="banner-detail">
+                                    <h5 class="theme-color">Buy more, Save more</h5>
+                                    <h6>Fresh Grocery</h6>
+                                </div>
+                                <div class="offer-box">
+                                       <a href="/Shop">
+                                       
+                                    <button 
+                                        class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                       </a>
+                                </div>
+                            </div>
                         </div>
 
                         <div>
                             <div class="offer-banner hover-effect">
                                 <img src="../assets/images/Banner5.jpg" class="img-fluid bg-img blur-up lazyload"
-                                    alt="Image Size : 510 X 288" style={{ width: '100%' }} />
+                                    alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
-                                    <h5 class="theme-color">Winter Savings!</h5>
-                                    <h6>Essential Groceries at Best Prices</h6>
+                                    <h5 class="theme-color">Save More!</h5>
+                                    <h6>Fresh Dairy Products</h6>
                                 </div>
-
                                 <div class="offer-box">
-                                       <a href="/Offerspage">
+                                       <a href="/Shop">
                                        
                                     <button 
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
@@ -304,13 +250,13 @@ export default function Home() {
                         <div>
                             <div class="offer-banner hover-effect">
                                 <img src="../assets/images/Banner6.jpg" class="img-fluid bg-img blur-up lazyload"
-                                    alt="Image Size : 510 X 288" style={{ width: '100%' }}/>
+                                    alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
-                                    <h5 class="theme-color">Special Offer!</h5>
-                                    <h6>Big Savings on Grocery & Bakery Products</h6>
+                                    <h5 class="theme-color">Hot Deals!</h5>
+                                    <h6>Groceries & Daily Essentials</h6>
                                 </div>
                                 <div class="offer-box">
-                                       <a href="/Offerspage">
+                                       <a href="/Shop">
                                        
                                     <button
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
@@ -322,13 +268,13 @@ export default function Home() {
                         <div>
                             <div class="offer-banner hover-effect">
                                 <img src="../assets/images/Banner7.jpg" class="img-fluid bg-img blur-up lazyload"
-                                    alt="Image Size : 510 X 288" style={{ width: '100%' }}/>
+                                    alt="Image Size : 510 X 288" />
                                 <div class="banner-detail">
-                                    <h5 class="theme-color">Save More!</h5>
-                                    <h6>Spices & Everyday Groceries</h6>
+                                    <h5 class="theme-color">Buy more, Save more</h5>
+                                    <h6>Groceries & Daily Essentials</h6>
                                 </div>
                                 <div class="offer-box">
-                                       <a href="/Offerspage">
+                                       <a href="/Shop">
                                        
                                     <button 
                                         class="btn-category btn theme-bg-color text-white">View
@@ -371,62 +317,54 @@ export default function Home() {
                                     </div>
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
                                         <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                     <div className="progress custom-progressbar" style={{ height: "20px" }}>
-                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
-                                     </div>
+                                    <div class="progress custom-progressbar">
+                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
+                                    </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                      <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
-      <ul>
+                                    <div class="timer" id="clockdiv-4" data-hours="1" data-minutes="2" data-seconds="3">
+                                      <ul>
         <li>
-          <div className="counter">
-            <div className="days">
-              <h6>{days}</h6>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="hours">
-              <h6>{String(hours).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="minutes">
-              <h6>{String(minutes).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="seconds">
-              <h6>{String(seconds).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
             </div>
-          </div>
         </li>
-      </ul>
-    </div>
+    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -447,62 +385,54 @@ export default function Home() {
                                     </div>
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
                                         <h5>Butter</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-              <div className="progress custom-progressbar" style={{ height: "20px" }}>
-                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
-                                     </div>
+                                    <div class="progress custom-progressbar">
+                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
+                                    </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
-      <ul>
+                                    <div class="timer" id="clockdiv-1" data-hours="1" data-minutes="2" data-seconds="3">
+                                      <ul>
         <li>
-          <div className="counter">
-            <div className="days">
-              <h6>{days}</h6>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="hours">
-              <h6>{String(hours).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="minutes">
-              <h6>{String(minutes).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="seconds">
-              <h6>{String(seconds).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
             </div>
-          </div>
         </li>
-      </ul>
-    </div>
+    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -523,62 +453,54 @@ export default function Home() {
                                     </div>
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
                                         <h5>cheese</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                              <div className="progress custom-progressbar" style={{ height: "20px" }}>
-                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
-                                     </div>
+                                    <div class="progress custom-progressbar">
+                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
+                                    </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                     <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
-      <ul>
+                                    <div class="timer" id="clockdiv-2" data-hours="1" data-minutes="2" data-seconds="3">
+                                        <ul>
         <li>
-          <div className="counter">
-            <div className="days">
-              <h6>{days}</h6>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="hours">
-              <h6>{String(hours).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="minutes">
-              <h6>{String(minutes).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="seconds">
-              <h6>{String(seconds).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
             </div>
-          </div>
         </li>
-      </ul>
-    </div>
+    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -598,62 +520,54 @@ export default function Home() {
                                     </div>
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Shop" class="text-title">
                                         <h5>Noodles</h5>
                                     </a>
                                     <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div className="progress custom-progressbar" style={{ height: "20px" }}>
-                                        <div  className="progress-bar"  role="progressbar"  style={{    width: `${progress}%`,    transition: "width 0.3s ease-in-out",  }}></div>
-                                     </div>
+                                    <div class="progress custom-progressbar">
+                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
+                                    </div>
                                     <h4 class="item">Sold: <span>30 Items</span></h4>
                                     <h4 class="offer">Hurry up offer end in</h4>
-                                    <div className="timer" id="clockdiv-4" data-hours={initialHours} data-minutes={initialMinutes} data-seconds={initialSeconds}>
-      <ul>
+                                    <div class="timer" id="clockdiv-3" data-hours="1" data-minutes="2" data-seconds="3">
+                                     <ul>
         <li>
-          <div className="counter">
-            <div className="days">
-              <h6>{days}</h6>
+            <div class="counter">
+                <div class="days"><h6>0</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="hours">
-              <h6>{String(hours).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="hours"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="minutes">
-              <h6>{String(minutes).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="minutes"><h6>00</h6></div>
             </div>
-          </div>
         </li>
         <li>
-          <div className="counter">
-            <div className="seconds">
-              <h6>{String(seconds).padStart(2, "0")}</h6>
+            <div class="counter">
+                <div class="seconds"><h6>00</h6></div>
             </div>
-          </div>
         </li>
-      </ul>
-    </div>
+    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -727,19 +641,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -794,19 +708,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -865,19 +779,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -932,19 +846,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1003,19 +917,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1070,19 +984,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1137,19 +1051,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1208,19 +1122,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1283,19 +1197,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1350,19 +1264,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1421,19 +1335,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1492,19 +1406,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1563,19 +1477,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1630,19 +1544,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1697,19 +1611,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1764,19 +1678,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1831,19 +1745,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1898,19 +1812,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -1965,19 +1879,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2032,19 +1946,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2099,19 +2013,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2166,19 +2080,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2237,19 +2151,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2304,19 +2218,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2371,19 +2285,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2438,19 +2352,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2505,19 +2419,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2572,19 +2486,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2639,19 +2553,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2710,19 +2624,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2777,19 +2691,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2844,19 +2758,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2911,19 +2825,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -2978,19 +2892,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3045,19 +2959,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3112,19 +3026,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3179,19 +3093,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3246,19 +3160,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3313,19 +3227,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3384,19 +3298,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3451,19 +3365,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3518,19 +3432,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3585,19 +3499,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3652,19 +3566,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3719,19 +3633,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3786,19 +3700,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3853,19 +3767,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3920,19 +3834,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -3987,19 +3901,19 @@ export default function Home() {
                                 <div class="product-detail">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <a href="/Productdetails">
@@ -4249,19 +4163,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4303,19 +4217,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4357,19 +4271,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4415,19 +4329,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4469,19 +4383,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4523,19 +4437,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4592,19 +4506,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4646,19 +4560,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4700,19 +4614,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4758,19 +4672,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4812,19 +4726,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4866,19 +4780,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4936,19 +4850,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -4990,19 +4904,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5044,19 +4958,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5102,19 +5016,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5156,19 +5070,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5210,19 +5124,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5280,19 +5194,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5334,19 +5248,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5388,19 +5302,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5446,19 +5360,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5500,19 +5414,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5554,19 +5468,19 @@ export default function Home() {
                                                 <div class="product-details">
                                                     <ul class="rating">
                                                         <li>
-                                                            <i data-feather="star" class="fill"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                         <li>
-                                                            <i data-feather="star"></i>
+                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
@@ -5674,19 +5588,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -5743,19 +5657,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -5810,19 +5724,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -5875,19 +5789,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -5942,19 +5856,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6007,19 +5921,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6074,19 +5988,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6143,19 +6057,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6214,19 +6128,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6283,19 +6197,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6350,19 +6264,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6415,19 +6329,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6482,19 +6396,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6547,19 +6461,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6614,19 +6528,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6679,19 +6593,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6746,19 +6660,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -6811,19 +6725,19 @@ export default function Home() {
                         <div class="product-detail">
                             <ul class="rating">
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                                 <li>
-                                    <i data-feather="star" class="fill"></i>
+                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
                             </ul>
                             <a href="/Productdetails">
@@ -7007,19 +6921,19 @@ export default function Home() {
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <span class="ms-2">8 Reviews</span>
