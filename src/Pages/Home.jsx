@@ -3949,6 +3949,7 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
         {/* <!-- Banner Section Start --> */}
+        
 <section className="banner-section" style={{ marginTop: "40px" }}>
   <div className="container-fluid-lg">
     <div className="row gy-xl-0 gy-3">

@@ -95,7 +95,7 @@ const Footer = () => {
                                     <a href="/Shop" class="text-content">Beverages</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Meats & Seafood</a>
+                                    <a href="/Shop" class="text-content">Oils</a>
                                 </li>
                                 <li>
                                     <a href="/Shop" class="text-content">Frozen Foods</a>

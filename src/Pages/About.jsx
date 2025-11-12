@@ -37,11 +37,15 @@ const About = () => {
                     <div class="row g-sm-4 g-2">
                      <div class="col-12">
                             <div class="fresh-image-2">
-                                <div>
-                                    <img src="../assets/images/Img1.jpg"
-                                        class="bg-img blur-up lazyload" alt="" />
-                                </div>
+                              <div>
+                                <img
+                                  src="../assets/images/Img1.jpg"
+                                  alt="Fresh Image"
+                                  class="resimg"
+                                />
+                              </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
