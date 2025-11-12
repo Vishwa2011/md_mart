@@ -125,17 +125,17 @@ document.querySelectorAll('.address-box').forEach(box => {
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-wishlist" type="button"><i data-feather="heart"></i>
-                                    Wishlist</button>
+                                    Your Wishlist</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-card-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-card" type="button" role="tab"><i
-                                        data-feather="credit-card"></i> Saved Card</button>
+                                        data-feather="credit-card"></i> Your Refunds</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-address" type="button" role="tab"><i
-                                        data-feather="map-pin"></i>Address</button>
+                                        data-feather="map-pin"></i>Saved Address</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
@@ -1249,168 +1249,150 @@ document.querySelectorAll('.address-box').forEach(box => {
                             </div>
 
                             <div class="tab-pane fade" id="pills-card" role="tabpanel">
-                                <div class="dashboard-card">
-                                    <div class="title title-flex">
-                                       <div>
-                                            <h2>My Card Details</h2>
-                                            <span class="title-leaf">
-                                                <svg class="icon-width bg-gray">
-                                                     <use href="../assets/svg/leaf.svg#leaf"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
+                               <div class="dashboard-card">
+  <div class="title title-flex align-items-center justify-content-between">
+    <div>
+      <h2>My Refunds</h2>
+      <span class="title-leaf">
+        <svg class="icon-width bg-gray">
+          <use href="../assets/svg/leaf.svg#leaf"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
 
-                                        <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
-                                            data-bs-toggle="modal" data-bs-target="#editCard"><i data-feather="plus"
-                                                class="me-2"></i> Add New Card</button>
-                                    </div>
+  <div class="row g-4 mt-2">
+    {/* <!-- Refund Item 1 --> */}
+    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img
+            src="../assets/images/veg-3/cate1/4.png"
+            class="img-fluid rounded me-3"
+            alt="Product"
+            style={{width:'70px', height:'70px', objectFit:'cover'}}
+            // style="width: 70px; height: 70px; object-fit: cover;"
+          />
+          <div>
+            <h6 class="fw-semibold mb-1">Chips</h6>
+            <small class="text-muted">Order ID: #2548</small>
+          </div>
+        </div>
 
-                                    <div class="row g-4">
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-                                            <div class="payment-card-detail">
-                                                <div class="card-details">
-                                                    <div class="card-number">
-                                                        <h4>XXXX - XXXX - XXXX - 2548</h4>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Amount:</span>
+          <span class="fw-bold text-success">₹70.21</span>
+        </div>
 
-                                                    <div class="valid-detail">
-                                                        <div class="title">
-                                                            <span>valid</span>
-                                                            <span>thru</span>
-                                                        </div>
-                                                        <div class="date">
-                                                            <h3>08/05</h3>
-                                                        </div>
-                                                        <div class="primary">
-                                                            <span class="badge bg-pill badge-light">primary</span>
-                                                        </div>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Status:</span>
+          <span class="badge bg-success">Approved</span>
+        </div>
 
-                                                    <div class="name-detail">
-                                                        <div class="name">
-                                                            <h5>Audrey Carol</h5>
-                                                        </div>
-                                                        <div class="card-img">
-                                                            <img src="../assets/images/payment-icon/1.jpg"
-                                                                class="img-fluid blur-up lazyloaded" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="fw-semibold text-dark">Refund Date:</span>
+          <span class="text-muted">08/05/2025</span>
+        </div>
 
-                                                <div class="edit-card">
-                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                        data-bs-target="#removeProfile"><i
-                                                            class="far fa-minus-square"></i> delete</a>
-                                                </div>
-                                            </div>
+        <div class="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
+            <i class="far fa-eye me-1"></i>View Details
+          </a>
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cancelRefund" class="text-danger fw-semibold">
+            <i class="far fa-times-circle me-1"></i>Cancel
+          </a>
+        </div>
+      </div>
+    </div>
 
-                                            <div class="edit-card-mobile">
-                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
-                                                    delete</a>
-                                            </div>
-                                        </div>
+    {/* <!-- Refund Item 2 --> */}
+    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img
+            src="../assets/images/veg-3/cate1/5.png"
+            class="img-fluid rounded me-3"
+            alt="Product"
+            style={{width:'70px', height:'70px', objectFit:'cover'}}
+            // style="width: 70px; height: 70px; object-fit: cover;"
+          />
+          <div>
+            <h6 class="fw-semibold mb-1">Soda</h6>
+            <small class="text-muted">Order ID: #1536</small>
+          </div>
+        </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-                                            <div class="payment-card-detail">
-                                                <div class="card-details card-visa">
-                                                    <div class="card-number">
-                                                        <h4>XXXX - XXXX - XXXX - 1536</h4>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Amount:</span>
+          <span class="fw-bold text-warning">₹70.21</span>
+        </div>
 
-                                                    <div class="valid-detail">
-                                                        <div class="title">
-                                                            <span>valid</span>
-                                                            <span>thru</span>
-                                                        </div>
-                                                        <div class="date">
-                                                            <h3>12/23</h3>
-                                                        </div>
-                                                        <div class="primary">
-                                                            <span class="badge bg-pill badge-light">primary</span>
-                                                        </div>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Status:</span>
+          <span class="badge bg-warning text-dark">Pending</span>
+        </div>
 
-                                                    <div class="name-detail">
-                                                        <div class="name">
-                                                            <h5>Leah Heather</h5>
-                                                        </div>
-                                                        <div class="card-img">
-                                                            <img src="../assets/images/payment-icon/2.jpg"
-                                                                class="img-fluid blur-up lazyloaded" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="fw-semibold text-dark">Requested On:</span>
+          <span class="text-muted">11/09/2025</span>
+        </div>
 
-                                                <div class="edit-card">
-                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                        data-bs-target="#removeProfile"><i
-                                                            class="far fa-minus-square"></i> delete</a>
-                                                </div>
-                                            </div>
+        <div class="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
+            <i class="far fa-eye me-1"></i>View Details
+          </a>
+          <a href="javascript:void(0)" class="text-muted fw-semibold disabled">
+            <i class="far fa-clock me-1"></i>In Process
+          </a>
+        </div>
+      </div>
+    </div>
 
-                                            <div class="edit-card-mobile">
-                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
-                                                    delete</a>
-                                            </div>
-                                        </div>
+    {/* <!-- Refund Item 3 --> */}
+    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img
+            src="/assets/images/picture/kaju.png"
+            class="img-fluid rounded me-3"
+            alt="Product"
+             style={{width:'70px', height:'70px', objectFit:'cover'}}
+            // style="width: 70px; height: 70px; object-fit: cover;"
+          />
+          <div>
+            <h6 class="fw-semibold mb-1">Cashew Nuts</h6>
+            <small class="text-muted">Order ID: #1366</small>
+          </div>
+        </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-                                            <div class="payment-card-detail">
-                                                <div class="card-details debit-card">
-                                                    <div class="card-number">
-                                                        <h4>XXXX - XXXX - XXXX - 1366</h4>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Amount:</span>
+          <span class="fw-bold text-danger">₹70.21</span>
+        </div>
 
-                                                    <div class="valid-detail">
-                                                        <div class="title">
-                                                            <span>valid</span>
-                                                            <span>thru</span>
-                                                        </div>
-                                                        <div class="date">
-                                                            <h3>05/21</h3>
-                                                        </div>
-                                                        <div class="primary">
-                                                            <span class="badge bg-pill badge-light">primary</span>
-                                                        </div>
-                                                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold text-dark">Refund Status:</span>
+          <span class="badge bg-danger">Rejected</span>
+        </div>
 
-                                                    <div class="name-detail">
-                                                        <div class="name">
-                                                            <h5>mark jecno</h5>
-                                                        </div>
-                                                        <div class="card-img">
-                                                            <img src="../assets/images/payment-icon/3.jpg"
-                                                                class="img-fluid blur-up lazyloaded" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="fw-semibold text-dark">Rejected On:</span>
+          <span class="text-muted">10/10/2025</span>
+        </div>
 
-                                                <div class="edit-card">
-                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                        data-bs-target="#removeProfile"><i
-                                                            class="far fa-minus-square"></i> delete</a>
-                                                </div>
-                                            </div>
+        <div class="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
+            <i class="far fa-eye me-1"></i>View Details
+          </a>
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestRefund" class="text-success fw-semibold">
+            <i class="far fa-redo me-1"></i>Reapply
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                                            <div class="edit-card-mobile">
-                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
-                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
-                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
-                                                    delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel">
@@ -1561,551 +1543,25 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
+
+
+
+
+
+
+
                             <div class="tab-pane fade" id="pills-download" role="tabpanel">
-                                <div class="dashboard-download">
-                                  <div class="title">
-                                        <h2>My Download</h2>
-                                        <span class="title-leaf">
-                                            <svg class="icon-width bg-gray">
-                                                <use href="../assets/svg/leaf.svg#leaf"></use>
-                                            </svg>
-                                        </span>
-                                    </div>
 
-                                    <div class="download-detail dashboard-bg-box">
-                                        <form>
-                                            <div class="input-group download-form">
-                                                <input type="text" class="form-control"
-                                                    placeholder="Search your download" />
-                                                <button class="btn theme-bg-color text-light" type="button"
-                                                    id="button-addon2">Search</button>
-                                            </div>
-                                        </form>
+                            
 
-                                        <div class="select-filter-box">
-                                            <select class="form-select">
-                                                <option selected="">All marketplaces</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-
-
-                                            <ul class="nav nav-pills filter-box" id="pills-tab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="pills-data-tab"
-                                                        data-bs-toggle="pill" data-bs-target="#pills-data"
-                                                        type="button">Data Purchased</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-title-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-title" type="button">Title</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-rating-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-rating" type="button">My Rating</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-recent-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-recent" type="button">Recent
-                                                        Updates</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-data" role="tabpanel">
-                                                <div class="download-table">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>No</th>
-                                                                    <th>Image</th>
-                                                                    <th>Name</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow1.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow2.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
-                                                                        and
-                                                                        Flexible. OS 2.0</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow3.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Boho - React JS Admin Dashboard Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-title">
-                                                <div class="download-table">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>No</th>
-                                                                    <th>Image</th>
-                                                                    <th>Name</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow1.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>
-                                                                        <img src="./assets/images/picture/dow2.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
-                                                                        and
-                                                                        Flexible. OS 2.0</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow3.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Boho - React JS Admin Dashboard Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-rating">
-                                                <div class="download-table">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>No</th>
-                                                                    <th>Image</th>
-                                                                    <th>Name</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow1.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow2.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
-                                                                        and
-                                                                        Flexible. OS 2.0</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow3.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Boho - React JS Admin Dashboard Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-recent">
-                                                <div class="download-table">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>No</th>
-                                                                    <th>Image</th>
-                                                                    <th>Name</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow1.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow2.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
-                                                                        and
-                                                                        Flexible. OS 2.0</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>
-                                                                        <img src="/assets/images/picture/dow3.png"
-                                                                            class="img-fluid" alt="" />
-                                                                    </td>
-                                                                    <td>Boho - React JS Admin Dashboard Template</td>
-                                                                    <td>
-                                                                        <div class="dropdown download-dropdown">
-                                                                            <button class="btn dropdown-toggle"
-                                                                                type="button"
-                                                                                data-bs-toggle="dropdown">Download</button>
-                                                                            <ul class="dropdown-menu">
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">All files
-                                                                                        & documentation</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (PDF)</a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item"
-                                                                                        href="#">License
-                                                                                        certificate & purchase code
-                                                                                        (text)</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+
+
+
+
+
+
+
 
                             <div class="tab-pane fade" id="pills-security" role="tabpanel">
                                 <div class="dashboard-privacy">
