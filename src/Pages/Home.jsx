@@ -8,7 +8,74 @@ export default function Home() {
     <div>
         <Navbar />
             {/* <!-- home section start --> */}
-<section className="home-section-2 home-section-small section-b-space"> <div className="container-fluid-lg"> <div className="row g-4"> <div className="col-xxl-6 col-md-8"> <div className="home-contain h-100"> <img src="../assets/images/Hero-img.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 780 X 534" /> <div className="home-detail home-width p-center-left "> <div> <h6 className="ls-expanded theme-color">ORGANIC</h6> <h1 className="fw-bold w-100">100% Fresh</h1> <h3 className="text-content fw-light">Fruit & Vegetables</h3> <p className="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p> <a href="/Shop"> <button className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop Now</button> </a> </div> </div> </div> </div> <div className="col-xxl-3 col-md-4 ratio_medium d-md-block d-none"> <div className="home-contain home-small h-100"> <div className="h-100"> <img src="../assets/images/Banner1.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 534" /> </div> <div className="home-detail text-center p-top-center w-100 text-white"> <div> <h4 className="fw-bold">Fresh & 100% Organic</h4> <h5 className="text-center">farmer's market</h5> <a href="/Shop"> <button className="btn bg-white theme-color mt-3 home-button mx-auto btn-2" >Shop Now</button> </a> </div> </div> </div> </div> <div className="col-xxl-3 ratio_65 d-xxl-block d-none"> <div className="row g-3"> <div className="col-xxl-12 col-sm-6"> <div className="home-contain"> <a href="/Shop"> <img src="../assets/images/Banner2.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" /> </a> <div className="home-detail text-white p-center text-center"> <div> <h4 className="text-center">Organic Lifestyle</h4> <h5 className="text-center">Best Weekend Sales</h5> </div> </div> </div> </div> <div className="col-xxl-12 col-sm-6"> <div className="home-contain"> <a href="/Shop"> <img src="../assets/images/Banner3.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" /> </a> <div className="home-detail text-white w-50 p-center-left home-p-sm"> <div> <h4 className="fw-bold">Safe food saves lives</h4> <h5>Discount Offer</h5> </div> </div> </div> </div> </div> </div> </div> </div> </section>
+
+<section className="home-section-2 home-section-small section-b-space"> 
+    <div className="container-fluid-lg"> 
+        <div className="row g-4"> 
+        <div className="col-xxl-6 col-md-8"> 
+            <div className="home-contain h-100"> 
+                <img src="../assets/images/Hero-img.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 780 X 534" style={{ opacity: 0.7, width: "100%", borderRadius: "10px" }} /> 
+                <div className="home-detail home-width p-center-left "> 
+                    <div> 
+                        <h6 className="ls-expanded theme-color">ORGANIC</h6> 
+                        <h1 className="fw-bold w-100">100% Fresh</h1> 
+                        <h3 className="text-content fw-bold w-70">Groceries</h3> 
+                        <p className="d-sm-block d-none fw-bold w-100">Free shipping on all your order. we deliver you enjoy</p> 
+                        <a href="/Shop"> 
+                        <button className="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop Now</button> 
+                        </a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+
+                        <div className="col-xxl-3 col-md-4 ratio_medium d-md-block d-none"> 
+                            <div className="home-contain home-small h-100"> 
+                                <div className="h-100"> 
+                                    <img src="../assets/images/Banner1.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 534" style={{ opacity: 0.6, width: "100%", borderRadius: "10px" }}/> 
+                                </div> 
+                                <div className="home-detail text-center w-100 text-white"> 
+                                    <div> 
+                                        <h4 className="fw-bold w-100 text-center" style={{color:'Black',marginTop:'40px'}}>Fresh & 100% Organic</h4> 
+                                        <h5 className="text-center fw-bold w-100" style={{color:'Black'}}>farmer's market</h5> 
+                                        <a href="/Shop"> 
+                                        <button className="btn bg-white theme-color mt-3 home-button mx-auto btn-2" >Shop Now</button> 
+                                        </a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+
+                                        <div className="col-xxl-3 ratio_65 d-xxl-block d-none"> 
+                                            <div className="row g-3"> 
+                                                <div className="col-xxl-12 col-sm-6"> 
+                                                    <div className="home-contain"> 
+                                                        <a href="/Shop"> <img src="../assets/images/Banner2.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" style={{ opacity: 0.6, width: "100%", borderRadius: "10px" }}/> </a> 
+                                                        <div className="home-detail text-white p-center text-center"> 
+                                                            <div> 
+                                                                <h4 className=" fw-bold w-100" style={{color:'Black' , marginTop:'40px'}}>Organic Lifestyle</h4> 
+                                                                <h5 className=" fw-bold w-100" style={{color:'Black'}}>Best Weekend Sales</h5> 
+                                                            </div> 
+                                                        </div> 
+                                                    </div> 
+                                                </div> 
+
+                                                <div className="col-xxl-12 col-sm-6"> 
+                                                    <div className="home-contain"> 
+                                                        <a href="/Shop"> <img src="../assets/images/Banner3.jpg" className="img-fluid bg-img blur-up lazyload" alt="Image Size : 375 X 252" style={{ opacity: 0.6, width: "100%", borderRadius: "10px" }} /> </a> 
+                                                        <div className="home-detail text-white w-50 p-center-left home-p-sm"> 
+                                                            <div> 
+                                                                <h4 className="fw-bold w-100" style={{color:'Black'}}>Safe food saves lives</h4> 
+                                                                <h5 className='fw-bold w-100' style={{color:'Black'}}>Discount Offer</h5> 
+                                                            </div> 
+                                                        </div> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                                                                </div> 
+                                                                                </div> 
+                                                                                </section>
 
     {/* <!-- Home Section End --> */}
 
