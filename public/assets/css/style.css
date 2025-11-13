@@ -14190,7 +14190,7 @@ template {
     border-radius: 5px;
     background: #418ca7 ;
     background: -webkit-gradient(linear, left top, right top, from(#418ca7 ), to(#418ca7 ));
-    background: linear-gradient(90deg, #0e947a 0%, #0da487 100%);
+    background: linear-gradient(90deg, #2e98be 0%, #077faa 100%);
     -webkit-transition: all .3s ease;
     transition: all .3s ease
 }

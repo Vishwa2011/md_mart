@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useState } from "react";
 import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { FaRupeeSign, FaBolt, FaSyncAlt, FaGift, FaWallet, FaPlus, FaTimes } from "react-icons/fa";
+
 
 
 const giftCardsData = [
@@ -32,6 +34,10 @@ const giftCardsData = [
 ];
 
 const Account = () => {
+      const [showModal, setShowModal] = useState(false);
+
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
        useEffect(() => {
             /**=====================
                 Quantity 2 js
@@ -122,7 +128,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                             <div class="profile-contain">
                                 <div class="profile-image">
                                     <div class="position-relative">
-                                        <img src="../assets/images/inner-page/user/1.jpg"
+                                        <img src="/assets/images/CEO.jpg"
                                             class="blur-up lazyload update_img" alt="" />
                                         <div class="cover-icon">
                                             <i class="fa-solid fa-pen">
@@ -138,58 +144,67 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
                         </div>
-
+  
                         <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation"></li>
+                            <section className="account-section p-3 pt-0 " style={{textAlign:'center'}}>
+    
+                      <div className="card shadow-sm rounded-3 border-0 p-4">
+                        <div className="d-flex align-items-center justify-content-center mb-3">
+            <h4 className="fw-bold d-flex align-items-center gap-2 mb-0">
+              <i className="fas fa-wallet " style={{color:'#2baedd'}}></i>
+              MD Mart Cash & Gift Card
+            </h4>
+          
+                        </div>
+                        <div className="balance-box bg-light p-3 rounded-3 d-flex flex-column flex-md-row align-items-center justify-content-center">
+                          <div>
+                            <p className="text-muted mb-1">Available Balance</p>
+                            <h3 className="fw-bold mb-0" style={{color:'#2baedd'}}>₹0</h3>
+                          </div>
+                        </div>
+                      </div>
+                            </section> 
+                            <li class="nav-item p-3 pt-0" role="presentation" style={{borderBottom:'1px solid #b2b2b2'}}>
+                          <button class="nav-link btn theme-bg-color mt-3 mt-md-0 px-2 py-2 rounded-2 fw-semibold" style={{color:'#fff'}} id="pills-Balance-tab" data-bs-toggle="pill"
+                           data-bs-target="#pills-Balance" type="button">Add Balance</button>
+                      </li>
+                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-dashboard" type="button"><i data-feather="home"></i>
+                                    data-bs-target="#pills-dashboard" type="button">
                                     DashBoard</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-order" type="button"><i
-                                        data-feather="shopping-bag"></i>Order</button>
+                                    data-bs-target="#pills-order" type="button">Order</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-wishlist" type="button"><i data-feather="heart"></i>
+                                    data-bs-target="#pills-wishlist" type="button">
                                     Your Wishlist</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-card-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-card" type="button" role="tab"><i
-                                        data-feather="credit-card"></i> Your Refunds</button>
+                                    data-bs-target="#pills-card" type="button" role="tab"> Your Refunds</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-address" type="button" role="tab"><i
-                                        data-feather="map-pin"></i>Saved Address</button>
+                                    data-bs-target="#pills-address" type="button" role="tab">Saved Address</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"><i data-feather="user"></i>
+                                    data-bs-target="#pills-profile" type="button" role="tab">
                                     Profile</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-download-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-download" type="button" role="tab"><i
-                                        data-feather="download"></i>Help & Support</button>
+                                    data-bs-target="#pills-download" type="button" role="tab">Help & Support</button>
                             </li>
-
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-security" type="button" role="tab"><i
-                                        data-feather="shield"></i>
+                                    data-bs-target="#pills-security" type="button" role="tab">
                                     E- Gift Cards</button>
                             </li>
-
-                            {/* <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-security" type="button" role="tab"><i
-                                        data-feather="shield"></i>
-                                    Privacy</button>
-                            </li> */}
-
                         </ul>
                     </div>
                 </div>
@@ -199,6 +214,181 @@ document.querySelectorAll('.address-box').forEach(box => {
                         Menu</button>
                     <div class="dashboard-right-sidebar">
                         <div class="tab-content" id="pills-tabContent">
+                            
+                             <div class="tab-pane fade" id="pills-Balance" role="tabpanel">
+                                <div class="dashboard-order">
+                                    <div class="title">
+                                        <h2>My Available Balance</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                            <svg class="icon-width bg-gray">
+                                                <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                     <div className="wallet-section">
+      {/* Available Balance Card */}
+      <div
+        className="p-4 rounded-4 text-white mb-4"
+        style={{
+          background: "linear-gradient(90deg, rgb(43 174 221), rgb(43 174 221))",
+          position: "relative",
+          borderRadius:'10px'
+        }}
+      >
+        <div className="d-flex justify-content-between align-items-center">
+          <div>
+            <span>Available Balance</span>
+            <h2 className="fw-bold mt-1">
+              <FaRupeeSign className="me-1" />
+              0
+            </h2>
+          </div>
+            <img src="/assets/images/coin.png" alt="" style={{width:'50px'}} />
+        </div>
+      </div>
+
+      {/* Feature Icons */}
+      <div className="d-flex justify-content-around text-center mb-4">
+        <div>
+          <FaBolt size={24} className="text-primary mb-2" />
+          <p className="mb-0 fw-semibold small">Easy & Fast<br />Payments</p>
+        </div>
+        <div>
+          <FaSyncAlt size={24} className="text-primary mb-2" />
+          <p className="mb-0 fw-semibold small">Instant<br />Refunds</p>
+        </div>
+        <div>
+          <FaGift size={24} className="text-primary mb-2" />
+          <p className="mb-0 fw-semibold small">Exclusive<br />Offers</p>
+        </div>
+      </div>
+
+      {/* Wallet Section */}
+      <div className="card border-0 shadow-sm mb-4 rounded-4">
+        <div className="card-body d-flex justify-content-between align-items-center">
+          <div>
+            <h6 className="fw-bold mb-1">
+             <img src="/assets/images/coin.png" alt="" style={{width:'40px'}} />
+              MD Mart Cash
+            </h6>
+            <p className="text-muted small mb-0">
+              Unavailable in your location. Please contact customer support for any queries.
+            </p>
+          </div>
+          <div className="text-end">
+            <h6 className="fw-bold mb-2">₹0</h6>
+          </div>
+        </div>
+      </div>
+
+      {/* Recent Transactions */}
+      <div className="card border-0 shadow-sm mb-4 rounded-4">
+        <div className="card-body">
+          <h6 className="fw-bold mb-3">Recent Transactions</h6>
+          <div className="mb-2">
+            <div className="row">
+                <div className="col-sm-10">
+                    <p className="mb-1 fw-semibold">Placed Order #19ED6SPRI47612</p>
+                    <small className="text-muted">04/01/2025 at 02:04pm</small>
+                </div>
+                <div className="col-sm-2"><div className="text-end text-dark fw-bold">₹75</div></div>
+            </div>
+          </div>
+          <hr />
+          <div className="mb-2">
+            <div className="row">
+                <div className="col-sm-10">
+                    <p className="mb-1 fw-semibold">Free Cash - Valid for next order only</p>
+                    <small className="text-muted">02/01/2025 at 10:06am</small>
+                </div>
+                <div className="col-sm-2">
+                     <div className="text-end text-success fw-bold">+₹75</div>
+                    <small className="d-block text-end text-muted">Expires 01/01/2026</small>
+                </div>
+            </div>
+          </div>
+          <hr />
+          <div className="mb-2">
+            <div className="row">
+                <div className="col-sm-10">
+            <p className="mb-1 fw-semibold">Free Cash Expired</p>
+            <small className="text-muted">28/12/2024 at 02:04am</small>
+                </div>
+                <div className="col-sm-2">
+            <div className="text-end text-dark fw-bold">₹50</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Accordion */}
+      <div className="accordion" id="walletAccordion">
+        <div className="accordion-item border-0 mb-2 rounded-3 shadow-sm">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button collapsed fw-semibold"
+              type="button"
+              onClick={handleOpen}
+            >
+               How it works?
+            </button>
+          </h2>
+        </div>
+
+        <div className="accordion-item border-0 rounded-3 shadow-sm">
+          <h2 className="accordion-header">
+            <a className="accordion-button collapsed fw-semibold" type="button" href="/Faq">
+               FAQs
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div
+          className="modal fade show d-block"
+          style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+        >
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content rounded-4">
+              <div className="modal-header border-0">
+                <h5 className="modal-title fw-bold">How It Works</h5>
+                <button
+                  className="btn btn-light border-0"
+                  onClick={handleClose}
+                >
+                  <FaTimes />
+                </button>
+              </div>
+              <div className="modal-body pt-0">
+                <ol className="list-group list-group-numbered">
+                  <li className="list-group-item border-0">
+                    MD Mart Cash is a wallet service for customers to purchase products until expiry.
+                  </li>
+                  <li className="list-group-item border-0">
+                    MD Mart Cash is valid for 12 months from date of issue and is non-refundable.
+                  </li>
+                  <li className="list-group-item border-0">
+                    Can only be used in serviceable cities and regions.
+                  </li>
+                  <li className="list-group-item border-0">
+                    You can add balance or redeem gift vouchers anytime.
+                  </li>
+                  <li className="list-group-item border-0">
+                    For support, contact <a href="mailto:support@mdmart.com">support@mdmart.com</a>.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+                                </div>
+                            </div>
+
                             <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
                                 <div class="dashboard-home">
                               <div class="title">
@@ -260,7 +450,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
                                     </div>
-
+                                  
                                     <div class="dashboard-title">
                                         <h3>Account Information</h3>
                                     </div>
@@ -275,7 +465,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             <div class="dashboard-detail">
                                                 <h6 class="text-content">MARK JECNO</h6>
                                                 <h6 class="text-content">rajeshpatel01@gmail.com</h6>
-                                                <a href="javascript:void(0)">Change Password</a>
+                                                <a href="">Change Password</a>
                                             </div>
                                         </div>
 
@@ -1580,13 +1770,6 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-
-
-
-
-
-
-
                             <div class="tab-pane fade" id="pills-download" role="tabpanel">
  <section class="faq-box-contain section-b-space">
                                                 <div class="faq-accordion">
@@ -1750,13 +1933,6 @@ document.querySelectorAll('.address-box').forEach(box => {
                     </div></section>
 
                             </div>
-
-
-
-
-
-
-
 
                             <div class="tab-pane fade" id="pills-security" role="tabpanel">
                                 {/* <div class="dashboard-privacy">

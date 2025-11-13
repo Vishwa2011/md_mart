@@ -220,7 +220,7 @@ export default function Home() {
                                     <h6>Fresh Grocery</h6>
                                 </div>
                                 <div class="offer-box">
-                                       <a href="/Shop">
+                                       <a href="/Offerspage">
                                        
                                     <button 
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
@@ -238,7 +238,7 @@ export default function Home() {
                                     <h6>Fresh Dairy Products</h6>
                                 </div>
                                 <div class="offer-box">
-                                       <a href="/Shop">
+                                       <a href="/Offerspage">
                                        
                                     <button 
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
@@ -256,7 +256,7 @@ export default function Home() {
                                     <h6>Groceries & Daily Essentials</h6>
                                 </div>
                                 <div class="offer-box">
-                                       <a href="/Shop">
+                                       <a href="/Offerspage">
                                        
                                     <button
                                         class="btn-category btn theme-bg-color text-white">View Offer</button>
