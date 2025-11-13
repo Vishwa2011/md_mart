@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Navbar from './Navbar'
 import Newsletter from '../component/Newsletter'
 import Footer from './Footer'
 
 export default function Home() {
+      const [progress, setProgress] = useState(50); // Example: 50% filled
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 1,
+    minutes: 2,
+    seconds: 3,
+  });
+
+  // Countdown timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        let { hours, minutes, seconds } = prevTime;
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours--;
+          minutes = 59;
+          seconds = 59;
+        } else {
+          clearInterval(timer);
+        }
+        return { hours, minutes, seconds };
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <div>
         <Navbar />
@@ -302,275 +332,337 @@ export default function Home() {
                 <div class="col-12">
                     <div class="three-slider-1 arrow-slider">
                         <div>
-                            <div class="deal-box wow fadeInUp">
-                                <a href="/Shop" class="category-image order-sm-2">
-                                    <img src="/assets/images/picture/kaju.png" class="img-fluid blur-up lazyload"
-                                        alt="Image Size : 183 X 171" />
-                                </a>
+                             <div className="deal-box wow fadeInUp">
+      <a href="/Shop" className="category-image order-sm-2">
+        <img
+          src="/assets/images/picture/kaju.png"
+          className="img-fluid blur-up lazyload"
+          alt="Image Size : 183 X 171"
+        />
+      </a>
 
-                                <div class="deal-detail order-sm-1">
-                                    <button class="buy-box btn theme-bg-color text-white btn-cart">
-                                        <i class="iconly-Buy icli m-0"></i>
-                                    </button>
-                                    <div class="hot-deal">
-                                        <span>Hot Deals</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                    </ul>
-                                    <a href="/Shop" class="text-title">
-                                        <h5>Noodles</h5>
-                                    </a>
-                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
-                                    <h4 class="item">Sold: <span>30 Items</span></h4>
-                                    <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-4" data-hours="1" data-minutes="2" data-seconds="3">
-                                      <ul>
-        <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
-            </div>
-        </li>
-    </ul>
-                                    </div>
-                                </div>
-                            </div>
+      <div className="deal-detail order-sm-1">
+        <button className="buy-box btn theme-bg-color text-white btn-cart">
+          <i className="fa-solid fa-cart-shopping m-0"></i>
+        </button>
+
+        <div className="hot-deal">
+          <span>Hot Deals</span>
+        </div>
+
+        <ul className="rating list-unstyled d-flex gap-1">
+          {[...Array(5)].map((_, i) => (
+            <li key={i}>
+              <i
+                className="fa-solid fa-star text-xl fill"
+                style={{ color: "#ffb321" }}
+              ></i>
+            </li>
+          ))}
+        </ul>
+
+        <a href="/Shop" className="text-title text-decoration-none">
+          <h5 className="mt-2 mb-1">Noodles</h5>
+        </a>
+        <h5 className="price mb-2">
+          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+        </h5>
+
+        {/* Progress bar */}
+        <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
+          <div
+            className="progress-bar bg-success"
+            style={{ width: `${progress}%` }}
+            role="progressbar"
+          ></div>
+        </div>
+
+        <h4 className="item">
+          Sold: <span>30 Items</span>
+        </h4>
+        <h4 className="offer mt-2">Hurry up, offer ends in:</h4>
+
+        {/* Countdown Timer */}
+        <div className="timer mt-2" id="clockdiv-4">
+          <ul className="list-unstyled d-flex gap-3">
+            <li>
+              <div className="counter text-center">
+                <div className="hours">
+                  <h6>{String(timeLeft.hours).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="minutes">
+                  <h6>{String(timeLeft.minutes).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="seconds">
+                  <h6>{String(timeLeft.seconds).padStart(2, "0")}</h6>
+                </div>
+              
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+                          </div>
                         </div>
-
                         <div>
-                            <div class="deal-box wow fadeInUp" data-wow-delay="0.05s">
-                                <a href="/Shop" class="category-image order-sm-2">
-                                    <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid blur-up lazyload"
-                                        alt="Image Size : 183 X 171" />
-                                </a>
+                             <div className="deal-box wow fadeInUp">
+      <a href="/Shop" className="category-image order-sm-2">
+        <img
+          src="../assets/images/veg-3/cate1/2.png"
+          className="img-fluid blur-up lazyload"
+          alt="Image Size : 183 X 171"
+        />
+      </a>
 
-                                <div class="deal-detail order-sm-1">
-                                    <button class="buy-box btn theme-bg-color text-white btn-cart">
-                                        <i class="iconly-Buy icli m-0"></i>
-                                    </button>
-                                    <div class="hot-deal">
-                                        <span>Hot Deals</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                    </ul>
-                                    <a href="/Shop" class="text-title">
-                                        <h5>Butter</h5>
-                                    </a>
-                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
-                                    <h4 class="item">Sold: <span>30 Items</span></h4>
-                                    <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-1" data-hours="1" data-minutes="2" data-seconds="3">
-                                      <ul>
-        <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
-            </div>
-        </li>
-    </ul>
-                                    </div>
-                                </div>
-                            </div>
+      <div className="deal-detail order-sm-1">
+        <button className="buy-box btn theme-bg-color text-white btn-cart">
+          <i className="fa-solid fa-cart-shopping m-0"></i>
+        </button>
+
+        <div className="hot-deal">
+          <span>Hot Deals</span>
+        </div>
+
+        <ul className="rating list-unstyled d-flex gap-1">
+          {[...Array(5)].map((_, i) => (
+            <li key={i}>
+              <i
+                className="fa-solid fa-star text-xl fill"
+                style={{ color: "#ffb321" }}
+              ></i>
+            </li>
+          ))}
+        </ul>
+
+        <a href="/Shop" className="text-title text-decoration-none">
+          <h5 className="mt-2 mb-1">Butter</h5>
+        </a>
+        <h5 className="price mb-2">
+          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+        </h5>
+
+        {/* Progress bar */}
+        <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
+          <div
+            className="progress-bar bg-success"
+            style={{ width: `${progress}%` }}
+            role="progressbar"
+          ></div>
+        </div>
+
+        <h4 className="item">
+          Sold: <span>30 Items</span>
+        </h4>
+        <h4 className="offer mt-2">Hurry up, offer ends in:</h4>
+
+        {/* Countdown Timer */}
+        <div className="timer mt-2" id="clockdiv-4">
+          <ul className="list-unstyled d-flex gap-3">
+            <li>
+              <div className="counter text-center">
+                <div className="hours">
+                  <h6>{String(timeLeft.hours).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="minutes">
+                  <h6>{String(timeLeft.minutes).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="seconds">
+                  <h6>{String(timeLeft.seconds).padStart(2, "0")}</h6>
+                </div>
+              
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+                          </div>
                         </div>
-
                         <div>
-                            <div class="deal-box wow fadeInUp" data-wow-delay="0.1s">
-                                <a href="/Shop" class="category-image order-sm-2">
-                                    <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid blur-up lazyload"
-                                        alt="Image Size : 183 X 171" />
-                                </a>
+                             <div className="deal-box wow fadeInUp">
+      <a href="/Shop" className="category-image order-sm-2">
+        <img
+          src="../assets/images/veg-3/cate1/3.png"
+          className="img-fluid blur-up lazyload"
+          alt="Image Size : 183 X 171"
+        />
+      </a>
 
-                                <div class="deal-detail order-sm-1">
-                                    <button class="buy-box btn theme-bg-color text-white btn-cart">
-                                        <i class="iconly-Buy icli m-0"></i>
-                                    </button>
-                                    <div class="hot-deal">
-                                        <span>Hot Deals</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                    </ul>
-                                    <a href="/Shop" class="text-title">
-                                        <h5>cheese</h5>
-                                    </a>
-                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
-                                    <h4 class="item">Sold: <span>30 Items</span></h4>
-                                    <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-2" data-hours="1" data-minutes="2" data-seconds="3">
-                                        <ul>
-        <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
-            </div>
-        </li>
-    </ul>
-                                    </div>
-                                </div>
-                            </div>
+      <div className="deal-detail order-sm-1">
+        <button className="buy-box btn theme-bg-color text-white btn-cart">
+          <i className="fa-solid fa-cart-shopping m-0"></i>
+        </button>
+
+        <div className="hot-deal">
+          <span>Hot Deals</span>
+        </div>
+
+        <ul className="rating list-unstyled d-flex gap-1">
+          {[...Array(5)].map((_, i) => (
+            <li key={i}>
+              <i
+                className="fa-solid fa-star text-xl fill"
+                style={{ color: "#ffb321" }}
+              ></i>
+            </li>
+          ))}
+        </ul>
+
+        <a href="/Shop" className="text-title text-decoration-none">
+          <h5 className="mt-2 mb-1">cheese</h5>
+        </a>
+        <h5 className="price mb-2">
+          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+        </h5>
+
+        {/* Progress bar */}
+        <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
+          <div
+            className="progress-bar bg-success"
+            style={{ width: `${progress}%` }}
+            role="progressbar"
+          ></div>
+        </div>
+
+        <h4 className="item">
+          Sold: <span>30 Items</span>
+        </h4>
+        <h4 className="offer mt-2">Hurry up, offer ends in:</h4>
+
+        {/* Countdown Timer */}
+        <div className="timer mt-2" id="clockdiv-4">
+          <ul className="list-unstyled d-flex gap-3">
+            <li>
+              <div className="counter text-center">
+                <div className="hours">
+                  <h6>{String(timeLeft.hours).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="minutes">
+                  <h6>{String(timeLeft.minutes).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="seconds">
+                  <h6>{String(timeLeft.seconds).padStart(2, "0")}</h6>
+                </div>
+              
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+                          </div>
                         </div>
-
                         <div>
-                            <div class="deal-box wow fadeInUp" data-wow-delay="0.15s">
-                                <div class="category-image order-sm-2">
-                                    <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="Image Size : 183 X 171" />
-                                </div>
+                             <div className="deal-box wow fadeInUp">
+      <a href="/Shop" className="category-image order-sm-2">
+        <img
+          src="../assets/images/veg-3/cate1/4.png"
+          className="img-fluid blur-up lazyload"
+          alt="Image Size : 183 X 171"
+        />
+      </a>
 
-                                <div class="deal-detail order-sm-1">
-                                    <button class="buy-box btn theme-bg-color text-white btn-cart">
-                                        <i class="iconly-Buy icli m-0"></i>
-                                    </button>
-                                    <div class="hot-deal">
-                                        <span>Hot Deals</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                        <li>
-                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                        </li>
-                                    </ul>
-                                    <a href="/Shop" class="text-title">
-                                        <h5>Noodles</h5>
-                                    </a>
-                                    <h5 class="price">₹70.21 <span>₹65.00</span></h5>
-                                    <div class="progress custom-progressbar">
-                                        <div class="progress-bar" style={{width: "50"}} role="progressbar"></div>
-                                    </div>
-                                    <h4 class="item">Sold: <span>30 Items</span></h4>
-                                    <h4 class="offer">Hurry up offer end in</h4>
-                                    <div class="timer" id="clockdiv-3" data-hours="1" data-minutes="2" data-seconds="3">
-                                     <ul>
-        <li>
-            <div class="counter">
-                <div class="days"><h6>0</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="hours"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="minutes"><h6>00</h6></div>
-            </div>
-        </li>
-        <li>
-            <div class="counter">
-                <div class="seconds"><h6>00</h6></div>
-            </div>
-        </li>
-    </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div className="deal-detail order-sm-1">
+        <button className="buy-box btn theme-bg-color text-white btn-cart">
+          <i className="fa-solid fa-cart-shopping m-0"></i>
+        </button>
+
+        <div className="hot-deal">
+          <span>Hot Deals</span>
+        </div>
+
+        <ul className="rating list-unstyled d-flex gap-1">
+          {[...Array(5)].map((_, i) => (
+            <li key={i}>
+              <i
+                className="fa-solid fa-star text-xl fill"
+                style={{ color: "#ffb321" }}
+              ></i>
+            </li>
+          ))}
+        </ul>
+
+        <a href="/Shop" className="text-title text-decoration-none">
+          <h5 className="mt-2 mb-1">Noodles</h5>
+        </a>
+        <h5 className="price mb-2">
+          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+        </h5>
+
+        {/* Progress bar */}
+        <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
+          <div
+            className="progress-bar bg-success"
+            style={{ width: `${progress}%` }}
+            role="progressbar"
+          ></div>
+        </div>
+
+        <h4 className="item">
+          Sold: <span>30 Items</span>
+        </h4>
+        <h4 className="offer mt-2">Hurry up, offer ends in:</h4>
+
+        {/* Countdown Timer */}
+        <div className="timer mt-2" id="clockdiv-4">
+          <ul className="list-unstyled d-flex gap-3">
+            <li>
+              <div className="counter text-center">
+                <div className="hours">
+                  <h6>{String(timeLeft.hours).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="minutes">
+                  <h6>{String(timeLeft.minutes).padStart(2, "0")}</h6>
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div className="counter text-center">
+                <div className="seconds">
+                  <h6>{String(timeLeft.seconds).padStart(2, "0")}</h6>
+                </div>
+              
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+                          </div>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -4020,7 +4112,7 @@ export default function Home() {
                   className="btn theme-color bg-white btn-md fw-bold mt-sm-3 mt-1 mend-auto"
                   style={{
                     backgroundColor: "#fff",
-                    color: "#4CAF50",
+                    // color: "#4CAF50",
                     fontWeight: "bold",
                     border: "none",
                     padding: "10px 25px",
@@ -4126,18 +4218,6 @@ export default function Home() {
 </section>
 
     {/* <!-- Banner Section End --> */}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         {/* <!-- Product Section Start --> */}
@@ -5522,10 +5602,6 @@ export default function Home() {
         </div>
     </section>
     {/* <!-- Product Section End --> */}
-
-
-
-
 
 
         {/* <!-- Banner Section Start --> */}
