@@ -305,13 +305,13 @@ export default function Navbar() {
           <h5>Hot & Cold Drinks</h5>
         </div>
         <ul>
-          <li><a href="#">Tea</a></li>
-          <li><a href="#">Green Tea</a></li>
-          <li><a href="#">Coffee</a></li>
-          <li><a href="#">Soft Drinks</a></li>
-          <li><a href="#">Fruit Juices</a></li>
-          <li><a href="#">Packaged Water</a></li>
-          <li><a href="#">Health Drinks</a></li>
+          <li><a href="/Shop">Tea</a></li>
+          <li><a href="/Shop">Green Tea</a></li>
+          <li><a href="/Shop">Coffee</a></li>
+          <li><a href="/Shop">Soft Drinks</a></li>
+          <li><a href="/Shop">Fruit Juices</a></li>
+          <li><a href="/Shop">Packaged Water</a></li>
+          <li><a href="/Shop">Health Drinks</a></li>
         </ul>
       </div>
     </div>
@@ -330,11 +330,11 @@ export default function Navbar() {
           <h5>Breakfast Items</h5>
         </div>
         <ul>
-          <li><a href="#">Oats & Porridge</a></li>
-          <li><a href="#">Corn Flakes</a></li>
-          <li><a href="#">Muesli & Granola</a></li>
-          <li><a href="#">Instant Noodles</a></li>
-          <li><a href="#">Pasta & Macaroni</a></li>
+          <li><a href="/Shop">Oats & Porridge</a></li>
+          <li><a href="/Shop">Corn Flakes</a></li>
+          <li><a href="/Shop">Muesli & Granola</a></li>
+          <li><a href="/Shop">Instant Noodles</a></li>
+          <li><a href="/Shop">Pasta & Macaroni</a></li>
         </ul>
       </div>
 
@@ -343,12 +343,12 @@ export default function Navbar() {
           <h5>Dairy Products</h5>
         </div>
         <ul>
-          <li><a href="#">Milk</a></li>
-          <li><a href="#">Curd & Yogurt</a></li>
-          <li><a href="#">Paneer & Tofu</a></li>
-          <li><a href="#">Butter & Cheese</a></li>
-          <li><a href="#">Ghee</a></li>
-          <li><a href="#">Lassi & Buttermilk</a></li>
+          <li><a href="/Shop">Milk</a></li>
+          <li><a href="/Shop">Curd & Yogurt</a></li>
+          <li><a href="/Shop">Paneer & Tofu</a></li>
+          <li><a href="/Shop">Butter & Cheese</a></li>
+          <li><a href="/Shop">Ghee</a></li>
+          <li><a href="/Shop">Lassi & Buttermilk</a></li>
         </ul>
       </div>
     </div>
@@ -367,10 +367,10 @@ export default function Navbar() {
           <h5>Biscuits & Cookies</h5>
         </div>
         <ul>
-          <li><a href="#">Salted Biscuits</a></li>
-          <li><a href="#">Cream Biscuits</a></li>
-          <li><a href="#">Digestive & Health Biscuits</a></li>
-          <li><a href="#">Cookies</a></li>
+          <li><a href="/Shop">Salted Biscuits</a></li>
+          <li><a href="/Shop">Cream Biscuits</a></li>
+          <li><a href="/Shop">Digestive & Health Biscuits</a></li>
+          <li><a href="/Shop">Cookies</a></li>
         </ul>
       </div>
 
@@ -379,10 +379,10 @@ export default function Navbar() {
           <h5>Namkeen & Chips</h5>
         </div>
         <ul>
-          <li><a href="#">Chips & Wafers</a></li>
-          <li><a href="#">Namkeen</a></li>
-          <li><a href="#">Popcorn</a></li>
-          <li><a href="#">Snack Bars</a></li>
+          <li><a href="/Shop">Chips & Wafers</a></li>
+          <li><a href="/Shop">Namkeen</a></li>
+          <li><a href="/Shop">Popcorn</a></li>
+          <li><a href="/Shop">Snack Bars</a></li>
         </ul>
       </div>
     </div>
@@ -401,10 +401,10 @@ export default function Navbar() {
           <h5>Grains & Pulses</h5>
         </div>
         <ul>
-          <li><a href="#">Rice & Poha</a></li>
-          <li><a href="#">Wheat & Flour</a></li>
-          <li><a href="#">Dals & Pulses</a></li>
-          <li><a href="#">Millets</a></li>
+          <li><a href="/Shop">Rice & Poha</a></li>
+          <li><a href="/Shop">Wheat & Flour</a></li>
+          <li><a href="/Shop">Dals & Pulses</a></li>
+          <li><a href="/Shop">Millets</a></li>
         </ul>
       </div>
 
@@ -413,10 +413,10 @@ export default function Navbar() {
           <h5>Masala & Oil</h5>
         </div>
         <ul>
-          <li><a href="#">Cooking Oils & Ghee</a></li>
-          <li><a href="#">Masalas & Spices</a></li>
-          <li><a href="#">Salt, Sugar & Jaggery</a></li>
-          <li><a href="#">Dry Fruits & Nuts</a></li>
+          <li><a href="/Shop">Cooking Oils & Ghee</a></li>
+          <li><a href="/Shop">Masalas & Spices</a></li>
+          <li><a href="/Shop">Salt, Sugar & Jaggery</a></li>
+          <li><a href="/Shop">Dry Fruits & Nuts</a></li>
         </ul>
       </div>
     </div>
@@ -429,20 +429,21 @@ export default function Navbar() {
       <h6>Home Care</h6>
       <i className="fa-solid fa-angle-right"></i>
     </a>
-    <div className="onhover-category-box">
+    <div className="onhover-category-box w-100">
       <div className="list-1">
         <div className="category-title-box">
           <h5>Cleaning Essentials</h5>
         </div>
         <ul>
-          <li><a href="#">Detergents & Fabric Care</a></li>
-          <li><a href="#">Dishwash & Cleaners</a></li>
-          <li><a href="#">Floor Cleaners</a></li>
-          <li><a href="#">Air Fresheners</a></li>
+          <li><a href="/Shop">Detergents & Fabric Care</a></li>
+          <li><a href="/Shop">Dishwash & Cleaners</a></li>
+          <li><a href="/Shop">Floor Cleaners</a></li>
+          <li><a href="/Shop">Air Fresheners</a></li>
         </ul>
       </div>
     </div>
   </li>
+
 
   {/* <!-- Personal Care --> */}
   <li className="onhover-category-list">
@@ -451,17 +452,17 @@ export default function Navbar() {
       <h6>Personal Care</h6>
       <i className="fa-solid fa-angle-right"></i>
     </a>
-    <div className="onhover-category-box">
+    <div className="onhover-category-box w-100">
       <div className="list-1">
         <div className="category-title-box">
           <h5>Daily Essentials</h5>
         </div>
         <ul>
-          <li><a href="#">Bath & Body</a></li>
-          <li><a href="#">Hair Care</a></li>
-          <li><a href="#">Oral Care</a></li>
-          <li><a href="#">Skin Care</a></li>
-          <li><a href="#">Shaving & Grooming</a></li>
+          <li><a href="/Shop">Bath & Body</a></li>
+          <li><a href="/Shop">Hair Care</a></li>
+          <li><a href="/Shop">Oral Care</a></li>
+          <li><a href="/Shop">Skin Care</a></li>
+          <li><a href="/Shop">Shaving & Grooming</a></li>
         </ul>
       </div>
     </div>
@@ -474,16 +475,16 @@ export default function Navbar() {
       <h6>Baby Care</h6>
       <i className="fa-solid fa-angle-right"></i>
     </a>
-    <div className="onhover-category-box">
+    <div className="onhover-category-box w-100">
       <div className="list-1">
         <div className="category-title-box">
           <h5>For Babies</h5>
         </div>
         <ul>
-          <li><a href="#">Baby Food</a></li>
-          <li><a href="#">Diapers & Wipes</a></li>
-          <li><a href="#">Baby Skin Care</a></li>
-          <li><a href="#">Feeding Bottles</a></li>
+          <li><a href="/Shop">Baby Food</a></li>
+          <li><a href="/Shop">Diapers & Wipes</a></li>
+          <li><a href="/Shop">Baby Skin Care</a></li>
+          <li><a href="/Shop">Feeding Bottles</a></li>
         </ul>
       </div>
     </div>
