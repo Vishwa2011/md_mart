@@ -172,13 +172,13 @@ export default function Navbar() {
                                 <div className="option-list">
                                     <ul>
                                         <li>
-                                            <a href="javascript:void(0)" className="header-icon user-icon search-icon">
+                                            <a href="/Login" className="header-icon user-icon search-icon">
                                                 <i className="iconly-Profile icli"></i>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="javascript:void(0)" className="header-icon search-box search-icon">
+                                            <a href="" className="header-icon search-box search-icon">
                                                 <i className="iconly-Search icli"></i>
                                             </a>
                                         </li>
@@ -253,13 +253,13 @@ export default function Navbar() {
                                             </div>
                                         </li>
                                             <li >
-                                          <a href="/login" className="header-icon swap-icon" title="Log in">
+                                          <a href="/login" className="header-icon swap-icon " title="Log in">
                                             <i className="fa-solid fa-right-to-bracket"></i> {/* Login icon */}
                                           </a>
                                         </li>
 
                                                  <li >
-                                            <a href="/Account" className="header-icon swap-icon" title=" My Account">
+                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
                                        <i class="fa-solid fa-user-tie"></i>
                                             </a>
 
