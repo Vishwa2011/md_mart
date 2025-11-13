@@ -6,6 +6,27 @@ import Footer from './Footer'
 const Shop = () => {
      useEffect(() => {
     /**=====================
+        Filter Sidebar js
+    ==========================**/
+    $(".filter-button").on("click", function () {
+      $(".bg-overlay, .left-box").addClass("show");
+    });
+
+    $(".back-button, .bg-overlay").on("click", function () {
+      $(".bg-overlay, .left-box").removeClass("show");
+    });
+
+    $(".sort-by-button").on("click", function () {
+      $(".top-filter-menu").toggleClass("show");
+    });
+
+    // Cleanup events on unmount
+    return () => {
+      $(".filter-button, .back-button, .bg-overlay, .sort-by-button").off();
+    };
+  }, []);
+     useEffect(() => {
+    /**=====================
         Quantity 2 js
     ==========================**/
     $(".addcart-button").click(function () {
@@ -44,6 +65,7 @@ const Shop = () => {
                     <div class="left-box wow fadeInUp">
                         <div class="shop-left-sidebar">
                             <ul class="nav nav-pills mb-3 custom-nav-tab" id="pills-tab" role="tablist">
+                                       
                                 {/* <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-vegetables" data-bs-toggle="pill"
                                         data-bs-target="#pills-vegetable" type="button" role="tab">Vegetables & Fruit
@@ -90,7 +112,7 @@ const Shop = () => {
                                             src="../assets/svg/1/milk.svg" alt="" class="blur-up lazyload" /></button>
                                 </li>
 
-                                                           </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
