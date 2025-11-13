@@ -7060,12 +7060,18 @@ export default function Home() {
                                 </div>
 
                                 <div class="modal-button">
-                                    <button onclick="location.href = '/Cart';"
+                                    <a href="/Cart">
+
+                                    <button 
                                         class="btn btn-md add-cart-button icon">Add
                                         To Cart</button>
-                                    <button onclick="location.href = '/Productdetails';"
+                                    </a>
+                                    <a href="/Productdetails">
+
+                                    <button 
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
