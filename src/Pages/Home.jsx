@@ -206,7 +206,7 @@ export default function Home() {
     <section>
         <div class="container-fluid-lg">
             <div class="title">
-                <h2>Best Value</h2>
+                <h2>Best Offers</h2>
             </div>
             <div class="row">
                 <div class="col-12">

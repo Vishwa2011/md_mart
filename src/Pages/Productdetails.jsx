@@ -395,7 +395,7 @@ const Productdetails = () => {
                                 sweetness and vibrant flavors. At Fruit, we celebrate the beauty and goodness of fruits
                                 in their purest form.</p>
 
-                            <div class="vendor-list">
+                            {/* <div class="vendor-list">
                                 <ul>
                                     <li>
                                         <div class="address-contact">
@@ -411,7 +411,7 @@ const Productdetails = () => {
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div class="pt-25">
