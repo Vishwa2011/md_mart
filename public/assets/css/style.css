@@ -18400,7 +18400,7 @@ section,
 }
 
 .container-fluid-lg {
-    padding: 0 calc(-5px + 148*(100vw - 320px)/1600)
+    padding:  0 calc(12px + 148*(100vw - 320px)/1600)
 }
 
 .container-fluid-md {
