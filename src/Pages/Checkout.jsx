@@ -218,6 +218,34 @@ const Checkout = () => {
               </div>
             </div>
 
+            {/* Store Pickup */}
+            <div className="col-xxl-6 col-md-6">
+              <div className="delivery-option">
+                <div className="delivery-category">
+                  <div className="shipment-detail">
+                    <div className="form-check mb-0 custom-form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="delivery"
+                        // id="future"
+                        // value="future"
+                        // checked={deliveryType === "future"}
+                        onChange={(e) => setDeliveryType(e.target.value)}
+                      />
+                      <label className="form-check-label ms-2" htmlFor="future">
+                        Store Pickup Option
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
             {/* Future Delivery Box */}
             {deliveryType === "future" && (
               <div className="col-12">
@@ -296,7 +324,7 @@ const Checkout = () => {
                                                         <div class="accordion-body">
                                                             <p class="cod-review">Pay digitally with SMS Pay
                                                                 Link. Cash may not be accepted in COVID restricted
-                                                                areas. <a href="javascript:void(0)">Know more.</a>
+                                                                areas.
                                                             </p>
                                                         </div>
                                                     </div>

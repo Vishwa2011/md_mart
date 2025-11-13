@@ -58,12 +58,6 @@ const Shop = () => {
                                 </li>
 
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-meat" data-bs-toggle="pill"
-                                        data-bs-target="#pills-meat" type="button" role="tab">Meats & Seafood <img
-                                            src="../assets/svg/1/meats.svg" alt="" class="blur-up lazyload" /></button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-dairy" data-bs-toggle="pill"
                                         data-bs-target="#pills-dairy" type="button" role="tab">Breakfast & Dairy <img
                                             src="../assets/svg/1/breakfast.svg" class="blur-up lazyload"
@@ -92,16 +86,11 @@ const Shop = () => {
 
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-milk" data-bs-toggle="pill"
-                                        data-bs-target="#pills-milk" type="button" role="tab">Milk & Dairies <img
+                                        data-bs-target="#pills-milk" type="button" role="tab">Milk & Milk Products <img
                                             src="../assets/svg/1/milk.svg" alt="" class="blur-up lazyload" /></button>
                                 </li>
 
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-pet" data-bs-toggle="pill"
-                                        data-bs-target="#pills-pet" type="button" role="tab">Pet Foods <img
-                                            class="blur-up lazyload" src="../assets/svg/1/pet.svg" alt="" /></button>
-                                </li>
-                            </ul>
+                                                           </ul>
                         </div>
                     </div>
                 </div>

@@ -89,22 +89,22 @@ const Footer = () => {
                         <div class="footer-contain">
                             <ul>
                                 <li>
-                                    <a href="/Shop" class="text-content">Vegetables & Fruit</a>
+                                    <a href="/Shop" class="text-content">Rice, Flour & Grains</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Beverages</a>
+                                    <a href="/Shop" class="text-content">Dals & Pulses</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Oils</a>
+                                    <a href="/Shop" class="text-content">Drinks & Beverages</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Frozen Foods</a>
+                                    <a href="/Shop" class="text-content">Instant Mixes</a>
                                 </li>
                                 <li>
                                     <a href="/Shop" class="text-content">Biscuits & Snacks</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Grocery & Staples</a>
+                                    <a href="/Shop" class="text-content">Frozen Foods</a>
                                 </li>
                             </ul>
                         </div>
