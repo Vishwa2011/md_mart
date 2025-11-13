@@ -229,121 +229,97 @@ const Blog = () => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseTwo">Category</button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse collapse show">
-                                    <div class="accordion-body p-0">
-                                        <div class="category-list-box">
-                                            <ul>
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Latest Recipes</h5>
-                                                            <span>10</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Diet Food</h5>
-                                                            <span>6</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Low calorie Items</h5>
-                                                            <span>8</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Cooking Method</h5>
-                                                            <span>9</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Dairy Free</h5>
-                                                            <span>12</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/Blog">
-                                                        <div class="category-name">
-                                                            <h5>Vegetarian Food</h5>
-                                                            <span>10</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                          <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo">Category</button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse collapse show">
+        <div class="accordion-body p-0">
+            <div class="category-list-box">
+                <ul>
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Snacks & Namkeen</h5>
+                                <span>10</span>
                             </div>
+                        </a>
+                    </li>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseThree">Product Tags</button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseThree"
-                                    class="accordion-collapse collapse collapse show">
-                                    <div class="accordion-body pt-0">
-                                        <div class="product-tags-box">
-                                            <ul>
-
-                                                <li>
-                                                    <a href="">Fruit Cutting</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">Meat</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">organic</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">cake</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">pick fruit</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">backery</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">organix food</a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="">Most Expensive Fruit</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Beverages</h5>
+                                <span>6</span>
                             </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Breakfast Items</h5>
+                                <span>8</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Cleaning Supplies</h5>
+                                <span>9</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Personal Care</h5>
+                                <span>12</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Blog">
+                            <div class="category-name">
+                                <h5>Packaged Foods</h5>
+                                <span>10</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree">Product Tags</button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse collapse show">
+        <div class="accordion-body pt-0">
+            <div class="product-tags-box">
+                <ul>
+                    <li><a href="">Snacks</a></li>
+                    <li><a href="">Soft Drinks</a></li>
+                    <li><a href="">Biscuits</a></li>
+                    <li><a href="">Tea & Coffee</a></li>
+                    <li><a href="">Detergent</a></li>
+                    <li><a href="">Soap</a></li>
+                    <li><a href="">Toothpaste</a></li>
+                    <li><a href="">Cooking Oil</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">

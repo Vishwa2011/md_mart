@@ -12,7 +12,7 @@ const Blogdetails = () => {
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-contain">
-                        <h2>Blog Details Page</h2>
+                        <h2>Blog Details </h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -20,7 +20,8 @@ const Blogdetails = () => {
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item">Blog</li>
+                                <li class="breadcrumb-item"><a href='/Blog'>
+                                   Blog </a></li>
                                 <li class="breadcrumb-item active">Blog Details</li>
                             </ol>
                         </nav>
@@ -309,8 +310,14 @@ const Blogdetails = () => {
                 </div>
 
                 <div class="col-xxl-9 col-xl-8 col-lg-7 ratio_50">
-                    <div class="blog-detail-image rounded-3 mb-4">
-                        <img src="/assets/images/picture/blogdetails,,.jpg" class="bg-img blur-up lazyload" alt="" />
+                    <div class="blog-detail-image rounded-3 mb-4 bg-size blur-up lazyloaded"    style={{
+    backgroundImage: "url('/assets/images/picture/bd.webp')",
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    display: "block"
+  }}>
+                        <img src="/assets/images/picture/bd.webp" class="bg-img blur-up lazyload" style={{display:'none'}} alt="" />
                         <div class="blog-image-contain">
                             <ul class="contain-list">
                                 <li>backpack</li>
