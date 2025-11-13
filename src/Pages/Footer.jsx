@@ -64,18 +64,14 @@ const Footer = () => {
                             </div>
 
                             <div class="footer-logo-contain">
-                                <p>We are a friendly bar serving a variety of cocktails, wines and beers. Our bar is a
-                                    perfect place for a couple.</p>
+                                <p>MD Mart — your one-stop shop for quality products, great prices, and quick doorstep delivery.</p>
 
                                 <ul class="address">
                                     <li>
-                                        <i data-feather="home"></i>
-                                        <a href="">1418 Riverwood Drive, CA 96052, US</a>
+                                        <i class="fa-solid fa-home"></i>
+                                        <a href="">25, Shiv Park Soc, opp. Madhav Shopping Center, Gododara Canal Road, Godadara , Surat, India, Gujarat</a>
                                     </li>
-                                    <li>
-                                        <i data-feather="mail"></i>
-                                        <a href="">support@mdmart.com</a>
-                                    </li>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -176,27 +172,35 @@ const Footer = () => {
 
                         <div class="footer-contact">
                             <ul>
-                                <li>
-                                    <div class="footer-number">
-                                        <i data-feather="phone"></i>
-                                        <div class="contact-number">
-                                            <h6 class="text-content">Hotline 24/7 :</h6>
-                                            <h5>+91 1234567897</h5>
-                                        </div>
-                                    </div>
-                                </li>
+  <li>
+    <div class="footer-number">
+      <i data-feather="phone"></i>
+      <div class="contact-number">
+        <h6 class="text-content">Hotline 24/7 :</h6>
+        <h5>
+          <a href="tel:+919725817388" class="text-content ">
+            +91 97258 17388
+          </a>
+        </h5>
+      </div>
+    </div>
+  </li>
 
-                                <li>
-                                    <div class="footer-number">
-                                        <i data-feather="mail"></i>
-                                        <div class="contact-number">
-                                            <h6 class="text-content">Email Address :</h6>
-                                            <h5>infomdmart@gmail.com</h5>
-                                        </div>
-                                    </div>
-                                </li>
+  <li>
+    <div class="footer-number">
+      <i data-feather="mail"></i>
+      <div class="contact-number">
+        <h6 class="text-content">Email Address :</h6>
+        <h5>
+          <a href="mailto:mdmart.superstore@gmail.com" class="text-content ">
+            mdmart.superstore@gmail.com
+          </a>
+        </h5>
+      </div>
+    </div>
+  </li>
+</ul>
 
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -213,7 +217,7 @@ const Footer = () => {
                     <h6 class="text-content">Stay connected :</h6>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank">
+                            <a href="https://www.facebook.com/mdmartsurat/" target="_blank">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
