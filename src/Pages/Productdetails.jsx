@@ -1,9 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Productdetails = () => {
+    const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 1,
+    minutes: 2,
+    seconds: 3,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => {
+        let { days, hours, minutes, seconds } = prev;
+
+        if (seconds > 0) seconds--;
+        else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours--;
+          minutes = 59;
+          seconds = 59;
+        } else if (days > 0) {
+          days--;
+          hours = 23;
+          minutes = 59;
+          seconds = 59;
+        } else {
+          clearInterval(interval);
+        }
+
+        return { days, hours, minutes, seconds };
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
          useEffect(() => {
         /**=====================
             Quantity 2 js
@@ -222,46 +257,51 @@ const Productdetails = () => {
 
 
 
-                                <div class="time deal-timer product-deal-timer mx-md-0 mx-auto" id="clockdiv-1"
-                                    data-hours="1" data-minutes="2" data-seconds="3">
-                                    <div class="product-title">
-                                        <h4>Hurry up! Sales Ends In</h4>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <div class="counter d-block">
-                                                <div class="days d-block">
-                                                    <h5></h5>
-                                                </div>
-                                                <h6>Days</h6>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="counter d-block">
-                                                <div class="hours d-block">
-                                                    <h5></h5>
-                                                </div>
-                                                <h6>Hours</h6>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="counter d-block">
-                                                <div class="minutes d-block">
-                                                    <h5></h5>
-                                                </div>
-                                                <h6>Min</h6>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="counter d-block">
-                                                <div class="seconds d-block">
-                                                    <h5></h5>
-                                                </div>
-                                                <h6>Sec</h6>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <div
+      class="time deal-timer product-deal-timer mx-md-0 mx-auto"
+      id="clockdiv-1"
+      data-hours="1"
+      data-minutes="2"
+      data-seconds="3"
+    >
+      <div class="product-title">
+        <h4>Hurry up! Sales Ends In</h4>
+      </div>
+      <ul>
+        <li>
+          <div class="counter d-block">
+            <div class="days d-block">
+              <h5>{String(timeLeft.days).padStart(2, "0")}</h5>
+            </div>
+            <h6>Days</h6>
+          </div>
+        </li>
+        <li>
+          <div class="counter d-block">
+            <div class="hours d-block">
+              <h5>{String(timeLeft.hours).padStart(2, "0")}</h5>
+            </div>
+            <h6>Hours</h6>
+          </div>
+        </li>
+        <li>
+          <div class="counter d-block">
+            <div class="minutes d-block">
+              <h5>{String(timeLeft.minutes).padStart(2, "0")}</h5>
+            </div>
+            <h6>Min</h6>
+          </div>
+        </li>
+        <li>
+          <div class="counter d-block">
+            <div class="seconds d-block">
+              <h5>{String(timeLeft.seconds).padStart(2, "0")}</h5>
+            </div>
+            <h6>Sec</h6>
+          </div>
+        </li>
+      </ul>
+                                 </div>
 
 
 
