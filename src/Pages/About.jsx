@@ -59,7 +59,7 @@ const About = () => {
                             </div>
 
                             <div class="delivery-list">
-                                <p class="text-content">
+                                <p class="text-content " style={{textAlign:'justify'}} >
                                     Founded in 2019, our journey began with a simple vision — to make quality products accessible and affordable for everyone.
                                      What started as a small online store has now grown into a trusted eCommerce brand serving thousands of happy customers across the country.
                                      <br /><br />
