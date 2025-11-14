@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Privacy = ({
-  companyName = 'Your Company',
+  companyName = 'MD Mart',
   effectiveDate = 'November 10, 2025',
 }) => {
   return (
@@ -115,7 +115,7 @@ const Privacy = ({
             <address className="privacypolicy-address not-italic mt-3 text-gray-700">
               <strong>{companyName}</strong>
               <br />
-              Email: <a href="mailto:privacy@yourcompany.com" className="privacypolicy-email underline">privacy@yourcompany.com</a>
+              Email: <a href="mailto:mdmart.superstore@gmail.com" className="privacypolicy-email underline">mdmart.superstore@gmail.com</a>
             </address>
           </section>
         </article>
