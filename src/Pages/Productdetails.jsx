@@ -334,16 +334,7 @@ const Productdetails = () => {
                                 </div>
 
                                 <div class="pickup-box">
-                                    <div class="product-title">
-                                        <h4>Store Information</h4>
-                                    </div>
-
-                                    <div class="pickup-detail">
-                                        <h4 class="text-content w-100">I would like the people that buy my clothes to
-                                            understand that for me it's one small piece of art. I love the 2000s because
-                                            everyone started to love haute couture. The only way to do something in
-                                            depth is to work hard.</h4>
-                                    </div>
+                                   
 
                                     <div class="product-info">
                                         <ul class="product-info-list product-info-list-2">

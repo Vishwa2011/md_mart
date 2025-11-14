@@ -18,6 +18,14 @@ const [pincodeValue, setPincodeValue] = useState("");
     }
 }, [locationPopup]);
 
+
+  const [open, setOpen] = useState(false);
+
+
+
+
+
+
 const scrollPosRef = React.useRef(0);
 
 useEffect(() => {
@@ -256,9 +264,6 @@ useEffect(() => {
         </div>
     </div>
 )}
-
-
-
 
 
                             <div className="row">
@@ -583,112 +588,121 @@ useEffect(() => {
                             <div className="rightside-menu">
                                
 
+                             
                                 <div className="option-list">
                                     <ul>
                                         
-
-                                        {/* <li>
-                                            <a href="" className="header-icon search-box search-icon">
-                                                <i className="iconly-Search icli"></i>
-                                            </a>
-                                        </li>
-
-                                       
-
-                                        <li className="onhover-dropdown">
-                                            <a href="/" className="header-icon swap-icon" title="Search">
-                                                 <i className="iconly-Search icli"></i>
-                                            </a>
-                                        </li> */}
-                                        {/* <li className="onhover-dropdown">
-                                            <a href="/Wishlist" className="header-icon swap-icon" title="Wishlist">
-                                                <i className="iconly-Heart icli"></i>
-                                            </a>
-
-                                        </li> */}
-
-                                        {/* <li className="onhover-dropdown">
-                                            <a href="/Cart" className="header-icon bag-icon">
-                                                <small className="badge-number">2</small>
-                                                <i className="iconly-Bag-2 icli"></i>
-                                            </a>
-                                            <div className="onhover-div">
-                                                <ul className="cart-list">
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/choco.png"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹80.58</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/soda.jpg"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
-                                                                    </h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹25.68</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-
-                                                <div className="price-box">
-                                                    <h5>Price :</h5>
-                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
-                                                </div>
-
-                                                <div className="button-group">
-                                                    <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
-                                                    <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
-                                                    text-white">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                            <li >
-                                          <a href="/login" className="header-icon swap-icon " title="Log in">
-                                            <i className="fa-solid fa-right-to-bracket"></i>
-                                          </a>
-                                        </li>
-
-                                                 <li >
-                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
-                                       <i class="fa-solid fa-user-tie"></i>
-                                            </a>
-
-                                        </li> */}
-                                    </ul>
-                                </div>
-                                <div className="option-list">
-                                    <ul>
-                                        
-                                            <li>
+                                            {/* <li>
                                             <a href="#" className="header-icon swap-icon " title="Search">
                                                <i className="iconly-Search icli"></i>
                                             </a>
-                                        </li>
+                                        </li> */}
+
+                                         <li>
+        <button
+          className="header-icon swap-icon"
+          title="Search"
+          onClick={() => setOpen(true)}
+        >
+          <i className="iconly-Search icli"></i>
+        </button>
+      </li>
+
+      {/* MODAL */}
+      {open && (
+        <div className="searchmodal-overlay">
+          <div className="modal-box">
+
+            {/* CLOSE BUTTON */}
+            <button className="close-btn" onClick={() => setOpen(false)}>
+              ×
+            </button>
+
+            {/* SEARCH INPUT */}
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search for over 5000 products"
+            />
+
+            {/* BANNER */}
+            <div className="banner">
+              <div className="banner-text">
+                <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
+                <p>Get smoking accessories, fresheners & more in minutes!</p>
+                <button className="order-now-btn">Order now</button>
+              </div>
+
+              <img
+                src="/assets/images/oils.png"
+                alt="banner visuals"
+                className="banner-img"
+              />
+            </div>
+
+            {/* PRODUCT GRID */}
+            <div className="product-grid">
+              {[
+                {
+                  title: "Drink",
+                  price: 32,
+                  old: 40,
+                  off: "₹8 OFF",
+                  img: "/assets/images/soda.jpg",
+                },
+                {
+                  title: " Chocolate",
+                  price: 18,
+                  old: 20,
+                  off: "₹2 OFF",
+                  img: "/assets/images/choco.png",
+                },
+                {
+                  title: "Ready to eat",
+                  price: 50,
+                  old: 70,
+                  off: "₹20 OFF",
+                  img: "/assets/images/ready-to-eat.png",
+                },
+                {
+                  title: "Rice",
+                  price: 48,
+                  old: 70,
+                  off: "₹22 OFF",
+                  img: "/assets/images/rice.png",
+                },
+                {
+                  title: "Dals",
+                  price: 104,
+                  old: 125,
+                  off: "₹21 OFF",
+                  img: "/assets/images/dals.png",
+                },
+                {
+                  title: "Instant-mixes",
+                  price: 36,
+                  old: 40,
+                  off: "₹4 OFF",
+                  img: "/assets/images/instant-mixes.png",
+                },
+              ].map((p, idx) => (
+                <div key={idx} className="product-card">
+                  <img src={p.img} alt={p.title} className="product-img" />
+                  <div className="price-box">
+                    <span className="price">₹{p.price}</span>
+                    <span className="old-price">₹{p.old}</span>
+                  </div>
+                  <span className="offer">{p.off}</span>
+                  <p className="product-name">{p.title}</p>
+                  <button className="add-btn">ADD</button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+
                                             <li>
                                             <a href="/Wishlist" className="header-icon swap-icon " title="Wishlist">
                                                 <i className="iconly-Heart icli"></i>

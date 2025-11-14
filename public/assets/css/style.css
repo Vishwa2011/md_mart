@@ -47809,8 +47809,22 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     left: 0;
     display: flex;
     justify-content: center;
-    /* width: 100%; */
     z-index: 200;
+}
+
+/* ✅ For screen width ≤ 375px */
+@media (max-width: 375px) {
+    .location-dropdown-box {
+        width: 100%;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+
+    .location-dropdown-box .location-inner {
+        width: 100%;     /* full width box inside */
+        margin: 0 10px;  /* little margin so it doesn’t touch edges */
+    }
 }
 
 .location-dropdown-box .location-inner {
@@ -47903,4 +47917,141 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     backdrop-filter: blur(2px);
     background: rgba(0,0,0,0.25);
     z-index: 150;
+}
+/*  */
+
+
+/* Overlay */
+.searchmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+/* Modal Box */
+.searchmodal-overlay .modal-box {
+  width: 95%;
+  max-width: 1100px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Close button */
+.searchmodal-overlay .close-btn {
+  position: absolute;
+  right: 15px;
+  font-size: 32px;
+  top: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Search Field */
+.searchmodal-overlay .search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 17px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Banner */
+.searchmodal-overlay .banner {
+  background: #f7eaff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.searchmodal-overlay .banner-text h2 {
+  font-size: 22px;
+  margin: 0 0 5px 0;
+}
+
+.searchmodal-overlay .banner img {
+  /* width: 200px; */
+  object-fit: contain;
+}
+
+.searchmodal-overlay .order-now-btn {
+  padding: 10px 18px;
+  background: #ff2c5b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+/* Product Grid */
+.searchmodal-overlay .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 20px;
+}
+
+/* Product Cards */
+.searchmodal-overlay .product-card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+}
+
+.searchmodal-overlay .product-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.searchmodal-overlay .price-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.searchmodal-overlay .price {
+  font-weight: 700;
+}
+
+.searchmodal-overlay .old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.searchmodal-overlay .offer {
+  color: green;
+  font-size: 12px;
+}
+
+.searchmodal-overlay .product-name {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.searchmodal-overlay .add-btn {
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid #ff2c5b;
+  color: #ff2c5b;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
 }
