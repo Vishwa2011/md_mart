@@ -186,6 +186,8 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
+        <h6 class="unit-dis">10% Off</h6>
+      
                                     
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -213,6 +215,14 @@ const Shop = () => {
                             </div>
                         </div>
 
+
+
+
+
+
+
+
+
                         <div>
                             <div class="product-box-3 h-100 wow fadeInUp" data-wow-delay="0.05s">
                                 <div class="product-header">
@@ -221,7 +231,7 @@ const Shop = () => {
                                             <img src="/assets/images/picture/shop2.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
-
+                                        <span class="sold-out-badge">Sold Out</span>
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="" data-bs-toggle="modal"
@@ -240,8 +250,7 @@ const Shop = () => {
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div class="product-footer">
+                                    <div class="product-footer">
                                     <div class="product-detail">
                                         <span class="span-name">Vegetable</span>
                                         <a href="/Productdetails">
@@ -292,30 +301,20 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
-                                        <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Add
+      <h6 class="unit-dis">10% Off</h6>                               
+                                        <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
+                                            <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
-                                                    <i class="fa-solid fa-plus"></i>
+                                                    <i class="fa-solid fa-bell"></i>
                                                 </span>
                                             </button>
-                                            <div class="cart_qty qty-box">
-                                                <div class="input-group bg-white">
-                                                    <button type="button" class="qty-left-minus bg-gray"
-                                                        data-type="minus" data-field="">
-                                                        <i class="fa fa-minus"></i>
-                                                    </button>
-                                                    <input class="form-control input-number qty-input" type="text"
-                                                        name="quantity" value="0" />
-                                                    <button type="button" class="qty-right-plus bg-gray"
-                                                        data-type="plus" data-field="">
-                                                        <i class="fa fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    </div>
+                               
+
+
+
                             </div>
                         </div>
 
@@ -399,7 +398,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
+        <h6 class="unit-dis">10% Off</h6>                            
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -504,7 +503,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                        
+        <h6 class="unit-dis">10% Off</h6>                                
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -539,7 +538,7 @@ const Shop = () => {
                                             <img src="/assets/images/picture/shop5.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
-
+                                        <span class="sold-out-badge">Sold Out</span>
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="" data-bs-toggle="modal"
@@ -613,27 +612,14 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                     
-                                        <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Add
+        <h6 class="unit-dis">10% Off</h6>                             
+                                        <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
+                                            <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
-                                                    <i class="fa-solid fa-plus"></i>
+                                                    <i class="fa-solid fa-bell"></i>
                                                 </span>
                                             </button>
-                                            <div class="cart_qty qty-box">
-                                                <div class="input-group bg-white">
-                                                    <button type="button" class="qty-left-minus bg-gray"
-                                                        data-type="minus" data-field="">
-                                                        <i class="fa fa-minus"></i>
-                                                    </button>
-                                                    <input class="form-control input-number qty-input" type="text"
-                                                        name="quantity" value="0" />
-                                                    <button type="button" class="qty-right-plus bg-gray"
-                                                        data-type="plus" data-field="">
-                                                        <i class="fa fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -719,7 +705,8 @@ const Shop = () => {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                    
+      </div>     
+      <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -824,7 +811,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                       
+        <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -930,7 +917,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                     
+       <h6 class="unit-dis">10% Off</h6>                              
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -965,7 +952,7 @@ const Shop = () => {
                                             <img src="/assets/images/picture/shop3.png"
                                                 class="img-fluid blur-up lazyload" alt="" />
                                         </a>
-
+                                        <span class="sold-out-badge">Sold Out</span>
                                         <ul class="product-option">
                                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
                                                 <a href="" data-bs-toggle="modal"
@@ -1037,27 +1024,13 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                      
-                                        <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Add
+       <h6 class="unit-dis">10% Off</h6>                               
+                                        <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
+                                            <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
-                                                    <i class="fa-solid fa-plus"></i>
+                                                    <i class="fa-solid fa-bell"></i>
                                                 </span>
                                             </button>
-                                            <div class="cart_qty qty-box">
-                                                <div class="input-group bg-white">
-                                                    <button type="button" class="qty-left-minus bg-gray"
-                                                        data-type="minus" data-field="">
-                                                        <i class="fa fa-minus"></i>
-                                                    </button>
-                                                    <input class="form-control input-number qty-input" type="text"
-                                                        name="quantity" value="0" />
-                                                    <button type="button" class="qty-right-plus bg-gray"
-                                                        data-type="plus" data-field="">
-                                                        <i class="fa fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1141,7 +1114,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                       
+        <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1248,6 +1221,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
+      <h6 class="unit-dis">10% Off</h6>
                                       
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1355,7 +1329,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                 
+        <h6 class="unit-dis">10% Off</h6>                         
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1459,7 +1433,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                      
+       <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1565,7 +1539,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
+       <h6 class="unit-dis">10% Off</h6>                             
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
