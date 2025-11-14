@@ -48110,7 +48110,7 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
-    z-index: 10;
+    z-index: 1;
     text-transform: uppercase;
 }
 

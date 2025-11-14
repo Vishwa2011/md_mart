@@ -144,26 +144,6 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Cheesy feet cheesy grin brie.
                                             Mascarpone cheese and wine hard cheese the big cheese everyone loves smelly
                                             cheese macaroni cheese croque monsieur.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(4.0)</span>
-                                        </div>
                                         <h6 class="unit">250 ml</h6>
                                              <div style={{ display: "flex" }}>
         <h5
@@ -259,26 +239,6 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Feta taleggio croque monsieur
                                             swiss manchego cheesecake dolcelatte jarlsberg. Hard cheese danish fontina
                                             boursin melted cheese fondue.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(2.4)</span>
-                                        </div>
                                         <h6 class="unit">350 G</h6>
                                               <div style={{ display: "flex" }}>
         <h5
@@ -356,26 +316,6 @@ const Shop = () => {
                                             wine cheesecake dolcelatte stilton. Cream cheese parmesan who moved my
                                             cheese when the cheese comes out everybody's happy cream cheese red
                                             leicester ricotta edam.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(5.0)</span>
-                                        </div>
                                         <h6 class="unit">570 G</h6>
                                              <div style={{ display: "flex" }}>
         <h5
@@ -461,26 +401,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Cheddar cheddar pecorino hard
                                             cheese hard cheese cheese and biscuits bocconcini babybel. Cow goat paneer
                                             cream cheese fromage cottage cheese cauliflower cheese jarlsberg.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(3.8)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">100 G</h6>
                                             <div style={{ display: "flex" }}>
         <h5
@@ -568,26 +489,7 @@ const Shop = () => {
                                             cheese swiss cut the cheese lancashire who moved my cheese manchego melted
                                             cheese. Red leicester paneer cow when the cheese comes out everybody's happy
                                             croque monsieur goat melted cheese port-salut.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(4.0)</span>
-                                        </div>
+                                        
 
                                         <h6 class="unit">550 G</h6>
 
@@ -662,26 +564,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Melted cheese babybel chalk
                                             and cheese. Port-salut port-salut cream cheese when the cheese comes out
                                             everybody's happy cream cheese hard cheese cream cheese red leicester.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(3.8)</span>
-                                        </div>
+                                        
 
                                         <h6 class="unit">1 Kg</h6>
 
@@ -769,26 +652,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Squirty cheese cottage cheese
                                             cheese strings. Red leicester paneer danish fontina queso lancashire when
                                             the cheese comes out everybody's happy cottage cheese paneer.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(4.0)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">250 ml</h6>
                                              <div style={{ display: "flex" }}>
         <h5
@@ -875,26 +739,7 @@ const Shop = () => {
                                             cheese squirty cheese cheesy grin camembert de normandie airedale edam.
                                             Squirty cheese babybel cheesecake the big cheese cauliflower cheese hard
                                             cheese cheese and biscuits cheese and wine.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(2.4)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">350 G</h6>
                                               <div style={{ display: "flex" }}>
         <h5
@@ -982,26 +827,7 @@ const Shop = () => {
                                             cheeseburger. Jarlsberg smelly cheese chalk and cheese gouda blue castello
                                             monterey jack swiss boursin. Halloumi cheesy feet mozzarella red leicester
                                             paneer boursin who moved my cheese croque monsieur.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(5.0)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">570 G</h6>
                                              <div style={{ display: "flex" }}>
         <h5
@@ -1072,26 +898,7 @@ const Shop = () => {
                                             jack smelly cheese emmental bocconcini when the cheese comes out everybody's
                                             happy pecorino. Cut the cheese stilton danish fontina cheesy grin rubber
                                             cheese smelly cheese roquefort paneer.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(3.8)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">100 G</h6>
                                             <div style={{ display: "flex" }}>
         <h5
@@ -1177,26 +984,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Manchego cow cheddar.
                                             Port-salut roquefort hard cheese babybel when the cheese comes out
                                             everybody's happy brie dolcelatte croque monsieur.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(4.0)</span>
-                                        </div>
+                                        
 
                                         <h6 class="unit">550 G</h6>
 
@@ -1285,26 +1073,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Roquefort say cheese the big
                                             cheese ricotta chalk and cheese when the cheese comes out everybody's happy
                                             brie lancashire.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(3.8)</span>
-                                        </div>
+                                        
 
                                         <h6 class="unit">1 Kg</h6>
 
@@ -1391,26 +1160,7 @@ const Shop = () => {
                                         <p class="text-content mt-1 mb-2 product-content">Lancashire when the cheese
                                             comes out everybody's happy blue castello halloumi boursin stinking bishop
                                             pecorino fromage frais.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(4.0)</span>
-                                        </div>
+                                        
                                         <h6 class="unit">250 ml</h6>
                                              <div style={{ display: "flex" }}>
         <h5
@@ -1497,26 +1247,7 @@ const Shop = () => {
                                             feta. Queso bocconcini danish fontina camembert de normandie brie airedale
                                             ricotta feta. Pecorino edam gouda caerphilly croque monsieur red leicester
                                             cheese triangles caerphilly.</p>
-                                        <div class="product-rating mt-2">
-                                            <ul class="rating">
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                                <li>
-                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                </li>
-                                            </ul>
-                                            <span>(2.4)</span>
-                                        </div>
+                                       
                                         <h6 class="unit">350 G</h6>
                                               <div style={{ display: "flex" }}>
         <h5
