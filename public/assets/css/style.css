@@ -32730,7 +32730,7 @@ body.rtl .menu-label {
 .product-box-4 .product-image img {
     width: 70%;
     height: calc(80px + 60*(100vw - 320px)/1600);
-    margin: 30px auto 20px;
+
     -o-object-fit: contain;
     object-fit: contain;
     -webkit-transition: all .3s ease-in-out;
