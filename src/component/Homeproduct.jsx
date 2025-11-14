@@ -94,7 +94,7 @@ const Homeproduct = () => {
                             color: "#2baedd",
                             padding: "5px",
                             borderRadius: "10px",
-                            marginRight: "10px",
+                            marginRight: "5px",
                           }}
                         >
                           ₹70.21
@@ -172,7 +172,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -255,7 +255,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -333,7 +333,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -415,7 +415,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -493,7 +493,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -579,7 +579,7 @@ const Homeproduct = () => {
                             color: "#2baedd",
                             padding: "5px",
                             borderRadius: "10px",
-                            marginRight: "10px",
+                            marginRight: "5px",
                           }}
                         >
                           ₹70.21
@@ -657,7 +657,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -742,7 +742,7 @@ const Homeproduct = () => {
                             color: "#2baedd",
                             padding: "5px",
                             borderRadius: "10px",
-                            marginRight: "10px",
+                            marginRight: "5px",
                           }}
                         >
                           ₹70.21
@@ -824,7 +824,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -909,7 +909,7 @@ const Homeproduct = () => {
                             color: "#2baedd",
                             padding: "5px",
                             borderRadius: "10px",
-                            marginRight: "10px",
+                            marginRight: "5px",
                           }}
                         >
                           ₹70.21
@@ -988,7 +988,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1073,7 +1073,7 @@ const Homeproduct = () => {
                             color: "#2baedd",
                             padding: "5px",
                             borderRadius: "10px",
-                            marginRight: "10px",
+                            marginRight: "5px",
                           }}
                         >
                           ₹70.21
@@ -1156,7 +1156,7 @@ const Homeproduct = () => {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21

@@ -197,8 +197,30 @@ const Productdetails = () => {
                                 <h6 class="offer-top">30% Off</h6>
                                 <h2 class="name">Deliciously Ripe Peach</h2>
                                 <div class="price-rating">
-                                    <h3 class="theme-color price">₹49.50 <del class="text-content">₹58.46</del> <span
-                                            class="offer theme-color">(8% off)</span></h3>
+      <div style={{ display: "flex" }}>
+        <h5
+          className=" theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+            fontWeight:"600"
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      <h3>
+                                    <span class="offer theme-color" style={{fontSize:'15px',margin:'10px'}}>(8% off)</span></h3>
+      </div>
                                     <div class="product-rating custom-rate">
                                         <ul class="rating">
                                             <li>
@@ -321,7 +343,7 @@ const Productdetails = () => {
                                     </div>
 
                                     <a href="/Cart"
-                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</a>
+                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Basket</a>
                                 </div>
 
                                 <div class="buy-box">
@@ -390,66 +412,18 @@ const Productdetails = () => {
                 <div class="col-xxl-3 col-xl-4 col-lg-5 d-none d-lg-block wow fadeInUp">
                     <div class="right-sidebar-box">
                         <div class="vendor-box">
-                            <div class="vendor-contain">
-                                <div class="vendor-image">
-                                    <img src="../assets/images/product/vendor.png" class="blur-up lazyload" alt="" />
-                                </div>
+                          
+                   <h3>Why Shop MD Mart</h3>
+                            <p class="vendor-detail">At MD Mart, we make everyday shopping simple, reliable, and affordable. From quality products to quick delivery, we ensure a smooth experience from start to finish. With trusted brands, secure payments, and friendly support, MD Mart is your go-to destination for everything you need — all in one place.</p>
 
-                                <div class="vendor-name">
-                                    <h5 class="fw-500">Noodles Co.</h5>
-
-                                    <div class="product-rating mt-1">
-                                        <ul class="rating">
-                                            <li>
-                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                            </li>
-                                            <li>
-                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                            </li>
-                                            <li>
-                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                            </li>
-                                            <li>
-                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                            </li>
-                                            <li>
-                                                 <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                            </li>
-                                        </ul>
-                                        <span>(36 Reviews)</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <p class="vendor-detail">Welcome to Fruits Market, your gateway to a world of natural
-                                sweetness and vibrant flavors. At Fruit, we celebrate the beauty and goodness of fruits
-                                in their purest form.</p>
-
-                            {/* <div class="vendor-list">
-                                <ul>
-                                    <li>
-                                        <div class="address-contact">
-                                            <i data-feather="map-pin"></i>
-                                            <h5>Address: <span class="text-content">1288 Franklin Avenue</span></h5>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="address-contact">
-                                            <i data-feather="headphones"></i>
-                                            <h5>Contact Seller: <span class="text-content">(+1)-123-456-789</span></h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div> */}
+                       
                         </div>
 
                         <div class="pt-25">
                             <div class="hot-line-number">
                                 <h5>Hotline Order:</h5>
                                 <h6>Mon - Fri: 07:00 am - 08:30PM</h6>
-                                <h3>(+1) 123 456 789</h3>
+                                <h3>+91 97258 17388</h3>
                             </div>
                         </div>
                     </div>
@@ -484,10 +458,27 @@ const Productdetails = () => {
                                                     <h6 class="name">Fantasy Crunchy Choco Chip Cookies</h6>
                                                 </a>
 
-                                                <h5 class="sold text-content">
-                                                    <span class="theme-color price">₹26.69</span>
-                                                    <del>₹28.56</del>
-                                                </h5>
+                                                      <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "20px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                             </div>
                                         </div>
                                     </li>
@@ -505,10 +496,27 @@ const Productdetails = () => {
                                                     <h6 class="name">Chocolate Chip Cookies 250 g</h6>
                                                 </a>
 
-                                                <h5 class="sold text-content">
-                                                    <span class="theme-color price">₹26.69</span>
-                                                    <del>₹28.56</del>
-                                                </h5>
+                                                      <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "20px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                             </div>
                                         </div>
                                     </li>
@@ -526,10 +534,27 @@ const Productdetails = () => {
                                                     <h6 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h6>
                                                 </a>
 
-                                                <h5 class="sold text-content">
-                                                    <span class="theme-color price">₹26.69</span>
-                                                    <del>₹28.56</del>
-                                                </h5>
+                                                      <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "20px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "20px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                             </div>
                                         </div>
                                     </li>
@@ -570,9 +595,29 @@ const Productdetails = () => {
 
                                     <li class="content">
                                         <h5>Product Selected for</h5>
-                                        <h4 class="theme-color">₹210.69 <del class="text-content">212.36</del></h4>
+                                             <div style={{ display: "flex",marginTop:'10px' }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹210.21
+        </h5>
+
+        <h5 style={{ marginTop: "5px" }}>
+          <del>₹212.25</del>
+        </h5>
+      </div>
                                         <button class="btn text-white theme-bg-color btn-md mt-sm-4 mt-3 fw-bold"><i
-                                                class="fa-solid fa-cart-shopping me-2"></i> Add All To Cart</button>
+                                                class="fa-solid fa-cart-shopping me-2"></i> Add All To Basket</button>
                                     </li>
                                 </ul>
                             </div>
@@ -1111,8 +1156,27 @@ const Productdetails = () => {
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">500 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.57</del>
-                                        </h5>
+                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1192,8 +1256,27 @@ const Productdetails = () => {
                                             <span>(4.0)</span>
                                         </div>
                                         <h6 class="unit">250 ml</h6>
-                                        <h5 class="price"><span class="theme-color">₹08.02</span> <del>₹15.15</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1275,8 +1358,27 @@ const Productdetails = () => {
                                             <span>(2.4)</span>
                                         </div>
                                         <h6 class="unit">350 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹04.33</span> <del>₹10.36</del>
-                                        </h5>
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1358,8 +1460,27 @@ const Productdetails = () => {
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">570 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
-                                        </h5>
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1441,8 +1562,27 @@ const Productdetails = () => {
                                             <span>(3.8)</span>
                                         </div>
                                         <h6 class="unit">100 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.36</del>
-                                        </h5>
+                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1526,8 +1666,27 @@ const Productdetails = () => {
 
                                         <h6 class="unit">550 G</h6>
 
-                                        <h5 class="price"><span class="theme-color">₹14.25</span> <del>₹16.57</del>
-                                        </h5>
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1609,8 +1768,27 @@ const Productdetails = () => {
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">570 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
-                                        </h5>
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1824,7 +2002,28 @@ const Productdetails = () => {
                                 alt="" />
                             <div class="content">
                                 <h5>Creamy Chocolate Cake</h5>
-                                <h6>₹32.96<del class="text-danger">₹96.00</del><span>55% off</span></h6>
+                                <div style={{ display: "flex",marginTop:'10px' }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+                                <span className=" theme-color" style={{margin:'10px'}}>55% off</span>
+      </div>
                             </div>
                         </div>
                         <div class="selection-section">
