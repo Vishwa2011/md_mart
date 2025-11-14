@@ -25157,7 +25157,8 @@ header .location-box button i {
     }
 
     .header-2 .header-nav-left .category-dropdown.show {
-        left: 0
+        left: 0;
+        overflow: auto;
     }
 
     [dir=rtl] .header-2 .header-nav-left .category-dropdown.show {
