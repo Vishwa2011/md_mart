@@ -48055,3 +48055,24 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
   font-weight: 600;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+.sold-out-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ed439f;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 10;
+    text-transform: uppercase;
+}
