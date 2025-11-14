@@ -147,26 +147,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
                                         </div>
                                         <h6 class="unit">250 ml</h6>
-                                        <h5 class="price"><span class="theme-color">₹08.02</span> <del>₹15.15</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                    
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -233,26 +253,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(2.4)</span>
                                         </div>
                                         <h6 class="unit">350 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹04.33</span> <del>₹10.36</del>
-                                        </h5>
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                    
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -320,26 +360,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">570 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                    
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -405,26 +465,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(3.8)</span>
                                         </div>
                                         <h6 class="unit">100 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.36</del>
-                                        </h5>
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                        
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -492,19 +572,19 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
@@ -512,8 +592,28 @@ const Shop = () => {
 
                                         <h6 class="unit">550 G</h6>
 
-                                        <h5 class="price"><span class="theme-color">₹14.25</span> <del>₹16.57</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                     
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -579,19 +679,19 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                    <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(3.8)</span>
@@ -599,8 +699,27 @@ const Shop = () => {
 
                                         <h6 class="unit">1 Kg</h6>
 
-                                        <h5 class="price"><span class="theme-color">₹12.68</span> <del>₹14.69</del>
-                                        </h5>
+      <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                    
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -666,26 +785,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
                                         </div>
                                         <h6 class="unit">250 ml</h6>
-                                        <h5 class="price"><span class="theme-color">₹08.02</span> <del>₹15.15</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                       
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -752,26 +891,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(2.4)</span>
                                         </div>
                                         <h6 class="unit">350 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹04.33</span> <del>₹10.36</del>
-                                        </h5>
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                     
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -839,26 +998,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(5.0)</span>
                                         </div>
                                         <h6 class="unit">570 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹12.52</span> <del>₹13.62</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                      
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -923,26 +1102,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(3.8)</span>
                                         </div>
                                         <h6 class="unit">100 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹10.25</span> <del>₹12.36</del>
-                                        </h5>
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                       
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1008,19 +1207,19 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
@@ -1028,8 +1227,28 @@ const Shop = () => {
 
                                         <h6 class="unit">550 G</h6>
 
-                                        <h5 class="price"><span class="theme-color">₹14.25</span> <del>₹16.57</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                      
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1095,19 +1314,19 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(3.8)</span>
@@ -1115,8 +1334,28 @@ const Shop = () => {
 
                                         <h6 class="unit">1 Kg</h6>
 
-                                        <h5 class="price"><span class="theme-color">₹12.68</span> <del>₹14.69</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                 
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1181,26 +1420,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(4.0)</span>
                                         </div>
                                         <h6 class="unit">250 ml</h6>
-                                        <h5 class="price"><span class="theme-color">₹08.02</span> <del>₹15.15</del>
-                                        </h5>
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                      
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1267,26 +1526,46 @@ const Shop = () => {
                                         <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star" class="fill"></i>
+                                                       <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                                 <li>
-                                                    <i data-feather="star"></i>
+                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                 </li>
                                             </ul>
                                             <span>(2.4)</span>
                                         </div>
                                         <h6 class="unit">350 G</h6>
-                                        <h5 class="price"><span class="theme-color">₹04.33</span> <del>₹10.36</del>
-                                        </h5>
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+                                    
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1369,19 +1648,19 @@ const Shop = () => {
                                 <div class="product-rating">
                                     <ul class="rating">
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                               <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                               <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                               <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star" class="fill"></i>
+                                               <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                         <li>
-                                            <i data-feather="star"></i>
+                                              <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
                                     <span class="ms-2">8 Reviews</span>
