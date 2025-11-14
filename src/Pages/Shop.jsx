@@ -186,6 +186,8 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
+        <h6 class="unit-dis">10% Off</h6>
+      
                                     
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -299,7 +301,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
+      <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
                                             <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
@@ -396,7 +398,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
+        <h6 class="unit-dis">10% Off</h6>                            
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -501,7 +503,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                        
+        <h6 class="unit-dis">10% Off</h6>                                
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -610,7 +612,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                     
+        <h6 class="unit-dis">10% Off</h6>                             
                                         <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
                                             <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
@@ -703,7 +705,8 @@ const Shop = () => {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                    
+      </div>     
+      <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -808,7 +811,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                       
+        <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -914,7 +917,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                     
+       <h6 class="unit-dis">10% Off</h6>                              
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1021,7 +1024,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                      
+       <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box" style={{background:'#9fa4aa'}}>
                                             <button class="btn btn-add-cart addcart-button">Notify
                                                 <span class="add-icon bg-light-gray">
@@ -1111,7 +1114,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                       
+        <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1218,6 +1221,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
+      <h6 class="unit-dis">10% Off</h6>
                                       
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
@@ -1325,7 +1329,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                 
+        <h6 class="unit-dis">10% Off</h6>                         
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1429,7 +1433,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                      
+       <h6 class="unit-dis">10% Off</h6>                               
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
@@ -1535,7 +1539,7 @@ const Shop = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                    
+       <h6 class="unit-dis">10% Off</h6>                             
                                         <div class="add-to-cart-box bg-white">
                                             <button class="btn btn-add-cart addcart-button">Add
                                                 <span class="add-icon bg-light-gray">
