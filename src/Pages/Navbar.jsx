@@ -1,9 +1,56 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Navbar() {
+    const [locationPopup, setLocationPopup] = useState(true); 
+    const [showPincodeInput, setShowPincodeInput] = useState(false);
+    const [showOptions, setShowOptions] = useState(true);
+    const [detectedLocation, setDetectedLocation] = useState("");
+    useEffect(() => {
+    if (locationPopup) {
+        document.body.classList.add("no-scroll");
+    } else {
+        document.body.classList.remove("no-scroll");
+    }
+}, [locationPopup]);
+
+const scrollPosRef = React.useRef(0);
+
+useEffect(() => {
+  if (locationPopup) {
+    // store current scroll
+    scrollPosRef.current = window.scrollY || window.pageYOffset || 0;
+
+    // apply fixed positioning to body to prevent scroll and preserve layout
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPosRef.current}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    // optional: prevent overscroll on iOS
+    document.documentElement.style.touchAction = "none";
+  } else {
+    // remove styles and restore scroll
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.documentElement.style.touchAction = "";
+
+    // restore scroll position
+    window.scrollTo(0, scrollPosRef.current || 0);
+  }
+
+  // cleanup if component unmounts while popup open
+  return () => {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.documentElement.style.touchAction = "";
+  };
+}, [locationPopup]);
     const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -86,27 +133,10 @@ export default function Navbar() {
                                 <img src="/assets/images/vendor-page/logo/mdmart.png" className="img-fluid blur-up lazyload" alt="" style={{width:'90px'}}/> 
                             </a>
 
-                            <div className="search-full">
-                                <div className="input-group">
-                                    <span className="input-group-text">
-                                        <i data-feather="search" className="font-light"></i>
-                                    </span>
-                                    <input type="text" className="form-control search-type" placeholder="Search here.." />
-                                    <span className="input-group-text close-search">
-                                        <i data-feather="x" className="font-light"></i>
-                                    </span>
-                                </div>
-                            </div>
+                            
 
-                            <div className="middle-box">
+                            {/* <div className="middle-box">
                                 <div className="center-box">
-                                    <div className="searchbar-box order-xl-1 d-none d-xl-block">
-                                        <input type="search" className="form-control" id="exampleFormControlInput1"
-                                            placeholder="search for product, delivered to your door..." />
-                                        <button className="btn search-button">
-                                            <i className="iconly-Search icli"></i>
-                                        </button>
-                                    </div>
                                     <div className="location-box-2">
                                         <button className="btn location-button" data-bs-toggle="modal"
                                             data-bs-target="#locationModal">
@@ -116,164 +146,98 @@ export default function Navbar() {
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div className="rightside-menu">
-                                <div className="dropdown-dollar">
-                                    <div className="dropdown">
-                                        <button className="dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown">
-                                            <span>Language</span> <i className="fa-solid fa-angle-down"></i>
-                                        </button>
-                                        <ul className="dropdown-menu">
-                                            <li>
-                                                <a id="eng" className="dropdown-item" href="#">English</a>
-                                            </li>
-                                            <li>
-                                                <a id="hin" className="dropdown-item" href="#">Hindi</a>
-                                            </li>
-                                            <li>
-                                                <a id="guj" className="dropdown-item" href="#">Gujarati</a>
-                                            </li>
-                                            <li>
-                                                <a id="arb" className="dropdown-item" href="#">Arabic</a>
-                                            </li>
-                                            <li>
-                                                <a id="rus" className="dropdown-item" href="#">Russia</a>
-                                            </li>
-                                            <li>
-                                                <a className="dropdown-item" href="#">Chinese</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="dropdown">
-                                        <button className="dropdown-toggle m-0" type="button" id="dropdownMenuButton2"
-                                            data-bs-toggle="dropdown">
-                                            <span>Dollar</span> <i className="fa-solid fa-angle-down"></i>
-                                        </button>
-                                        <ul className="dropdown-menu">
-                                            <li>
-                                                <a id="usd" className="dropdown-item" href="javascript:void(0)">USD</a>
-                                            </li>
-                                            <li>
-                                                <a id="inr" className="dropdown-item" href="javascript:void(0)">INR</a>
-                                            </li>
-                                            <li>
-                                                <a id="eur" className="dropdown-item" href="javascript:void(0)">EUR</a>
-                                            </li>
-                                            <li>
-                                                <a id="aud" className="dropdown-item" href="javascript:void(0)">AUD</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div className="option-list">
-                                    <ul>
-                                        <li>
-                                            <a href="/Login" className="header-icon user-icon search-icon">
-                                                <i className="iconly-Profile icli"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="" className="header-icon search-box search-icon">
-                                                <i className="iconly-Search icli"></i>
-                                            </a>
-                                        </li>
-
-                                       
-
-                                        <li className="onhover-dropdown">
-                                            <a href="/Wishlist" className="header-icon swap-icon" title="Wishlist">
-                                                <i className="iconly-Heart icli"></i>
-                                            </a>
-
-                                        </li>
-
-                                        <li className="onhover-dropdown">
-                                            <a href="/Cart" className="header-icon bag-icon">
-                                                <small className="badge-number">2</small>
-                                                <i className="iconly-Bag-2 icli"></i>
-                                            </a>
-                                            <div className="onhover-div">
-                                                <ul className="cart-list">
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/choco.png"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹80.58</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/soda.jpg"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
-                                                                    </h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹25.68</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-
-                                                <div className="price-box">
-                                                    <h5>Price :</h5>
-                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
-                                                </div>
-
-                                                <div className="button-group">
-                                                    <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
-                                                    <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
-                                                    text-white">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                            <li >
-                                          <a href="/login" className="header-icon swap-icon " title="Log in">
-                                            <i className="fa-solid fa-right-to-bracket"></i> {/* Login icon */}
-                                          </a>
-                                        </li>
-
-                                                 <li >
-                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
-                                       <i class="fa-solid fa-user-tie"></i>
-                                            </a>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </div> */}
+                       <div className="middle-box">
+    <div className="center-box">
+        <div className="location-box-2">
+            <button 
+                className="btn location-button"
+                onClick={() => setLocationPopup(!locationPopup)}
+            >
+                <i className="iconly-Location icli"></i>
+                <span className="locat-name">Your Location</span>
+            </button>
         </div>
-        <div className="container-fluid-lg">
-            <div className="row">
+    </div>
+</div>
+
+{/* BLUR BACKGROUND OVERLAY */}
+{locationPopup && <div className="location-blur-overlay"></div>}
+
+{locationPopup && (
+    <div className="location-dropdown-box">
+        <div className="location-inner">
+
+            {/* CLOSE BUTTON */}
+            <button 
+                className="close-btn"
+                onClick={() => {
+                    setLocationPopup(false);
+                    setShowPincodeInput(false);
+                    setShowOptions(true);
+                    setDetectedLocation("");
+                }}
+            >
+                ×
+            </button>
+
+            <h4>Select Delivery Location</h4>
+            <p>Enter your address and we will specify the offer for your area.</p>
+
+            {showOptions && (
+                <>
+                    {/* ENTER PINCODE BUTTON */}
+                    <button 
+                        className="option-btn"
+                        onClick={() => {
+                            setShowPincodeInput(true);
+                            setShowOptions(false);
+                            setDetectedLocation("");
+                        }}
+                    >
+                        Enter a pincode
+                    </button>
+
+                    {/* DETECT BUTTON */}
+                    <button 
+                        className="option-btn"
+                        onClick={() => {
+                            setDetectedLocation("Detecting...");
+                            setShowOptions(false);
+                            setShowPincodeInput(false);
+                        }}
+                    >
+                        Detect My Location
+                    </button>
+                </>
+            )}
+
+            {/* PINCODE FIELD */}
+            {showPincodeInput && (
+               <>
+                <input 
+                    type="text"
+                    className="pincode-input"
+                    placeholder="Enter your pincode"
+                />
+                <div className="d-flex justify-content-end">
+                    <button className="btn btn-2 theme-bg-color text-white btn-2-animation">Apply</button>
+                </div>
+               </>
+            )}
+
+            {detectedLocation && (
+                <p className="detect-result">{detectedLocation}</p>
+            )}
+
+        </div>
+    </div>
+)}
+
+
+
+
+                            <div className="row">
                 <div className="col-12">
                     <div className="main-nav">
                         <div className="header-nav-left">
@@ -508,93 +472,54 @@ export default function Navbar() {
                                         </li>
 
 
-                                        <li className="nav-item dropdown dropdown-mega">
-                                            <a className="nav-link dropdown-toggle ps-xl-2 ps-0" href=""
-                                                data-bs-toggle="dropdown">Shop</a>
+                                       <li className="nav-item dropdown dropdown-mega">
+    <a className="nav-link dropdown-toggle ps-xl-2 ps-0" href="" data-bs-toggle="dropdown">
+        Offer
+    </a>
 
-                                            <div className="dropdown-menu dropdown-menu-2">
-                                                <div className="row">
-                                                    <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Cooking Essentials</h5>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                           Rice
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                           Atta, Flours & Sooji
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Dals & Pulses
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Sabudana & Poha
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Edible Oils
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Salt & Sugar
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Millet & Organic
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Dry Fruits & Nuts
-                                                        </a>
-                                                    </div>
+    <div className="dropdown-menu dropdown-menu-2">
+        <div className="row">
 
-                                                    <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Dairy Products</h5>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Fresh Milk
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Butter
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Cheese
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Yogurt
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Icecream
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Ghee
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Cream
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Buttermilk
-                                                        </a>
-                                                    </div>
+            {/* <!-- Category 1 --> */}
+            <div className="dropdown-column col-xl-3">
+                <h5 className="dropdown-header">Winter Grocery Essentials</h5>
 
-                                                    <div className="dropdown-column col-xl-3">
-                                                        <h5 className="dropdown-header">Bakery Products</h5>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Bread
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Cakes
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Rolls
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Buns
-                                                        </a>
-                                                        <a className="dropdown-item" href="/Shop">
-                                                            Muffins
-                                                        </a>
-                                                    </div>
+                <a className="dropdown-item" href="/Offerspage"> Bajra Flour Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Jaggery (Gur) Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Groundnut Oil Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Dry Fruits Combo Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Sesame (Til) Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Winter Spices Offer </a>
+            </div>
 
+            {/* <!-- Category 2 --> */}
+            <div className="dropdown-column col-xl-3">
+                <h5 className="dropdown-header">Women Fashion Offers</h5>
 
+                <a className="dropdown-item" href="/Offerspage"> Saree Special Discount </a>
+                <a className="dropdown-item" href="/Offerspage"> Winter Kurtis Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Ladies Footwear Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Cosmetic Combo Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Skincare Winter Sale </a>
+            </div>
 
-                                                    <div className="dropdown-column dropdown-column-img col-3"></div>
-                                                </div>
-                                            </div>
-                                        </li>
+            {/* <!-- Category 3 --> */}
+            <div className="dropdown-column col-xl-3">
+                <h5 className="dropdown-header">Baby Products Offers</h5>
+
+                <a className="dropdown-item" href="/Offerspage"> Diaper Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Baby Lotion Combo Offer </a>
+                <a className="dropdown-item" href="/Offerspage"> Baby Food Discount </a>
+                <a className="dropdown-item" href="/Offerspage"> Shampoo + Soap Combo </a>
+                <a className="dropdown-item" href="/Offerspage"> Baby Winter Care Kit </a>
+            </div>
+
+            <div className="dropdown-column dropdown-column-img col-3"></div>
+
+        </div>
+    </div>
+</li>
+
 
                                        <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" href="javascript:void(0)"
@@ -627,23 +552,204 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        <div className="right-nav">
-                            <div className="nav-number">
-                                <img src="../assets/images/icon/music.png" className="img-fluid blur-up lazyload" alt="" /> 
-                                <span>(123) 456 7890</span>
-                            </div>
-                            <a href="javascript:void(0)" className="btn theme-bg-color ms-3 fire-button"
-                                data-bs-toggle="modal" data-bs-target="#deal-box">
-                                <div className="fire">
-                                    <img src="../assets/images/icon/hot-sale.png" className="img-fluid" alt="" /> 
+                      
+                    </div>
+                </div>
+            </div>
+                            <div className="rightside-menu">
+                               
+
+                                <div className="option-list">
+                                    <ul>
+                                        
+
+                                        {/* <li>
+                                            <a href="" className="header-icon search-box search-icon">
+                                                <i className="iconly-Search icli"></i>
+                                            </a>
+                                        </li>
+
+                                       
+
+                                        <li className="onhover-dropdown">
+                                            <a href="/" className="header-icon swap-icon" title="Search">
+                                                 <i className="iconly-Search icli"></i>
+                                            </a>
+                                        </li> */}
+                                        {/* <li className="onhover-dropdown">
+                                            <a href="/Wishlist" className="header-icon swap-icon" title="Wishlist">
+                                                <i className="iconly-Heart icli"></i>
+                                            </a>
+
+                                        </li> */}
+
+                                        {/* <li className="onhover-dropdown">
+                                            <a href="/Cart" className="header-icon bag-icon">
+                                                <small className="badge-number">2</small>
+                                                <i className="iconly-Bag-2 icli"></i>
+                                            </a>
+                                            <div className="onhover-div">
+                                                <ul className="cart-list">
+                                                    <li>
+                                                        <div className="drop-cart">
+                                                            <a href="/Productdetails" className="drop-image">
+                                                                <img src="/assets/images/choco.png"
+                                                                    className="blur-up lazyload" alt="" /> 
+                                                            </a>
+
+                                                            <div className="drop-contain">
+                                                                <a href="/Productdetails">
+                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> ₹80.58</h6>
+                                                                <button className="close-button">
+                                                                    <i className="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div className="drop-cart">
+                                                            <a href="/Productdetails" className="drop-image">
+                                                                <img src="/assets/images/soda.jpg"
+                                                                    className="blur-up lazyload" alt="" /> 
+                                                            </a>
+
+                                                            <div className="drop-contain">
+                                                                <a href="/Productdetails">
+                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
+                                                                    </h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> ₹25.68</h6>
+                                                                <button className="close-button">
+                                                                    <i className="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+
+                                                <div className="price-box">
+                                                    <h5>Price :</h5>
+                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
+                                                </div>
+
+                                                <div className="button-group">
+                                                    <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
+                                                    <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                            <li >
+                                          <a href="/login" className="header-icon swap-icon " title="Log in">
+                                            <i className="fa-solid fa-right-to-bracket"></i>
+                                          </a>
+                                        </li>
+
+                                                 <li >
+                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
+                                       <i class="fa-solid fa-user-tie"></i>
+                                            </a>
+
+                                        </li> */}
+                                    </ul>
                                 </div>
-                                <span>Hot Deals</span>
-                            </a>
+                                <div className="option-list">
+                                    <ul>
+                                        
+                                            <li>
+                                            <a href="#" className="header-icon swap-icon " title="Search">
+                                               <i className="iconly-Search icli"></i>
+                                            </a>
+                                        </li>
+                                            <li>
+                                            <a href="/Wishlist" className="header-icon swap-icon " title="Wishlist">
+                                                <i className="iconly-Heart icli"></i>
+                                            </a>
+                                        </li>
+                                        <li className="onhover-dropdown">
+                                            <a href="/Cart" className="header-icon bag-icon">
+                                                <small className="badge-number">2</small>
+                                                <i className="iconly-Bag-2 icli"></i>
+                                            </a>
+                                            <div className="onhover-div">
+                                                <ul className="cart-list">
+                                                    <li>
+                                                        <div className="drop-cart">
+                                                            <a href="/Productdetails" className="drop-image">
+                                                                <img src="/assets/images/choco.png"
+                                                                    className="blur-up lazyload" alt="" /> 
+                                                            </a>
+
+                                                            <div className="drop-contain">
+                                                                <a href="/Productdetails">
+                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> ₹80.58</h6>
+                                                                <button className="close-button">
+                                                                    <i className="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div className="drop-cart">
+                                                            <a href="/Productdetails" className="drop-image">
+                                                                <img src="/assets/images/soda.jpg"
+                                                                    className="blur-up lazyload" alt="" /> 
+                                                            </a>
+
+                                                            <div className="drop-contain">
+                                                                <a href="/Productdetails">
+                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
+                                                                    </h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> ₹25.68</h6>
+                                                                <button className="close-button">
+                                                                    <i className="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+
+                                                <div className="price-box">
+                                                    <h5>Price :</h5>
+                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
+                                                </div>
+
+                                                <div className="button-group">
+                                                    <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
+                                                    <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                      
+                                        <li>
+                                            <a href="/Login" className="header-icon swap-icon " title="Login">
+                                                <i className="fa-solid fa-right-to-bracket"></i>
+                                            </a>
+                                        </li>
+                                        <li >
+                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
+                                                 <i class="fa-solid fa-user-tie"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+       
     </header>
     {/* <!-- Header End --> */}
      {/* <!-- mobile fix menu start --> */}
@@ -702,167 +808,14 @@ export default function Navbar() {
                         <div className="search-input">
                             <input type="search" className="form-control" placeholder="Search Your Area" />
                             <i className="fa-solid fa-magnifying-glass"></i>
-                        </div>
-
-                        <div className="disabled-box">
-                            <h6>Select a Location</h6>
-                        </div>
-
-                        <ul className="location-select custom-height">
-                            <li>
-                                <a href="#">
-                                    <h6>Alabama</h6>
-                                    <span>Min: ₹130</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Arizona</h6>
-                                    <span>Min: ₹150</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>California</h6>
-                                    <span>Min: ₹110</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Colorado</h6>
-                                    <span>Min: ₹140</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Florida</h6>
-                                    <span>Min: ₹160</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Georgia</h6>
-                                    <span>Min: ₹120</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Kansas</h6>
-                                    <span>Min: ₹170</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Minnesota</h6>
-                                    <span>Min: ₹120</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>New York</h6>
-                                    <span>Min: ₹110</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <h6>Washington</h6>
-                                    <span>Min: ₹130</span>
-                                </a>
-                            </li>
-                        </ul>
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
     </div>
     {/* <!-- Location Modal End --> */}
-    {/* <!-- Deal Box Modal Start --> */}
-    <div className="modal fade theme-modal deal-modal" id="deal-box" tabindex="-1">
-        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <div>
-                        <h5 className="modal-title w-100" id="deal_today">Deal Today</h5>
-                        <p className="mt-1 text-content">Recommended deals for you.</p>
-                    </div>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal">
-                        <i className="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div className="modal-body">
-                    <div className="deal-offer-box">
-                        <ul className="deal-offer-list">
-                            <li className="list-1">
-                                <div className="deal-offer-contain">
-                                    <a href="/Shop" className="deal-image">
-                                        <img src="/assets/images/snack.png" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-
-                                    <a href="/Shop" className="deal-contain">
-                                        <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li className="list-2">
-                                <div className="deal-offer-contain">
-                                    <a href="/Shop" className="deal-image">
-                                        <img src="/assets/images/choco.png" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-
-                                    <a href="/Shop" className="deal-contain">
-                                        <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li className="list-3">
-                                <div className="deal-offer-contain">
-                                    <a href="/Shop" className="deal-image">
-                                        <img src="/assets/images/soda.jpg" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-
-                                    <a href="/Shop" className="deal-contain">
-                                        <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li className="list-1">
-                                <div className="deal-offer-contain">
-                                    <a href="/Shop" className="deal-image">
-                                        <img src="/assets/images/oils.png" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-
-                                    <a href="/Shop" className="deal-contain">
-                                        <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
-                                        <h6>₹52.57 <del>57.62</del> <span>500 G</span></h6>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {/* <!-- Deal Box Modal End --> */}
+   
     </div>
   )
 }

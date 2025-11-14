@@ -4,27 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 const Shop = () => {
-     useEffect(() => {
-    /**=====================
-        Filter Sidebar js
-    ==========================**/
-    $(".filter-button").on("click", function () {
-      $(".bg-overlay, .left-box").addClass("show");
-    });
-
-    $(".back-button, .bg-overlay").on("click", function () {
-      $(".bg-overlay, .left-box").removeClass("show");
-    });
-
-    $(".sort-by-button").on("click", function () {
-      $(".top-filter-menu").toggleClass("show");
-    });
-
-    // Cleanup events on unmount
-    return () => {
-      $(".filter-button, .back-button, .bg-overlay, .sort-by-button").off();
-    };
-  }, []);
+  
      useEffect(() => {
     /**=====================
         Quantity 2 js
@@ -61,67 +41,11 @@ const Shop = () => {
     <section class="section-b-space shop-section">
         <div class="container-fluid-lg">
             <div class="row">
-                <div class="col-custom-3">
-                    <div class="left-box wow fadeInUp">
-                        <div class="shop-left-sidebar">
-                            <ul class="nav nav-pills mb-3 custom-nav-tab" id="pills-tab" role="tablist">
-                                       
-                                {/* <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-vegetables" data-bs-toggle="pill"
-                                        data-bs-target="#pills-vegetable" type="button" role="tab">Vegetables & Fruit
-                                        <img src="../assets/svg/1/vegetable.svg" class="blur-up lazyload"
-                                            alt="" /></button>
-                                </li> */}
+               
 
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-beverages" data-bs-toggle="pill"
-                                        data-bs-target="#pills-beverages" type="button" role="tab">Beverages <img
-                                            src="../assets/svg/1/cup.svg" class="blur-up lazyload" alt="" /></button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-dairy" data-bs-toggle="pill"
-                                        data-bs-target="#pills-dairy" type="button" role="tab">Breakfast & Dairy <img
-                                            src="../assets/svg/1/breakfast.svg" class="blur-up lazyload"
-                                            alt="" /></button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-frozen" data-bs-toggle="pill"
-                                        data-bs-target="#pills-frozen" type="button" role="tab">Frozen Foods <img
-                                            src="../assets/svg/1/frozen.svg" class="blur-up lazyload" alt="" /></button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-snack" data-bs-toggle="pill"
-                                        data-bs-target="#pills-snack" type="button" role="tab">Biscuits & Snacks <img
-                                            src="../assets/svg/1/biscuit.svg" class="blur-up lazyload" alt="" /></button>
-                                </li>
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-grocery" data-bs-toggle="pill"
-                                        data-bs-target="#pills-grocery" type="button" role="tab">Grocery & Staples <img
-                                            src="../assets/svg/1/grocery.svg" class="blur-up lazyload" alt="" /></button>
-                                </li>
-
-                               
-
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-milk" data-bs-toggle="pill"
-                                        data-bs-target="#pills-milk" type="button" role="tab">Milk & Milk Products <img
-                                            src="../assets/svg/1/milk.svg" alt="" class="blur-up lazyload" /></button>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-custom-">
+                <div class="col-custom-12">
                     <div class="show-button">
-                        <div class="filter-button d-inline-block d-lg-none">
-                            <a><i class="fa-solid fa-filter"></i> Filter Menu</a>
-                        </div>
+                       
 
                         <div class="top-filter-menu">
                             <div class="category-dropdown">
@@ -161,28 +85,6 @@ const Shop = () => {
                                 </div>
                             </div>
 
-                            <div class="grid-option d-none d-md-block">
-                                <ul>
-                                    <li class="three-grid">
-                                        <a href="">
-                                            <img src="../assets/svg/grid-3.svg" class="blur-up lazyload" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="grid-btn d-xxl-inline-block d-none active">
-                                        <a href="">
-                                            <img src="../assets/svg/grid-4.svg"
-                                                class="blur-up lazyload d-lg-inline-block d-none" alt="" />
-                                            <img src="../assets/svg/grid.svg"
-                                                class="blur-up lazyload img-fluid d-lg-none d-inline-block" alt="" />
-                                        </a>
-                                    </li>
-                                    <li class="list-btn">
-                                        <a href="">
-                                            <img src="../assets/svg/list.svg" class="blur-up lazyload" alt="" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
 
                         <div class="filter-category">
@@ -205,7 +107,7 @@ const Shop = () => {
                     </div>
 
                     <div
-                        class="row g-sm-4 g-3 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-2 product-list-section">
+                        class="row g-sm-4 g-3 row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 product-list-section">
                         <div>
                             <div class="product-box-3 h-100 wow fadeInUp">
                                 <div class="product-header">
