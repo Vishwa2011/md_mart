@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from './Navbar'
 import Newsletter from '../component/Newsletter'
 import Footer from './Footer'
+import Homeproduct from "../component/Homeproduct";
 
 export default function Home() {
       const [progress, setProgress] = useState(50); // Example: 50% filled
@@ -178,17 +179,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        {/* <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.25s">
-                                <a href="/Shop" class="circle-1">
-                                    <img src="../assets/images/fresh-fruits.png" class="img-fluid blur-up lazyload"
-                                        alt="" />
-                                </a>
-                                <div class="category-name">
-                                    <h6>Fresh Fruits & Vegetables</h6>
-                                </div>
-                            </div>
-                        </div> */}
+                 
 
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.3s">
@@ -213,7 +204,29 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+ <div>
+                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
+                                <a href="/Shop" class="circle-2">
+                                    <img src="../assets/images/rice.png" class="img-fluid blur-up lazyload"
+                                        alt="Image Size : 97 X 86" />
+                                </a>
+                                <div class="category-name">
+                                    <h6>Rice, Flour & Grains</h6>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div>
+                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="/Shop" class="circle-3">
+                                    <img src="../assets/images/food.png" class="img-fluid blur-up lazyload"
+                                        alt="Image Size : 97 X 86" />
+                                </a>
+                                <div class="category-name">
+                                    <h6>Food Cupboard</h6>
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.4s">
                                 <a href="/Shop" class="circle-4">
@@ -222,6 +235,20 @@ export default function Home() {
                                 </a>
                                 <div class="category-name">
                                     <h6>Rice, Flour & Grains</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                    
+                        <div>
+                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="/Shop" class="circle-3">
+                                    <img src="../assets/images/food.png" class="img-fluid blur-up lazyload"
+                                        alt="Image Size : 97 X 86" />
+                                </a>
+                                <div class="category-name">
+                                    <h6>Food Cupboard</h6>
                                 </div>
                             </div>
                         </div>
@@ -672,7 +699,7 @@ export default function Home() {
 
 
       {/* <!-- Product Section Start --> */}
-    <section class="product-section">
+    {/* <section class="product-section">
         <div class="container-fluid-lg">
             <div class="title title-flex-2">
                 <h2>Our Products</h2>
@@ -751,7 +778,26 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Noodles</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                    <div style={{display:'flex'}}>
+<h5
+  className="price theme-color"
+  style={{
+    background: "#f7fdff",
+    borderStyle: "solid",
+    borderColor: "#2baedd",
+    borderWidth: "1px 3px 3px 1px",  
+    color: "#2baedd",
+    padding: "5px",
+    borderRadius:'10px',
+    marginRight:'10px'
+  
+  }}
+>
+  ₹70.21
+</h5>
+
+                                    <h5 style={{marginTop:'10px'}}><del>₹65.25</del></h5>
+                                    </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -818,7 +864,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Candy</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -889,7 +955,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ketchup</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -956,7 +1042,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Water</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1027,7 +1133,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Shampoo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1094,7 +1220,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Tea</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1161,7 +1307,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Mayo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1232,7 +1398,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Jam</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1307,7 +1493,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Bread</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1374,7 +1580,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">coffee</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1445,7 +1671,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">pasta</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1516,7 +1762,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cookies</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1587,7 +1853,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1654,7 +1940,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1721,7 +2027,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">cheese</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1788,7 +2114,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Candy</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1855,7 +2201,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ketchup</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1922,7 +2288,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Water</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -1989,7 +2375,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">curd</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2056,7 +2462,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Mayo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2123,7 +2549,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">pasta</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2190,7 +2636,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cookies</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2261,7 +2727,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Chips</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2328,7 +2814,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Passion</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2395,7 +2901,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Blackberry</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2462,7 +2988,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Shampoo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2529,7 +3075,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Chips</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2596,7 +3162,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Bread</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2663,7 +3249,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Noodles</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2734,7 +3340,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2801,7 +3427,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2868,7 +3514,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">cheese</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -2935,7 +3601,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Candy</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3002,7 +3688,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ketchup</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3069,7 +3775,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Water</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3136,7 +3862,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">curd</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3203,7 +3949,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Mayo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3270,7 +4036,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">pasta</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3337,7 +4123,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cookies</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3408,7 +4214,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3475,7 +4301,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Butter</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3542,7 +4388,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">cheese</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3609,7 +4475,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Candy</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3676,7 +4562,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Ketchup</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3743,7 +4649,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Water</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3810,7 +4736,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">curd</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3877,7 +4823,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Mayo</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -3944,7 +4910,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">pasta</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -4011,7 +4997,27 @@ export default function Home() {
                                     <a href="/Productdetails">
                                         <h5 class="name">Cookies</h5>
                                     </a>
-                                    <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                                       <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -4037,8 +5043,23 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
+    <Homeproduct />
     {/* <!-- Product Section End --> */}
+
+
+       <section class="banner-section">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+                        <img src="/assets/images/picture/bannerhome.jpg" className="newresimg" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
         {/* <!-- Banner Section Start --> */}
         
@@ -4261,8 +5282,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">cashew nuts</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4315,8 +5355,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Red cheese</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4369,8 +5428,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Detergent</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4427,8 +5505,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Candy</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4481,8 +5578,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Water</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4535,8 +5651,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Detergent</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4604,8 +5739,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Almonds</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4658,8 +5812,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Jam</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4712,8 +5885,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Butter</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4770,8 +5962,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Noodles</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4824,8 +6035,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">curd</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4878,8 +6108,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Tea</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -4948,8 +6197,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">cashew nuts</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5002,8 +6270,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Red cheese</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5056,8 +6343,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Detergent</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5114,8 +6420,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Candy</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5168,8 +6493,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Water</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5222,8 +6566,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Detergent</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5292,8 +6655,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Almonds</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5346,8 +6728,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Jam</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5400,8 +6801,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Butter</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5458,8 +6878,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Noodles</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5512,8 +6951,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">curd</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5566,8 +7024,27 @@ export default function Home() {
                                                     <a href="/Productdetails">
                                                         <h4 class="name">Tea</h4>
                                                     </a>
-                                                    <h5 class="price">₹75.20<del>₹65.21</del></h5>
-                                                    <ul class="option">
+    <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add to Cart">
                                                             <a href="/Cart">
@@ -5682,8 +7159,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Butter</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
-                            <div class="price-qty">
+   <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>                            <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
                                         <div class="qty-left-minus" data-type="minus" data-field="">
@@ -5751,7 +7247,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Cookies</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5818,7 +7334,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Butter</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5883,7 +7419,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Candy</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -5950,7 +7506,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">cheese</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6015,7 +7591,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Water</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6082,7 +7678,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">curd</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6151,7 +7767,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">pasta</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6222,7 +7858,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Bread</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6291,7 +7947,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Mayo</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6358,7 +8034,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Chips</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6423,7 +8119,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Blackberry</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6490,7 +8206,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Chips</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6555,7 +8291,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Noodles</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6622,7 +8378,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Butter</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6687,7 +8463,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Candy</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6754,7 +8550,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Water</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6819,7 +8635,27 @@ export default function Home() {
                             <a href="/Productdetails">
                                 <h5 class="name">Mayo</h5>
                             </a>
-                            <h5 class="price theme-color">₹70.21<del>₹65.25</del></h5>
+                               <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                             <div class="price-qty">
                                 <div class="counter-number">
                                     <div class="counter">
@@ -6846,7 +8682,18 @@ export default function Home() {
     </section>
     {/* <!-- Product Section End --> */}
 
-
+ <section class="banner-section">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+                        <img src="/assets/images/picture/image (1).png" className="newresimg" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {/* <!-- Blog Section Start --> */}
     <section class="blog-section">
         <div class="container-fluid-lg">
