@@ -630,7 +630,7 @@ useEffect(() => {
               <div className="banner-text">
                 <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
                 <p>Get smoking accessories, fresheners & more in minutes!</p>
-                <button className="order-now-btn">Order now</button>
+                <button className="order-now-btn"><a href="/Shop">Order now</a></button>
               </div>
 
               <img
@@ -687,14 +687,23 @@ useEffect(() => {
                 },
               ].map((p, idx) => (
                 <div key={idx} className="product-card">
-                  <img src={p.img} alt={p.title} className="product-img" />
+                 <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
                   <div className="price-box">
                     <span className="price">₹{p.price}</span>
                     <span className="old-price">₹{p.old}</span>
                   </div>
                   <span className="offer">{p.off}</span>
                   <p className="product-name">{p.title}</p>
-                  <button className="add-btn">ADD</button>
+                  <button className="add-btn"  style={{
+                            background: "#f7fdff",
+                            borderStyle: "solid",
+                            borderColor: "#2baedd",
+                            borderWidth: "1px 3px 3px 1px",
+                            color: "#2baedd",
+                            padding: "5px",
+                            borderRadius: "10px",
+                            marginRight: "10px",
+                          }}><a href="/cart">ADD</a></button>
                 </div>
               ))}
             </div>
@@ -793,12 +802,7 @@ useEffect(() => {
      {/* <!-- mobile fix menu start --> */}
     <div className="mobile-menu d-md-none d-block mobile-cart">
         <ul>
-            <li className="active">
-                <a href="/">
-                    <i className="iconly-Home icli"></i>
-                    <span>Home</span>
-                </a>
-            </li>
+           
 
             <li className="mobile-category">
                 <a href="#" >
@@ -815,7 +819,7 @@ useEffect(() => {
             </li> */}
 
             <li>
-                <a href="/Wishlist" className="notifi-wishlist">
+                <a href="/Wishlist" >
                     <i className="iconly-Heart icli"></i>
                     <span>My Wish</span>
                 </a>
@@ -825,6 +829,12 @@ useEffect(() => {
                 <a href="/Cart">
                     <i className="iconly-Bag-2 icli fly-cate"></i>
                     <span>Cart</span>
+                </a>
+            </li>
+             <li className="mobile-category">
+                <a href="/Account">
+                    <i class="fa-solid fa-user-tie icli" style={{color:'#fff'}}></i>
+                    <span>Account</span>
                 </a>
             </li>
         </ul>

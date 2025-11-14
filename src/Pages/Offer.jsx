@@ -77,7 +77,7 @@ const OffersPage = () => {
                   {/* ✅ Message BELOW the coupon box */}
                   {copiedCode === offer.code && (
                     <p className="offercouponpage-copied-msg">
-                      ✅ Coupon Code Copied!
+                       Coupon Code Copied!
                     </p>
                   )}
                 </div>
