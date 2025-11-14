@@ -104,7 +104,7 @@ const Homeproduct = () => {
                           <del>₹65.25</del>
                         </h5>
                       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
                       <div className="price-qty">
                         <div className="counter-number">
                           <div className="counter">
@@ -182,7 +182,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
@@ -265,7 +265,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
@@ -343,7 +343,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
@@ -425,7 +425,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
@@ -503,7 +503,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
@@ -589,7 +589,7 @@ const Homeproduct = () => {
                           <del>₹65.25</del>
                         </h5>
                       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
                       <div className="price-qty">
                         <div className="counter-number">
                           <div className="counter">
@@ -667,7 +667,7 @@ const Homeproduct = () => {
           <del>₹65.25</del>
         </h5>
       </div>
-
+<h6 class="unit-dis">10% Off</h6>     
       <div className="price-qty">
         <div className="counter-number">
           <div className="counter">
