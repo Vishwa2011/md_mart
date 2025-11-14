@@ -391,9 +391,27 @@ export default function Home() {
         <a href="/Shop" className="text-title text-decoration-none">
           <h5 className="mt-2 mb-1">Noodles</h5>
         </a>
-        <h5 className="price mb-2">
-          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
         </h5>
+
+        <h5 style={{ marginTop: "15px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
         {/* Progress bar */}
         <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
@@ -474,9 +492,27 @@ export default function Home() {
         <a href="/Shop" className="text-title text-decoration-none">
           <h5 className="mt-2 mb-1">Butter</h5>
         </a>
-        <h5 className="price mb-2">
-          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
         </h5>
+
+        <h5 style={{ marginTop: "15px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
         {/* Progress bar */}
         <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
@@ -557,9 +593,27 @@ export default function Home() {
         <a href="/Shop" className="text-title text-decoration-none">
           <h5 className="mt-2 mb-1">cheese</h5>
         </a>
-        <h5 className="price mb-2">
-          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
         </h5>
+
+        <h5 style={{ marginTop: "15px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
         {/* Progress bar */}
         <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>
@@ -640,9 +694,27 @@ export default function Home() {
         <a href="/Shop" className="text-title text-decoration-none">
           <h5 className="mt-2 mb-1">Noodles</h5>
         </a>
-        <h5 className="price mb-2">
-          ₹70.21 <span className="text-muted text-decoration-line-through">₹65.00</span>
+             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
         </h5>
+
+        <h5 style={{ marginTop: "15px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
         {/* Progress bar */}
         <div className="progress custom-progressbar mb-2" style={{ height: "8px" }}>

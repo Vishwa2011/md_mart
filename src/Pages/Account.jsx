@@ -558,10 +558,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             big cheese everyone loves smelly cheese macaroni cheese
                                                             croque monsieur.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹08.02</span>
-                                                            <del>₹15.15</del>
-                                                        </h5>
+                                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -618,10 +635,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             jarlsberg. Hard cheese danish fontina boursin melted cheese
                                                             fondue.</p>
                                                         <h6 class="unit mt-1">350 G</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹04.33</span>
-                                                            <del>₹10.36</del>
-                                                        </h5>
+                                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -680,10 +714,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             comes out everybody's happy cream cheese red leicester
                                                             ricotta edam.</p>
                                                         <h6 class="unit mt-1">570 G</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹12.52</span>
-                                                            <del>₹13.62</del>
-                                                        </h5>
+                                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -740,10 +791,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             bocconcini babybel. Cow goat paneer cream cheese fromage
                                                             cottage cheese cauliflower cheese jarlsberg.</p>
                                                         <h6 class="unit mt-1">100 G</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹10.25</span>
-                                                            <del>₹12.36</del>
-                                                        </h5>
+                                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -800,10 +868,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             cow when the cheese comes out everybody's happy croque
                                                             monsieur goat melted cheese port-salut.</p>
                                                         <h6 class="unit mt-1">550 G</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹14.25</span>
-                                                            <del>₹16.57</del>
-                                                        </h5>
+                                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -859,10 +944,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             when the cheese comes out everybody's happy cream cheese
                                                             hard cheese cream cheese red leicester.</p>
                                                         <h6 class="unit mt-1">1 Kg</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹12.68</span>
-                                                            <del>₹14.69</del>
-                                                        </h5>
+                                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -918,10 +1020,27 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                             fontina queso lancashire when the cheese comes out
                                                             everybody's happy cottage cheese paneer.</p>
                                                         <h6 class="unit mt-1">250 ml</h6>
-                                                        <h5 class="price">
-                                                            <span class="theme-color">₹08.02</span>
-                                                            <del>₹15.15</del>
-                                                        </h5>
+                                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
                                                         <div class="add-to-cart-box mt-2">
                                                             <button class="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
@@ -994,7 +1113,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>₹20.68</h5>
+                                                                <h5 class="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -1075,7 +1194,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>₹20.68</h5>
+                                                                <h5 class="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
@@ -1152,7 +1271,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         <li>
                                                             <div class="size-box">
                                                                 <h6 class="text-content">Price : </h6>
-                                                                <h5>₹20.68</h5>
+                                                                <h5 class="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
