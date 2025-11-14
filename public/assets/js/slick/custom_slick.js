@@ -10,7 +10,7 @@ $('.category-slider').slick({
     responsive: [{
         breakpoint: 1745,
         settings: {
-            slidesToShow: 7,
+            slidesToShow: 9,
         }
     },
     {
