@@ -34668,7 +34668,7 @@ body.rtl .menu-label {
     font-weight: 700
 }
 
->>.table:not(:last-child):last-child>* {
+.table:not(:last-child):last-child>* {
     border-bottom: none
 }
 
