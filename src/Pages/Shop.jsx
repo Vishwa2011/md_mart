@@ -137,7 +137,7 @@ const Shop = () => {
                                 </div>
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
@@ -252,7 +252,7 @@ const Shop = () => {
                                 </div>
                                     <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
@@ -560,7 +560,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
@@ -655,7 +655,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
@@ -762,7 +762,7 @@ const Shop = () => {
                                 </div>
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
@@ -867,7 +867,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
@@ -1170,7 +1170,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
@@ -1278,7 +1278,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
@@ -1384,7 +1384,7 @@ const Shop = () => {
                                 </div>
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
@@ -1489,7 +1489,7 @@ const Shop = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        <span class="span-name">snacks</span>
                                         <a href="/Productdetails">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
