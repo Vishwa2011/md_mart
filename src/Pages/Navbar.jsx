@@ -8,6 +8,8 @@ export default function Navbar() {
     const [showPincodeInput, setShowPincodeInput] = useState(false);
     const [showOptions, setShowOptions] = useState(true);
     const [detectedLocation, setDetectedLocation] = useState("");
+    const [selectedLocation, setSelectedLocation] = useState("Your Location");
+const [pincodeValue, setPincodeValue] = useState("");
     useEffect(() => {
     if (locationPopup) {
         document.body.classList.add("no-scroll");
@@ -19,30 +21,35 @@ export default function Navbar() {
 const scrollPosRef = React.useRef(0);
 
 useEffect(() => {
-  if (locationPopup) {
+  const isHome = window.location.pathname === "/";
+
+  if (locationPopup && isHome) {
     // store current scroll
     scrollPosRef.current = window.scrollY || window.pageYOffset || 0;
 
-    // apply fixed positioning to body to prevent scroll and preserve layout
+    // lock scroll
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollPosRef.current}px`;
     document.body.style.left = "0";
     document.body.style.right = "0";
-    // optional: prevent overscroll on iOS
+
+    // disable overscroll (iOS)
     document.documentElement.style.touchAction = "none";
   } else {
-    // remove styles and restore scroll
+    // restore body
     document.body.style.position = "";
     document.body.style.top = "";
     document.body.style.left = "";
     document.body.style.right = "";
     document.documentElement.style.touchAction = "";
 
-    // restore scroll position
-    window.scrollTo(0, scrollPosRef.current || 0);
+    // restore scroll only if popup was active on home page
+    if (isHome) {
+      window.scrollTo(0, scrollPosRef.current || 0);
+    }
   }
 
-  // cleanup if component unmounts while popup open
+  // cleanup if component unmounts
   return () => {
     document.body.style.position = "";
     document.body.style.top = "";
@@ -51,6 +58,8 @@ useEffect(() => {
     document.documentElement.style.touchAction = "";
   };
 }, [locationPopup]);
+
+
     const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -155,20 +164,22 @@ useEffect(() => {
                 onClick={() => setLocationPopup(!locationPopup)}
             >
                 <i className="iconly-Location icli"></i>
-                <span className="locat-name">Your Location</span>
+                <span className="locat-name">{selectedLocation}</span>
             </button>
         </div>
     </div>
 </div>
 
 {/* BLUR BACKGROUND OVERLAY */}
-{locationPopup && <div className="location-blur-overlay"></div>}
+{locationPopup && window.location.pathname === "/" && (
+    <div className="location-blur-overlay"></div>
+)}
 
-{locationPopup && (
+
+{locationPopup && window.location.pathname === "/" && (
     <div className="location-dropdown-box">
         <div className="location-inner">
 
-            {/* CLOSE BUTTON */}
             <button 
                 className="close-btn"
                 onClick={() => {
@@ -186,7 +197,6 @@ useEffect(() => {
 
             {showOptions && (
                 <>
-                    {/* ENTER PINCODE BUTTON */}
                     <button 
                         className="option-btn"
                         onClick={() => {
@@ -198,7 +208,6 @@ useEffect(() => {
                         Enter a pincode
                     </button>
 
-                    {/* DETECT BUTTON */}
                     <button 
                         className="option-btn"
                         onClick={() => {
@@ -212,16 +221,30 @@ useEffect(() => {
                 </>
             )}
 
-            {/* PINCODE FIELD */}
             {showPincodeInput && (
                <>
                 <input 
-                    type="text"
+                    type="number"
                     className="pincode-input"
                     placeholder="Enter your pincode"
+                    value={pincodeValue}
+                    onChange={(e) => setPincodeValue(e.target.value)}
                 />
+
                 <div className="d-flex justify-content-end">
-                    <button className="btn btn-2 theme-bg-color text-white btn-2-animation">Apply</button>
+                    <button 
+                        className="btn btn-2 theme-bg-color text-white btn-2-animation"
+                        onClick={() => {
+                            if (pincodeValue.trim() !== "") {
+                                setSelectedLocation(pincodeValue);
+                            }
+                            setLocationPopup(false);
+                            setShowPincodeInput(false);
+                            setShowOptions(true);
+                        }}
+                    >
+                        Apply
+                    </button>
                 </div>
                </>
             )}
@@ -233,6 +256,7 @@ useEffect(() => {
         </div>
     </div>
 )}
+
 
 
 
