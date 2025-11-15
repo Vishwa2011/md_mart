@@ -802,7 +802,12 @@ useEffect(() => {
      {/* <!-- mobile fix menu start --> */}
     <div className="mobile-menu d-md-none d-block mobile-cart">
         <ul>
-           
+             <li class="active">
+                <a href="/">
+                    <i class="iconly-Home icli"></i>
+                    <span>Home</span>
+                </a>
+            </li>
 
             <li className="mobile-category">
                 <a href="#" >
@@ -811,12 +816,7 @@ useEffect(() => {
                 </a>
             </li>
 
-            {/* <li>
-                <a href="#" className="search-box">
-                    <i className="iconly-Search icli"></i>
-                    <span>Search</span>
-                </a>
-            </li> */}
+          
 
             <li>
                 <a href="/Wishlist" >
@@ -831,7 +831,7 @@ useEffect(() => {
                     <span>Cart</span>
                 </a>
             </li>
-             <li className="mobile-category">
+             <li>
                 <a href="/Account">
                     <i class="fa-solid fa-user-tie icli" style={{color:'#fff'}}></i>
                     <span>Account</span>

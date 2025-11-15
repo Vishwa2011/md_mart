@@ -39657,7 +39657,7 @@ body.rtl .menu-label {
 }
 
 @media(max-width: 991px) {
-    .user-dashboard-section .dashboard-left-sidebar {
+    /* .user-dashboard-section .dashboard-left-sidebar {
         width: 300px;
         height: 100vh;
         position: fixed;
@@ -39669,7 +39669,7 @@ body.rtl .menu-label {
         overflow-x: hidden;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out
-    }
+    } */
 
     .user-dashboard-section .dashboard-left-sidebar.show {
         left: 0
@@ -39920,10 +39920,34 @@ body.rtl .menu-label {
     border-radius: 8px;
     height: 100%
 }
+@media (max-width: 991px) {
+    .dashboard-right-sidebar {
+        display: none;
+    }
+    .dashboard-right-sidebar.active {
+        display: block;
+    }
+    .mobile-back-btn {
+        display: block;
+        padding: 10px 15px;
+        background: var(--theme-color);
+        color: #fff;
+        border: none;
+        width: 100%;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile-back-btn {
+        display: none;
+    }
+}
 
 @media(max-width: 991px) {
     .user-dashboard-section .dashboard-right-sidebar {
-        height: auto
+        height: auto;
     }
 }
 

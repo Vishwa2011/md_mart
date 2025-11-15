@@ -34,6 +34,39 @@ const giftCardsData = [
 ];
 
 const Account = () => {
+   const [showSidebar, setShowSidebar] = useState(true);
+  const [showRight, setShowRight] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 991;
+      setIsMobile(mobile);
+
+      if (mobile) {
+        setShowSidebar(true);
+        setShowRight(false);
+      } else {
+        setShowSidebar(true);
+        setShowRight(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleTabClick = () => {
+    if (isMobile) {
+      setShowSidebar(false);
+      setShowRight(true);
+    }
+  };
+
+  const handleBack = () => {
+    setShowSidebar(true);
+    setShowRight(false);
+  };
       const [showModal, setShowModal] = useState(false);
 
   const handleOpen = () => setShowModal(true);
@@ -84,136 +117,216 @@ document.querySelectorAll('.address-box').forEach(box => {
   return (
     <>
     <Navbar />
-    {/* <!-- Breadcrumb Section Start --> */}
-    <section className="breadcrumb-section pt-0">
-        <div className="container-fluid-lg">
-            <div className="row">
-                <div className="col-12">
-                    <div className="breadcrumb-contain">
-                        <h2>Account</h2>
-                        <nav>
-                            <ol className="breadcrumb mb-0">
-                                <li className="breadcrumb-item">
-                                    <a href="/">
-                                        <i className="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-                                <li className="breadcrumb-item active">Account</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {/* <!-- Breadcrumb Section End --> */}
+
 
     {/* <!-- User Dashboard Section Start --> */}
     <section className="user-dashboard-section section-b-space">
-        <div className="container-fluid-lg">
-            <div className="row">
-                <div className="col-xxl-3 col-lg-4">
-                    <div className="dashboard-left-sidebar">
-                        <div className="close-button d-flex d-lg-none">
-                            <button className="close-sidebar">
-                                <i className="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        <div className="profile-box">
-                            <div className="cover-image">
-                                <img src="../assets/images/inner-page/cover-img.jpg" className="img-fluid blur-up lazyload"
-                                    alt="" />
-                            </div>
+      <div className="container-fluid-lg">
+        <div className="row">
 
-                            <div className="profile-contain">
-                                <div className="profile-image">
-                                    <div className="position-relative">
-                                        <img src="/assets/images/CEO.jpg"
-                                            className="blur-up lazyload update_img" alt="" />
-                                        <div className="cover-icon">
-                                            <i className="fa-solid fa-pen">
-                                                <input type="file" onchange="readURL(this,0)" />
-                                            </i>
-                                        </div>
-                                    </div>
-                                </div>
+          {/* ------------------------------
+              LEFT SIDEBAR (Always Mounted)
+          ------------------------------- */}
+          <div
+            className="col-xxl-3 col-lg-4"
+            style={{
+              display: showSidebar ? "block" : (isMobile ? "none" : "block")
+            }}
+          >
+            <div className="dashboard-left-sidebar">
 
-                                <div className="profile-name">
-                                    <h3>Rajesh Patel</h3>
-                                    <h6 className="text-content">rajeshpatel01@gmail.com</h6>
-                                </div>
-                            </div>
-                        </div>
-  
-                        <ul className="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
-                            <li className="nav-item" role="presentation"></li>
-                            <section className="account-section p-3 pt-0 " style={{textAlign:'center'}}>
-    
-                      <div className="card shadow-sm rounded-3 border-0 p-4">
-                        <div className="d-flex align-items-center justify-content-center mb-3">
-            <h4 className="fw-bold d-flex align-items-center gap-2 mb-0">
-              <i className="fas fa-wallet " style={{color:'#2baedd'}}></i>
-              MD Mart Cash & Gift Card
-            </h4>
-          
-                        </div>
-                        <div className="balance-box bg-light p-3 rounded-3 d-flex flex-column flex-md-row align-items-center justify-content-center">
-                          <div>
-                            <p className="text-muted mb-1">Available Balance</p>
-                            <h3 className="fw-bold mb-0" style={{color:'#2baedd'}}>₹0</h3>
-                          </div>
-                        </div>
-                      </div>
-                            </section> 
-                            <li className="nav-item p-3 pt-0" role="presentation" style={{borderBottom:'1px solid #b2b2b2'}}>
-                          <button className="nav-link btn theme-bg-color mt-3 mt-md-0 px-2 py-2 rounded-2 fw-semibold" style={{color:'#fff'}} id="pills-Balance-tab" data-bs-toggle="pill"
-                           data-bs-target="#pills-Balance" type="button">Add Balance</button>
-                      </li>
-                             <li className="nav-item" role="presentation">
-                                <button className="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-dashboard" type="button">
-                                    DashBoard</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-order-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-order" type="button">Order</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-wishlist" type="button">
-                                    Your Wishlist</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-card-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-card" type="button" role="tab"> Your Refunds</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-address-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-address" type="button" role="tab">Saved Address</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab">
-                                    Profile</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-download-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-download" type="button" role="tab">Help & Support</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="pills-security-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-security" type="button" role="tab">
-                                    E- Gift Cards</button>
-                            </li>
-                        </ul>
-                    </div>
+              <div className="profile-box">
+                <div className="cover-image">
+                  <img
+                    src="../assets/images/inner-page/cover-img.jpg"
+                    className="img-fluid blur-up lazyload"
+                    alt=""
+                  />
                 </div>
 
-                <div className="col-xxl-9 col-lg-8">
-                    <button className="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
-                        Menu</button>
-                    <div className="dashboard-right-sidebar">
-                        <div className="tab-content" id="pills-tabContent">
+                <div className="profile-contain">
+                  <div className="profile-image">
+                    <div className="position-relative">
+                      <img
+                        src="/assets/images/CEO.jpg"
+                        className="blur-up lazyload update_img"
+                        alt=""
+                      />
+
+                      <div className="cover-icon">
+                        <i className="fa-solid fa-pen">
+                          <input type="file" onChange={() => { }} />
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="profile-name">
+                    <h3>Rajesh Patel</h3>
+                    <h6 className="text-content text-center">
+                      rajeshpatel01@gmail.com
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              {/* MENU SECTIONS */}
+              <ul className="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+
+                <li className="nav-item" role="presentation"></li>
+
+                <section className="account-section p-3 pt-0 " style={{ textAlign: 'center' }}>
+                  <div className="card shadow-sm rounded-3 border-0 p-4">
+                    <div className="d-flex align-items-center justify-content-center mb-3">
+                      <h4 className="fw-bold d-flex align-items-center gap-2 mb-0">
+                        <i className="fas fa-wallet " style={{ color: '#2baedd' }}></i>
+                        MD Mart Cash & Gift Card
+                      </h4>
+                    </div>
+                    <div className="balance-box bg-light p-3 rounded-3 d-flex flex-column flex-md-row align-items-center justify-content-center">
+                      <div>
+                        <p className="text-muted mb-1">Available Balance</p>
+                        <h3 className="fw-bold mb-0" style={{ color: '#2baedd' }}>₹0</h3>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <li className="nav-item p-3 pt-0" role="presentation"
+                    style={{ borderBottom: '1px solid #b2b2b2' }}>
+                  <button className="nav-link btn theme-bg-color mt-3 mt-md-0 px-2 py-2 rounded-2 fw-semibold"
+                    style={{ color: '#fff' }}
+                    id="pills-Balance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Balance"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Add Balance
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link active"
+                    id="pills-dashboard-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-dashboard"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    DashBoard
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-order-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-order"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Order
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-wishlist-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-wishlist"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Your Wishlist
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-card-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-card"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Your Refunds
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-address-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-address"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Saved Address
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Profile
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-download-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-download"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Help & Support
+                  </button>
+                </li>
+
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-security-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-security"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    E- Gift Cards
+                  </button>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+          {/* ---------------------------
+              RIGHT SIDEBAR (Always Mounted)
+          --------------------------- */}
+
+          <div
+            className="col-xxl-9 col-lg-8"
+            style={{
+              display: showRight ? "block" : (isMobile ? "none" : "block")
+            }}
+          >
+            <div className="dashboard-right-sidebar active">
+
+              {/* Mobile Back Button */}
+              {isMobile && (
+                <button className="mobile-back-btn" onClick={handleBack}>
+                  ← Back
+                </button>
+              )}
+
+               <div className="tab-content" id="pills-tabContent">
                             
                              <div className="tab-pane fade" id="pills-Balance" role="tabpanel">
                                 <div className="dashboard-order">
@@ -1743,8 +1856,7 @@ document.querySelectorAll('.address-box').forEach(box => {
       </div>
     </div>
   </div>
-</div>
-
+                                </div>
                             </div>
 
                             <div className="tab-pane fade" id="pills-profile" role="tabpanel">
@@ -1896,7 +2008,7 @@ document.querySelectorAll('.address-box').forEach(box => {
                             </div>
 
                             <div className="tab-pane fade" id="pills-download" role="tabpanel">
- <section className="faq-box-contain section-b-space">
+                                <section className="faq-box-contain section-b-space">
                                                 <div className="faq-accordion">
                         <div className="accordion" id="accordionExample">
                             <div className="accordion-item">
@@ -2055,84 +2167,13 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
                         </div>
-                    </div></section>
-
+                                </div>
+                                </section>
                             </div>
 
                             <div className="tab-pane fade" id="pills-security" role="tabpanel">
-                                {/* <div className="dashboard-privacy">
-                                    <div className="dashboard-bg-box">
-                                        <div className="dashboard-title mb-4">
-                                            <h3>Privacy</h3>
-                                        </div>
-
-                                        <div className="privacy-box">
-                                            <div className="d-flex align-items-start">
-                                                <h6>Allows others to see my profile</h6>
-                                                <div className="form-check form-switch switch-radio ms-auto">
-                                                    <input className="form-check-input" type="checkbox" role="switch"
-                                                        id="redio" />
-                                                    <label className="form-check-label" for="redio"></label>
-                                                </div>
-                                            </div>
-
-                                            <p className="text-content">all peoples will be able to see my profile</p>
-                                        </div>
-
-                                        <div className="privacy-box">
-                                            <div className="d-flex align-items-start">
-                                                <h6>who has save this profile only that people see my profile</h6>
-                                                <div className="form-check form-switch switch-radio ms-auto">
-                                                    <input className="form-check-input" type="checkbox" role="switch"
-                                                        id="redio2" />
-                                                    <label className="form-check-label" for="redio2"></label>
-                                                </div>
-                                            </div>
-
-                                            <p className="text-content">all peoples will not be able to see my profile</p>
-                                        </div>
-
-                                        <button className="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
-                                            Changes</button>
-                                    </div>
-
-                                    <div className="dashboard-bg-box mt-4">
-                                        <div className="dashboard-title mb-4">
-                                            <h3>Account settings</h3>
-                                        </div>
-
-                                        <div className="privacy-box">
-                                            <div className="d-flex align-items-start">
-                                                <h6>Deleting Your Account Will Permanently</h6>
-                                                <div className="form-check form-switch switch-radio ms-auto">
-                                                    <input className="form-check-input" type="checkbox" role="switch"
-                                                        id="redio3" />
-                                                    <label className="form-check-label" for="redio3"></label>
-                                                </div>
-                                            </div>
-                                            <p className="text-content">Once your account is deleted, you will be logged out
-                                                and will be unable to log in back.</p>
-                                        </div>
-
-                                        <div className="privacy-box">
-                                            <div className="d-flex align-items-start">
-                                                <h6>Deleting Your Account Will Temporary</h6>
-                                                <div className="form-check form-switch switch-radio ms-auto">
-                                                    <input className="form-check-input" type="checkbox" role="switch"
-                                                        id="redio4" />
-                                                    <label className="form-check-label" for="redio4"></label>
-                                                </div>
-                                            </div>
-
-                                            <p className="text-content">Once your account is deleted, you will be logged out
-                                                and you will be create new account</p>
-                                        </div>
-
-                                        <button className="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
-                                            Account</button>
-                                    </div>
-                                </div> */}
-                            <div className="row g-4 mt-2">
+                              
+                                 <div className="row g-4 mt-2">
   {giftCardsData.map((card) => (
     <div key={card.id} className="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
       <div className="card h-100 shadow-sm rounded-4 overflow-hidden">
@@ -2188,15 +2229,16 @@ document.querySelectorAll('.address-box').forEach(box => {
       </div>
     </div>
   ))}
+                                 </div>
                             </div>
 
-
-                            </div>
                         </div>
-                    </div>
-                </div>
+
             </div>
+          </div>
+
         </div>
+      </div>
     </section>
     {/* <!-- User Dashboard Section End --> */}
 
