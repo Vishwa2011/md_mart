@@ -48121,11 +48121,39 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     padding: 3px 6px; 
     border-radius: 4px;
 }
-.newresimg {
+.newresimg11 {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
+.newresimg12 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
+@media (max-width: 576px) {
+    .newresimg12 {
+         height: 120px;
+    object-fit: cover;
+    }
+}
+
+/* Tablets (576px - 992px) */
+@media (max-width: 768px) {
+    .newresimg12 {
+         height: 120px;
+    object-fit: cover;
+    }
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+    .newresimg12 {
+           height: auto;
+    object-fit: cover;
+    }
+}

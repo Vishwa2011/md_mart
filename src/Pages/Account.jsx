@@ -68,10 +68,10 @@ const Account = () => {
             // Ensure only one address box is selected and radio is checked
 document.querySelectorAll('.address-box').forEach(box => {
     box.addEventListener('click', function() {
-        // Remove active class from all boxes
+        // Remove active className from all boxes
         document.querySelectorAll('.address-box').forEach(b => b.classList.remove('active'));
         
-        // Add active class to clicked box
+        // Add active className to clicked box
         this.classList.add('active');
 
         // Check the radio button inside clicked box
@@ -85,20 +85,20 @@ document.querySelectorAll('.address-box').forEach(box => {
     <>
     <Navbar />
     {/* <!-- Breadcrumb Section Start --> */}
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
+    <section className="breadcrumb-section pt-0">
+        <div className="container-fluid-lg">
+            <div className="row">
+                <div className="col-12">
+                    <div className="breadcrumb-contain">
                         <h2>Account</h2>
                         <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
+                            <ol className="breadcrumb mb-0">
+                                <li className="breadcrumb-item">
                                     <a href="/">
-                                        <i class="fa-solid fa-house"></i>
+                                        <i className="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active">Account</li>
+                                <li className="breadcrumb-item active">Account</li>
                             </ol>
                         </nav>
                     </div>
@@ -109,44 +109,44 @@ document.querySelectorAll('.address-box').forEach(box => {
     {/* <!-- Breadcrumb Section End --> */}
 
     {/* <!-- User Dashboard Section Start --> */}
-    <section class="user-dashboard-section section-b-space">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-xxl-3 col-lg-4">
-                    <div class="dashboard-left-sidebar">
-                        <div class="close-button d-flex d-lg-none">
-                            <button class="close-sidebar">
-                                <i class="fa-solid fa-xmark"></i>
+    <section className="user-dashboard-section section-b-space">
+        <div className="container-fluid-lg">
+            <div className="row">
+                <div className="col-xxl-3 col-lg-4">
+                    <div className="dashboard-left-sidebar">
+                        <div className="close-button d-flex d-lg-none">
+                            <button className="close-sidebar">
+                                <i className="fa-solid fa-xmark"></i>
                             </button>
                         </div>
-                        <div class="profile-box">
-                            <div class="cover-image">
-                                <img src="../assets/images/inner-page/cover-img.jpg" class="img-fluid blur-up lazyload"
+                        <div className="profile-box">
+                            <div className="cover-image">
+                                <img src="../assets/images/inner-page/cover-img.jpg" className="img-fluid blur-up lazyload"
                                     alt="" />
                             </div>
 
-                            <div class="profile-contain">
-                                <div class="profile-image">
-                                    <div class="position-relative">
+                            <div className="profile-contain">
+                                <div className="profile-image">
+                                    <div className="position-relative">
                                         <img src="/assets/images/CEO.jpg"
-                                            class="blur-up lazyload update_img" alt="" />
-                                        <div class="cover-icon">
-                                            <i class="fa-solid fa-pen">
+                                            className="blur-up lazyload update_img" alt="" />
+                                        <div className="cover-icon">
+                                            <i className="fa-solid fa-pen">
                                                 <input type="file" onchange="readURL(this,0)" />
                                             </i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="profile-name">
+                                <div className="profile-name">
                                     <h3>Rajesh Patel</h3>
-                                    <h6 class="text-content">rajeshpatel01@gmail.com</h6>
+                                    <h6 className="text-content">rajeshpatel01@gmail.com</h6>
                                 </div>
                             </div>
                         </div>
   
-                        <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation"></li>
+                        <ul className="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                            <li className="nav-item" role="presentation"></li>
                             <section className="account-section p-3 pt-0 " style={{textAlign:'center'}}>
     
                       <div className="card shadow-sm rounded-3 border-0 p-4">
@@ -165,43 +165,43 @@ document.querySelectorAll('.address-box').forEach(box => {
                         </div>
                       </div>
                             </section> 
-                            <li class="nav-item p-3 pt-0" role="presentation" style={{borderBottom:'1px solid #b2b2b2'}}>
-                          <button class="nav-link btn theme-bg-color mt-3 mt-md-0 px-2 py-2 rounded-2 fw-semibold" style={{color:'#fff'}} id="pills-Balance-tab" data-bs-toggle="pill"
+                            <li className="nav-item p-3 pt-0" role="presentation" style={{borderBottom:'1px solid #b2b2b2'}}>
+                          <button className="nav-link btn theme-bg-color mt-3 mt-md-0 px-2 py-2 rounded-2 fw-semibold" style={{color:'#fff'}} id="pills-Balance-tab" data-bs-toggle="pill"
                            data-bs-target="#pills-Balance" type="button">Add Balance</button>
                       </li>
-                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
+                             <li className="nav-item" role="presentation">
+                                <button className="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-dashboard" type="button">
                                     DashBoard</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-order-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-order" type="button">Order</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-wishlist" type="button">
                                     Your Wishlist</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-card-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-card-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-card" type="button" role="tab"> Your Refunds</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-address-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-address" type="button" role="tab">Saved Address</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-profile" type="button" role="tab">
                                     Profile</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-download-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-download-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-download" type="button" role="tab">Help & Support</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                            <li className="nav-item" role="presentation">
+                                <button className="nav-link" id="pills-security-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-security" type="button" role="tab">
                                     E- Gift Cards</button>
                             </li>
@@ -209,18 +209,18 @@ document.querySelectorAll('.address-box').forEach(box => {
                     </div>
                 </div>
 
-                <div class="col-xxl-9 col-lg-8">
-                    <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
+                <div className="col-xxl-9 col-lg-8">
+                    <button className="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
                         Menu</button>
-                    <div class="dashboard-right-sidebar">
-                        <div class="tab-content" id="pills-tabContent">
+                    <div className="dashboard-right-sidebar">
+                        <div className="tab-content" id="pills-tabContent">
                             
-                             <div class="tab-pane fade" id="pills-Balance" role="tabpanel">
-                                <div class="dashboard-order">
-                                    <div class="title">
+                             <div className="tab-pane fade" id="pills-Balance" role="tabpanel">
+                                <div className="dashboard-order">
+                                    <div className="title">
                                         <h2>My Available Balance</h2>
-                                        <span class="title-leaf title-leaf-gray">
-                                            <svg class="icon-width bg-gray">
+                                        <span className="title-leaf title-leaf-gray">
+                                            <svg className="icon-width bg-gray">
                                                 <use href="../assets/svg/leaf.svg#leaf"></use>
                                             </svg>
                                         </span>
@@ -389,9 +389,9 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
-                                <div class="dashboard-home">
-                              <div class="title">
+                            <div className="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                                <div className="dashboard-home">
+                              <div className="title">
                                         <h2>My Account</h2>
                                       <span className="title-leaf">
                                      <svg className="icon-width bg-gray">
@@ -401,55 +401,55 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                                     </div>
 
-                                    <div class="dashboard-user-name">
-                                        <h6 class="text-content">Hello, <b class="text-title">Rajesh Patel</b></h6>
-                                        <p class="text-content">From your My Account Dashboard you have the ability to
+                                    <div className="dashboard-user-name">
+                                        <h6 className="text-content">Hello, <b className="text-title">Rajesh Patel</b></h6>
+                                        <p className="text-content">From your My Account Dashboard you have the ability to
                                             view a snapshot of your recent account activity and update your account
                                             information. Select a link below to view or edit information.</p>
                                     </div>
 
-                                    <div class="total-box">
-                                        <div class="row g-sm-4 g-3">
-                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                    <div className="total-box">
+                                        <div className="row g-sm-4 g-3">
+                                            <div className="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                                                 <a href="Ordersuccess">
-                                                    <div class="total-contain">
+                                                    <div className="total-contain">
                                                     <img src="../assets/images/svg/order.svg"
-                                                        class="img-1 blur-up lazyload" alt="" />
-                                                    <img src="../assets/images/svg/order.svg" class="blur-up lazyload"
+                                                        className="img-1 blur-up lazyload" alt="" />
+                                                    <img src="../assets/images/svg/order.svg" className="blur-up lazyload"
                                                         alt="" />
-                                                    <div class="total-detail">
+                                                    <div className="total-detail">
                                                         <h5>Total Order</h5>
-                                                        <h3 class="text-title">3658</h3>
+                                                        <h3 className="text-title">3658</h3>
                                                     </div>
                                                 </div>
                                                 </a>
                                             </div>
 
-                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                                                <a href="">
-                                                 <div class="total-contain">
+                                                 <div className="total-contain">
                                                     <img src="../assets/images/svg/pending.svg"
-                                                        class="img-1 blur-up lazyload" alt="" />
-                                                    <img src="../assets/images/svg/pending.svg" class="blur-up lazyload"
+                                                        className="img-1 blur-up lazyload" alt="" />
+                                                    <img src="../assets/images/svg/pending.svg" className="blur-up lazyload"
                                                         alt="" />
-                                                    <div class="total-detail">
+                                                    <div className="total-detail">
                                                         <h5>Total Pending Order</h5>
-                                                        <h3 class="text-title">254</h3>
+                                                        <h3 className="text-title">254</h3>
                                                     </div>
                                                 </div>
                                                </a>
                                             </div>
 
-                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                                                 <a href="/Wishlist">
-                                                <div class="total-contain">
+                                                <div className="total-contain">
                                                     <img src="../assets/images/svg/wishlist.svg"
-                                                        class="img-1 blur-up lazyload" alt="" />
+                                                        className="img-1 blur-up lazyload" alt="" />
                                                     <img src="../assets/images/svg/wishlist.svg"
-                                                        class="blur-up lazyload" alt="" />
-                                                    <div class="total-detail">
+                                                        className="blur-up lazyload" alt="" />
+                                                    <div className="total-detail">
                                                         <h5>Total Wishlist</h5>
-                                                        <h3 class="text-title">32158</h3>
+                                                        <h3 className="text-title">32158</h3>
                                                     </div>
                                                 </div>
                                                 </a>
@@ -457,56 +457,56 @@ document.querySelectorAll('.address-box').forEach(box => {
                                         </div>
                                     </div>
                                   
-                                    <div class="dashboard-title">
+                                    <div className="dashboard-title">
                                         <h3>Account Information</h3>
                                     </div>
 
-                                    <div class="row g-4">
-                                        <div class="col-xxl-6">
-                                            <div class="dashboard-content-title">
+                                    <div className="row g-4">
+                                        <div className="col-xxl-6">
+                                            <div className="dashboard-content-title">
                                                 <h4>Contact Information <a href="javascript:void(0)"
                                                         data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
                                                 </h4>
                                             </div>
-                                            <div class="dashboard-detail">
-                                                <h6 class="text-content">MARK JECNO</h6>
-                                                <h6 class="text-content">rajeshpatel01@gmail.com</h6>
+                                            <div className="dashboard-detail">
+                                                <h6 className="text-content">MARK JECNO</h6>
+                                                <h6 className="text-content">rajeshpatel01@gmail.com</h6>
                                                 <a href="">Change Password</a>
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-6">
-                                            <div class="dashboard-content-title">
+                                        <div className="col-xxl-6">
+                                            <div className="dashboard-content-title">
                                                 <h4>Newsletters <a href="javascript:void(0)" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile">Edit</a></h4>
                                             </div>
-                                            <div class="dashboard-detail">
-                                                <h6 class="text-content">You are currently not subscribed to any
+                                            <div className="dashboard-detail">
+                                                <h6 className="text-content">You are currently not subscribed to any
                                                     newsletter</h6>
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="dashboard-content-title">
+                                        <div className="col-12">
+                                            <div className="dashboard-content-title">
                                                 <h4>Address Book <a href="javascript:void(0)" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile">Edit</a></h4>
                                             </div>
 
-                                            <div class="row g-4">
-                                                <div class="col-xxl-6">
-                                                    <div class="dashboard-detail">
-                                                        <h6 class="text-content">Default Billing Address</h6>
-                                                        <h6 class="text-content">You have not set a default billing
+                                            <div className="row g-4">
+                                                <div className="col-xxl-6">
+                                                    <div className="dashboard-detail">
+                                                        <h6 className="text-content">Default Billing Address</h6>
+                                                        <h6 className="text-content">You have not set a default billing
                                                             address.</h6>
                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
                                                             data-bs-target="#editProfile">Edit Address</a>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-xxl-6">
-                                                    <div class="dashboard-detail">
-                                                        <h6 class="text-content">Default Shipping Address</h6>
-                                                        <h6 class="text-content">You have not set a default shipping
+                                                <div className="col-xxl-6">
+                                                    <div className="dashboard-detail">
+                                                        <h6 className="text-content">Default Shipping Address</h6>
+                                                        <h6 className="text-content">You have not set a default shipping
                                                             address.</h6>
                                                         <a href="javascript:void(0)" data-bs-toggle="modal"
                                                             data-bs-target="#editProfile">Edit Address</a>
@@ -518,28 +518,28 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-wishlist" role="tabpanel">
-                                <div class="dashboard-wishlist">
-                               <div class="title">
+                            <div className="tab-pane fade" id="pills-wishlist" role="tabpanel">
+                                <div className="dashboard-wishlist">
+                               <div className="title">
                                         <h2>My Wishlist History</h2>
-                                        <span class="title-leaf title-leaf-gray">
-                                            <svg class="icon-width bg-gray">
+                                        <span className="title-leaf title-leaf-gray">
+                                            <svg className="icon-width bg-gray">
                                                 <use href="../assets/svg/leaf.svg#leaf"></use>
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="row g-sm-4 g-3">
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                    <div className="row g-sm-4 g-3">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop1.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
@@ -547,17 +547,17 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Vegetable</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Vegetable</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
+                                                            <h5 className="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Cheesy feet
+                                                        <p className="text-content mt-1 mb-2 product-content">Cheesy feet
                                                             cheesy grin brie. Mascarpone cheese and wine hard cheese the
                                                             big cheese everyone loves smelly cheese macaroni cheese
                                                             croque monsieur.</p>
-                                                        <h6 class="unit mt-1">250 ml</h6>
+                                                        <h6 className="unit mt-1">250 ml</h6>
                                                            <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -579,24 +579,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -606,35 +606,35 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop2.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Vegetable</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Vegetable</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Peanut Butter Bite Premium Butter Cookies
+                                                            <h5 className="name">Peanut Butter Bite Premium Butter Cookies
                                                                 600 g</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Feta taleggio
+                                                        <p className="text-content mt-1 mb-2 product-content">Feta taleggio
                                                             croque monsieur swiss manchego cheesecake dolcelatte
                                                             jarlsberg. Hard cheese danish fontina boursin melted cheese
                                                             fondue.</p>
-                                                        <h6 class="unit mt-1">350 G</h6>
+                                                        <h6 className="unit mt-1">350 G</h6>
                                                             <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -656,24 +656,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -683,37 +683,37 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop3.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Snacks</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Snacks</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">SnackAmor Combo Pack of Jowar Stick and
+                                                            <h5 className="name">SnackAmor Combo Pack of Jowar Stick and
                                                                 Jowar Chips</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Lancashire
+                                                        <p className="text-content mt-1 mb-2 product-content">Lancashire
                                                             hard cheese parmesan. Danish fontina mozzarella cream cheese
                                                             smelly cheese cheese and wine cheesecake dolcelatte stilton.
                                                             Cream cheese parmesan who moved my cheese when the cheese
                                                             comes out everybody's happy cream cheese red leicester
                                                             ricotta edam.</p>
-                                                        <h6 class="unit mt-1">570 G</h6>
+                                                        <h6 className="unit mt-1">570 G</h6>
                                                              <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -735,24 +735,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -762,35 +762,35 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop4.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Snacks</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Snacks</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g
+                                                            <h5 className="name">Yumitos Chilli Sprinkled Potato Chips 100 g
                                                             </h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Cheddar
+                                                        <p className="text-content mt-1 mb-2 product-content">Cheddar
                                                             cheddar pecorino hard cheese hard cheese cheese and biscuits
                                                             bocconcini babybel. Cow goat paneer cream cheese fromage
                                                             cottage cheese cauliflower cheese jarlsberg.</p>
-                                                        <h6 class="unit mt-1">100 G</h6>
+                                                        <h6 className="unit mt-1">100 G</h6>
                                                              <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -812,24 +812,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -839,35 +839,35 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop5.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Vegetable</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Vegetable</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
+                                                            <h5 className="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Bavarian
+                                                        <p className="text-content mt-1 mb-2 product-content">Bavarian
                                                             bergkase smelly cheese swiss cut the cheese lancashire who
                                                             moved my cheese manchego melted cheese. Red leicester paneer
                                                             cow when the cheese comes out everybody's happy croque
                                                             monsieur goat melted cheese port-salut.</p>
-                                                        <h6 class="unit mt-1">550 G</h6>
+                                                        <h6 className="unit mt-1">550 G</h6>
                                                              <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -889,24 +889,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -916,34 +916,34 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop6.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Vegetable</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Vegetable</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
+                                                            <h5 className="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Melted cheese
+                                                        <p className="text-content mt-1 mb-2 product-content">Melted cheese
                                                             babybel chalk and cheese. Port-salut port-salut cream cheese
                                                             when the cheese comes out everybody's happy cream cheese
                                                             hard cheese cream cheese red leicester.</p>
-                                                        <h6 class="unit mt-1">1 Kg</h6>
+                                                        <h6 className="unit mt-1">1 Kg</h6>
                                                             <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -965,24 +965,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -992,34 +992,34 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
-                                            <div class="product-box-3 theme-bg-white h-100">
-                                                <div class="product-header">
-                                                    <div class="product-image">
+                                        <div className="col-xxl-3 col-lg-6 col-md-4 col-sm-6">
+                                            <div className="product-box-3 theme-bg-white h-100">
+                                                <div className="product-header">
+                                                    <div className="product-image">
                                                         <a href="/Productdetails">
                                                             <img src="/assets/images/picture/shop1.png"
-                                                                class="img-fluid blur-up lazyload" alt="" />
+                                                                className="img-fluid blur-up lazyload" alt="" />
                                                         </a>
 
-                                                        <div class="product-header-top">
-                                                            <button class="btn wishlist-button close_button">
+                                                        <div className="product-header-top">
+                                                            <button className="btn wishlist-button close_button">
                                                                 <i className="fa-solid fa-close"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="product-footer">
-                                                    <div class="product-detail">
-                                                        <span class="span-name">Vegetable</span>
+                                                <div className="product-footer">
+                                                    <div className="product-detail">
+                                                        <span className="span-name">Vegetable</span>
                                                         <a href="/Productdetails">
-                                                            <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
+                                                            <h5 className="name">Fresh Bread and Pastry Flour 200 g</h5>
                                                         </a>
-                                                        <p class="text-content mt-1 mb-2 product-content">Squirty cheese
+                                                        <p className="text-content mt-1 mb-2 product-content">Squirty cheese
                                                             cottage cheese cheese strings. Red leicester paneer danish
                                                             fontina queso lancashire when the cheese comes out
                                                             everybody's happy cottage cheese paneer.</p>
-                                                        <h6 class="unit mt-1">250 ml</h6>
+                                                        <h6 className="unit mt-1">250 ml</h6>
                                                            <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1041,24 +1041,24 @@ document.querySelectorAll('.address-box').forEach(box => {
           <del>₹65.25</del>
         </h5>
       </div>
-                                                        <div class="add-to-cart-box mt-2">
-                                                            <button class="btn btn-add-cart addcart-button"
+                                                        <div className="add-to-cart-box mt-2">
+                                                            <button className="btn btn-add-cart addcart-button"
                                                                 tabindex="0">Add
-                                                                <span class="add-icon">
-                                                                    <i class="fa-solid fa-plus"></i>
+                                                                <span className="add-icon">
+                                                                    <i className="fa-solid fa-plus"></i>
                                                                 </span>
                                                             </button>
-                                                            <div class="cart_qty qty-box">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="qty-left-minus"
+                                                            <div className="cart_qty qty-box">
+                                                                <div className="input-group">
+                                                                    <button type="button" className="qty-left-minus"
                                                                         data-type="minus" data-field="">
-                                                                        <i class="fa fa-minus"></i>
+                                                                        <i className="fa fa-minus"></i>
                                                                     </button>
-                                                                    <input class="form-control input-number qty-input"
+                                                                    <input className="form-control input-number qty-input"
                                                                         type="text" name="quantity" value="0" />
-                                                                    <button type="button" class="qty-right-plus"
+                                                                    <button type="button" className="qty-right-plus"
                                                                         data-type="plus" data-field="">
-                                                                        <i class="fa fa-plus"></i>
+                                                                        <i className="fa fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -1071,57 +1071,57 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-order" role="tabpanel">
-                                <div class="dashboard-order">
-                                    <div class="title">
+                            <div className="tab-pane fade" id="pills-order" role="tabpanel">
+                                <div className="dashboard-order">
+                                    <div className="title">
                                         <h2>My Orders History</h2>
-                                        <span class="title-leaf title-leaf-gray">
-                                            <svg class="icon-width bg-gray">
+                                        <span className="title-leaf title-leaf-gray">
+                                            <svg className="icon-width bg-gray">
                                                 <use href="../assets/svg/leaf.svg#leaf"></use>
                                             </svg>
                                         </span>
                                     </div>
 
-                                    <div class="order-contain"> 
-                                        <div class="order-box dashboard-bg-box">
-                                            <div class="order-container">
-                                                <div class="order-icon">
+                                    <div className="order-contain"> 
+                                        <div className="order-box dashboard-bg-box">
+                                            <div className="order-container">
+                                                <div className="order-icon">
                                                     <i className="fa-solid fa-box"></i>
                                                 </div>
 
-                                                <div class="order-detail">
+                                                <div className="order-detail">
                                                     <h4>Delivers <span>Pending</span></h4>
-                                                    <h6 class="text-content">Gouda parmesan caerphilly mozzarella
+                                                    <h6 className="text-content">Gouda parmesan caerphilly mozzarella
                                                         cottage cheese cauliflower cheese taleggio gouda.</h6>
                                                 </div>
                                             </div>
 
-                                            <div class="product-order-detail">
-                                                <a href="/Productdetails" class="order-image">
+                                            <div className="product-order-detail">
+                                                <a href="/Productdetails" className="order-image">
                                                     <img src="/assets/images/picture/shop5.png"
-                                                        class="blur-up lazyload" alt="" />
+                                                        className="blur-up lazyload" alt="" />
                                                 </a>
 
-                                                <div class="order-wrap">
+                                                <div className="order-wrap">
                                                     <a href="/Productdetails">
                                                         <h3>Fantasy Crunchy Choco Chip Cookies</h3>
                                                     </a>
-                                                    <p class="text-content">Cheddar dolcelatte gouda. Macaroni cheese
+                                                    <p className="text-content">Cheddar dolcelatte gouda. Macaroni cheese
                                                         cheese strings feta halloumi cottage cheese jarlsberg cheese
                                                         triangles say cheese.</p>
-                                                    <ul class="product-size">
+                                                    <ul className="product-size">
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Price : </h6>
-                                                                <h5 class="theme-color">₹20.68</h5>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Price : </h6>
+                                                                <h5 className="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Rate : </h6>
-                                                                <div class="product-rating ms-2">
-                                                                    <ul class="rating">
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Rate : </h6>
+                                                                <div className="product-rating ms-2">
+                                                                    <ul className="rating">
                                                                         <li>
                                                                             {/* <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i> */}
                                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1145,15 +1145,15 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Sold By : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Sold By : </h6>
                                                                 <h5>Fresho</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Quantity : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Quantity : </h6>
                                                                 <h5>250 G</h5>
                                                             </div>
                                                         </li>
@@ -1164,45 +1164,45 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                                        
 
-                                        <div class="order-box dashboard-bg-box">
-                                            <div class="order-container">
-                                                <div class="order-icon">
+                                        <div className="order-box dashboard-bg-box">
+                                            <div className="order-container">
+                                                <div className="order-icon">
                                                     <i className="fa-solid fa-box"></i>
                                                 </div>
 
-                                                <div class="order-detail">
+                                                <div className="order-detail">
                                                     <h4>Delivere <span>Pending</span></h4>
-                                                    <h6 class="text-content">Cheesy grin boursin cheesy grin cheesecake
+                                                    <h6 className="text-content">Cheesy grin boursin cheesy grin cheesecake
                                                         blue castello cream cheese lancashire melted cheese.</h6>
                                                 </div>
                                             </div>
 
-                                            <div class="product-order-detail">
-                                                <a href="/Productdetails" class="order-image">
+                                            <div className="product-order-detail">
+                                                <a href="/Productdetails" className="order-image">
                                                     <img src="/assets/images/picture/shop2.png" alt=""
-                                                        class="blur-up lazyload" />
+                                                        className="blur-up lazyload" />
                                                 </a>
 
-                                                <div class="order-wrap">
+                                                <div className="order-wrap">
                                                     <a href="/Productdetails">
                                                         <h3>Peanut Butter Bite Premium Butter Cookies 600 g</h3>
                                                     </a>
-                                                    <p class="text-content">Cow bavarian bergkase mascarpone paneer
+                                                    <p className="text-content">Cow bavarian bergkase mascarpone paneer
                                                         squirty cheese fromage frais cheese slices when the cheese comes
                                                         out everybody's happy.</p>
-                                                    <ul class="product-size">
+                                                    <ul className="product-size">
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Price : </h6>
-                                                                <h5 class="theme-color">₹20.68</h5>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Price : </h6>
+                                                                <h5 className="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Rate : </h6>
-                                                                <div class="product-rating ms-2">
-                                                                    <ul class="rating">
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Rate : </h6>
+                                                                <div className="product-rating ms-2">
+                                                                    <ul className="rating">
                                                                         <li>
                                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
@@ -1224,15 +1224,15 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Sold By : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Sold By : </h6>
                                                                 <h5>Fresho</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Quantity : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Quantity : </h6>
                                                                 <h5>250 G</h5>
                                                             </div>
                                                         </li>
@@ -1241,45 +1241,45 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </div>
                                         </div>
 
-                                        <div class="order-box dashboard-bg-box">
-                                            <div class="order-container">
-                                                <div class="order-icon">
+                                        <div className="order-box dashboard-bg-box">
+                                            <div className="order-container">
+                                                <div className="order-icon">
                                                    <i className="fa-solid fa-box"></i>
                                                 </div>
 
-                                                <div class="order-detail">
-                                                    <h4>Delivered <span class="success-bg">Success</span></h4>
-                                                    <h6 class="text-content">Caerphilly port-salut parmesan pecorino
+                                                <div className="order-detail">
+                                                    <h4>Delivered <span className="success-bg">Success</span></h4>
+                                                    <h6 className="text-content">Caerphilly port-salut parmesan pecorino
                                                         croque monsieur dolcelatte melted cheese cheese and wine.</h6>
                                                 </div>
                                             </div>
 
-                                            <div class="product-order-detail">
-                                                <a href="/Productdetails" class="order-image">
+                                            <div className="product-order-detail">
+                                                <a href="/Productdetails" className="order-image">
                                                     <img src="/assets/images/picture/shop3.png"
-                                                        class="blur-up lazyload" alt="" />
+                                                        className="blur-up lazyload" alt="" />
                                                 </a>
 
-                                                <div class="order-wrap">
+                                                <div className="order-wrap">
                                                     <a href="/Productdetails">
                                                         <h3>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
                                                     </a>
-                                                    <p class="text-content">The big cheese cream cheese pepper jack
+                                                    <p className="text-content">The big cheese cream cheese pepper jack
                                                         cheese slices danish fontina everyone loves cheese on toast
                                                         bavarian bergkase.</p>
-                                                    <ul class="product-size">
+                                                    <ul className="product-size">
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Price : </h6>
-                                                                <h5 class="theme-color">₹20.68</h5>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Price : </h6>
+                                                                <h5 className="theme-color">₹20.68</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Rate : </h6>
-                                                                <div class="product-rating ms-2">
-                                                                    <ul class="rating">
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Rate : </h6>
+                                                                <div className="product-rating ms-2">
+                                                                    <ul className="rating">
                                                                         <li>
                                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                                         </li>
@@ -1301,15 +1301,15 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Sold By : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Sold By : </h6>
                                                                 <h5>Fresho</h5>
                                                             </div>
                                                         </li>
 
                                                         <li>
-                                                            <div class="size-box">
-                                                                <h6 class="text-content">Quantity : </h6>
+                                                            <div className="size-box">
+                                                                <h6 className="text-content">Quantity : </h6>
                                                                 <h5>250 G</h5>
                                                             </div>
                                                         </li>
@@ -1321,38 +1321,38 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-address" role="tabpanel">
-                                <div class="dashboard-address">
-                                    <div class="title title-flex">
+                            <div className="tab-pane fade" id="pills-address" role="tabpanel">
+                                <div className="dashboard-address">
+                                    <div className="title title-flex">
                                         <div>
                                             <h2>My Address Book</h2>
-                                            <span class="title-leaf">
-                                                <svg class="icon-width bg-gray">
+                                            <span className="title-leaf">
+                                                <svg className="icon-width bg-gray">
                                                      <use href="../assets/svg/leaf.svg#leaf"></use>
                                                 </svg>
                                             </span>
                                         </div>
 
-                                        <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
+                                        <button className="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
                                             data-bs-toggle="modal" data-bs-target="#add-address"><i data-feather="plus"
-                                                class="me-2"></i> Add New Address</button>
+                                                className="me-2"></i> Add New Address</button>
                                     </div>
 
-                                    <div class="row g-sm-4 g-3">
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
-                                            <div class="address-box">
+                                    <div className="row g-sm-4 g-3">
+                                        <div className="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div className="address-box">
                                                 <div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="jack"
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="jack"
                                                             id="flexRadioDefault2" checked />
                                                     </div>
 
-                                                    <div class="label">
+                                                    <div className="label">
                                                         <label>Home</label>
                                                     </div>
 
-                                                    <div class="table-responsive address-table">
-                                                        <table class="table">
+                                                    <div className="table-responsive address-table">
+                                                        <table className="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td colspan="2">Jack Jennas</td>
@@ -1380,31 +1380,31 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="button-group">
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                <div className="button-group">
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile"><i data-feather="edit"></i>
                                                         Edit</button>
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
                                                         Remove</button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
-                                            <div class="address-box">
+                                        <div className="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div className="address-box">
                                                 <div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="jack"
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="jack"
                                                             id="flexRadioDefault3" />
                                                     </div>
 
-                                                    <div class="label">
+                                                    <div className="label">
                                                         <label>Office</label>
                                                     </div>
 
-                                                    <div class="table-responsive address-table">
-                                                        <table class="table">
+                                                    <div className="table-responsive address-table">
+                                                        <table className="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td colspan="2">Terry S. Sutton</td>
@@ -1431,31 +1431,31 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="button-group">
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                <div className="button-group">
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile"><i data-feather="edit"></i>
                                                         Edit</button>
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
                                                         Remove</button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
-                                            <div class="address-box">
+                                        <div className="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div className="address-box">
                                                 <div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="jack"
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="jack"
                                                             id="flexRadioDefault4" />
                                                     </div>
 
-                                                    <div class="label">
+                                                    <div className="label">
                                                         <label>Neighbour</label>
                                                     </div>
 
-                                                    <div class="table-responsive address-table">
-                                                        <table class="table">
+                                                    <div className="table-responsive address-table">
+                                                        <table className="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td colspan="2">Juan M. McKeon</td>
@@ -1482,31 +1482,31 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="button-group">
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                <div className="button-group">
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile"><i data-feather="edit"></i>
                                                         Edit</button>
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
                                                         Remove</button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
-                                            <div class="address-box">
+                                        <div className="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div className="address-box">
                                                 <div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="jack"
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="jack"
                                                             id="flexRadioDefault5" />
                                                     </div>
 
-                                                    <div class="label">
+                                                    <div className="label">
                                                         <label>Home 2</label>
                                                     </div>
 
-                                                    <div class="table-responsive address-table">
-                                                        <table class="table">
+                                                    <div className="table-responsive address-table">
+                                                        <table className="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td colspan="2">Gary M. Bailey</td>
@@ -1534,31 +1534,31 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="button-group">
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                <div className="button-group">
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile"><i data-feather="edit"></i>
                                                         Edit</button>
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
                                                         Remove</button>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
-                                            <div class="address-box">
+                                        <div className="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div className="address-box">
                                                 <div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="jack"
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="jack"
                                                             id="flexRadioDefault1" />
                                                     </div>
 
-                                                    <div class="label">
+                                                    <div className="label">
                                                         <label>Home 2</label>
                                                     </div>
 
-                                                    <div class="table-responsive address-table">
-                                                        <table class="table">
+                                                    <div className="table-responsive address-table">
+                                                        <table className="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td colspan="2">Gary M. Bailey</td>
@@ -1586,11 +1586,11 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </div>
                                                 </div>
 
-                                                <div class="button-group">
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                <div className="button-group">
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#editProfile"><i data-feather="edit"></i>
                                                         Edit</button>
-                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                    <button className="btn btn-sm add-button w-100" data-bs-toggle="modal"
                                                         data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
                                                         Remove</button>
                                                 </div>
@@ -1600,144 +1600,144 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-card" role="tabpanel">
-                               <div class="dashboard-card">
-  <div class="title title-flex align-items-center justify-content-between">
+                            <div className="tab-pane fade" id="pills-card" role="tabpanel">
+                               <div className="dashboard-card">
+  <div className="title title-flex align-items-center justify-content-between">
     <div>
       <h2>My Refunds</h2>
-      <span class="title-leaf">
-        <svg class="icon-width bg-gray">
+      <span className="title-leaf">
+        <svg className="icon-width bg-gray">
           <use href="../assets/svg/leaf.svg#leaf"></use>
         </svg>
       </span>
     </div>
   </div>
 
-  <div class="row g-4 mt-2">
+  <div className="row g-4 mt-2">
     {/* <!-- Refund Item 1 --> */}
-    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
-        <div class="d-flex align-items-center mb-3">
+    <div className="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div className="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div className="d-flex align-items-center mb-3">
           <img
             src="../assets/images/veg-3/cate1/4.png"
-            class="img-fluid rounded me-3"
+            className="img-fluid rounded me-3"
             alt="Product"
             style={{width:'70px', height:'70px', objectFit:'cover'}}
             // style="width: 70px; height: 70px; object-fit: cover;"
           />
           <div>
-            <h6 class="fw-semibold mb-1">Chips</h6>
-            <small class="text-muted">Order ID: #2548</small>
+            <h6 className="fw-semibold mb-1">Chips</h6>
+            <small className="text-muted">Order ID: #2548</small>
           </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Amount:</span>
-          <span class="fw-bold text-success">₹70.21</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Amount:</span>
+          <span className="fw-bold text-success">₹70.21</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Status:</span>
-          <span class="badge bg-success">Approved</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Status:</span>
+          <span className="badge bg-success">Approved</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <span class="fw-semibold text-dark">Refund Date:</span>
-          <span class="text-muted">08/05/2025</span>
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <span className="fw-semibold text-dark">Refund Date:</span>
+          <span className="text-muted">08/05/2025</span>
         </div>
 
-        <div class="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
-            <i class="far fa-eye me-1"></i>View Details
+        <div className="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+            <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cancelRefund" class="text-danger fw-semibold">
-            <i class="far fa-times-circle me-1"></i>Cancel
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cancelRefund" className="text-danger fw-semibold">
+            <i className="far fa-times-circle me-1"></i>Cancel
           </a>
         </div>
       </div>
     </div>
 
     {/* <!-- Refund Item 2 --> */}
-    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
-        <div class="d-flex align-items-center mb-3">
+    <div className="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div className="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div className="d-flex align-items-center mb-3">
           <img
             src="../assets/images/veg-3/cate1/5.png"
-            class="img-fluid rounded me-3"
+            className="img-fluid rounded me-3"
             alt="Product"
             style={{width:'70px', height:'70px', objectFit:'cover'}}
             // style="width: 70px; height: 70px; object-fit: cover;"
           />
           <div>
-            <h6 class="fw-semibold mb-1">Soda</h6>
-            <small class="text-muted">Order ID: #1536</small>
+            <h6 className="fw-semibold mb-1">Soda</h6>
+            <small className="text-muted">Order ID: #1536</small>
           </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Amount:</span>
-          <span class="fw-bold text-warning">₹70.21</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Amount:</span>
+          <span className="fw-bold text-warning">₹70.21</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Status:</span>
-          <span class="badge bg-warning text-dark">Pending</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Status:</span>
+          <span className="badge bg-warning text-dark">Pending</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <span class="fw-semibold text-dark">Requested On:</span>
-          <span class="text-muted">11/09/2025</span>
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <span className="fw-semibold text-dark">Requested On:</span>
+          <span className="text-muted">11/09/2025</span>
         </div>
 
-        <div class="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
-            <i class="far fa-eye me-1"></i>View Details
+        <div className="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+            <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" class="text-muted fw-semibold disabled">
-            <i class="far fa-clock me-1"></i>In Process
+          <a href="javascript:void(0)" className="text-muted fw-semibold disabled">
+            <i className="far fa-clock me-1"></i>In Process
           </a>
         </div>
       </div>
     </div>
 
     {/* <!-- Refund Item 3 --> */}
-    <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
-      <div class="refund-card border rounded-4 p-3 shadow-sm h-100">
-        <div class="d-flex align-items-center mb-3">
+    <div className="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+      <div className="refund-card border rounded-4 p-3 shadow-sm h-100">
+        <div className="d-flex align-items-center mb-3">
           <img
             src="/assets/images/picture/kaju.png"
-            class="img-fluid rounded me-3"
+            className="img-fluid rounded me-3"
             alt="Product"
              style={{width:'70px', height:'70px', objectFit:'cover'}}
             // style="width: 70px; height: 70px; object-fit: cover;"
           />
           <div>
-            <h6 class="fw-semibold mb-1">Cashew Nuts</h6>
-            <small class="text-muted">Order ID: #1366</small>
+            <h6 className="fw-semibold mb-1">Cashew Nuts</h6>
+            <small className="text-muted">Order ID: #1366</small>
           </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Amount:</span>
-          <span class="fw-bold text-danger">₹70.21</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Amount:</span>
+          <span className="fw-bold text-danger">₹70.21</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-semibold text-dark">Refund Status:</span>
-          <span class="badge bg-danger">Rejected</span>
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <span className="fw-semibold text-dark">Refund Status:</span>
+          <span className="badge bg-danger">Rejected</span>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <span class="fw-semibold text-dark">Rejected On:</span>
-          <span class="text-muted">10/10/2025</span>
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <span className="fw-semibold text-dark">Rejected On:</span>
+          <span className="text-muted">10/10/2025</span>
         </div>
 
-        <div class="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" class="text-primary fw-semibold">
-            <i class="far fa-eye me-1"></i>View Details
+        <div className="d-flex justify-content-between border-top pt-2">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+            <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestRefund" class="text-success fw-semibold">
-            <i class="far fa-redo me-1"></i>Reapply
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestRefund" className="text-success fw-semibold">
+            <i className="far fa-redo me-1"></i>Reapply
           </a>
         </div>
       </div>
@@ -1747,26 +1747,26 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                             </div>
 
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-                                <div class="dashboard-profile">
-                                  <div class="title">
+                            <div className="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <div className="dashboard-profile">
+                                  <div className="title">
                                         <h2>My Profile</h2>
-                                        <span class="title-leaf">
-                                            <svg class="icon-width bg-gray">
+                                        <span className="title-leaf">
+                                            <svg className="icon-width bg-gray">
                                                  <use href="../assets/svg/leaf.svg#leaf"></use>
                                             </svg>
                                         </span>
                                     </div>
 
-                                    <div class="profile-detail dashboard-bg-box">
-                                        <div class="dashboard-title">
+                                    <div className="profile-detail dashboard-bg-box">
+                                        <div className="dashboard-title">
                                             <h3>Profile Name</h3>
                                         </div>
-                                        <div class="profile-name-detail">
-                                            <div class="d-sm-flex align-items-center d-block">
+                                        <div className="profile-name-detail">
+                                            <div className="d-sm-flex align-items-center d-block">
                                                 <h3>Rajesh Patel</h3>
-                                                <div class="product-rating profile-rating">
-                                                    <ul class="rating">
+                                                <div className="product-rating profile-rating">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1790,24 +1790,24 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 data-bs-target="#editProfile">Edit</a>
                                         </div>
 
-                                        <div class="location-profile">
+                                        <div className="location-profile">
                                             <ul>
                                                 <li>
-                                                    <div class="location-box">
+                                                    <div className="location-box">
                                                         <i data-feather="map-pin"></i>
                                                         <h6>Downers Grove, IL</h6>
                                                     </div>
                                                 </li>
 
                                                 <li>
-                                                    <div class="location-box">
+                                                    <div className="location-box">
                                                         <i data-feather="mail"></i>
                                                         <h6>rajeshpatel01@gmail.com</h6>
                                                     </div>
                                                 </li>
 
                                                 <li>
-                                                    <div class="location-box">
+                                                    <div className="location-box">
                                                         <i data-feather="check-square"></i>
                                                         <h6>Licensed for 2 years</h6>
                                                     </div>
@@ -1815,22 +1815,22 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </ul>
                                         </div>
 
-                                        <div class="profile-description">
+                                        <div className="profile-description">
                                             <p>Residences can be classified by and how they are connected to
                                                 neighbouring residences and land. Different types of housing tenure can
                                                 be used for the same physical type.</p>
                                         </div>
                                     </div>
 
-                                    <div class="profile-about dashboard-bg-box">
-                                        <div class="row">
-                                            <div class="col-xxl-7">
-                                                <div class="dashboard-title mb-3">
+                                    <div className="profile-about dashboard-bg-box">
+                                        <div className="row">
+                                            <div className="col-xxl-7">
+                                                <div className="dashboard-title mb-3">
                                                     <h3>Profile About</h3>
                                                 </div>
 
-                                                <div class="table-responsive">
-                                                    <table class="table">
+                                                <div className="table-responsive">
+                                                    <table className="table">
                                                         <tbody>
                                                             <tr>
                                                                 <td>Gender :</td>
@@ -1855,12 +1855,12 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                     </table>
                                                 </div>
 
-                                                <div class="dashboard-title mb-3">
+                                                <div className="dashboard-title mb-3">
                                                     <h3>Login Details</h3>
                                                 </div>
 
-                                                <div class="table-responsive">
-                                                    <table class="table">
+                                                <div className="table-responsive">
+                                                    <table className="table">
                                                         <tbody>
                                                             <tr>
                                                                 <td>Email :</td>
@@ -1883,10 +1883,10 @@ document.querySelectorAll('.address-box').forEach(box => {
                                                 </div>
                                             </div>
 
-                                            <div class="col-xxl-5">
-                                                <div class="profile-image">
+                                            <div className="col-xxl-5">
+                                                <div className="profile-image">
                                                     <img src="../assets/images/inner-page/dashboard-profile.png"
-                                                        class="img-fluid blur-up lazyload" alt="" />
+                                                        className="img-fluid blur-up lazyload" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1895,21 +1895,21 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-download" role="tabpanel">
- <section class="faq-box-contain section-b-space">
-                                                <div class="faq-accordion">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <div className="tab-pane fade" id="pills-download" role="tabpanel">
+ <section className="faq-box-contain section-b-space">
+                                                <div className="faq-accordion">
+                        <div className="accordion" id="accordionExample">
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingOne">
+                                    <button className="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne">
                                         What is MD Mart and what do we offer? <i
-                                            class="fa-solid fa-angle-down"></i>
+                                            className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                <div id="collapseOne" className="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>
                                             <strong>MD Mart</strong> is a modern eCommerce platform designed to make your daily shopping experience easier, faster, and more convenient. 
                                             From groceries and household items to personal care and lifestyle products — we bring everything you need right to your doorstep.
@@ -1918,17 +1918,17 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo">
                                          How do I place an order on your website? <i
-                                            class="fa-solid fa-angle-down"></i>
+                                            className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                <div id="collapseTwo" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                          <p>
                                             Placing an order is simple! Just browse through our products, add your desired items to the cart, 
                                             proceed to checkout, fill in your shipping details, and make a secure payment using any of our supported methods.
@@ -1937,32 +1937,32 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingThree">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree">
-                                       What payment methods do you accept? <i class="fa-solid fa-angle-down"></i>
+                                       What payment methods do you accept? <i className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
+                                <div id="collapseThree" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>We accept all major payment options including Credit/Debit Cards, UPI, Net Banking, Wallets, and Cash on Delivery (COD) 
                                         depending on your delivery location.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFour">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour">
-                                        How long will it take to deliver my order? <i class="fa-solid fa-angle-down"></i>
+                                        How long will it take to deliver my order? <i className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
+                                <div id="collapseFour" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>Delivery times depend on your location and product availability. 
                                         Generally, we deliver within <strong>2-5 business days</strong>. 
                                         You’ll receive regular updates via SMS or email once your order is dispatched.</p>
@@ -1970,33 +1970,33 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFive">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive">
-                                        How can I track my order? <i class="fa-solid fa-angle-down"></i>
+                                        How can I track my order? <i className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
+                                <div id="collapseFive" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p> Once your order is shipped, we’ll send you a tracking link via email or SMS. 
                                         You can also log in to your account and view the real-time status of your order from the “My Orders” section.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSix">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSix">
                                         What is your return and refund policy? <i
-                                            class="fa-solid fa-angle-down"></i>
+                                            className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse"
+                                <div id="collapseSix" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>If you’re not satisfied with your purchase, you can request a return or replacement within 
                                         <strong>7 days</strong> of delivery. Refunds will be processed once the item passes quality inspection. 
                                         Please refer to our <a href="/Return">Return Policy</a> page for more details.</p>
@@ -2004,17 +2004,17 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSeven">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseSeven">
                                         Is my personal information secure? <i
-                                        class="fa-solid fa-angle-down"></i>
+                                        className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                <div id="collapseSeven" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>Absolutely! We take your privacy seriously. 
                                         All your personal and payment information is encrypted and protected using the latest security standards. 
                                         Learn more in our <a href="/Privacy">Privacy Policy</a></p>
@@ -2022,33 +2022,33 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingEight">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseEight">
                                          Do you offer discounts or loyalty programs? <i
-                                            class="fa-solid fa-angle-down"></i>
+                                            className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse"
+                                <div id="collapseEight" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>Yes! We frequently offer seasonal discounts, promo codes, and loyalty rewards for our regular customers. 
                                         Stay updated by subscribing to our newsletter or following us on social media.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingNine">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingNine">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseNine">
-                                        How can I contact customer support? <i class="fa-solid fa-angle-down"></i>
+                                        How can I contact customer support? <i className="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
-                                <div id="collapseNine" class="accordion-collapse collapse"
+                                <div id="collapseNine" className="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div className="accordion-body">
                                         <p>You can reach our support team through the <a href="/contact">Contact Us</a> page, 
                                         email us at <strong>support@mdmart.com</strong>, or call our helpline between <strong>9 AM to 9 PM</strong>.</p>
                                     </div>
@@ -2059,76 +2059,76 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                             </div>
 
-                            <div class="tab-pane fade" id="pills-security" role="tabpanel">
-                                {/* <div class="dashboard-privacy">
-                                    <div class="dashboard-bg-box">
-                                        <div class="dashboard-title mb-4">
+                            <div className="tab-pane fade" id="pills-security" role="tabpanel">
+                                {/* <div className="dashboard-privacy">
+                                    <div className="dashboard-bg-box">
+                                        <div className="dashboard-title mb-4">
                                             <h3>Privacy</h3>
                                         </div>
 
-                                        <div class="privacy-box">
-                                            <div class="d-flex align-items-start">
+                                        <div className="privacy-box">
+                                            <div className="d-flex align-items-start">
                                                 <h6>Allows others to see my profile</h6>
-                                                <div class="form-check form-switch switch-radio ms-auto">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                <div className="form-check form-switch switch-radio ms-auto">
+                                                    <input className="form-check-input" type="checkbox" role="switch"
                                                         id="redio" />
-                                                    <label class="form-check-label" for="redio"></label>
+                                                    <label className="form-check-label" for="redio"></label>
                                                 </div>
                                             </div>
 
-                                            <p class="text-content">all peoples will be able to see my profile</p>
+                                            <p className="text-content">all peoples will be able to see my profile</p>
                                         </div>
 
-                                        <div class="privacy-box">
-                                            <div class="d-flex align-items-start">
+                                        <div className="privacy-box">
+                                            <div className="d-flex align-items-start">
                                                 <h6>who has save this profile only that people see my profile</h6>
-                                                <div class="form-check form-switch switch-radio ms-auto">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                <div className="form-check form-switch switch-radio ms-auto">
+                                                    <input className="form-check-input" type="checkbox" role="switch"
                                                         id="redio2" />
-                                                    <label class="form-check-label" for="redio2"></label>
+                                                    <label className="form-check-label" for="redio2"></label>
                                                 </div>
                                             </div>
 
-                                            <p class="text-content">all peoples will not be able to see my profile</p>
+                                            <p className="text-content">all peoples will not be able to see my profile</p>
                                         </div>
 
-                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
+                                        <button className="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
                                             Changes</button>
                                     </div>
 
-                                    <div class="dashboard-bg-box mt-4">
-                                        <div class="dashboard-title mb-4">
+                                    <div className="dashboard-bg-box mt-4">
+                                        <div className="dashboard-title mb-4">
                                             <h3>Account settings</h3>
                                         </div>
 
-                                        <div class="privacy-box">
-                                            <div class="d-flex align-items-start">
+                                        <div className="privacy-box">
+                                            <div className="d-flex align-items-start">
                                                 <h6>Deleting Your Account Will Permanently</h6>
-                                                <div class="form-check form-switch switch-radio ms-auto">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                <div className="form-check form-switch switch-radio ms-auto">
+                                                    <input className="form-check-input" type="checkbox" role="switch"
                                                         id="redio3" />
-                                                    <label class="form-check-label" for="redio3"></label>
+                                                    <label className="form-check-label" for="redio3"></label>
                                                 </div>
                                             </div>
-                                            <p class="text-content">Once your account is deleted, you will be logged out
+                                            <p className="text-content">Once your account is deleted, you will be logged out
                                                 and will be unable to log in back.</p>
                                         </div>
 
-                                        <div class="privacy-box">
-                                            <div class="d-flex align-items-start">
+                                        <div className="privacy-box">
+                                            <div className="d-flex align-items-start">
                                                 <h6>Deleting Your Account Will Temporary</h6>
-                                                <div class="form-check form-switch switch-radio ms-auto">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                <div className="form-check form-switch switch-radio ms-auto">
+                                                    <input className="form-check-input" type="checkbox" role="switch"
                                                         id="redio4" />
-                                                    <label class="form-check-label" for="redio4"></label>
+                                                    <label className="form-check-label" for="redio4"></label>
                                                 </div>
                                             </div>
 
-                                            <p class="text-content">Once your account is deleted, you will be logged out
+                                            <p className="text-content">Once your account is deleted, you will be logged out
                                                 and you will be create new account</p>
                                         </div>
 
-                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
+                                        <button className="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
                                             Account</button>
                                     </div>
                                 </div> */}
@@ -2202,39 +2202,39 @@ document.querySelectorAll('.address-box').forEach(box => {
 
 
         {/* <!-- Edit Profile Start --> */}
-    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Edit Profile</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div className="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel2">Edit Profile</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row g-4">
-                        <div class="col-xxl-12">
+                <div className="modal-body">
+                    <div className="row g-4">
+                        <div className="col-xxl-12">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="pname" value="Jack Jennas" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="pname" value="Jack Jennas" />
                                     <label for="pname">Full Name</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-xxl-6">
+                        <div className="col-xxl-6">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="email" class="form-control" id="email1" value="rajeshpatel01@gmail.com" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="email" className="form-control" id="email1" value="rajeshpatel01@gmail.com" />
                                     <label for="email1">Email address</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-xxl-6">
+                        <div className="col-xxl-6">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input class="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
+                                <div className="form-floating theme-form-floating">
+                                    <input className="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
                                         maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value =
                                             this.value.slice(0, this.maxLength);" />
                                     <label for="mobile">Email address</label>
@@ -2242,29 +2242,29 @@ document.querySelectorAll('.address-box').forEach(box => {
                             </form>
                         </div>
 
-                        <div class="col-12">
+                        <div className="col-12">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="address1"
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="address1"
                                         value="8424 James Lane South San Francisco" />
                                     <label for="address1">Add Address</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-12">
+                        <div className="col-12">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="address2" value="CA 94080" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="address2" value="CA 94080" />
                                     <label for="address2">Add Address 2</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-xxl-4">
+                        <div className="col-xxl-4">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <select class="form-select" id="floatingSelect1">
+                                <div className="form-floating theme-form-floating">
+                                    <select className="form-select" id="floatingSelect1">
                                         <option selected>Choose Your Country</option>
                                         <option value="kingdom">United Kingdom</option>
                                         <option value="states">United States</option>
@@ -2290,10 +2290,10 @@ document.querySelectorAll('.address-box').forEach(box => {
                             </form>
                         </div>
 
-                        <div class="col-xxl-4">
+                        <div className="col-xxl-4">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <select class="form-select" id="floatingSelect">
+                                <div className="form-floating theme-form-floating">
+                                    <select className="form-select" id="floatingSelect">
                                         <option selected>Choose Your City</option>
                                         <option value="kingdom">India</option>
                                         <option value="states">Canada</option>
@@ -2306,60 +2306,60 @@ document.querySelectorAll('.address-box').forEach(box => {
                             </form>
                         </div>
 
-                        <div class="col-xxl-4">
+                        <div className="col-xxl-4">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="address3" value="94080" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="address3" value="94080" />
                                     <label for="address3">Pin Code</label>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                <div className="modal-footer">
+                    <button type="button" className="btn btn-animation btn-md fw-bold"
                         data-bs-dismiss="modal">Close</button>
                     <button type="button" data-bs-dismiss="modal"
-                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                        className="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
     {/* <!-- Edit Profile End --> */}
       {/* <!-- Edit Card Start --> */}
-    <div class="modal fade theme-modal" id="editCard" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel8">Edit Card</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal" id="editCard" tabindex="-1">
+        <div className="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel8">Edit Card</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row g-4">
-                        <div class="col-xxl-6">
+                <div className="modal-body">
+                    <div className="row g-4">
+                        <div className="col-xxl-6">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="finame" value="Mark" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="finame" value="Mark" />
                                     <label for="finame">First Name</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-xxl-6">
+                        <div className="col-xxl-6">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="text" class="form-control" id="laname" value="Jecno" />
+                                <div className="form-floating theme-form-floating">
+                                    <input type="text" className="form-control" id="laname" value="Jecno" />
                                     <label for="laname">Last Name</label>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-xxl-4">
+                        <div className="col-xxl-4">
                             <form>
-                                <div class="form-floating theme-form-floating">
-                                    <select class="form-select" id="floatingSelect12">
+                                <div className="form-floating theme-form-floating">
+                                    <select className="form-select" id="floatingSelect12">
                                         <option selected>Card Type</option>
                                         <option value="kingdom">Visa Card</option>
                                         <option value="states">MasterCard Card</option>
@@ -2373,55 +2373,55 @@ document.querySelectorAll('.address-box').forEach(box => {
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                <div className="modal-footer">
+                    <button type="button" className="btn btn-animation btn-md fw-bold"
                         data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light">Update Card</button>
+                    <button type="button" className="btn theme-bg-color btn-md fw-bold text-light">Update Card</button>
                 </div>
             </div>
         </div>
     </div>
     {/* <!-- Edit Card End --> */}
       {/* <!-- Remove Profile Modal Start --> */}
-    <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center">
-                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header d-block text-center">
+                    <h5 className="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="remove-box">
+                <div className="modal-body">
+                    <div className="remove-box">
                         <p>The permission for the use/group, preview is inherited from the object, object will create a
                             new permission for this object</p>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
-                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                <div className="modal-footer">
+                    <button type="button" className="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" className="btn theme-bg-color btn-md fw-bold text-light"
                         data-bs-target="#removeAddress" data-bs-toggle="modal">Yes</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="remove-box text-center">
-                        <h4 class="text-content">It's Removed.</h4>
+                <div className="modal-body">
+                    <div className="remove-box text-center">
+                        <h4 className="text-content">It's Removed.</h4>
                     </div>
                 </div>
-                <div class="modal-footer pt-0">
-                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                <div className="modal-footer pt-0">
+                    <button type="button" className="btn theme-bg-color btn-md fw-bold text-light"
                         data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -2429,55 +2429,55 @@ document.querySelectorAll('.address-box').forEach(box => {
     </div>
     {/* <!-- Remove Profile Modal End --> */}
         {/* <!-- Add address modal box start --> */}
-    <div class="modal fade theme-modal" id="add-address" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add a new address</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal" id="add-address" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel">Add a new address</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                     <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" />
+                        <div className="form-floating mb-4 theme-form-floating">
+                            <input type="text" className="form-control" id="fname" placeholder="Enter First Name" />
                             <label for="fname">First Name</label>
                         </div>
                     </form>
 
                     <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" />
+                        <div className="form-floating mb-4 theme-form-floating">
+                            <input type="text" className="form-control" id="lname" placeholder="Enter Last Name" />
                             <label for="lname">Last Name</label>
                         </div>
                     </form>
 
                     <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="email" class="form-control" id="email" placeholder="Enter Email Address" />
+                        <div className="form-floating mb-4 theme-form-floating">
+                            <input type="email" className="form-control" id="email" placeholder="Enter Email Address" />
                             <label for="email">Email Address</label>
                         </div>
                     </form>
 
                     <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="address"
+                        <div className="form-floating mb-4 theme-form-floating">
+                            <textarea className="form-control" placeholder="Leave a comment here" id="address"
                                 style={{height:'100px'}}></textarea>
                             <label for="address">Enter Address</label>
                         </div>
                     </form>
 
                     <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="email" class="form-control" id="pin" placeholder="Enter Pin Code" />
+                        <div className="form-floating mb-4 theme-form-floating">
+                            <input type="email" className="form-control" id="pin" placeholder="Enter Pin Code" />
                             <label for="pin">Pin Code</label>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
+                <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" className="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
                         changes</button>
                 </div>
             </div>

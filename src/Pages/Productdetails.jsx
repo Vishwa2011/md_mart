@@ -10,7 +10,9 @@ const Productdetails = () => {
     minutes: 2,
     seconds: 3,
   });
+  const [selected, setSelected] = useState("1kg");
 
+  const weights = ["1kg", "2kg", "3kg"];
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeLeft((prev) => {
@@ -43,10 +45,7 @@ const Productdetails = () => {
         /**=====================
             Quantity 2 js
         ==========================**/
-        $(".addcart-button").click(function () {
-          $(this).next().addClass("open");
-          $(".add-to-cart-box .qty-input").val("1");
-        });
+       
     
         $(".qty-left-minus").on("click", function () {
           var $qty = $(this).siblings(".qty-input");
@@ -250,34 +249,36 @@ const Productdetails = () => {
                                         goodness of this summer fruit.</p>
                                 </div>
 
-                             <div class="product-package">
-    <div class="product-title">
+                   <div className="product-package">
+      <div className="product-title">
         <h4>Weight</h4>
+      </div>
+
+      <ul className="rectangle select-package" style={{ display: "flex" }}>
+        {weights.map((w) => (
+          <h5
+            key={w}
+            onClick={() => setSelected(w)}
+            className="weight-box"
+            style={{
+              background: selected === w ? "#ffe6f3" : "#f7fdff",
+              borderStyle: "solid",
+              borderColor: selected === w ? "#ED439F" : "#2baedd",
+              borderWidth: "1px 3px 3px 1px",
+              color: selected === w ? "#ED439F" : "#2baedd",
+              padding: "15px",
+              borderRadius: "10px",
+              marginRight: "10px",
+              fontWeight: "600",
+              cursor: "pointer",
+              transition: "0.3s",
+            }}
+          >
+            {w.toUpperCase()}
+          </h5>
+        ))}
+      </ul>
     </div>
-
-    <ul class="rectangle select-package">
-        <li class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="small" checked />
-            <label class="form-check-label" for="small">
-                <span>1 KG</span>
-            </label>
-        </li>
-        <li class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="medium" />
-            <label class="form-check-label" for="medium">
-                <span>2 KG</span>
-            </label>
-        </li>
-        <li class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="large" />
-            <label class="form-check-label" for="large">
-                <span>3 KG</span>
-            </label>
-        </li>
-    </ul>
-</div>
-
-
 
                                 <div
       class="time deal-timer product-deal-timer mx-md-0 mx-auto"
