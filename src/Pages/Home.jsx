@@ -774,18 +774,23 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
 
-       <section class="banner-section">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                        <img src="/assets/images/picture/bannerhome.jpg" className="newresimg" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
-                     
-                    </div>
+ <section class="banner-section">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+                    <img 
+                        src="/assets/images/picture/bannerhome.jpg" 
+                        className="newresimg"
+                        alt="Banner Image"
+                        style={{borderRadius:'10px'}}
+                    />
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
         {/* <!-- Banner Section Start --> */}
         
