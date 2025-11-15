@@ -44341,7 +44341,7 @@ background: linear-gradient(90.56deg, #2082a5 8.46%, var(--theme-color) 62.97%);
 
 @media(max-width: 767px) {
     .product-section .right-box-contain {
-        text-align: center
+        text-align: start
     }
 }
 
@@ -44428,7 +44428,7 @@ background: linear-gradient(90.56deg, #2082a5 8.46%, var(--theme-color) 62.97%);
         margin-top: 10px;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center
+        justify-content: start
     }
 }
 
@@ -48182,4 +48182,16 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     transform: scale(0.85);
     transform-origin: center;
   }
+}
+
+.cart_qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-input {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
 }
