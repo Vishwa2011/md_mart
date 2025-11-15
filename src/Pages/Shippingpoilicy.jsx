@@ -115,8 +115,8 @@ const ShippingPolicy = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:support@MD Mart.com" className="underline">
-                support@MD Mart.com
+              <a href="mailto:mdmart.superstore@gmail.com" className="underline">
+                mdmart.superstore@gmail.com
               </a>
             </address>
           </section>

@@ -55,8 +55,8 @@ const ReturnPolicy = ({
             <h3>3. Return Process</h3>
             <p>
               To initiate a return, please contact our support team at{' '}
-              <a href="mailto:returns@MD Mart.com" className="underline">
-                returns@MD Mart.com
+              <a href="mailto:mdmart.superstore@gmail.com" className="underline">
+                mdmart.superstore@gmail.com
               </a>{' '}
               with your order details and reason for return.
             </p>
@@ -89,8 +89,8 @@ const ReturnPolicy = ({
             <p>
               We only replace items if they are defective or damaged. If you need to
               exchange an item, contact us at{' '}
-              <a href="mailto:support@MD Mart.com" className="underline">
-                support@MD Mart.com
+              <a href="mailto:mdmart.superstore@gmail.com" className="underline">
+                mdmart.superstore@gmail.com
               </a>{' '}
               with your order number and details.
             </p>
@@ -113,8 +113,8 @@ const ReturnPolicy = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:support@MD Mart.com" className="underline">
-                support@MD Mart.com
+              <a href="mailto:mdmart.superstore@gmail.com" className="underline">
+                mdmart.superstore@gmail.com
               </a>
             </address>
           </section>

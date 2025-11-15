@@ -52,7 +52,7 @@ const Signup = () => {
                                             <input class="checkbox_animated check-box" type="checkbox"
                                                 id="flexCheckDefault" />
                                             <label class="form-check-label" for="flexCheckDefault">I agree with
-                                                <span>Terms</span> and <span>Privacy</span></label>
+                                                <a href="/Terms&condition">Terms</a> and <a href="/Privacy">Privacy</a></label>
                                         </div>
                                     </div>
                                 </div>

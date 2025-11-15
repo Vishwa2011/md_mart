@@ -111,17 +111,17 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">₹20.68</h6>
+                                            <h6 class="theme-color" style={{textAlign:'start'}}>₹20.68</h6>
                                         </td>
 
                                         <td class="quantity">
                                             <h4 class="table-title text-content">Qty</h4>
-                                            <h4 class="text-title">01</h4>
+                                            <h4 class="text-title" style={{textAlign:'start'}}>01</h4>
                                         </td>
 
-                                        <td class="subtotal">
+                                        <td class="subtotal" style={{textAlign:'start'}}>
                                             <h4 class="table-title text-content">Total</h4>
-                                            <h5>₹35.10</h5>
+                                            <h5 >₹35.10</h5>
                                         </td>
                                     </tr>
 
@@ -148,15 +148,15 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">₹15.14</h6>
+                                            <h6 class="theme-color" style={{textAlign:'start'}}>₹15.14</h6>
                                         </td>
 
                                         <td class="quantity">
                                             <h4 class="table-title text-content">Qty</h4>
-                                            <h4 class="text-title">01</h4>
+                                            <h4 class="text-title" style={{textAlign:'start'}}>01</h4>
                                         </td>
 
-                                        <td class="subtotal">
+                                        <td class="subtotal" style={{textAlign:'start'}}>
                                             <h4 class="table-title text-content">Total</h4>
                                             <h5>₹52.95</h5>
                                         </td>
@@ -185,15 +185,15 @@ const Ordersuccess = () => {
 
                                         <td class="price">
                                             <h4 class="table-title text-content">Price</h4>
-                                            <h6 class="theme-color">₹29.22</h6>
+                                            <h6 class="theme-color" style={{textAlign:'start'}}>₹29.22</h6>
                                         </td>
 
                                         <td class="quantity">
                                             <h4 class="table-title text-content">Qty</h4>
-                                            <h4 class="text-title">01</h4>
+                                            <h4 class="text-title" style={{textAlign:'start'}}>01</h4>
                                         </td>
 
-                                        <td class="subtotal">
+                                        <td class="subtotal" style={{textAlign:'start'}}>
                                             <h4 class="table-title text-content">Total</h4>
                                             <h5>₹67.36</h5>
                                         </td>
