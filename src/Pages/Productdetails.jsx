@@ -41,42 +41,34 @@ const Productdetails = () => {
 
     return () => clearInterval(interval);
   }, []);
-         useEffect(() => {
-        /**=====================
-            Quantity 2 js
-        ==========================**/
-       
-    
-        $(".qty-left-minus").on("click", function () {
-          var $qty = $(this).siblings(".qty-input");
-          var _val = $($qty).val();
-          if (_val === "1") {
-            var _removeCls = $(this).parents(".cart_qty");
-            $(_removeCls).removeClass("open");
-          }
-          var currentVal = parseInt($qty.val());
-          if (!isNaN(currentVal) && currentVal > 0) {
-            $qty.val(currentVal - 1);
-          }
-        });
-    
-        $(".qty-right-plus").click(function () {
-          if ($(this).prev().val() < 9) {
-            $(this).prev().val(+$(this).prev().val() + 1);
-          }
-        });
-        $(".product-package .select-package li").click(function () {
-    // Remove active class from all
-    $(".product-package .select-package li").removeClass("active");
+          useEffect(() => {
+    /**=====================
+        Quantity 2 js
+    ==========================**/
+    $(".addcart-button").click(function () {
+      $(this).next().addClass("open");
+      $(".add-to-cart-box .qty-input").val("1");
+    });
 
-    // Add active class to clicked li
-    $(this).addClass("active");
+    $(".qty-left-minus").on("click", function () {
+      var $qty = $(this).siblings(".qty-input");
+      var _val = $($qty).val();
+      if (_val === "1") {
+        var _removeCls = $(this).parents(".cart_qty");
+        $(_removeCls).removeClass("open");
+      }
+      var currentVal = parseInt($qty.val());
+      if (!isNaN(currentVal) && currentVal > 0) {
+        $qty.val(currentVal - 1);
+      }
+    });
 
-    // Select the radio input inside clicked li
-    $(this).find('input[type=radio]').prop('checked', true);
-});
-
-      }, []); // only run once
+    $(".qty-right-plus").click(function () {
+      if ($(this).prev().val() < 9) {
+        $(this).prev().val(+$(this).prev().val() + 1);
+      }
+    });
+  }, []); 
   return (
     <>
       <Navbar />
@@ -949,7 +941,7 @@ const Productdetails = () => {
                                                             </div>
                                                             <div class="people-comment">
                                                                 <div class="people-name"><a href=""
-                                                                        class="name">Rome Doe</a>
+                                                                        class="name">Sunny Patel</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
                                                                             06:18:PM
@@ -999,8 +991,8 @@ const Productdetails = () => {
                                                             </div>
                                                             <div class="people-comment">
                                                                 <div class="people-name"><a href=""
-                                                                        class="name">Sarah
-                                                                        Davis</a>
+                                                                        class="name">Meera Shah
+                                                                        </a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
                                                                             05:58:PM
@@ -1048,7 +1040,7 @@ const Productdetails = () => {
                                                             </div>
                                                             <div class="people-comment">
                                                                 <div class="people-name"><a href=""
-                                                                        class="name">John Doe</a>
+                                                                        class="name">Sunny Patel</a>
                                                                     <div class="date-time">
                                                                         <h6 class="text-content"> 29 Sep 2023
                                                                             05:22:PM
@@ -1104,7 +1096,7 @@ const Productdetails = () => {
           <div class="title">
                 <h2>Related Products</h2>
             </div>
-            <div class="row">
+            <div class="row">   
                 <div class="col-12">
                     <div class="slider-6_1 product-wrapper">
                         <div>
@@ -1137,11 +1129,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Cake</span>
+                                        {/* <span class="span-name">Cake</span> */}
                                         <a href="/">
                                             <h5 class="name">Chocolate Chip Cookies 250 g</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1161,7 +1153,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(5.0)</span>
                                         </div>
-                                        <h6 class="unit">500 G</h6>
+                                        <h6 class="unit">500 G</h6> */}
                                            <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1238,11 +1230,11 @@ const Productdetails = () => {
                                 </div>
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        {/* <span class="span-name">Vegetable</span> */}
                                         <a href="/">
                                             <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1262,7 +1254,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(4.0)</span>
                                         </div>
-                                        <h6 class="unit">250 ml</h6>
+                                        <h6 class="unit">250 ml</h6> */}
                                              <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1341,11 +1333,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        {/* <span class="span-name">Vegetable</span> */}
                                         <a href="/">
                                             <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1365,7 +1357,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(2.4)</span>
                                         </div>
-                                        <h6 class="unit">350 G</h6>
+                                        <h6 class="unit">350 G</h6> */}
                                               <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1444,11 +1436,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Snacks</span>
+                                        {/* <span class="span-name">Snacks</span> */}
                                         <a href="/">
                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1468,7 +1460,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(5.0)</span>
                                         </div>
-                                        <h6 class="unit">570 G</h6>
+                                        <h6 class="unit">570 G</h6> */}
                                             <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1547,11 +1539,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Snacks</span>
+                                        {/* <span class="span-name">Snacks</span> */}
                                         <a href="/">
                                             <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1571,7 +1563,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(3.8)</span>
                                         </div>
-                                        <h6 class="unit">100 G</h6>
+                                        <h6 class="unit">100 G</h6> */}
                                            <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"
@@ -1650,11 +1642,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Vegetable</span>
+                                        {/* <span class="span-name">Vegetable</span> */}
                                         <a href="/">
                                             <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1675,7 +1667,7 @@ const Productdetails = () => {
                                             <span>(4.0)</span>
                                         </div>
 
-                                        <h6 class="unit">550 G</h6>
+                                        <h6 class="unit">550 G</h6> */}
 
                                               <div style={{ display: "flex" }}>
         <h5
@@ -1755,11 +1747,11 @@ const Productdetails = () => {
 
                                 <div class="product-footer">
                                     <div class="product-detail">
-                                        <span class="span-name">Snacks</span>
+                                        {/* <span class="span-name">Snacks</span> */}
                                         <a href="/">
                                             <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                         </a>
-                                        <div class="product-rating mt-2">
+                                        {/* <div class="product-rating mt-2">
                                             <ul class="rating">
                                                 <li>
                                                      <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
@@ -1779,7 +1771,7 @@ const Productdetails = () => {
                                             </ul>
                                             <span>(5.0)</span>
                                         </div>
-                                        <h6 class="unit">570 G</h6>
+                                        <h6 class="unit">570 G</h6> */}
                                             <div style={{ display: "flex" }}>
         <h5
           className="price theme-color"

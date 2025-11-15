@@ -384,7 +384,744 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
+
+            
         </div>
+         {/* <!-- Related Product Section Start --> */}
+    <section class="product-list-section section-b-space">
+        <div class="container-fluid-lg">
+          <div class="title">
+                <h2>Related Products</h2>
+            </div>
+            <div class="row">   
+                <div class="col-12">
+                    <div class="slider-6_1 product-wrapper">
+                        <div>
+                            <div class="product-box-3 wow fadeInUp">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/cake1.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                           
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Cake</span> */}
+                                        <a href="/">
+                                            <h5 class="name">Chocolate Chip Cookies 250 g</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(5.0)</span>
+                                        </div>
+                                        <h6 class="unit">500 G</h6> */}
+                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.05s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/flour.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Vegetable</span> */}
+                                        <a href="/">
+                                            <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(4.0)</span>
+                                        </div>
+                                        <h6 class="unit">250 ml</h6> */}
+                                             <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/buttor.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                          
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Vegetable</span> */}
+                                        <a href="/">
+                                            <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(2.4)</span>
+                                        </div>
+                                        <h6 class="unit">350 G</h6> */}
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.15s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/snack.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                       
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Snacks</span> */}
+                                        <a href="/">
+                                            <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(5.0)</span>
+                                        </div>
+                                        <h6 class="unit">570 G</h6> */}
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/7days.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                           
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Snacks</span> */}
+                                        <a href="/">
+                                            <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(3.8)</span>
+                                        </div>
+                                        <h6 class="unit">100 G</h6> */}
+                                           <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/choco.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                            
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Vegetable</span> */}
+                                        <a href="/">
+                                            <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(4.0)</span>
+                                        </div>
+
+                                        <h6 class="unit">550 G</h6> */}
+
+                                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div>
+                            <div class="product-box-3 wow fadeInUp" data-wow-delay="0.15s">
+                                <div class="product-header">
+                                    <div class="product-image">
+                                        <a href="/">
+                                            <img src="/assets/images/snack.png"
+                                                class="img-fluid blur-up lazyload" alt="" />
+                                        </a>
+
+                                        <ul class="product-option">
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#view">
+                                                    <i class="fa-solid fa-eye"></i> 
+                                                </a>
+                                            </li>
+
+                                       
+
+                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                                <a href="/Wishlist" class="notifi-wishlist">
+                                                   <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-footer">
+                                    <div class="product-detail">
+                                        {/* <span class="span-name">Snacks</span> */}
+                                        <a href="/">
+                                            <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
+                                        </a>
+                                        {/* <div class="product-rating mt-2">
+                                            <ul class="rating">
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                                <li>
+                                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
+                                                </li>
+                                            </ul>
+                                            <span>(5.0)</span>
+                                        </div>
+                                        <h6 class="unit">570 G</h6> */}
+                                            <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
+        <h6 class="unit-dis">10% Off</h6>
+                                        <div class="add-to-cart-box bg-white">
+                                            <button class="btn btn-add-cart addcart-button">Add
+                                                <span class="add-icon bg-light-gray">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                            <div class="cart_qty qty-box">
+                                                <div class="input-group bg-white">
+                                                    <button type="button" class="qty-left-minus bg-gray"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input class="form-control input-number qty-input" type="text"
+                                                        name="quantity" value="0" />
+                                                    <button type="button" class="qty-right-plus bg-gray"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- Related Product Section End --> */}
     </section>
     {/* <!-- Cart Section End --> */}
     <Footer />

@@ -32,7 +32,7 @@ const Shop = () => {
         $(this).prev().val(+$(this).prev().val() + 1);
       }
     });
-  }, []); // only run once
+  }, []); 
   return (
     <>
        <Navbar />
