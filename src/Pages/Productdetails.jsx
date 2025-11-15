@@ -1912,7 +1912,7 @@ const Productdetails = () => {
                     <div class="row g-sm-4 g-2">
                         <div class="col-lg-6">
                             <div class="slider-image">
-                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                <img src="/assets/images/picture/bigest.jpg" class="img-fluid blur-up lazyload"
                                     alt="" />
                             </div>
                         </div>
@@ -1990,9 +1990,9 @@ const Productdetails = () => {
                                     <a href="/Cart"
                                         class="btn btn-md add-cart-button icon">Add
                                         To Cart</a>
-                                    <button href=""
+                                    <a href="/Productdetails"
                                         class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
-                                        View More Details</button>
+                                        View More Details</a>
                                 </div>
                             </div>
                         </div>

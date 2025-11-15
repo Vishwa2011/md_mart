@@ -4682,7 +4682,7 @@ export default function Home() {
             </li>
             <li>+3</li>
         </ul>
-        <button onclick="location.href = '/Cart';" class="btn item-button btn-sm fw-bold">₹ 20.70</button>
+        <a href = '/Cart' class="btn item-button btn-sm fw-bold">₹ 20.70</a>
     </div>
     {/* <!-- Items section End --> */}
 

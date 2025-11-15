@@ -90,7 +90,7 @@ const Ordertracking = () => {
 
                                 <div class="order-details-name">
                                     <h5 class="text-content">From</h5>
-                                    <h4>STR. Smardan 9, Bucuresti, romania.</h4>
+                                    <h4>Surat , Gujarat</h4>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ const Ordertracking = () => {
 
                                 <div class="order-details-name">
                                     <h5 class="text-content">Destination</h5>
-                                    <h4>Flokagata 24, 105 Reykjavik, Iceland</h4>
+                                    <h4>Rajhans Platinum Plaza, Adajan</h4>
                                 </div>
                             </div>
                         </div>
@@ -170,28 +170,28 @@ const Ordertracking = () => {
     <tbody>
         <tr>
             <td>Order Placed</td>
-            <td>26 Sep 2021</td>
+            <td>26 Sep 2024</td>
             <td>12:00 AM</td>
             <td>Surat, India</td>
         </tr>
 
         <tr>
             <td>Preparing to Ship</td>
-            <td>03 Oct 2021</td>
+            <td>03 Oct 2024</td>
             <td>12:00 AM</td>
             <td>Surat, India</td>
         </tr>
 
         <tr>
             <td>Shipped</td>
-            <td>04 Oct 2021</td>
+            <td>04 Oct 2024</td>
             <td>12:00 AM</td>
             <td>Surat, India</td>
         </tr>
 
         <tr>
             <td>Delivered</td>
-            <td>10 Nov 2021</td>
+            <td>10 Nov 2024</td>
             <td>12:00 AM</td>
             <td>Surat, India</td>
         </tr>

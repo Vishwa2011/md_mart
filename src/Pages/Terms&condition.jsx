@@ -193,11 +193,11 @@ const Termscondition = ({
               <strong>{companyName}</strong>
               <br />
               Email:{' '}
-              <a href="mailto:MD Mart@gmail.com" className="underline">
-                MD Mart@gmail.com
+              <a href="mailto:mdmart.superstore@gmail.com" className="underline">
+               mdmart.superstore@gmail.com
               </a>
               <br />
-              Address: 123 Market Street, Surat, Gujarat, India
+              Address: 25, Shiv Park Soc, opp. Madhav Shopping Center, Gododara Canal Road, Godadara , Surat, India, Gujarat
             </address>
           </section>
         </article>
