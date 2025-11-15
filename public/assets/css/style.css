@@ -22229,9 +22229,9 @@ header .top-nav .navbar-top .middle-box {
 }
 
 @media(max-width: 767px) {
-    header .top-nav .navbar-top .middle-box {
+    /* header .top-nav .navbar-top .middle-box {
         display: none
-    }
+    } */
 }
 
 header .top-nav .navbar-top .middle-box .location-box {
@@ -22346,9 +22346,7 @@ header .top-nav .navbar-top .middle-box .location-box button .locat-name {
 }
 
 @media(max-width: 1300px) {
-    header .top-nav .navbar-top .middle-box .location-box button .locat-name {
-        display: none
-    }
+   
 }
 
 header .top-nav .navbar-top .middle-box .location-box button i {
@@ -23532,9 +23530,7 @@ header .location-box button .locat-name {
 }
 
 @media(max-width: 1300px) {
-    header .location-box button .locat-name {
-        display: none
-    }
+  
 }
 
 header .location-box button i {
@@ -23987,9 +23983,9 @@ header .location-box button i {
 }
 
 @media(max-width: 991px) {
-    .header-2 .top-nav .middle-box .center-box {
+    /* .header-2 .top-nav .middle-box .center-box {
         display: none
-    }
+    } */
 }
 
 .header-2 .top-nav .middle-box .searchbar-box {
@@ -24135,9 +24131,9 @@ header .location-box button i {
 }
 
 @media(max-width: 767px) {
-    .header-2 .top-nav .middle-box .location-box-2 {
+    /* .header-2 .top-nav .middle-box .location-box-2 {
         display: none
-    }
+    } */
 }
 
 .header-2 .top-nav .middle-box .location-box-2 button {
@@ -24176,9 +24172,9 @@ header .location-box button i {
 }
 
 @media(max-width: 1556px) {
-    .header-2 .top-nav .middle-box .location-box-2 button span {
+    /* .header-2 .top-nav .middle-box .location-box-2 button span {
         display: none
-    }
+    } */
 }
 
 .header-2 .top-nav .middle-box .location-box-2 button .down-arrow {
@@ -24529,8 +24525,8 @@ header .location-box button i {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: 18px;
-    border: 1px solid #ed439f;
-    background-color:#ed439f;
+    border: 1px solid #2baedd;
+    background-color: #2baedd;
     border-radius: 100%;
     padding: 10px;
     position: relative
