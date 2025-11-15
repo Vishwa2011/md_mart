@@ -402,7 +402,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -503,7 +503,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -604,7 +604,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -705,7 +705,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -774,18 +774,23 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
 
-       <section class="banner-section">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                        <img src="/assets/images/picture/bannerhome.jpg" className="newresimg" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
-                     
-                    </div>
+ <section class="banner-section">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+                    <img 
+                        src="/assets/images/picture/bannerhome.jpg" 
+                        className="newresimg"
+                        alt="Banner Image"
+                        style={{borderRadius:'10px'}}
+                    />
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
         {/* <!-- Banner Section Start --> */}
         
@@ -1019,7 +1024,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1030,7 +1035,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1092,7 +1097,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1103,7 +1108,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1165,7 +1170,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1176,7 +1181,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1242,7 +1247,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1253,7 +1258,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1315,7 +1320,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1326,7 +1331,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1388,7 +1393,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1399,7 +1404,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1476,7 +1481,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1487,7 +1492,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1549,7 +1554,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1560,7 +1565,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1622,7 +1627,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1633,7 +1638,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1699,7 +1704,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1710,7 +1715,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1772,7 +1777,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1783,7 +1788,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1845,7 +1850,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1856,7 +1861,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -1934,7 +1939,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -1945,7 +1950,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2007,7 +2012,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2018,7 +2023,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2080,7 +2085,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2091,7 +2096,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2157,7 +2162,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2168,7 +2173,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2230,7 +2235,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2241,7 +2246,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2303,7 +2308,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2314,7 +2319,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2392,7 +2397,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2403,7 +2408,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2465,7 +2470,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2476,7 +2481,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2538,7 +2543,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2549,7 +2554,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2615,7 +2620,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2626,7 +2631,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2688,7 +2693,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2699,7 +2704,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2761,7 +2766,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2772,7 +2777,7 @@ export default function Home() {
         </h5>
       </div>                                                    <ul class="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Add to Cart">
+                                                            title="Add To Basket">
                                                             <a href="/Cart">
                                                                 <i class="iconly-Buy icli"></i>
                                                             </a>
@@ -2896,7 +2901,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -2984,7 +2989,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3071,7 +3076,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3156,7 +3161,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3243,7 +3248,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3328,7 +3333,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3415,7 +3420,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3504,7 +3509,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3595,7 +3600,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3684,7 +3689,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3771,7 +3776,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3856,7 +3861,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -3943,7 +3948,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4028,7 +4033,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4115,7 +4120,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4200,7 +4205,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4287,7 +4292,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4372,7 +4377,7 @@ export default function Home() {
             color: "#2baedd",
             padding: "5px",
             borderRadius: "10px",
-            marginRight: "10px",
+            marginRight: "5px",
           }}
         >
           ₹70.21
@@ -4637,7 +4642,7 @@ export default function Home() {
 
                                     <button 
                                         class="btn btn-md add-cart-button icon">Add
-                                        To Cart</button>
+                                        To Basket</button>
                                     </a>
                                     <a href="/Productdetails">
 
