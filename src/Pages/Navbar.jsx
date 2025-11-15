@@ -604,7 +604,7 @@ useEffect(() => {
           title="Search"
           onClick={() => setOpen(true)}
         >
-          <i className="iconly-Search icli"></i>
+          <i className="iconly-Search icli" style={{color:'#fff'}}></i>
         </button>
       </li>
 
@@ -714,13 +714,13 @@ useEffect(() => {
 
                                             <li>
                                             <a href="/Wishlist" className="header-icon swap-icon " title="Wishlist">
-                                                <i className="iconly-Heart icli"></i>
+                                                <i className="iconly-Heart icli" style={{color:'#fff'}}></i>
                                             </a>
                                         </li>
                                         <li className="onhover-dropdown">
                                             <a href="/Cart" className="header-icon bag-icon">
                                                 <small className="badge-number">2</small>
-                                                <i className="iconly-Bag-2 icli"></i>
+                                                <i className="iconly-Bag-2 icli" style={{color:'#fff'}}></i>
                                             </a>
                                             <div className="onhover-div">
                                                 <ul className="cart-list">
@@ -780,12 +780,12 @@ useEffect(() => {
                                       
                                         <li>
                                             <a href="/Login" className="header-icon swap-icon " title="Login">
-                                                <i className="fa-solid fa-right-to-bracket"></i>
+                                                <i className="fa-solid fa-right-to-bracket" style={{color:'#fff'}}></i>
                                             </a>
                                         </li>
                                         <li >
                                             <a href="/Account" className="header-icon swap-icon " title=" My Account">
-                                                 <i class="fa-solid fa-user-tie"></i>
+                                                 <i class="fa-solid fa-user-tie" style={{color:'#fff'}}></i>
                                             </a>
                                         </li>
                                     </ul>
