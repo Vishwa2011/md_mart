@@ -111,69 +111,69 @@ export default function Home() {
     {/* <!-- Home Section End --> */}
 
      {/* <!-- Category Section Start --> */}
-    <section class="category-section-2">
-        <div class="container-fluid-lg">
-            <div class="title">
+    <section className="category-section-2">
+        <div className="container-fluid-lg">
+            <div className="title">
                 <h2>Shop By Categories</h2>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="category-slider arrow-slider">
+            <div className="row">
+                <div className="col-12">
+                    <div className="category-slider arrow-slider">
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn">
-                                <a href="/Shop" class="circle-1">
-                                    <img src="../assets/images/oils.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn">
+                                <a href="/Shop" className="circle-1">
+                                    <img src="../assets/images/oils.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Oils, Refined & Ghee</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
-                                <a href="/Shop" class="circle-2">
-                                    <img src="../assets/images/rice.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
+                                <a href="/Shop" className="circle-2">
+                                    <img src="../assets/images/rice.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Rice, Flour & Grains</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
-                                <a href="/Shop" class="circle-3">
-                                    <img src="../assets/images/food.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="/Shop" className="circle-3">
+                                    <img src="../assets/images/food.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Food Cupboard</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.15s">
-                                <a href="/Shop" class="circle-4">
-                                    <img src="../assets/images/dals.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.15s">
+                                <a href="/Shop" className="circle-4">
+                                    <img src="../assets/images/dals.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Dals & Pulses</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.2s">
-                                <a href="/Shop" class="circle-4">
-                                    <img src="../assets/images/drinks.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.2s">
+                                <a href="/Shop" className="circle-4">
+                                    <img src="../assets/images/drinks.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Drinks & Beverages</h6>
                                 </div>
                             </div>
@@ -182,58 +182,58 @@ export default function Home() {
                  
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.3s">
-                                <a href="/Shop" class="circle-2">
-                                    <img src="../assets/images/ready-to-eat.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.3s">
+                                <a href="/Shop" className="circle-2">
+                                    <img src="../assets/images/ready-to-eat.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Ready to eat Meals</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.35s">
-                                <a href="/Shop" class="circle-3">
-                                    <img src="../assets/images/instant-mixes.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.35s">
+                                <a href="/Shop" className="circle-3">
+                                    <img src="../assets/images/instant-mixes.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Instant Mixes</h6>
                                 </div>
                             </div>
                         </div>
  <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
-                                <a href="/Shop" class="circle-2">
-                                    <img src="../assets/images/rice.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
+                                <a href="/Shop" className="circle-2">
+                                    <img src="../assets/images/rice.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Rice, Flour & Grains</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
-                                <a href="/Shop" class="circle-3">
-                                    <img src="../assets/images/food.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="/Shop" className="circle-3">
+                                    <img src="../assets/images/food.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Food Cupboard</h6>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.4s">
-                                <a href="/Shop" class="circle-4">
-                                    <img src="../assets/images/rice.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.4s">
+                                <a href="/Shop" className="circle-4">
+                                    <img src="../assets/images/rice.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Rice, Flour & Grains</h6>
                                 </div>
                             </div>
@@ -242,12 +242,12 @@ export default function Home() {
                      
                     
                         <div>
-                            <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
-                                <a href="/Shop" class="circle-3">
-                                    <img src="../assets/images/food.png" class="img-fluid blur-up lazyload"
+                            <div className="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="/Shop" className="circle-3">
+                                    <img src="../assets/images/food.png" className="img-fluid blur-up lazyload"
                                         alt="Image Size : 97 X 86" />
                                 </a>
-                                <div class="category-name">
+                                <div className="category-name">
                                     <h6>Food Cupboard</h6>
                                 </div>
                             </div>
@@ -261,80 +261,80 @@ export default function Home() {
 
         {/* <!-- Value Section Start --> */}
     <section>
-        <div class="container-fluid-lg">
-            <div class="title">
+        <div className="container-fluid-lg">
+            <div className="title">
                 <h2>Best Offers</h2>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="three-slider arrow-slider ratio_65">
+            <div className="row">
+                <div className="col-12">
+                    <div className="three-slider arrow-slider ratio_65">
                         <div>
-                            <div class="offer-banner hover-effect">
-                                <img src="../assets/images/Banner4.jpg" class="img-fluid bg-img blur-up lazyload"
+                            <div className="offer-banner hover-effect">
+                                <img src="../assets/images/Banner4.jpg" className="img-fluid bg-img blur-up lazyload"
                                     alt="Image Size : 510 X 288" />
-                                <div class="banner-detail">
-                                    <h5 class="theme-color">Buy more, Save more</h5>
+                                <div className="banner-detail">
+                                    <h5 className="theme-color">Buy more, Save more</h5>
                                     <h6>Fresh Grocery</h6>
                                 </div>
-                                <div class="offer-box">
+                                <div className="offer-box">
                                        <a href="/Offerspage">
                                        
                                     <button 
-                                        class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                        className="btn-category btn theme-bg-color text-white">View Offer</button>
                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="offer-banner hover-effect">
-                                <img src="../assets/images/Banner5.jpg" class="img-fluid bg-img blur-up lazyload"
+                            <div className="offer-banner hover-effect">
+                                <img src="../assets/images/Banner5.jpg" className="img-fluid bg-img blur-up lazyload"
                                     alt="Image Size : 510 X 288" />
-                                <div class="banner-detail">
-                                    <h5 class="theme-color">Save More!</h5>
+                                <div className="banner-detail">
+                                    <h5 className="theme-color">Save More!</h5>
                                     <h6>Fresh Dairy Products</h6>
                                 </div>
-                                <div class="offer-box">
+                                <div className="offer-box">
                                        <a href="/Offerspage">
                                        
                                     <button 
-                                        class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                        className="btn-category btn theme-bg-color text-white">View Offer</button>
                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="offer-banner hover-effect">
-                                <img src="../assets/images/Banner6.jpg" class="img-fluid bg-img blur-up lazyload"
+                            <div className="offer-banner hover-effect">
+                                <img src="../assets/images/Banner6.jpg" className="img-fluid bg-img blur-up lazyload"
                                     alt="Image Size : 510 X 288" />
-                                <div class="banner-detail">
-                                    <h5 class="theme-color">Hot Deals!</h5>
+                                <div className="banner-detail">
+                                    <h5 className="theme-color">Hot Deals!</h5>
                                     <h6>Groceries & Daily Essentials</h6>
                                 </div>
-                                <div class="offer-box">
+                                <div className="offer-box">
                                        <a href="/Offerspage">
                                        
                                     <button
-                                        class="btn-category btn theme-bg-color text-white">View Offer</button>
+                                        className="btn-category btn theme-bg-color text-white">View Offer</button>
                                        </a>
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="offer-banner hover-effect">
-                                <img src="../assets/images/Banner7.jpg" class="img-fluid bg-img blur-up lazyload"
+                            <div className="offer-banner hover-effect">
+                                <img src="../assets/images/Banner7.jpg" className="img-fluid bg-img blur-up lazyload"
                                     alt="Image Size : 510 X 288" />
-                                <div class="banner-detail">
-                                    <h5 class="theme-color">Buy more, Save more</h5>
+                                <div className="banner-detail">
+                                    <h5 className="theme-color">Buy more, Save more</h5>
                                     <h6>Groceries & Daily Essentials</h6>
                                 </div>
-                                <div class="offer-box">
+                                <div className="offer-box">
                                        <a href="/Shop">
                                        
                                     <button 
-                                        class="btn-category btn theme-bg-color text-white">View
+                                        className="btn-category btn theme-bg-color text-white">View
                                         Offer</button>
                                        </a>
                                 </div>
@@ -350,14 +350,14 @@ export default function Home() {
 
 
         {/* <!-- Deal Section Start --> */}
-    <section class="deal-section">
-        <div class="container-fluid-lg">
-            <div class="title">
+    <section className="deal-section">
+        <div className="container-fluid-lg">
+            <div className="title">
                 <h2>Deal Of The Day</h2>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="three-slider-1 arrow-slider">
+            <div className="row">
+                <div className="col-12">
+                    <div className="three-slider-1 arrow-slider">
                         <div>
                              <div className="deal-box wow fadeInUp">
       <a href="/Shop" className="category-image order-sm-2">
@@ -774,14 +774,14 @@ export default function Home() {
     {/* <!-- Product Section End --> */}
 
 
- <section class="banner-section">
-    <div class="container-fluid-lg">
-        <div class="row">
-            <div class="col-12">
-                <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+ <section className="banner-section">
+    <div className="container-fluid-lg">
+        <div className="row">
+            <div className="col-12">
+                <div className="banner-contain-3 section-b-space section-t-space hover-effect">
                     <img 
                         src="/assets/images/picture/bannerhome.jpg" 
-                        className="newresimg"
+                        className="newresimg11"
                         alt="Banner Image"
                         style={{borderRadius:'10px'}}
                     />
@@ -973,27 +973,27 @@ export default function Home() {
 
 
         {/* <!-- Product Section Start --> */}
-    <section class="product-section-2">
-        <div class="container-fluid-lg">
-            <div class="row gy-sm-5 gy-4">
-                <div class="col-xxl-3 col-md-6">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="title title-border d-block">
+    <section className="product-section-2">
+        <div className="container-fluid-lg">
+            <div className="row gy-sm-5 gy-4">
+                <div className="col-xxl-3 col-md-6">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="title title-border d-block">
                                 <h3>NEW PRODUCTS</h3>
                             </div>
 
-                            <div class="product-category-1 arrow-slider-2">
+                            <div className="product-category-1 arrow-slider-2">
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="/assets/images/picture/kaju.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="/assets/images/picture/kaju.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1011,7 +1011,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">cashew nuts</h4>
+                                                        <h4 className="name">cashew nuts</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1033,24 +1033,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="#" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -1059,14 +1059,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/2.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1084,7 +1084,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Red cheese</h4>
+                                                        <h4 className="name">Red cheese</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1106,24 +1106,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -1132,14 +1132,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/3.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1157,7 +1157,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Detergent</h4>
+                                                        <h4 className="name">Detergent</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1179,24 +1179,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -1208,15 +1208,15 @@ export default function Home() {
                                 </div>
 
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/4.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1234,7 +1234,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Candy</h4>
+                                                        <h4 className="name">Candy</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1256,24 +1256,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1282,14 +1282,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/5.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1307,7 +1307,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Water</h4>
+                                                        <h4 className="name">Water</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1329,24 +1329,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1355,14 +1355,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/6.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1380,7 +1380,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Detergent</h4>
+                                                        <h4 className="name">Detergent</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1402,24 +1402,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                     
@@ -1433,24 +1433,24 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-3 col-md-6">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="title title-border d-block">
+                <div className="col-xxl-3 col-md-6">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="title title-border d-block">
                                 <h3>FEATURE PRODUCT</h3>
                             </div>
 
-                            <div class="product-category-1 arrow-slider-2">
+                            <div className="product-category-1 arrow-slider-2">
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/6.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1468,7 +1468,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Almonds</h4>
+                                                        <h4 className="name">Almonds</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1490,24 +1490,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1516,14 +1516,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/5.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1541,7 +1541,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Jam</h4>
+                                                        <h4 className="name">Jam</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1563,24 +1563,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -1589,14 +1589,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 pb-1 wow fadeInUp" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 pb-1 wow fadeInUp" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/4.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1614,7 +1614,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Butter</h4>
+                                                        <h4 className="name">Butter</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1636,24 +1636,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1665,15 +1665,15 @@ export default function Home() {
                                 </div>
 
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/3.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1691,7 +1691,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Noodles</h4>
+                                                        <h4 className="name">Noodles</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1713,24 +1713,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -1739,14 +1739,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/2.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1764,7 +1764,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">curd</h4>
+                                                        <h4 className="name">curd</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1786,24 +1786,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1812,14 +1812,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/1.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1837,7 +1837,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tea</h4>
+                                                        <h4 className="name">Tea</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1859,24 +1859,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -1891,24 +1891,24 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="col-xxl-3 col-md-6">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="title title-border d-block">
+                <div className="col-xxl-3 col-md-6">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="title title-border d-block">
                                 <h3>BEST SELLER</h3>
                             </div>
 
-                            <div class="product-category-1 arrow-slider-2">
+                            <div className="product-category-1 arrow-slider-2">
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="/assets/images/picture/kaju.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="/assets/images/picture/kaju.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1926,7 +1926,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">cashew nuts</h4>
+                                                        <h4 className="name">cashew nuts</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -1948,24 +1948,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                         
@@ -1974,14 +1974,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/2.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -1999,7 +1999,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Red cheese</h4>
+                                                        <h4 className="name">Red cheese</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2021,24 +2021,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                   
@@ -2047,14 +2047,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/3.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2072,7 +2072,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Detergent</h4>
+                                                        <h4 className="name">Detergent</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2094,24 +2094,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                      
@@ -2123,15 +2123,15 @@ export default function Home() {
                                 </div>
 
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/4.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2149,7 +2149,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Candy</h4>
+                                                        <h4 className="name">Candy</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2171,24 +2171,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                  
@@ -2197,14 +2197,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/5.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2222,7 +2222,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Water</h4>
+                                                        <h4 className="name">Water</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2244,24 +2244,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                         
@@ -2270,14 +2270,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/6.png" className="img-fluid"
                                                         alt="" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2295,7 +2295,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Detergent</h4>
+                                                        <h4 className="name">Detergent</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2317,24 +2317,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -2349,24 +2349,24 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="col-xxl-3 col-md-6">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="title title-border d-block">
+                <div className="col-xxl-3 col-md-6">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="title title-border d-block">
                                 <h3>ON SELL</h3>
                             </div>
 
-                            <div class="product-category-1 arrow-slider-2">
+                            <div className="product-category-1 arrow-slider-2">
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/6.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/6.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2384,7 +2384,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Almonds</h4>
+                                                        <h4 className="name">Almonds</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2406,24 +2406,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -2432,14 +2432,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/5.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/5.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2457,7 +2457,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Jam</h4>
+                                                        <h4 className="name">Jam</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2479,24 +2479,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -2505,14 +2505,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/4.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/4.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2530,7 +2530,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Butter</h4>
+                                                        <h4 className="name">Butter</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2552,24 +2552,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                      
@@ -2581,15 +2581,15 @@ export default function Home() {
                                 </div>
 
                                 <div>
-                                    <div class="row gy-sm-4 gy-3">
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/3.png" class="img-fluid"
+                                    <div className="row gy-sm-4 gy-3">
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/3.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2607,7 +2607,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Noodles</h4>
+                                                        <h4 className="name">Noodles</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2629,24 +2629,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                        
@@ -2655,14 +2655,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/2.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/2.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2680,7 +2680,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">curd</h4>
+                                                        <h4 className="name">curd</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2702,24 +2702,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
 
@@ -2728,14 +2728,14 @@ export default function Home() {
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                                <a href="/Shop" class="product-image">
-                                                    <img src="../assets/images/veg-3/pro1/1.png" class="img-fluid"
+                                        <div className="col-12">
+                                            <div className="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
+                                                <a href="/Shop" className="product-image">
+                                                    <img src="../assets/images/veg-3/pro1/1.png" className="img-fluid"
                                                         alt="Image Size : 67 X 65" />
                                                 </a>
-                                                <div class="product-details">
-                                                    <ul class="rating">
+                                                <div className="product-details">
+                                                    <ul className="rating">
                                                         <li>
                                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                                         </li>
@@ -2753,7 +2753,7 @@ export default function Home() {
                                                         </li>
                                                     </ul>
                                                     <a href="/Productdetails">
-                                                        <h4 class="name">Tea</h4>
+                                                        <h4 className="name">Tea</h4>
                                                     </a>
     <div style={{ display: "flex" }}>
         <h5
@@ -2775,24 +2775,24 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                                                    <ul class="option">
+      </div>                                                    <ul className="option">
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Add To Basket">
                                                             <a href="/Cart">
-                                                                <i class="iconly-Buy icli"></i>
+                                                                <i className="iconly-Buy icli"></i>
                                                             </a>
                                                         </li>
                                                         {/* <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Quick View">
                                                             <a href="" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal">
-                                                                <i class="iconly-Show icli"></i>
+                                                                <i className="iconly-Show icli"></i>
                                                             </a>
                                                         </li> */}
                                                         <li data-bs-toggle="tooltip" data-bs-placement="top"
                                                             title="Wishlist">
                                                             <a href="/Wishlist">
-                                                                <i class="iconly-Heart icli"></i>
+                                                                <i className="iconly-Heart icli"></i>
                                                             </a>
                                                         </li>
                                                       
@@ -2813,20 +2813,20 @@ export default function Home() {
 
 
         {/* <!-- Banner Section Start --> */}
-    <section class="banner-section">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+    <section className="banner-section">
+        <div className="container-fluid-lg">
+            <div className="row">
+                <div className="col-12">
+                    <div className="banner-contain-3 section-b-space section-t-space hover-effect">
                         <img src="../assets/images/veg-3/banner/Main-Banner.png" className="newresimg" alt="Image Size : 1590 X 428" />
-                        <div class="banner-detail p-center text-dark  text-center p-0">
+                        <div className="banner-detail p-center text-dark  text-center p-0">
                             <div>
-                                <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
-                                <h2 class="my-3">100% Organic Best Quality Best Price</h2>
-                                <h4 class="text-content fw-300">Best MD Mart Food Quality</h4>
+                                <h4 className="ls-expanded text-uppercase theme-color">Try Our New</h4>
+                                <h2 className="my-3">100% Organic Best Quality Best Price</h2>
+                                <h4 className="text-content fw-300">Best MD Mart Food Quality</h4>
                                    <a href="/Shop">
                                    
-                                <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
+                                <button className="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
                                     >Shop Now</button>
                                    </a>
                             </div>
@@ -2839,38 +2839,38 @@ export default function Home() {
     {/* <!-- Banner Section End --> */}
 
         {/* <!-- Product Section Start --> */}
-    <section class="product-section">
-        <div class="container-fluid-lg">
-            <div class="title">
+    <section className="product-section">
+        <div className="container-fluid-lg">
+            <div className="title">
                 <h2>Top Products</h2>
             </div>
 
-            <div class="slider-6 img-slider slick-slider-1 arrow-slider">
+            <div className="slider-6 img-slider slick-slider-1 arrow-slider">
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="/assets/images/picture/kaju.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -2888,7 +2888,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Butter</h5>
+                                <h5 className="name">Butter</h5>
                             </a>
    <div style={{ display: "flex" }}>
         <h5
@@ -2910,55 +2910,55 @@ export default function Home() {
         <h5 style={{ marginTop: "10px" }}>
           <del>₹65.25</del>
         </h5>
-      </div>                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+      </div>                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div> 
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <div class="discount">
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <div className="discount">
                                     <label>-25%</label>
                                 </div>
 
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/2.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -2976,7 +2976,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Cookies</h5>
+                                <h5 className="name">Cookies</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -2999,22 +2999,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3022,30 +3022,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/3.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3063,7 +3063,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Butter</h5>
+                                <h5 className="name">Butter</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3086,51 +3086,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/4.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3148,7 +3148,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Candy</h5>
+                                <h5 className="name">Candy</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3171,22 +3171,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3194,30 +3194,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/5.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/5.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                               
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3235,7 +3235,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">cheese</h5>
+                                <h5 className="name">cheese</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3258,51 +3258,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/6.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                              
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3320,7 +3320,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Water</h5>
+                                <h5 className="name">Water</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3343,22 +3343,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3366,30 +3366,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/7.jpg" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/7.jpg" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3407,7 +3407,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">curd</h5>
+                                <h5 className="name">curd</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3430,55 +3430,55 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <div class="discount">
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <div className="discount">
                                     <label>50%</label>
                                 </div>
 
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/8.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/8.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                 
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3496,7 +3496,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">pasta</h5>
+                                <h5 className="name">pasta</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3519,22 +3519,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3542,34 +3542,34 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <div class="discount">
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <div className="discount">
                                     <label>-25%</label>
                                 </div>
 
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="/assets/images/picture/kaju.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="/assets/images/picture/kaju.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                              
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3587,7 +3587,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Bread</h5>
+                                <h5 className="name">Bread</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3610,55 +3610,55 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <div class="discount">
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <div className="discount">
                                     <label>50%</label>
                                 </div>
 
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/2.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                 
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3676,7 +3676,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Mayo</h5>
+                                <h5 className="name">Mayo</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3699,22 +3699,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3722,30 +3722,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/3.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/3.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3763,7 +3763,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Chips</h5>
+                                <h5 className="name">Chips</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3786,51 +3786,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="Image Size : 183 X 171" />
+                                <img src="../assets/images/veg-3/cate1/4.png" className="img-fluid" alt="Image Size : 183 X 171" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                               
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3848,7 +3848,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Blackberry</h5>
+                                <h5 className="name">Blackberry</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3871,22 +3871,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -3894,30 +3894,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/9.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/9.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -3935,7 +3935,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Chips</h5>
+                                <h5 className="name">Chips</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -3958,51 +3958,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/12.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/12.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -4020,7 +4020,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Noodles</h5>
+                                <h5 className="name">Noodles</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -4043,22 +4043,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -4066,30 +4066,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/2.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/2.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -4107,7 +4107,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Butter</h5>
+                                <h5 className="name">Butter</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -4130,51 +4130,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/4.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/4.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                              
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -4192,7 +4192,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Candy</h5>
+                                <h5 className="name">Candy</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -4215,22 +4215,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -4238,30 +4238,30 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="product-box-4 wow fadeInUp">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/6.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/6.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                                
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -4279,7 +4279,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Water</h5>
+                                <h5 className="name">Water</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -4302,51 +4302,51 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                        <div class="product-image">
-                            <div class="label-flex">
-                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                    <i class="iconly-Heart icli"></i>
+                    <div className="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
+                        <div className="product-image">
+                            <div className="label-flex">
+                                <button className="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i className="iconly-Heart icli"></i>
                                 </button>
                             </div>
 
                             <a href="/Productdetails">
-                                <img src="../assets/images/veg-3/cate1/11.png" class="img-fluid" alt="" />
+                                <img src="../assets/images/veg-3/cate1/11.png" className="img-fluid" alt="" />
                             </a>
 
-                            <ul class="option">
+                            <ul className="option">
                                 <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#view">
-                                        <i class="iconly-Show icli"></i>
+                                        <i className="iconly-Show icli"></i>
                                     </a>
                                 </li>
                               
                             </ul>
                         </div>
 
-                        <div class="product-detail">
-                            <ul class="rating">
+                        <div className="product-detail">
+                            <ul className="rating">
                                 <li>
                                     <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                 </li>
@@ -4364,7 +4364,7 @@ export default function Home() {
                                 </li>
                             </ul>
                             <a href="/Productdetails">
-                                <h5 class="name">Mayo</h5>
+                                <h5 className="name">Mayo</h5>
                             </a>
                                <div style={{ display: "flex" }}>
         <h5
@@ -4387,22 +4387,22 @@ export default function Home() {
           <del>₹65.25</del>
         </h5>
       </div>
-                            <div class="price-qty">
-                                <div class="counter-number">
-                                    <div class="counter">
-                                        <div class="qty-left-minus" data-type="minus" data-field="">
-                                            <i class="fa-solid fa-minus"></i>
+                            <div className="price-qty">
+                                <div className="counter-number">
+                                    <div className="counter">
+                                        <div className="qty-left-minus" data-type="minus" data-field="">
+                                            <i className="fa-solid fa-minus"></i>
                                         </div>
-                                        <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        <input className="form-control input-number qty-input" type="text" name="quantity"
                                             value="0" />
-                                        <div class="qty-right-plus" data-type="plus" data-field="">
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div className="qty-right-plus" data-type="plus" data-field="">
+                                            <i className="fa-solid fa-plus"></i>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button class="buy-button buy-button-2 btn btn-cart">
-                                    <i class="iconly-Buy icli text-white m-0"></i>
+                                <button className="buy-button buy-button-2 btn btn-cart">
+                                    <i className="iconly-Buy icli text-white m-0"></i>
                                 </button>
                             </div>
                         </div>
@@ -4413,12 +4413,12 @@ export default function Home() {
     </section>
     {/* <!-- Product Section End --> */}
 
- <section class="banner-section">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                        <img src="/assets/images/picture/image (1).png" className="newresimg" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
+ <section className="banner-section">
+        <div className="container-fluid-lg">
+            <div className="row">
+                <div className="col-12">
+                    <div className="banner-contain-3 section-b-space section-t-space hover-effect">
+                        <img src="/assets/images/picture/image (1).png" className="newresimg12" alt="Image Size : 1590 X 428" style={{borderRadius:'10px'}}/>
                      
                     </div>
                 </div>
@@ -4426,27 +4426,27 @@ export default function Home() {
         </div>
     </section>
     {/* <!-- Blog Section Start --> */}
-    <section class="blog-section">
-        <div class="container-fluid-lg">
-            <div class="title">
+    <section className="blog-section">
+        <div className="container-fluid-lg">
+            <div className="title">
                 <h2>Blog</h2>
             </div>
 
-            <div class="slider-3 arrow-slider">
+            <div className="slider-3 arrow-slider">
                 <div>
-                    <div class="blog-box ratio_50">
-                        <div class="blog-box-image">
+                    <div className="blog-box ratio_50">
+                        <div className="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/banner/Banner1.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
+                                <img src="../assets/images/veg-3/banner/Banner1.jpg" className="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
-                        <div class="blog-detail">
+                        <div className="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
                                 <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
-                            <div class="blog-list">
+                            <div className="blog-list">
                                 <span>March 9, 2021</span>
                                 <span>By Emil Kristensen</span>
                             </div>
@@ -4455,19 +4455,19 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="blog-box ratio_50">
-                        <div class="blog-box-image">
+                    <div className="blog-box ratio_50">
+                        <div className="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/banner/Banner3.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
+                                <img src="../assets/images/veg-3/banner/Banner3.jpg" className="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
-                        <div class="blog-detail">
+                        <div className="blog-detail">
                             <label>Email Marketing</label>
                             <a href="/Blogdetails">
                                 <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
-                            <div class="blog-list">
+                            <div className="blog-list">
                                 <span>March 9, 2021</span>
                                 <span>By Emil Kristensen</span>
                             </div>
@@ -4476,19 +4476,19 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="blog-box ratio_50">
-                        <div class="blog-box-image">
+                    <div className="blog-box ratio_50">
+                        <div className="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/banner/Banner4.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
+                                <img src="../assets/images/veg-3/banner/Banner4.jpg" className="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
-                        <div class="blog-detail">
+                        <div className="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
                                 <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
-                            <div class="blog-list">
+                            <div className="blog-list">
                                 <span>March 9, 2021</span>
                                 <span>By Emil Kristensen</span>
                             </div>
@@ -4497,19 +4497,19 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <div class="blog-box ratio_50">
-                        <div class="blog-box-image">
+                    <div className="blog-box ratio_50">
+                        <div className="blog-box-image">
                             <a href="/Blogdetails">
-                                <img src="../assets/images/veg-3/banner/Banner4.jpg" class="img-fluid bg-img" alt="Image Size : 510 X 232" />
+                                <img src="../assets/images/veg-3/banner/Banner4.jpg" className="img-fluid bg-img" alt="Image Size : 510 X 232" />
                             </a>
                         </div>
 
-                        <div class="blog-detail">
+                        <div className="blog-detail">
                             <label>Conversion rate optimization</label>
                             <a href="/Blogdetails">
                                 <h2>A Fresh Marketplace for Groceries & More</h2>
                             </a>
-                            <div class="blog-list">
+                            <div className="blog-list">
                                 <span>March 9, 2021</span>
                                 <span>By Emil Kristensen</span>
                             </div>
@@ -4551,29 +4551,29 @@ export default function Home() {
 
 
         {/* <!-- Quick View Modal Box Start --> */}
-    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
+    <div className="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div className="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div className="modal-content">
+                <div className="modal-header p-0">
+                    <button type="button" className="btn-close" data-bs-dismiss="modal">
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row g-sm-4 g-2">
-                        <div class="col-lg-6">
-                            <div class="slider-image">
-                                <img src="../assets/images/product/category/img1.jpg" class="img-fluid blur-up lazyload"
+                <div className="modal-body">
+                    <div className="row g-sm-4 g-2">
+                        <div className="col-lg-6">
+                            <div className="slider-image">
+                                <img src="../assets/images/product/category/img1.jpg" className="img-fluid blur-up lazyload"
                                     alt="Image Size : 750 X 750" />
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
-                            <div class="right-sidebar-modal">
-                                <h4 class="title-name">curdnut Butter Bite Premium Butter Cookies 600 g</h4>
-                                <h4 class="price">₹36.99</h4>
-                                <div class="product-rating">
-                                    <ul class="rating">
+                        <div className="col-lg-6">
+                            <div className="right-sidebar-modal">
+                                <h4 className="title-name">curdnut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 className="price">₹36.99</h4>
+                                <div className="product-rating">
+                                    <ul className="rating">
                                         <li>
                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
@@ -4590,11 +4590,11 @@ export default function Home() {
                                             <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
                                         </li>
                                     </ul>
-                                    <span class="ms-2">8 Reviews</span>
-                                    <span class="ms-2 text-danger">6 sold in last 16 hours</span>
+                                    <span className="ms-2">8 Reviews</span>
+                                    <span className="ms-2 text-danger">6 sold in last 16 hours</span>
                                 </div>
 
-                                <div class="product-detail">
+                                <div className="product-detail">
                                     <h4>Product Details :</h4>
                                     <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
                                         Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
@@ -4602,32 +4602,32 @@ export default function Home() {
                                         muffin I love Detergent cake sugar plum dessert bonbon.</p>
                                 </div>
 
-                                <ul class="brand-list">
+                                <ul className="brand-list">
                                     <li>
-                                        <div class="brand-box">
+                                        <div className="brand-box">
                                             <h5>Brand Name:</h5>
                                             <h6>Black Forest</h6>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <div class="brand-box">
+                                        <div className="brand-box">
                                             <h5>Product Code:</h5>
                                             <h6>W0690034</h6>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <div class="brand-box">
+                                        <div className="brand-box">
                                             <h5>Product Type:</h5>
                                             <h6>White Cream Cake</h6>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <div class="select-size">
+                                <div className="select-size">
                                     <h4>Cake Size :</h4>
-                                    <select class="form-select select-form-size">
+                                    <select className="form-select select-form-size">
                                         <option selected>Select Size</option>
                                         <option value="1.2">1/2 KG</option>
                                         <option value="0">1 KG</option>
@@ -4637,17 +4637,17 @@ export default function Home() {
                                     </select>
                                 </div>
 
-                                <div class="modal-button">
+                                <div className="modal-button">
                                     <a href="/Cart">
 
                                     <button 
-                                        class="btn btn-md add-cart-button icon">Add
+                                        className="btn btn-md add-cart-button icon">Add
                                         To Basket</button>
                                     </a>
                                     <a href="/Productdetails">
 
                                     <button 
-                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        className="btn theme-bg-color view-button icon text-white fw-bold btn-md">
                                         View More Details</button>
                                     </a>
                                 </div>
@@ -4660,20 +4660,20 @@ export default function Home() {
     </div>
     {/* <!-- Quick View Modal Box End --> */}
     {/* <!-- Items section Start --> */}
-    <div class="button-item">
-        <button class="item-btn btn text-white">
-            <i class="iconly-Bag-2 icli"></i>
+    <div className="button-item">
+        <button className="item-btn btn text-white">
+            <i className="iconly-Bag-2 icli"></i>
         </button>
     </div>
-    <div class="item-section">
-        <button class="close-button">
-            <i class="fas fa-times"></i>
+    <div className="item-section">
+        <button className="close-button">
+            <i className="fas fa-times"></i>
         </button>
         <h6>
-            <i class="iconly-Bag-2 icli"></i>
+            <i className="iconly-Bag-2 icli"></i>
             <span>5 Items</span>
         </h6>
-        <ul class="items-image">
+        <ul className="items-image">
             <li>
                 <img src="/assets/images/picture/kaju.png" alt="" />
             </li>
@@ -4682,28 +4682,28 @@ export default function Home() {
             </li>
             <li>+3</li>
         </ul>
-        <a href = '/Cart' class="btn item-button btn-sm fw-bold">₹ 20.70</a>
+        <a href = '/Cart' className="btn item-button btn-sm fw-bold">₹ 20.70</a>
     </div>
     {/* <!-- Items section End --> */}
 
     {/* <!-- Cookie Bar Box Start --> */}
-    <div class="cookie-bar-box">
-        <div class="cookie-box">
-            <div class="cookie-image">
-                <img src="../assets/images/cookie-bar.png" class="blur-up lazyload" alt="" />
+    <div className="cookie-bar-box">
+        <div className="cookie-box">
+            <div className="cookie-image">
+                <img src="../assets/images/cookie-bar.png" className="blur-up lazyload" alt="" />
                 <h2>Cookies!</h2>
             </div>
 
-            <div class="cookie-contain">
-                <h5 class="text-content">We use cookies to make your experience better</h5>
+            <div className="cookie-contain">
+                <h5 className="text-content">We use cookies to make your experience better</h5>
             </div>
         </div>
 
-        <div class="button-group">
+        <div className="button-group">
            <a href="/Privacy">
-             <button class="btn privacy-button" >Privacy Policy</button>
+             <button className="btn privacy-button" >Privacy Policy</button>
             </a>
-            <button class="btn ok-button">OK</button>
+            <button className="btn ok-button">OK</button>
         </div>
     </div>
     {/* <!-- Cookie Bar Box End --> */}
