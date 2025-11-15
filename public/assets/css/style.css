@@ -48121,3 +48121,11 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
     padding: 3px 6px; 
     border-radius: 4px;
 }
+.newresimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
