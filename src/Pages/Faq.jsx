@@ -22,7 +22,7 @@ const Faq = () => {
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <input type="search" class="form-control" id="exampleFormControlInput1"
                                     placeholder="name@example.com" />
-                                <div class="dropdown">
+                                {/* <div class="dropdown">
                                     <button class="btn btn-md faq-dropdown-button dropdown-toggle" type="button"
                                         id="dropdownMenuButton1" data-bs-toggle="dropdown">All
                                         Product <i class="fa-solid fa-angle-down ms-2"></i></button>
@@ -31,7 +31,7 @@ const Faq = () => {
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
