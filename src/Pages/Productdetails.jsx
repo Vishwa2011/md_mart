@@ -218,7 +218,8 @@ const Productdetails = () => {
           <del>₹65.25</del>
         </h5>
       <h3>
-                                    <span class="offer theme-color" style={{fontSize:'15px',margin:'10px'}}>(8% off)</span></h3>
+                                    {/* <span class="offer theme-color" style={{fontSize:'15px',margin:'10px'}}>(8% off)</span> */}
+                                    </h3>
       </div>
                                     <div class="product-rating custom-rate">
                                         <ul class="rating">
