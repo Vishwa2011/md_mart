@@ -37,7 +37,47 @@ const Account = () => {
    const [showSidebar, setShowSidebar] = useState(true);
   const [showRight, setShowRight] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+const orders = [
+    {
+      items: [
+        "/assets/images/choco.png",
+        "/assets/images/dals.png",
+        "/assets/images/snack.png",
+        "/assets/images/ready-to-eat.png",
+        "/assets/images/soda.jpg",
+        "/assets/images/ready-to-eat.png",
+        "/assets/images/dals.png",
+      ],
+      status: "Order delivered",
+      date: "20th Mar 2025, 12:07 pm",
+      amount: "69",
+    },
 
+    {
+      items: [ "/assets/images/dals.png",
+        "/assets/images/snack.png",],
+      status: "Order delivered",
+      date: "4th Jan 2025, 02:04 pm",
+      amount: "116.18",
+    },
+
+    {
+      items: ["/assets/images/snack.png",],
+      status: "Order delivered",
+      date: "1st Jan 2025, 05:31 pm",
+      amount: "120.99",
+    },
+
+    {
+      items: [        "/assets/images/ready-to-eat.png",
+        "/assets/images/soda.jpg",
+        "/assets/images/ready-to-eat.png",
+        "/assets/images/dals.png",],
+      status: "Order delivered",
+      date: "26th Dec 2024, 09:40 am",
+      amount: "216.89",
+    },
+  ];
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 991;
@@ -321,9 +361,15 @@ document.querySelectorAll('.address-box').forEach(box => {
 
               {/* Mobile Back Button */}
               {isMobile && (
-                <button className="mobile-back-btn" onClick={handleBack}>
-                  ← Back
+                <>
+                <div className="d-flex mb-3 " style={{borderBottom:'2px solid #2baedd'}}>
+                 <button className="mobile-back-btn" onClick={handleBack}>
+                  <i class="fa-solid fa-angle-left"></i>
                 </button>
+                    <h4 style={{marginLeft:'5px',fontWeight:'700'}}>Back</h4>
+                </div>
+                </>
+              
               )}
 
                <div className="tab-content" id="pills-tabContent">
@@ -1194,243 +1240,51 @@ document.querySelectorAll('.address-box').forEach(box => {
                                             </svg>
                                         </span>
                                     </div>
+                                    {/*  */}
+                                      <div>
+      {orders.map((o, i) => (
+        <div className="order-card" key={i}>
 
-                                    <div className="order-contain"> 
-                                        <div className="order-box dashboard-bg-box">
-                                            <div className="order-container">
-                                                <div className="order-icon">
-                                                    <i className="fa-solid fa-box"></i>
-                                                </div>
+         <div className="row">
+            <div className="col-12">
+                 {/* Images */}
+          <div className="order-images">
+            {o.items.slice(0, 7).map((src, index) => (
+              <div key={index} className="order-image-wrapper">
+                <img src={src} className="order-image" />
 
-                                                <div className="order-detail">
-                                                    <h4>Delivers <span>Pending</span></h4>
-                                                    <h6 className="text-content">Gouda parmesan caerphilly mozzarella
-                                                        cottage cheese cauliflower cheese taleggio gouda.</h6>
-                                                </div>
-                                            </div>
+                {index === 6 && o.items.length > 7 && (
+                  <span className="image-count">+{o.items.length - 6}</span>
+                )}
+              </div>
+            ))}
+          </div>
+            </div>
+         </div>
+            <div className="row mt-3">
+                <div className="col-sm-6">
+                     {/* Details */}
+          <div className="order-details">
+            <p className="order-status">
+              <span className="dot"></span> {o.status}
+            </p>
+            <p className="order-date">Placed at {o.date}</p>
+          </div>
+                </div>
+                <div className="col-sm-6 ">
+                      {/* Amount */}
+          <div className="order-amount">
+            ₹{o.amount} <span className="arrow">›</span>
+          </div>
+                </div>
+            </div>
+         
 
-                                            <div className="product-order-detail">
-                                                <a href="/Productdetails" className="order-image">
-                                                    <img src="/assets/images/picture/shop5.png"
-                                                        className="blur-up lazyload" alt="" />
-                                                </a>
-
-                                                <div className="order-wrap">
-                                                    <a href="/Productdetails">
-                                                        <h3>Fantasy Crunchy Choco Chip Cookies</h3>
-                                                    </a>
-                                                    <p className="text-content">Cheddar dolcelatte gouda. Macaroni cheese
-                                                        cheese strings feta halloumi cottage cheese jarlsberg cheese
-                                                        triangles say cheese.</p>
-                                                    <ul className="product-size">
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Price : </h6>
-                                                                <h5 className="theme-color">₹20.68</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Rate : </h6>
-                                                                <div className="product-rating ms-2">
-                                                                    <ul className="rating">
-                                                                        <li>
-                                                                            {/* <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i> */}
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                            
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Sold By : </h6>
-                                                                <h5>Fresho</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Quantity : </h6>
-                                                                <h5>250 G</h5>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                       
-
-                                        <div className="order-box dashboard-bg-box">
-                                            <div className="order-container">
-                                                <div className="order-icon">
-                                                    <i className="fa-solid fa-box"></i>
-                                                </div>
-
-                                                <div className="order-detail">
-                                                    <h4>Delivere <span>Pending</span></h4>
-                                                    <h6 className="text-content">Cheesy grin boursin cheesy grin cheesecake
-                                                        blue castello cream cheese lancashire melted cheese.</h6>
-                                                </div>
-                                            </div>
-
-                                            <div className="product-order-detail">
-                                                <a href="/Productdetails" className="order-image">
-                                                    <img src="/assets/images/picture/shop2.png" alt=""
-                                                        className="blur-up lazyload" />
-                                                </a>
-
-                                                <div className="order-wrap">
-                                                    <a href="/Productdetails">
-                                                        <h3>Peanut Butter Bite Premium Butter Cookies 600 g</h3>
-                                                    </a>
-                                                    <p className="text-content">Cow bavarian bergkase mascarpone paneer
-                                                        squirty cheese fromage frais cheese slices when the cheese comes
-                                                        out everybody's happy.</p>
-                                                    <ul className="product-size">
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Price : </h6>
-                                                                <h5 className="theme-color">₹20.68</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Rate : </h6>
-                                                                <div className="product-rating ms-2">
-                                                                    <ul className="rating">
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Sold By : </h6>
-                                                                <h5>Fresho</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Quantity : </h6>
-                                                                <h5>250 G</h5>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="order-box dashboard-bg-box">
-                                            <div className="order-container">
-                                                <div className="order-icon">
-                                                   <i className="fa-solid fa-box"></i>
-                                                </div>
-
-                                                <div className="order-detail">
-                                                    <h4>Delivered <span className="success-bg">Success</span></h4>
-                                                    <h6 className="text-content">Caerphilly port-salut parmesan pecorino
-                                                        croque monsieur dolcelatte melted cheese cheese and wine.</h6>
-                                                </div>
-                                            </div>
-
-                                            <div className="product-order-detail">
-                                                <a href="/Productdetails" className="order-image">
-                                                    <img src="/assets/images/picture/shop3.png"
-                                                        className="blur-up lazyload" alt="" />
-                                                </a>
-
-                                                <div className="order-wrap">
-                                                    <a href="/Productdetails">
-                                                        <h3>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
-                                                    </a>
-                                                    <p className="text-content">The big cheese cream cheese pepper jack
-                                                        cheese slices danish fontina everyone loves cheese on toast
-                                                        bavarian bergkase.</p>
-                                                    <ul className="product-size">
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Price : </h6>
-                                                                <h5 className="theme-color">₹20.68</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Rate : </h6>
-                                                                <div className="product-rating ms-2">
-                                                                    <ul className="rating">
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i className="fa-solid fa-star text-xl fill" style={{ color: '#ffb321' }}></i>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Sold By : </h6>
-                                                                <h5>Fresho</h5>
-                                                            </div>
-                                                        </li>
-
-                                                        <li>
-                                                            <div className="size-box">
-                                                                <h6 className="text-content">Quantity : </h6>
-                                                                <h5>250 G</h5>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        
+        </div>
+      ))}
+    </div>
+                                    {/*  */}
                                 </div>
                             </div>
 
@@ -1760,10 +1614,10 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
             <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cancelRefund" className="text-danger fw-semibold">
+          <a href="" data-bs-toggle="modal" data-bs-target="#cancelRefund" className="text-danger fw-semibold">
             <i className="far fa-times-circle me-1"></i>Cancel
           </a>
         </div>
@@ -1803,10 +1657,10 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
             <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" className="text-muted fw-semibold disabled">
+          <a href="" className="text-muted fw-semibold disabled">
             <i className="far fa-clock me-1"></i>In Process
           </a>
         </div>
@@ -1846,10 +1700,10 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
+          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
             <i className="far fa-eye me-1"></i>View Details
           </a>
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestRefund" className="text-success fw-semibold">
+          <a href="" data-bs-toggle="modal" data-bs-target="#requestRefund" className="text-success fw-semibold">
             <i className="far fa-redo me-1"></i>Reapply
           </a>
         </div>

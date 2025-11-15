@@ -135,6 +135,145 @@ useEffect(() => {
         <span>Close</span> <i className="fas fa-times"></i>
       </button>
     </div>
+     <div className="d-block d-sm-none" style={{padding:'10px 10px 0 10px'}}>
+      <div className="row">
+        <div className="col-9">
+ <div className="middle-box" style={{border:"solid #2baedd",borderWidth:'1px 3px 3px 1px',borderRadius:'10px'}}>
+    <div className="center-box">
+        <div className="location-box-2">
+            <button 
+                className="btn location-button"
+                
+                onClick={() => setLocationPopup(!locationPopup)}
+            >
+                <i className="iconly-Location icli"></i>
+                <span className="locat-name">{selectedLocation}</span>
+            </button>
+        </div>
+    </div>
+      </div>
+        </div>
+        <div className="col-3" style={{textAlign:'end'}}>
+            <div className="option-list">
+                                    <ul>
+                                      
+
+                                         <li>
+        <button
+          className="header-icon swap-icon"
+          title="Search"
+          onClick={() => setOpen(true)}
+          style={{border:'1px solid #2baedd',background:'#2baedd',padding:'10px',borderRadius:'100%'}}
+        >
+          <i className="iconly-Search icli" style={{color:'#fff',fontSize:'15px'}}></i>
+        </button>
+         {open && (
+        <div className="searchmodal-overlay">
+          <div className="modal-box">
+
+            {/* CLOSE BUTTON */}
+            <button className="close-btn" onClick={() => setOpen(false)}>
+              ×
+            </button>
+
+            {/* SEARCH INPUT */}
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search for over 5000 products"
+            />
+
+            {/* BANNER */}
+            <div className="banner">
+              <div className="banner-text">
+                <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
+                <p>Get smoking accessories, fresheners & more in minutes!</p>
+                <button className="order-now-btn"><a href="/Shop">Order now</a></button>
+              </div>
+
+              <img
+                src="/assets/images/oils.png"
+                alt="banner visuals"
+                className="banner-img"
+              />
+            </div>
+
+            {/* PRODUCT GRID */}
+            <div className="product-grid">
+              {[
+                {
+                  title: "Drink",
+                  price: 32,
+                  old: 40,
+                  off: "₹8 OFF",
+                  img: "/assets/images/soda.jpg",
+                },
+                {
+                  title: " Chocolate",
+                  price: 18,
+                  old: 20,
+                  off: "₹2 OFF",
+                  img: "/assets/images/choco.png",
+                },
+                {
+                  title: "Ready to eat",
+                  price: 50,
+                  old: 70,
+                  off: "₹20 OFF",
+                  img: "/assets/images/ready-to-eat.png",
+                },
+                {
+                  title: "Rice",
+                  price: 48,
+                  old: 70,
+                  off: "₹22 OFF",
+                  img: "/assets/images/rice.png",
+                },
+                {
+                  title: "Dals",
+                  price: 104,
+                  old: 125,
+                  off: "₹21 OFF",
+                  img: "/assets/images/dals.png",
+                },
+                {
+                  title: "Instant-mixes",
+                  price: 36,
+                  old: 40,
+                  off: "₹4 OFF",
+                  img: "/assets/images/instant-mixes.png",
+                },
+              ].map((p, idx) => (
+                <div key={idx} className="product-card">
+                 <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
+                  <div className="price-box">
+                    <span className="price">₹{p.price}</span>
+                    <span className="old-price">₹{p.old}</span>
+                  </div>
+                  <span className="offer">{p.off}</span>
+                  <p className="product-name">{p.title}</p>
+                  <button className="add-btn"  style={{
+                            background: "#f7fdff",
+                            borderStyle: "solid",
+                            borderColor: "#2baedd",
+                            borderWidth: "1px 3px 3px 1px",
+                            color: "#2baedd",
+                            padding: "5px",
+                            borderRadius: "10px",
+                            marginRight: "10px",
+                          }}><a href="/cart">ADD</a></button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+      </li>
+      </ul>
+      </div>
+        </div>
+      </div>
+       </div>
         <div className="top-nav top-header sticky-header sticky-header-3">
             <div className="container-fluid-lg">
                 <div className="row">
@@ -150,21 +289,8 @@ useEffect(() => {
                                 <img src="/assets/images/vendor-page/logo/mdmart.png" className="img-fluid blur-up lazyload" alt="" style={{width:'90px'}}/> 
                             </a>
 
-                            
-
-                            {/* <div className="middle-box">
-                                <div className="center-box">
-                                    <div className="location-box-2">
-                                        <button className="btn location-button" data-bs-toggle="modal"
-                                            data-bs-target="#locationModal">
-                                            <i className="iconly-Location icli"></i>
-                                            <span className="locat-name">Your Location</span>
-                                            <i className="fa-solid fa-angle-down down-arrow"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div> */}
-                       <div className="middle-box">
+                          
+                       <div className="middle-box  d-none d-sm-block">
     <div className="center-box">
         <div className="location-box-2">
             <button 
@@ -176,7 +302,7 @@ useEffect(() => {
             </button>
         </div>
     </div>
-</div>
+                      </div>
 
 {/* BLUR BACKGROUND OVERLAY */}
 {locationPopup && window.location.pathname === "/" && (
@@ -585,7 +711,7 @@ useEffect(() => {
                     </div>
                 </div>
             </div>
-                            <div className="rightside-menu">
+                            <div className="rightside-menu d-sm-block d-none">
                                
 
                              
@@ -799,6 +925,7 @@ useEffect(() => {
        
     </header>
     {/* <!-- Header End --> */}
+    
      {/* <!-- mobile fix menu start --> */}
     <div className="mobile-menu d-md-none d-block mobile-cart">
         <ul>
