@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-          <footer class="section-t-space">
+          <footer class="section-t-space ">
         <div class="container-fluid-lg">
-            <div class="service-section">
+            <div class="service-section d-sm-block d-none">
                 <div class="row g-3">
                     <div class="col-12">
                         <div class="service-contain">
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div class="main-footer section-b-space section-t-space">
+            <div class="main-footer section-b-space section-t-space d-sm-block d-none">
                 <div class="row g-md-4 g-3">
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="footer-logo">
@@ -117,7 +117,7 @@ const Footer = () => {
                                     <a href="/" class="text-content">Home</a>
                                 </li>
                                 <li>
-                                    <a href="/Shop" class="text-content">Shop</a>
+                                    <a href="/Offerspage" class="text-content">Offer</a>
                                 </li>
                                 <li>
                                     <a href="/About" class="text-content">About Us</a>
@@ -213,7 +213,7 @@ const Footer = () => {
 
                
 
-                <div class="social-link">
+                <div class="social-link d-sm-block d-none">
                     <h6 class="text-content">Stay connected :</h6>
                     <ul>
                         <li>

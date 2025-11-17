@@ -4,19 +4,19 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Navbar() {
-    const [locationPopup, setLocationPopup] = useState(true); 
-    const [showPincodeInput, setShowPincodeInput] = useState(false);
-    const [showOptions, setShowOptions] = useState(true);
-    const [detectedLocation, setDetectedLocation] = useState("");
-    const [selectedLocation, setSelectedLocation] = useState("Your Location");
-const [pincodeValue, setPincodeValue] = useState("");
-    useEffect(() => {
+  const [locationPopup, setLocationPopup] = useState(true);
+  const [showPincodeInput, setShowPincodeInput] = useState(false);
+  const [showOptions, setShowOptions] = useState(true);
+  const [detectedLocation, setDetectedLocation] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("Your Location");
+  const [pincodeValue, setPincodeValue] = useState("");
+  useEffect(() => {
     if (locationPopup) {
-        document.body.classList.add("no-scroll");
+      document.body.classList.add("no-scroll");
     } else {
-        document.body.classList.remove("no-scroll");
+      document.body.classList.remove("no-scroll");
     }
-}, [locationPopup]);
+  }, [locationPopup]);
 
 
   const [open, setOpen] = useState(false);
@@ -26,49 +26,49 @@ const [pincodeValue, setPincodeValue] = useState("");
 
 
 
-const scrollPosRef = React.useRef(0);
+  const scrollPosRef = React.useRef(0);
 
-useEffect(() => {
-  const isHome = window.location.pathname === "/";
+  useEffect(() => {
+    const isHome = window.location.pathname === "/";
 
-  if (locationPopup && isHome) {
-    // store current scroll
-    scrollPosRef.current = window.scrollY || window.pageYOffset || 0;
+    if (locationPopup && isHome) {
+      // store current scroll
+      scrollPosRef.current = window.scrollY || window.pageYOffset || 0;
 
-    // lock scroll
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollPosRef.current}px`;
-    document.body.style.left = "0";
-    document.body.style.right = "0";
+      // lock scroll
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollPosRef.current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
 
-    // disable overscroll (iOS)
-    document.documentElement.style.touchAction = "none";
-  } else {
-    // restore body
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.documentElement.style.touchAction = "";
+      // disable overscroll (iOS)
+      document.documentElement.style.touchAction = "none";
+    } else {
+      // restore body
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.documentElement.style.touchAction = "";
 
-    // restore scroll only if popup was active on home page
-    if (isHome) {
-      window.scrollTo(0, scrollPosRef.current || 0);
+      // restore scroll only if popup was active on home page
+      if (isHome) {
+        window.scrollTo(0, scrollPosRef.current || 0);
+      }
     }
-  }
 
-  // cleanup if component unmounts
-  return () => {
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.documentElement.style.touchAction = "";
-  };
-}, [locationPopup]);
+    // cleanup if component unmounts
+    return () => {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.documentElement.style.touchAction = "";
+    };
+  }, [locationPopup]);
 
 
-    const sliderRef = useRef(null);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     const $slider = $(sliderRef.current);
@@ -102,895 +102,932 @@ useEffect(() => {
       }
     };
   }, []);
+
+
+
+
+    const categories = [
+    { name: "All", icon: "https://cdn.zeptonow.com/production/inventory/banner/a767cf6e-9113-409b-b5ab-ac0d22a7db58.png" },
+    { name: "Beverages", icon: "../assets/svg/1/cup.svg" },
+    { name: "Breakfast", icon: "../assets/svg/1/breakfast.svg" },
+    { name: "Biscuits", icon: "../assets/svg/1/biscuit.svg" },
+    { name: "Grocery", icon: "../assets/svg/1/grocery.svg" },
+    { name: "Home Care", icon: "/assets/images/nursing-home.png" },
+    { name: "Personal Care", icon: "/assets/images/personalcare.png" },
+    { name: "Baby Care", icon: "/assets/images/babycar.png" },
+   
+  ];
   return (
     <div>
-      
-    {/* <!-- Header Start --> */}
-    <header className="header-2">
-       <div className="header-notification theme-bg-color overflow-hidden py-2">
-      <div className="notification-slider" ref={sliderRef}>
-        <div>
-          <div className="timer-notification text-center">
-            <h6>
-              <strong className="me-1">Welcome to MD Mart!</strong> Wrap new
-              offers/gift every single day on Weekends.
-              <strong className="ms-1"> New Coupon Code: Fast024 </strong>
-            </h6>
-          </div>
-        </div>
 
-        <div>
-          <div className="timer-notification text-center">
-            <h6>
-              Something you love is now on sale!
-              <a href="/Shop" className="text-white">
-                Buy Now!
-              </a>
-            </h6>
-          </div>
-        </div>
-      </div>
-
-      <button className="btn close-notification">
-        <span>Close</span> <i className="fas fa-times"></i>
-      </button>
-    </div>
-     <div className="d-block d-sm-none" style={{padding:'10px 10px 0 10px'}}>
-      <div className="row">
-        <div className="col-9">
- <div className="middle-box" style={{border:"solid #2baedd",borderWidth:'1px 3px 3px 1px',borderRadius:'10px'}}>
-    <div className="center-box">
-        <div className="location-box-2">
-            <button 
-                className="btn location-button"
-                
-                onClick={() => setLocationPopup(!locationPopup)}
-            >
-                <i className="iconly-Location icli"></i>
-                <span className="locat-name">{selectedLocation}</span>
-            </button>
-        </div>
-    </div>
-      </div>
-        </div>
-        <div className="col-3" style={{textAlign:'end'}}>
-            <div className="option-list">
-                                    <ul>
-                                      
-
-                                         <li>
-        <button
-          className="header-icon swap-icon"
-          title="Search"
-          onClick={() => setOpen(true)}
-          style={{border:'1px solid #2baedd',background:'#2baedd',padding:'10px',borderRadius:'100%'}}
-        >
-          <i className="iconly-Search icli" style={{color:'#fff',fontSize:'15px'}}></i>
-        </button>
-         {open && (
-        <div className="searchmodal-overlay">
-          <div className="modal-box">
-
-            {/* CLOSE BUTTON */}
-            <button className="close-btn" onClick={() => setOpen(false)}>
-              ×
-            </button>
-
-            {/* SEARCH INPUT */}
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search for over 5000 products"
-            />
-
-            {/* BANNER */}
-            <div className="banner">
-              <div className="banner-text">
-                <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
-                <p>Get smoking accessories, fresheners & more in minutes!</p>
-                <button className="order-now-btn"><a href="/Shop">Order now</a></button>
+      {/* <!-- Header Start --> */}
+      <header className="header-2">
+        <div className="header-notification theme-bg-color overflow-hidden py-2">
+          <div className="notification-slider" ref={sliderRef}>
+            <div>
+              <div className="timer-notification text-center">
+                <h6>
+                  <strong className="me-1">Welcome to MD Mart!</strong> Wrap new
+                  offers/gift every single day on Weekends.
+                  <strong className="ms-1"> New Coupon Code: Fast024 </strong>
+                </h6>
               </div>
-
-              <img
-                src="/assets/images/oils.png"
-                alt="banner visuals"
-                className="banner-img"
-              />
             </div>
 
-            {/* PRODUCT GRID */}
-            <div className="product-grid">
-              {[
-                {
-                  title: "Drink",
-                  price: 32,
-                  old: 40,
-                  off: "₹8 OFF",
-                  img: "/assets/images/soda.jpg",
-                },
-                {
-                  title: " Chocolate",
-                  price: 18,
-                  old: 20,
-                  off: "₹2 OFF",
-                  img: "/assets/images/choco.png",
-                },
-                {
-                  title: "Ready to eat",
-                  price: 50,
-                  old: 70,
-                  off: "₹20 OFF",
-                  img: "/assets/images/ready-to-eat.png",
-                },
-                {
-                  title: "Rice",
-                  price: 48,
-                  old: 70,
-                  off: "₹22 OFF",
-                  img: "/assets/images/rice.png",
-                },
-                {
-                  title: "Dals",
-                  price: 104,
-                  old: 125,
-                  off: "₹21 OFF",
-                  img: "/assets/images/dals.png",
-                },
-                {
-                  title: "Instant-mixes",
-                  price: 36,
-                  old: 40,
-                  off: "₹4 OFF",
-                  img: "/assets/images/instant-mixes.png",
-                },
-              ].map((p, idx) => (
-                <div key={idx} className="product-card">
-                 <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
-                  <div className="price-box">
-                    <span className="price">₹{p.price}</span>
-                    <span className="old-price">₹{p.old}</span>
+            <div>
+              <div className="timer-notification text-center">
+                <h6>
+                  Something you love is now on sale!
+                  <a href="/Shop" className="text-white">
+                    Buy Now!
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <button className="btn close-notification">
+            <span>Close</span> <i className="fas fa-times"></i>
+          </button>
+        </div>
+        <div className="d-block d-sm-none" style={{ padding: '10px 10px 0 10px' }}>
+          <div className="row">
+            <div className="col-9">
+              <div className="middle-box" style={{ border: "solid #2baedd", borderWidth: '1px 3px 3px 1px', borderRadius: '10px' }}>
+                <div className="center-box">
+                  <div className="location-box-2">
+                    <button
+                      className="btn location-button"
+
+                      onClick={() => setLocationPopup(!locationPopup)}
+                    >
+                      <i className="iconly-Location icli"></i>
+                      <span className="locat-name">{selectedLocation}</span>
+                    </button>
                   </div>
-                  <span className="offer">{p.off}</span>
-                  <p className="product-name">{p.title}</p>
-                  <button className="add-btn"  style={{
-                            background: "#f7fdff",
-                            borderStyle: "solid",
-                            borderColor: "#2baedd",
-                            borderWidth: "1px 3px 3px 1px",
-                            color: "#2baedd",
-                            padding: "5px",
-                            borderRadius: "10px",
-                            marginRight: "10px",
-                          }}><a href="/cart">ADD</a></button>
                 </div>
-              ))}
+              </div>
+            </div>
+            <div className="col-3" style={{ textAlign: 'end' }}>
+              <div className="option-list">
+                <ul>
+
+
+                  <li>
+                    <button
+                      className="header-icon swap-icon"
+                      title="Search"
+                      onClick={() => setOpen(true)}
+                      style={{ border: '1px solid #2baedd', background: '#2baedd', padding: '10px', borderRadius: '100%' }}
+                    >
+                      <i className="iconly-Search icli" style={{ color: '#fff', fontSize: '15px' }}></i>
+                    </button>
+                    {open && (
+                      <div className="searchmodal-overlay">
+                        <div className="modal-box">
+
+                          {/* CLOSE BUTTON */}
+                          <button className="close-btn" onClick={() => setOpen(false)}>
+                            ×
+                          </button>
+
+                          {/* SEARCH INPUT */}
+                          <input
+                            type="text"
+                            className="search-input"
+                            placeholder="Search for over 5000 products"
+                          />
+
+                          {/* BANNER */}
+                          <div className="banner">
+                            <div className="banner-text">
+                              <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
+                              <p>Get smoking accessories, fresheners & more in minutes!</p>
+                              <button className="order-now-btn"><a href="/Shop">Order now</a></button>
+                            </div>
+
+                            <img
+                              src="/assets/images/oils.png"
+                              alt="banner visuals"
+                              className="banner-img"
+                            />
+                          </div>
+
+                          {/* PRODUCT GRID */}
+                          <div className="product-grid">
+                            {[
+                              {
+                                title: "Drink",
+                                price: 32,
+                                old: 40,
+                                off: "₹8 OFF",
+                                img: "/assets/images/soda.jpg",
+                              },
+                              {
+                                title: " Chocolate",
+                                price: 18,
+                                old: 20,
+                                off: "₹2 OFF",
+                                img: "/assets/images/choco.png",
+                              },
+                              {
+                                title: "Ready to eat",
+                                price: 50,
+                                old: 70,
+                                off: "₹20 OFF",
+                                img: "/assets/images/ready-to-eat.png",
+                              },
+                              {
+                                title: "Rice",
+                                price: 48,
+                                old: 70,
+                                off: "₹22 OFF",
+                                img: "/assets/images/rice.png",
+                              },
+                              {
+                                title: "Dals",
+                                price: 104,
+                                old: 125,
+                                off: "₹21 OFF",
+                                img: "/assets/images/dals.png",
+                              },
+                              {
+                                title: "Instant-mixes",
+                                price: 36,
+                                old: 40,
+                                off: "₹4 OFF",
+                                img: "/assets/images/instant-mixes.png",
+                              },
+                            ].map((p, idx) => (
+                              <div key={idx} className="product-card">
+                                <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
+                                <div className="price-box">
+                                  <span className="price">₹{p.price}</span>
+                                  <span className="old-price">₹{p.old}</span>
+                                </div>
+                                <span className="offer">{p.off}</span>
+                                <p className="product-name">{p.title}</p>
+                                <button className="add-btn" style={{
+                                  background: "#f7fdff",
+                                  borderStyle: "solid",
+                                  borderColor: "#2baedd",
+                                  borderWidth: "1px 3px 3px 1px",
+                                  color: "#2baedd",
+                                  padding: "5px",
+                                  borderRadius: "10px",
+                                  marginRight: "10px",
+                                }}><a href="/cart">ADD</a></button>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      )}
-      </li>
-      </ul>
-      </div>
-        </div>
-      </div>
-       </div>
         <div className="top-nav top-header sticky-header sticky-header-3">
-            <div className="container-fluid-lg">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="navbar-top">
-                            <button className="navbar-toggler d-xl-none d-block p-0 me-3" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-                                <span className="navbar-toggler-icon">
-                                    <i className="iconly-Category icli theme-color"></i>
-                                </span>
-                            </button>
-                            <a href="/" className="web-logo nav-logo">
-                                <img src="/assets/images/vendor-page/logo/mdmart.png" className="img-fluid blur-up lazyload" alt="" style={{width:'90px'}}/> 
-                            </a>
+          <div className="container-fluid-lg">
+            <div className="row">
+              <div className="col-12 back-color-set">
+                <div className="navbar-top">
+                  <button className="navbar-toggler d-none p-0 me-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                    <span className="navbar-toggler-icon">
+                      <i className="iconly-Category icli theme-color"></i>
+                    </span>
+                  </button>
+                  <a href="/" className="web-logo nav-logo">
+                    <img src="/assets/images/vendor-page/logo/mdmart.png" className="img-fluid blur-up lazyload" alt="" style={{ width: '90px' }} />
+                  </a>
 
-                          
-                       <div className="middle-box  d-none d-sm-block">
-    <div className="center-box">
-        <div className="location-box-2">
-            <button 
-                className="btn location-button"
-                onClick={() => setLocationPopup(!locationPopup)}
-            >
-                <i className="iconly-Location icli"></i>
-                <span className="locat-name">{selectedLocation}</span>
-            </button>
-        </div>
+                  {/*  */}
+              <div className="mobile-category-slider">
+      <div className="category-container">
+        {categories.map((item, index) => (
+          <a className="cat-btn" key={index} href="/Shop">
+            <img src={item.icon} alt={item.name} className="cat-icon" />
+            <span className="cat-label">{item.name}</span>
+          </a>
+        ))}
+      </div>
     </div>
+
+
+                  {/*  */}
+
+
+                  <div className="middle-box  d-none d-sm-block">
+                    <div className="center-box">
+                      <div className="location-box-2">
+                        <button
+                          className="btn location-button"
+                          onClick={() => setLocationPopup(!locationPopup)}
+                        >
+                          <i className="iconly-Location icli"></i>
+                          <span className="locat-name">{selectedLocation}</span>
+                        </button>
                       </div>
+                    </div>
+                  </div>
 
-{/* BLUR BACKGROUND OVERLAY */}
-{locationPopup && window.location.pathname === "/" && (
-    <div className="location-blur-overlay"></div>
-)}
+                  {/* BLUR BACKGROUND OVERLAY */}
+                  {locationPopup && window.location.pathname === "/" && (
+                    <div className="location-blur-overlay"></div>
+                  )}
 
 
-{locationPopup && window.location.pathname === "/" && (
-    <div className="location-dropdown-box">
-        <div className="location-inner">
+                  {locationPopup && window.location.pathname === "/" && (
+                    <div className="location-dropdown-box">
+                      <div className="location-inner">
 
-            <button 
-                className="close-btn"
-                onClick={() => {
-                    setLocationPopup(false);
-                    setShowPincodeInput(false);
-                    setShowOptions(true);
-                    setDetectedLocation("");
-                }}
-            >
-                ×
-            </button>
-
-            <h4>Select Delivery Location</h4>
-            <p>Enter your address and we will specify the offer for your area.</p>
-
-            {showOptions && (
-                <>
-                    <button 
-                        className="option-btn"
-                        onClick={() => {
-                            setShowPincodeInput(true);
-                            setShowOptions(false);
-                            setDetectedLocation("");
-                        }}
-                    >
-                        Enter a pincode
-                    </button>
-
-                    <button 
-                        className="option-btn"
-                        onClick={() => {
-                            setDetectedLocation("Detecting...");
-                            setShowOptions(false);
-                            setShowPincodeInput(false);
-                        }}
-                    >
-                        Detect My Location
-                    </button>
-                </>
-            )}
-
-            {showPincodeInput && (
-               <>
-                <input 
-                    type="number"
-                    className="pincode-input"
-                    placeholder="Enter your pincode"
-                    value={pincodeValue}
-                    onChange={(e) => setPincodeValue(e.target.value)}
-                />
-
-                <div className="d-flex justify-content-end">
-                    <button 
-                        className="btn btn-2 theme-bg-color text-white btn-2-animation"
-                        onClick={() => {
-                            if (pincodeValue.trim() !== "") {
-                                setSelectedLocation(pincodeValue);
-                            }
+                        <button
+                          className="close-btn"
+                          onClick={() => {
                             setLocationPopup(false);
                             setShowPincodeInput(false);
                             setShowOptions(true);
-                        }}
-                    >
-                        Apply
-                    </button>
-                </div>
-               </>
-            )}
+                            setDetectedLocation("");
+                          }}
+                        >
+                          ×
+                        </button>
 
-            {detectedLocation && (
-                <p className="detect-result">{detectedLocation}</p>
-            )}
+                        <h4>Select Delivery Location</h4>
+                        <p>Enter your address and we will specify the offer for your area.</p>
 
-        </div>
-    </div>
-)}
-
-
-                            <div className="row">
-                <div className="col-12">
-                    <div className="main-nav">
-                        <div className="header-nav-left">
-                            <button className="dropdown-category dropdown-category-2">
-                                <i className="iconly-Category icli"></i>
-                                <span>All Categories</span>
+                        {showOptions && (
+                          <>
+                            <button
+                              className="option-btn"
+                              onClick={() => {
+                                setShowPincodeInput(true);
+                                setShowOptions(false);
+                                setDetectedLocation("");
+                              }}
+                            >
+                              Enter a pincode
                             </button>
 
-                            <div className="category-dropdown">
-                                <div className="category-title">
-                                    <h5>Categories</h5>
-                                    <button type="button" className="btn p-0 close-button text-content">
-                                        <i className="fa-solid fa-xmark"></i>
-                                    </button>
-                                </div>
+                            <button
+                              className="option-btn"
+                              onClick={() => {
+                                setDetectedLocation("Detecting...");
+                                setShowOptions(false);
+                                setShowPincodeInput(false);
+                              }}
+                            >
+                              Detect My Location
+                            </button>
+                          </>
+                        )}
 
-                                <ul className="category-list">
+                        {showPincodeInput && (
+                          <>
+                            <input
+                              type="number"
+                              className="pincode-input"
+                              placeholder="Enter your pincode"
+                              value={pincodeValue}
+                              onChange={(e) => setPincodeValue(e.target.value)}
+                            />
 
-  {/* <!-- Beverages --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="../assets/svg/1/cup.svg" alt="" />
-      <h6>Beverages</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box w-100">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Hot & Cold Drinks</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Tea</a></li>
-          <li><a href="/Shop">Green Tea</a></li>
-          <li><a href="/Shop">Coffee</a></li>
-          <li><a href="/Shop">Soft Drinks</a></li>
-          <li><a href="/Shop">Fruit Juices</a></li>
-          <li><a href="/Shop">Packaged Water</a></li>
-          <li><a href="/Shop">Health Drinks</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-  {/* <!-- Breakfast & Dairy --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="../assets/svg/1/breakfast.svg" alt="" />
-      <h6>Breakfast & Dairy</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Breakfast Items</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Oats & Porridge</a></li>
-          <li><a href="/Shop">Corn Flakes</a></li>
-          <li><a href="/Shop">Muesli & Granola</a></li>
-          <li><a href="/Shop">Instant Noodles</a></li>
-          <li><a href="/Shop">Pasta & Macaroni</a></li>
-        </ul>
-      </div>
-
-      <div className="list-2">
-        <div className="category-title-box">
-          <h5>Dairy Products</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Milk</a></li>
-          <li><a href="/Shop">Curd & Yogurt</a></li>
-          <li><a href="/Shop">Paneer & Tofu</a></li>
-          <li><a href="/Shop">Butter & Cheese</a></li>
-          <li><a href="/Shop">Ghee</a></li>
-          <li><a href="/Shop">Lassi & Buttermilk</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-  {/* <!-- Biscuits & Snacks --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="../assets/svg/1/biscuit.svg" alt="" />
-      <h6>Biscuits & Snacks</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Biscuits & Cookies</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Salted Biscuits</a></li>
-          <li><a href="/Shop">Cream Biscuits</a></li>
-          <li><a href="/Shop">Digestive & Health Biscuits</a></li>
-          <li><a href="/Shop">Cookies</a></li>
-        </ul>
-      </div>
-
-      <div className="list-2">
-        <div className="category-title-box">
-          <h5>Namkeen & Chips</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Chips & Wafers</a></li>
-          <li><a href="/Shop">Namkeen</a></li>
-          <li><a href="/Shop">Popcorn</a></li>
-          <li><a href="/Shop">Snack Bars</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-  {/* <!-- Grocery & Staples --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="../assets/svg/1/grocery.svg" alt="" />
-      <h6>Grocery & Staples</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Grains & Pulses</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Rice & Poha</a></li>
-          <li><a href="/Shop">Wheat & Flour</a></li>
-          <li><a href="/Shop">Dals & Pulses</a></li>
-          <li><a href="/Shop">Millets</a></li>
-        </ul>
-      </div>
-
-      <div className="list-2">
-        <div className="category-title-box">
-          <h5>Masala & Oil</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Cooking Oils & Ghee</a></li>
-          <li><a href="/Shop">Masalas & Spices</a></li>
-          <li><a href="/Shop">Salt, Sugar & Jaggery</a></li>
-          <li><a href="/Shop">Dry Fruits & Nuts</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-  {/* <!-- Home Care --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="/assets/images/nursing-home.png" alt="" />
-      <h6>Home Care</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box w-100">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Cleaning Essentials</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Detergents & Fabric Care</a></li>
-          <li><a href="/Shop">Dishwash & Cleaners</a></li>
-          <li><a href="/Shop">Floor Cleaners</a></li>
-          <li><a href="/Shop">Air Fresheners</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-
-  {/* <!-- Personal Care --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="/assets/images/personalcare.png" alt="" />
-      <h6>Personal Care</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box w-100">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>Daily Essentials</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Bath & Body</a></li>
-          <li><a href="/Shop">Hair Care</a></li>
-          <li><a href="/Shop">Oral Care</a></li>
-          <li><a href="/Shop">Skin Care</a></li>
-          <li><a href="/Shop">Shaving & Grooming</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-  {/* <!-- Baby Care --> */}
-  <li className="onhover-category-list">
-    <a href="#" className="category-name">
-      <img src="/assets/images/babycar.png" alt="" />
-      <h6>Baby Care</h6>
-      <i className="fa-solid fa-angle-right"></i>
-    </a>
-    <div className="onhover-category-box w-100">
-      <div className="list-1">
-        <div className="category-title-box">
-          <h5>For Babies</h5>
-        </div>
-        <ul>
-          <li><a href="/Shop">Baby Food</a></li>
-          <li><a href="/Shop">Diapers & Wipes</a></li>
-          <li><a href="/Shop">Baby Skin Care</a></li>
-          <li><a href="/Shop">Feeding Bottles</a></li>
-        </ul>
-      </div>
-    </div>
-  </li>
-
-</ul>
-
+                            <div className="d-flex justify-content-end">
+                              <button
+                                className="btn btn-2 theme-bg-color text-white btn-2-animation"
+                                onClick={() => {
+                                  if (pincodeValue.trim() !== "") {
+                                    setSelectedLocation(pincodeValue);
+                                  }
+                                  setLocationPopup(false);
+                                  setShowPincodeInput(false);
+                                  setShowOptions(true);
+                                }}
+                              >
+                                Apply
+                              </button>
                             </div>
+                          </>
+                        )}
+
+                        {detectedLocation && (
+                          <p className="detect-result">{detectedLocation}</p>
+                        )}
+
+                      </div>
+                    </div>
+                  )}
+
+
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="main-nav">
+                        <div className="header-nav-left">
+                          <button className="dropdown-category dropdown-category-2">
+                            <i className="iconly-Category icli"></i>
+                            <span>All Categories</span>
+                          </button>
+
+                          <div className="category-dropdown">
+                            <div className="category-title">
+                              <h5>Categories</h5>
+                              <button type="button" className="btn p-0 close-button text-content">
+                                <i className="fa-solid fa-xmark"></i>
+                              </button>
+                            </div>
+
+                            <ul className="category-list">
+
+                              {/* <!-- Beverages --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="../assets/svg/1/cup.svg" alt="" />
+                                  <h6>Beverages</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box w-100">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Hot & Cold Drinks</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Tea</a></li>
+                                      <li><a href="/Shop">Green Tea</a></li>
+                                      <li><a href="/Shop">Coffee</a></li>
+                                      <li><a href="/Shop">Soft Drinks</a></li>
+                                      <li><a href="/Shop">Fruit Juices</a></li>
+                                      <li><a href="/Shop">Packaged Water</a></li>
+                                      <li><a href="/Shop">Health Drinks</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                              {/* <!-- Breakfast & Dairy --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="../assets/svg/1/breakfast.svg" alt="" />
+                                  <h6>Breakfast & Dairy</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Breakfast Items</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Oats & Porridge</a></li>
+                                      <li><a href="/Shop">Corn Flakes</a></li>
+                                      <li><a href="/Shop">Muesli & Granola</a></li>
+                                      <li><a href="/Shop">Instant Noodles</a></li>
+                                      <li><a href="/Shop">Pasta & Macaroni</a></li>
+                                    </ul>
+                                  </div>
+
+                                  <div className="list-2">
+                                    <div className="category-title-box">
+                                      <h5>Dairy Products</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Milk</a></li>
+                                      <li><a href="/Shop">Curd & Yogurt</a></li>
+                                      <li><a href="/Shop">Paneer & Tofu</a></li>
+                                      <li><a href="/Shop">Butter & Cheese</a></li>
+                                      <li><a href="/Shop">Ghee</a></li>
+                                      <li><a href="/Shop">Lassi & Buttermilk</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                              {/* <!-- Biscuits & Snacks --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="../assets/svg/1/biscuit.svg" alt="" />
+                                  <h6>Biscuits & Snacks</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Biscuits & Cookies</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Salted Biscuits</a></li>
+                                      <li><a href="/Shop">Cream Biscuits</a></li>
+                                      <li><a href="/Shop">Digestive & Health Biscuits</a></li>
+                                      <li><a href="/Shop">Cookies</a></li>
+                                    </ul>
+                                  </div>
+
+                                  <div className="list-2">
+                                    <div className="category-title-box">
+                                      <h5>Namkeen & Chips</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Chips & Wafers</a></li>
+                                      <li><a href="/Shop">Namkeen</a></li>
+                                      <li><a href="/Shop">Popcorn</a></li>
+                                      <li><a href="/Shop">Snack Bars</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                              {/* <!-- Grocery & Staples --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="../assets/svg/1/grocery.svg" alt="" />
+                                  <h6>Grocery & Staples</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Grains & Pulses</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Rice & Poha</a></li>
+                                      <li><a href="/Shop">Wheat & Flour</a></li>
+                                      <li><a href="/Shop">Dals & Pulses</a></li>
+                                      <li><a href="/Shop">Millets</a></li>
+                                    </ul>
+                                  </div>
+
+                                  <div className="list-2">
+                                    <div className="category-title-box">
+                                      <h5>Masala & Oil</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Cooking Oils & Ghee</a></li>
+                                      <li><a href="/Shop">Masalas & Spices</a></li>
+                                      <li><a href="/Shop">Salt, Sugar & Jaggery</a></li>
+                                      <li><a href="/Shop">Dry Fruits & Nuts</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                              {/* <!-- Home Care --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="/assets/images/nursing-home.png" alt="" />
+                                  <h6>Home Care</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box w-100">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Cleaning Essentials</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Detergents & Fabric Care</a></li>
+                                      <li><a href="/Shop">Dishwash & Cleaners</a></li>
+                                      <li><a href="/Shop">Floor Cleaners</a></li>
+                                      <li><a href="/Shop">Air Fresheners</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+
+                              {/* <!-- Personal Care --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="/assets/images/personalcare.png" alt="" />
+                                  <h6>Personal Care</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box w-100">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>Daily Essentials</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Bath & Body</a></li>
+                                      <li><a href="/Shop">Hair Care</a></li>
+                                      <li><a href="/Shop">Oral Care</a></li>
+                                      <li><a href="/Shop">Skin Care</a></li>
+                                      <li><a href="/Shop">Shaving & Grooming</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                              {/* <!-- Baby Care --> */}
+                              <li className="onhover-category-list">
+                                <a href="#" className="category-name">
+                                  <img src="/assets/images/babycar.png" alt="" />
+                                  <h6>Baby Care</h6>
+                                  <i className="fa-solid fa-angle-right"></i>
+                                </a>
+                                <div className="onhover-category-box w-100">
+                                  <div className="list-1">
+                                    <div className="category-title-box">
+                                      <h5>For Babies</h5>
+                                    </div>
+                                    <ul>
+                                      <li><a href="/Shop">Baby Food</a></li>
+                                      <li><a href="/Shop">Diapers & Wipes</a></li>
+                                      <li><a href="/Shop">Baby Skin Care</a></li>
+                                      <li><a href="/Shop">Feeding Bottles</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
                         </div>
 
                         <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
-                            <div className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
-                                <div className="offcanvas-header navbar-shadow">
-                                    <h5>Menu</h5>
-                                    <button className="btn-close lead" type="button" data-bs-dismiss="offcanvas"></button>
-                                </div>
-                                <div className="offcanvas-body">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item ">
-                                            <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/">Home</a>
-                                        </li>
-
-
-                                       <li className="nav-item dropdown dropdown-mega">
-    <a className="nav-link dropdown-toggle ps-xl-2 ps-0" href="" data-bs-toggle="dropdown">
-        Offer
-    </a>
-
-    <div className="dropdown-menu dropdown-menu-2">
-        <div className="row">
-
-            {/* <!-- Category 1 --> */}
-            <div className="dropdown-column col-xl-3">
-                <h5 className="dropdown-header">Winter Grocery Essentials</h5>
-
-                <a className="dropdown-item" href="/Offerspage"> Bajra Flour Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Jaggery (Gur) Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Groundnut Oil Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Dry Fruits Combo Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Sesame (Til) Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Winter Spices Offer </a>
-            </div>
-
-            {/* <!-- Category 2 --> */}
-            <div className="dropdown-column col-xl-3">
-                <h5 className="dropdown-header">Women Fashion Offers</h5>
-
-                <a className="dropdown-item" href="/Offerspage"> Saree Special Discount </a>
-                <a className="dropdown-item" href="/Offerspage"> Winter Kurtis Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Ladies Footwear Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Cosmetic Combo Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Skincare Winter Sale </a>
-            </div>
-
-            {/* <!-- Category 3 --> */}
-            <div className="dropdown-column col-xl-3">
-                <h5 className="dropdown-header">Baby Products Offers</h5>
-
-                <a className="dropdown-item" href="/Offerspage"> Diaper Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Baby Lotion Combo Offer </a>
-                <a className="dropdown-item" href="/Offerspage"> Baby Food Discount </a>
-                <a className="dropdown-item" href="/Offerspage"> Shampoo + Soap Combo </a>
-                <a className="dropdown-item" href="/Offerspage"> Baby Winter Care Kit </a>
-            </div>
-
-            <div className="dropdown-column dropdown-column-img col-3"></div>
-
-        </div>
-    </div>
-</li>
-
-
-                                       <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="javascript:void(0)"
-                                                data-bs-toggle="dropdown">Company</a>
-                                            <ul className="dropdown-menu">
-                                                <li>
-                                                    <a className="dropdown-item" href="/About">About Us</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="/Mission">Mission</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="/Vision">Vision</a>
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
-                                        <li className="nav-item ">
-                                            <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Blog">Blog</a>
-                                        </li>
-                                        <li className="nav-item ">
-                                            <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Contact">Contact Us</a>
-                                        </li>
-
-                                     
-
-                                     
-                                    </ul>
-                                </div>
+                          <div className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                            <div className="offcanvas-header navbar-shadow">
+                              <h5>Menu</h5>
+                              <button className="btn-close lead" type="button" data-bs-dismiss="offcanvas"></button>
                             </div>
+                            <div className="offcanvas-body">
+                              <ul className="navbar-nav">
+                                <li className="nav-item ">
+                                  <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/">Home</a>
+                                </li>
+
+
+                                <li className="nav-item dropdown dropdown-mega m-0">
+                                  <a className="nav-link dropdown-toggle ps-xl-2 ps-0" href="" data-bs-toggle="dropdown">
+                                    Offer
+                                  </a>
+
+                                  <div className="dropdown-menu dropdown-menu-2">
+                                    <div className="row">
+
+                                      {/* <!-- Category 1 --> */}
+                                      <div className="dropdown-column col-xl-3">
+                                        <h5 className="dropdown-header">Winter Grocery Essentials</h5>
+
+                                        <a className="dropdown-item" href="/Offerspage"> Bajra Flour Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Jaggery (Gur) Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Groundnut Oil Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Dry Fruits Combo Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Sesame (Til) Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Winter Spices Offer </a>
+                                      </div>
+
+                                      {/* <!-- Category 2 --> */}
+                                      <div className="dropdown-column col-xl-3">
+                                        <h5 className="dropdown-header">Women Fashion Offers</h5>
+
+                                        <a className="dropdown-item" href="/Offerspage"> Saree Special Discount </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Winter Kurtis Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Ladies Footwear Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Cosmetic Combo Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Skincare Winter Sale </a>
+                                      </div>
+
+                                      {/* <!-- Category 3 --> */}
+                                      <div className="dropdown-column col-xl-3">
+                                        <h5 className="dropdown-header">Baby Products Offers</h5>
+
+                                        <a className="dropdown-item" href="/Offerspage"> Diaper Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Baby Lotion Combo Offer </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Baby Food Discount </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Shampoo + Soap Combo </a>
+                                        <a className="dropdown-item" href="/Offerspage"> Baby Winter Care Kit </a>
+                                      </div>
+
+                                      <div className="dropdown-column dropdown-column-img col-3"></div>
+
+                                    </div>
+                                  </div>
+                                </li>
+
+
+                                <li className="nav-item dropdown">
+                                  <a className="nav-link dropdown-toggle" href="javascript:void(0)"
+                                    data-bs-toggle="dropdown">Company</a>
+                                  <ul className="dropdown-menu">
+                                    <li>
+                                      <a className="dropdown-item" href="/About">About Us</a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="/Mission">Mission</a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="/Vision">Vision</a>
+                                    </li>
+
+                                  </ul>
+                                </li>
+                                <li className="nav-item ">
+                                  <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Blog">Blog</a>
+                                </li>
+                                <li className="nav-item m-0">
+                                  <a className="nav-link nav-link1 ps-xl-2 ps-0" href="/Contact">Contact Us</a>
+                                </li>
+
+
+
+
+                              </ul>
+                            </div>
+                          </div>
                         </div>
 
-                      
-                    </div>
-                </div>
-            </div>
-                            <div className="rightside-menu d-sm-block d-none">
-                               
 
-                             
-                                <div className="option-list">
-                                    <ul>
-                                        
-                                            {/* <li>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="rightside-menu d-sm-block d-none">
+
+
+
+                    <div className="option-list">
+                      <ul>
+
+                        {/* <li>
                                             <a href="#" className="header-icon swap-icon " title="Search">
                                                <i className="iconly-Search icli"></i>
                                             </a>
                                         </li> */}
 
-                                         <li>
-        <button
-          className="header-icon swap-icon"
-          title="Search"
-          onClick={() => setOpen(true)}
-        >
-          <i className="iconly-Search icli" style={{color:'#fff'}}></i>
-        </button>
-      </li>
+                        <li>
+                          <button
+                            className="header-icon swap-icon"
+                            title="Search"
+                            onClick={() => setOpen(true)}
+                          >
+                            <i className="iconly-Search icli" style={{ color: '#fff' }}></i>
+                          </button>
+                        </li>
 
-      {/* MODAL */}
-      {open && (
-        <div className="searchmodal-overlay">
-          <div className="modal-box">
+                        {/* MODAL */}
+                        {open && (
+                          <div className="searchmodal-overlay">
+                            <div className="modal-box">
 
-            {/* CLOSE BUTTON */}
-            <button className="close-btn" onClick={() => setOpen(false)}>
-              ×
-            </button>
+                              {/* CLOSE BUTTON */}
+                              <button className="close-btn" onClick={() => setOpen(false)}>
+                                ×
+                              </button>
 
-            {/* SEARCH INPUT */}
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search for over 5000 products"
-            />
+                              {/* SEARCH INPUT */}
+                              <input
+                                type="text"
+                                className="search-input"
+                                placeholder="Search for over 5000 products"
+                              />
 
-            {/* BANNER */}
-            <div className="banner">
-              <div className="banner-text">
-                <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
-                <p>Get smoking accessories, fresheners & more in minutes!</p>
-                <button className="order-now-btn"><a href="/Shop">Order now</a></button>
-              </div>
+                              {/* BANNER */}
+                              <div className="banner">
+                                <div className="banner-text">
+                                  <h2>Get Cigarettes at ₹0 Convenience Fee</h2>
+                                  <p>Get smoking accessories, fresheners & more in minutes!</p>
+                                  <button className="order-now-btn"><a href="/Shop">Order now</a></button>
+                                </div>
 
-              <img
-                src="/assets/images/oils.png"
-                alt="banner visuals"
-                className="banner-img"
-              />
-            </div>
+                                <img
+                                  src="/assets/images/oils.png"
+                                  alt="banner visuals"
+                                  className="banner-img"
+                                />
+                              </div>
 
-            {/* PRODUCT GRID */}
-            <div className="product-grid">
-              {[
-                {
-                  title: "Drink",
-                  price: 32,
-                  old: 40,
-                  off: "₹8 OFF",
-                  img: "/assets/images/soda.jpg",
-                },
-                {
-                  title: " Chocolate",
-                  price: 18,
-                  old: 20,
-                  off: "₹2 OFF",
-                  img: "/assets/images/choco.png",
-                },
-                {
-                  title: "Ready to eat",
-                  price: 50,
-                  old: 70,
-                  off: "₹20 OFF",
-                  img: "/assets/images/ready-to-eat.png",
-                },
-                {
-                  title: "Rice",
-                  price: 48,
-                  old: 70,
-                  off: "₹22 OFF",
-                  img: "/assets/images/rice.png",
-                },
-                {
-                  title: "Dals",
-                  price: 104,
-                  old: 125,
-                  off: "₹21 OFF",
-                  img: "/assets/images/dals.png",
-                },
-                {
-                  title: "Instant-mixes",
-                  price: 36,
-                  old: 40,
-                  off: "₹4 OFF",
-                  img: "/assets/images/instant-mixes.png",
-                },
-              ].map((p, idx) => (
-                <div key={idx} className="product-card">
-                 <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
-                  <div className="price-box">
-                    <span className="price">₹{p.price}</span>
-                    <span className="old-price">₹{p.old}</span>
+                              {/* PRODUCT GRID */}
+                              <div className="product-grid">
+                                {[
+                                  {
+                                    title: "Drink",
+                                    price: 32,
+                                    old: 40,
+                                    off: "₹8 OFF",
+                                    img: "/assets/images/soda.jpg",
+                                  },
+                                  {
+                                    title: " Chocolate",
+                                    price: 18,
+                                    old: 20,
+                                    off: "₹2 OFF",
+                                    img: "/assets/images/choco.png",
+                                  },
+                                  {
+                                    title: "Ready to eat",
+                                    price: 50,
+                                    old: 70,
+                                    off: "₹20 OFF",
+                                    img: "/assets/images/ready-to-eat.png",
+                                  },
+                                  {
+                                    title: "Rice",
+                                    price: 48,
+                                    old: 70,
+                                    off: "₹22 OFF",
+                                    img: "/assets/images/rice.png",
+                                  },
+                                  {
+                                    title: "Dals",
+                                    price: 104,
+                                    old: 125,
+                                    off: "₹21 OFF",
+                                    img: "/assets/images/dals.png",
+                                  },
+                                  {
+                                    title: "Instant-mixes",
+                                    price: 36,
+                                    old: 40,
+                                    off: "₹4 OFF",
+                                    img: "/assets/images/instant-mixes.png",
+                                  },
+                                ].map((p, idx) => (
+                                  <div key={idx} className="product-card">
+                                    <a href="/Shop"> <img src={p.img} alt={p.title} className="product-img" /></a>
+                                    <div className="price-box">
+                                      <span className="price">₹{p.price}</span>
+                                      <span className="old-price">₹{p.old}</span>
+                                    </div>
+                                    <span className="offer">{p.off}</span>
+                                    <p className="product-name">{p.title}</p>
+                                    <button className="add-btn" style={{
+                                      background: "#f7fdff",
+                                      borderStyle: "solid",
+                                      borderColor: "#2baedd",
+                                      borderWidth: "1px 3px 3px 1px",
+                                      color: "#2baedd",
+                                      padding: "5px",
+                                      borderRadius: "10px",
+                                      marginRight: "10px",
+                                    }}><a href="/cart">ADD</a></button>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+
+                        <li>
+                          <a href="/Wishlist" className="header-icon swap-icon " title="Wishlist">
+                            <i className="iconly-Heart icli" style={{ color: '#fff' }}></i>
+                          </a>
+                        </li>
+                        <li className="onhover-dropdown">
+                          <a href="/Cart" className="header-icon bag-icon">
+                            <small className="badge-number">2</small>
+                            <i className="iconly-Bag-2 icli" style={{ color: '#fff' }}></i>
+                          </a>
+                          <div className="onhover-div">
+                            <ul className="cart-list">
+                              <li>
+                                <div className="drop-cart">
+                                  <a href="/Productdetails" className="drop-image">
+                                    <img src="/assets/images/choco.png"
+                                      className="blur-up lazyload" alt="" />
+                                  </a>
+
+                                  <div className="drop-contain">
+                                    <a href="/Productdetails">
+                                      <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                    </a>
+                                    <h6><span>1 x</span> ₹80.58</h6>
+                                    <button className="close-button">
+                                      <i className="fa-solid fa-xmark"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div className="drop-cart">
+                                  <a href="/Productdetails" className="drop-image">
+                                    <img src="/assets/images/soda.jpg"
+                                      className="blur-up lazyload" alt="" />
+                                  </a>
+
+                                  <div className="drop-contain">
+                                    <a href="/Productdetails">
+                                      <h5>Peanut Butter Bite Premium Butter Cookies 600 g
+                                      </h5>
+                                    </a>
+                                    <h6><span>1 x</span> ₹25.68</h6>
+                                    <button className="close-button">
+                                      <i className="fa-solid fa-xmark"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+
+
+                            <div className="price-box">
+                              <h5>Price :</h5>
+                              <h4 className="theme-color fw-bold">₹106.58</h4>
+                            </div>
+
+                            <div className="button-group">
+                              <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
+                              <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Checkout</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <a href="/Login" className="header-icon swap-icon " title="Login">
+                            <i className="fa-solid fa-right-to-bracket" style={{ color: '#fff' }}></i>
+                          </a>
+                        </li>
+                        <li >
+                          <a href="/Account" className="header-icon swap-icon " title=" My Account">
+                            <i class="fa-solid fa-user-tie" style={{ color: '#fff' }}></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <span className="offer">{p.off}</span>
-                  <p className="product-name">{p.title}</p>
-                  <button className="add-btn"  style={{
-                            background: "#f7fdff",
-                            borderStyle: "solid",
-                            borderColor: "#2baedd",
-                            borderWidth: "1px 3px 3px 1px",
-                            color: "#2baedd",
-                            padding: "5px",
-                            borderRadius: "10px",
-                            marginRight: "10px",
-                          }}><a href="/cart">ADD</a></button>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
-      )}
 
+      </header>
+      {/* <!-- Header End --> */}
 
-                                            <li>
-                                            <a href="/Wishlist" className="header-icon swap-icon " title="Wishlist">
-                                                <i className="iconly-Heart icli" style={{color:'#fff'}}></i>
-                                            </a>
-                                        </li>
-                                        <li className="onhover-dropdown">
-                                            <a href="/Cart" className="header-icon bag-icon">
-                                                <small className="badge-number">2</small>
-                                                <i className="iconly-Bag-2 icli" style={{color:'#fff'}}></i>
-                                            </a>
-                                            <div className="onhover-div">
-                                                <ul className="cart-list">
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/choco.png"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹80.58</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div className="drop-cart">
-                                                            <a href="/Productdetails" className="drop-image">
-                                                                <img src="/assets/images/soda.jpg"
-                                                                    className="blur-up lazyload" alt="" /> 
-                                                            </a>
-
-                                                            <div className="drop-contain">
-                                                                <a href="/Productdetails">
-                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
-                                                                    </h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> ₹25.68</h6>
-                                                                <button className="close-button">
-                                                                    <i className="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-
-                                                <div className="price-box">
-                                                    <h5>Price :</h5>
-                                                    <h4 className="theme-color fw-bold">₹106.58</h4>
-                                                </div>
-
-                                                <div className="button-group">
-                                                    <a href="/Cart" className="btn btn-sm cart-button">View Cart</a>
-                                                    <a href="/Checkout" className="btn btn-sm cart-button theme-bg-color
-                                                    text-white">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                      
-                                        <li>
-                                            <a href="/Login" className="header-icon swap-icon " title="Login">
-                                                <i className="fa-solid fa-right-to-bracket" style={{color:'#fff'}}></i>
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="/Account" className="header-icon swap-icon " title=" My Account">
-                                                 <i class="fa-solid fa-user-tie" style={{color:'#fff'}}></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    </header>
-    {/* <!-- Header End --> */}
-    
-     {/* <!-- mobile fix menu start --> */}
-    <div className="mobile-menu d-md-none d-block mobile-cart">
+      {/* <!-- mobile fix menu start --> */}
+      <div className="mobile-menu d-md-none d-block mobile-cart">
         <ul>
-             <li class="active">
+          {/* <li class="active">
                 <a href="/">
                     <i class="iconly-Home icli"></i>
                     <span>Home</span>
                 </a>
-            </li>
+            </li> */}
 
-            <li className="mobile-category">
-                <a href="#" >
-                    <i className="iconly-Category icli js-link"></i>
-                    <span>Category</span>
-                </a>
-            </li>
+          <li className="mobile-category">
+            <a href="#" >
+              <i className="iconly-Category icli js-link"></i>
+              <span>Category</span>
+            </a>
+          </li>
 
-          
 
-            <li>
-                <a href="/Wishlist" >
-                    <i className="iconly-Heart icli"></i>
-                    <span>My Wish</span>
-                </a>
-            </li>
 
-            <li>
-                <a href="/Cart">
-                    <i className="iconly-Bag-2 icli fly-cate"></i>
-                    <span>Cart</span>
-                </a>
-            </li>
-             <li>
-                <a href="/Account">
-                    <i class="fa-solid fa-user-tie icli" style={{color:'#fff'}}></i>
-                    <span>Account</span>
-                </a>
-            </li>
+          <li>
+            <a href="/Wishlist" >
+              <i className="iconly-Heart icli"></i>
+              <span>My Wish</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/Cart">
+              <i className="iconly-Bag-2 icli fly-cate"></i>
+              <span>Cart</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Account">
+              <i class="fa-solid fa-user-tie icli" style={{ color: '#fff' }}></i>
+              <span>Account</span>
+            </a>
+          </li>
+          <li>
+            <a className="" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+              <i className="iconly-Category icli theme-color"></i>
+              <span>Other </span>
+            </a>
+          </li>
         </ul>
-    </div>
-    {/* <!-- mobile fix menu end --> */}
+      </div>
+      {/* <!-- mobile fix menu end --> */}
       {/* <!-- Location Modal Start --> */}
-    <div className="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
+      <div className="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
         <div className="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">Choose your Delivery Location</h5>
-                    <p className="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal">
-                        <i className="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div className="modal-body">
-                    <div className="location-list">
-                        <div className="search-input">
-                            <input type="search" className="form-control" placeholder="Search Your Area" />
-                            <i className="fa-solid fa-magnifying-glass"></i>
-                        </div>  
-                    </div>
-                </div>
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Choose your Delivery Location</h5>
+              <p className="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
+              <button type="button" className="btn-close" data-bs-dismiss="modal">
+                <i className="fa-solid fa-xmark"></i>
+              </button>
             </div>
+            <div className="modal-body">
+              <div className="location-list">
+                <div className="search-input">
+                  <input type="search" className="form-control" placeholder="Search Your Area" />
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    {/* <!-- Location Modal End --> */}
-   
+      </div>
+      {/* <!-- Location Modal End --> */}
+
     </div>
   )
 }

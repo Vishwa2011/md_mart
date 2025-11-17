@@ -4596,7 +4596,7 @@ export default function Home() {
 
                                 <div className="product-detail">
                                     <h4>Product Details :</h4>
-                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                    <p className="text-justify">Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
                                         Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
                                         Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
                                         muffin I love Detergent cake sugar plum dessert bonbon.</p>

@@ -236,7 +236,7 @@ const Productdetails = () => {
                                 </div>
 
                                 <div class="product-contain">
-                                    <p class="w-100">Incorporate our Deliciously Ripe Peaches into your healthy
+                                    <p class="w-100 text-justify">Incorporate our Deliciously Ripe Peaches into your healthy
                                         lifestyle or relish them as an occasional indulgence. Whichever way you choose
                                         to enjoy them, be prepared for a symphony of flavors that celebrate the natural
                                         goodness of this summer fruit.</p>
@@ -408,7 +408,7 @@ const Productdetails = () => {
                         <div class="vendor-box">
                           
                    <h3>Why Shop MD Mart</h3>
-                            <p class="vendor-detail">At MD Mart, we make everyday shopping simple, reliable, and affordable. From quality products to quick delivery, we ensure a smooth experience from start to finish. With trusted brands, secure payments, and friendly support, MD Mart is your go-to destination for everything you need — all in one place.</p>
+                            <p class="vendor-detail text-justify">At MD Mart, we make everyday shopping simple, reliable, and affordable. From quality products to quick delivery, we ensure a smooth experience from start to finish. With trusted brands, secure payments, and friendly support, MD Mart is your go-to destination for everything you need — all in one place.</p>
 
                        
                         </div>
@@ -659,7 +659,7 @@ const Productdetails = () => {
                         <div class="tab-content custom-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="description" role="tabpanel">
                                 <div class="product-description">
-                                    <div class="nav-desh">
+                                    <div class="nav-desh text-justify">
                                         <p>Indulge in the vibrant and tangy goodness of our premium fresh oranges.
                                             Sourced from the finest orchards, our oranges are a testament to quality and
                                             flavor. Each orange is meticulously handpicked to ensure that you receive a
@@ -725,7 +725,7 @@ const Productdetails = () => {
                             </div>
 
                             <div class="tab-pane fade" id="care" role="tabpanel">
-                                <div class="information-box">
+                                <div class="information-box text-justify">
                                     <ul>
                                         <li>Store cream cakes in a refrigerator. Fondant cakes should be
                                             stored in an air conditioned environment.</li>
@@ -1939,7 +1939,7 @@ const Productdetails = () => {
 
                                 <div class="product-detail">
                                     <h4>Product Details :</h4>
-                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                    <p className="text-justify">Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
                                         Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
                                         Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
                                         muffin I love carrot cake sugar plum dessert bonbon.</p>

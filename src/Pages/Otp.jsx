@@ -1,34 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+
 
 const Otp = () => {
   return (
     <>
-    <Navbar />
-        {/* <!-- Breadcrumb Section Start --> */}
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
-                        <h2>OTP</h2>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
-                                    <a href="/">
-                                        <i class="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item active">OTP</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {/* <!-- Breadcrumb Section End --> */}
 
     {/* <!-- log in section start --> */}
     <section class="log-in-section otp-section section-b-space">
@@ -77,7 +52,7 @@ const Otp = () => {
         </div>
     </section>
     {/* <!-- log in section end --></div> */}
-    <Footer />
+
     </>
   )
 }

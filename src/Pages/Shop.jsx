@@ -44,7 +44,7 @@ const Shop = () => {
                
 
                 <div class="col-custom-12">
-                    <div class="show-button">
+                    {/* <div class="show-button">
                        
 
                         <div class="top-filter-menu">
@@ -104,8 +104,8 @@ const Shop = () => {
                               
                             </ul>
                         </div>
-                    </div>
-
+                    </div> */}
+                {/* <h4 className="mb-3" >Bread and Pastry</h4> */}
                     <div
                         class="row g-sm-4 g-3 row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 product-list-section">
                         <div>
@@ -1374,7 +1374,7 @@ const Shop = () => {
 
                                 <div class="product-detail">
                                     <h4>Product Details :</h4>
-                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                    <p className="text-justify">Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
                                         Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
                                         Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
                                         muffin I love carrot cake sugar plum dessert bonbon.</p>

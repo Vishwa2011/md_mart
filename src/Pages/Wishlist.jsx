@@ -87,10 +87,27 @@ const Wishlist = () => {
                                     <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                 </a>
                                 <h6 class="unit mt-1">250 ml</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹08.02</span>
-                                    <del>₹15.15</del>
-                                </h5>
+                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -142,10 +159,27 @@ const Wishlist = () => {
                                     <h5 class="name">Peanut Butter Bite Premium Butter Cookies 600 g</h5>
                                 </a>
                                 <h6 class="unit mt-1">350 G</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹04.33</span>
-                                    <del>₹10.36</del>
-                                </h5>
+                                 <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -197,10 +231,27 @@ const Wishlist = () => {
                                     <h5 class="name">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h5>
                                 </a>
                                 <h6 class="unit mt-1">570 G</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹12.52</span>
-                                    <del>₹13.62</del>
-                                </h5>
+                                <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -252,10 +303,27 @@ const Wishlist = () => {
                                     <h5 class="name">Yumitos Chilli Sprinkled Potato Chips 100 g</h5>
                                 </a>
                                 <h6 class="unit mt-1">100 G</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹10.25</span>
-                                    <del>₹12.36</del>
-                                </h5>
+                                <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -307,10 +375,27 @@ const Wishlist = () => {
                                     <h5 class="name">Fantasy Crunchy Choco Chip Cookies</h5>
                                 </a>
                                 <h6 class="unit mt-1">550 G</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹14.25</span>
-                                    <del>₹16.57</del>
-                                </h5>
+                                <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -362,10 +447,27 @@ const Wishlist = () => {
                                     <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                 </a>
                                 <h6 class="unit mt-1">1 Kg</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹12.68</span>
-                                    <del>₹14.69</del>
-                                </h5>
+                                <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add
@@ -416,10 +518,27 @@ const Wishlist = () => {
                                     <h5 class="name">Fresh Bread and Pastry Flour 200 g</h5>
                                 </a>
                                 <h6 class="unit mt-1">250 ml</h6>
-                                <h5 class="price">
-                                    <span class="theme-color">₹08.02</span>
-                                    <del>₹15.15</del>
-                                </h5>
+                              <div style={{ display: "flex" }}>
+        <h5
+          className="price theme-color"
+          style={{
+            background: "#f7fdff",
+            borderStyle: "solid",
+            borderColor: "#2baedd",
+            borderWidth: "1px 3px 3px 1px",
+            color: "#2baedd",
+            padding: "5px",
+            borderRadius: "10px",
+            marginRight: "10px",
+          }}
+        >
+          ₹70.21
+        </h5>
+
+        <h5 style={{ marginTop: "10px" }}>
+          <del>₹65.25</del>
+        </h5>
+      </div>
 
                                 <div class="add-to-cart-box bg-white mt-2">
                                     <button class="btn btn-add-cart addcart-button">Add

@@ -3,6 +3,7 @@ import $ from "jquery";
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaRupeeSign, FaBolt, FaSyncAlt, FaGift, FaWallet, FaPlus, FaTimes } from "react-icons/fa";
+import { BiFontSize } from "react-icons/bi";
 
 
 
@@ -176,15 +177,9 @@ document.querySelectorAll('.address-box').forEach(box => {
             <div className="dashboard-left-sidebar">
 
               <div className="profile-box">
-                <div className="cover-image">
-                  <img
-                    src="../assets/images/inner-page/cover-img.jpg"
-                    className="img-fluid blur-up lazyload"
-                    alt=""
-                  />
-                </div>
+               
 
-                <div className="profile-contain">
+                <div className="profile-contain d-flex">
                   <div className="profile-image">
                     <div className="position-relative">
                       <img
@@ -193,18 +188,18 @@ document.querySelectorAll('.address-box').forEach(box => {
                         alt=""
                       />
 
-                      <div className="cover-icon">
+                      {/* <div className="cover-icon">
                         <i className="fa-solid fa-pen">
                           <input type="file" onChange={() => { }} />
                         </i>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
                   <div className="profile-name">
                     <h3>Rajesh Patel</h3>
-                    <h6 className="text-content text-center">
-                      rajeshpatel01@gmail.com
+                    <h6 className="text-content ">
+                     9987665432
                     </h6>
                   </div>
                 </div>
@@ -215,7 +210,7 @@ document.querySelectorAll('.address-box').forEach(box => {
 
                 <li className="nav-item" role="presentation"></li>
 
-                <section className="account-section p-3 pt-0 " style={{ textAlign: 'center' }}>
+                <section className="account-section p-3 pt-0 w-100" style={{ textAlign: 'center' }}>
                   <div className="card shadow-sm rounded-3 border-0 p-4">
                     <div className="d-flex align-items-center justify-content-center mb-3">
                       <h4 className="fw-bold d-flex align-items-center gap-2 mb-0">
@@ -341,9 +336,26 @@ document.querySelectorAll('.address-box').forEach(box => {
                     E- Gift Cards
                   </button>
                 </li>
-
-              </ul>
-
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link"
+                    id="pills-policy-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-policy"
+                    type="button"
+                    onClick={handleTabClick}
+                  >
+                    Policy
+                  </button>
+                </li>
+</ul>
+               <div className="d-flex justify-content-center">
+                 <a href="/" className="nav-link btn theme-bg-color mt-3 mb-3 px-2 py-2 rounded-2 fw-semibold"
+                    style={{ color: '#fff'}}
+                    type="button" >
+                    Log Out
+                  </a>
+               </div>
+              
             </div>
           </div>
 
@@ -360,7 +372,7 @@ document.querySelectorAll('.address-box').forEach(box => {
             <div className="dashboard-right-sidebar active">
 
               {/* Mobile Back Button */}
-              {isMobile && (
+              {/* {isMobile && (
                 <>
                 <div className="d-flex mb-3 " style={{borderBottom:'2px solid #2baedd'}}>
                  <button className="mobile-back-btn" onClick={handleBack}>
@@ -370,7 +382,17 @@ document.querySelectorAll('.address-box').forEach(box => {
                 </div>
                 </>
               
-              )}
+              )} */}
+              {isMobile && (
+  <div className="mobile-header1">
+    <button className="mobile-back-btn1" onClick={handleBack}>
+      <i className="fa-solid fa-angle-left"></i>
+    </button>
+
+    <h4 className="mobile-header-title1">Back</h4>
+  </div>
+)}
+
 
                <div className="tab-content" id="pills-tabContent">
                             
@@ -1614,10 +1636,8 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
-            <i className="far fa-eye me-1"></i>View Details
-          </a>
-          <a href="" data-bs-toggle="modal" data-bs-target="#cancelRefund" className="text-danger fw-semibold">
+        
+          <a href="" className="text-danger fw-semibold">
             <i className="far fa-times-circle me-1"></i>Cancel
           </a>
         </div>
@@ -1657,9 +1677,7 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
-            <i className="far fa-eye me-1"></i>View Details
-          </a>
+         
           <a href="" className="text-muted fw-semibold disabled">
             <i className="far fa-clock me-1"></i>In Process
           </a>
@@ -1700,10 +1718,8 @@ document.querySelectorAll('.address-box').forEach(box => {
         </div>
 
         <div className="d-flex justify-content-between border-top pt-2">
-          <a href="" data-bs-toggle="modal" data-bs-target="#refundDetails" className="text-primary fw-semibold">
-            <i className="far fa-eye me-1"></i>View Details
-          </a>
-          <a href="" data-bs-toggle="modal" data-bs-target="#requestRefund" className="text-success fw-semibold">
+         
+          <a href=""  className="text-success fw-semibold">
             <i className="far fa-redo me-1"></i>Reapply
           </a>
         </div>
@@ -2084,6 +2100,171 @@ document.querySelectorAll('.address-box').forEach(box => {
     </div>
   ))}
                                  </div>
+                            </div>
+
+                            <div className="tab-pane fade" id="pills-policy" role="tabpanel">
+                                <div className="title">
+                                        <h2>Privacy Policy</h2>
+                                        <span className="title-leaf">
+                                            <svg className="icon-width bg-gray">
+                                                 <use href="../assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                              <section className="faq-box-contain section-b-space pt-0">
+                                                <div className="faq-accordion">
+                        <div className="accordion" id="accordionExample">
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingOne">
+                                    <button className="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">
+                                        1. Data we collect <i
+                                            className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" className="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p>
+                                            We collect information that you provide directly and information
+              collected automatically when you use our services.
+                                        </p>
+                                        <ul className="privacypolicy-list list-disc list-inside mt-3 text-gray-700 space-y-2">
+              <li>Name, email, phone number, address, and payment information.</li> <br />
+              <li>Automatically collected data such as IP, device, and usage details.</li><br />
+              <li>Information from third-party sources such as payment gateways or social media.</li>
+            </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">
+                                         2. How we use your data <i
+                                            className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                         {/* <p> */}
+                                             <ul className="privacypolicy-list list-disc list-inside mt-3 text-gray-700 space-y-2">
+              <li>To provide, maintain, and improve our services.</li> <br />
+              <li>To process transactions and communicate with you.</li><br />
+              <li>To detect and prevent fraudulent or unauthorized activity.</li><br />
+              <li>To personalize your experience and offer relevant promotions.</li>
+            </ul>
+                                        {/* </p> */}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingThree">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">
+                                       3. Sharing & Disclosure <i className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p>We do not sell your data. We may share it with trusted service providers, legal authorities, or as required by law.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFour">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour">
+                                        4. Cookies & TrackingHow long will it take to deliver my order? <i className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p> We use cookies to enhance your experience. You can manage cookie preferences in your browser settings.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFive">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive">
+                                        5. Security<i className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p>               We take reasonable measures to protect your personal information but cannot guarantee 100% security.
+</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSix">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix">
+                                        6. Your Rights <i
+                                            className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p>              You have the right to access, update, or delete your data. Contact us if you wish to exercise these rights.
+</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSeven">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven">
+                                        7. Changes to this Policy<i
+                                        className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p>We may update this policy occasionally. Please review it periodically for updates.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingEight">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight">
+                                         8. Contact Us<i
+                                            className="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" className="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        <p> If you have any questions about this Privacy Policy, contact us at:</p> 
+                                        <address className="privacypolicy-address not-italic mt-3 text-gray-700">
+              <strong>MD Mart</strong>
+              <br />
+              Email: <a href="mailto:mdmart.superstore@gmail.com" className="privacypolicy-email underline">mdmart.superstore@gmail.com</a>
+            </address>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                                </div>
+                                </section>
                             </div>
 
                         </div>
