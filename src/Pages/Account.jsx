@@ -2055,7 +2055,8 @@ document.querySelectorAll('.address-box').forEach(box => {
                                 </div>
                             </div>
                         </div>
-                    </div></section>
+                    </div>
+                    </section>
 
                             </div>
 
